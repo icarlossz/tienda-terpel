@@ -1,0 +1,12 @@
+{
+  "name": "web_tiendaterpel",
+  "version": "1.0.0",
+  "description": "web tienda terpel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "carlossz",
+  "license": "MIT",
+  "repository": "git@github.com:icarlossz/tienda-terpel.git",
+}
