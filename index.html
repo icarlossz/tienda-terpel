@@ -22,10 +22,43 @@
     <div class="container-fluid usuarioLogueadoContainer sectionHome">
       <div class="row">
         <div class="col-md-offset-8 col-md-2 col-xs-12 text-right usuarioLogueado"><button>EDS de prueba</button></div>
-        <div class="col-md-1 text-left"><img src="images/iconUser.png" alt=""></div>
+        <div class="col-md-1 ">
+
+
+       <!--    <ul class="nav navbar-nav navbar-right"> <li id="fat-menu" class="dropdown"> <a href="#" class="dropdown-toggle" id="drop3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> Dropdown <span class="caret"></span> </a> <ul class="dropdown-menu" aria-labelledby="drop3"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </li> </ul> -->
+
+
+          <div class="dropdown">
+
+            <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <img class="dropdown" src="images/iconUser.png" alt="">
+              <span class="caret"></span>
+            </a>
+
+            <div class="dropdown-menu pull-right usuarioDropdown" aria-labelledby="dLabel">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/userImg.svg" width="80px" alt="">
+                </div>
+                <div class="col-md-4">
+                  <h2>PruebaEDS1</h2>
+                  <h3>Administrador</h3>
+                </div>
+              </div>
+              <ul>
+                <li>Actualizar perfil</li>
+                <li>Cambiar contraseña</li>
+                <li>Recursos</li>
+                <li>Cerrar sesión</li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 text-center logoTTHeader"><img src="images/logoTiendaTerpel.png" alt=""></div>
+        <div class="col-xs-12 text-center logoTTHeader"><img src="images/logoTT.svg" width="400px" alt=""></div>
       </div>
     </div>
     
@@ -33,13 +66,13 @@
       <div class="container Navbar">
         <div class="row">
           <div class="col-md-2 navbarItem">Inicio</div>
-          <div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem active catalogoDrop">Catálogo</div>
+          <div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem active catalogoDrop ">Catálogo</div>
           <div id="promocionesDrop" class="col-md-2 navbarItem  catalogoDrop">Promociones</div>
           <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem pedidosDrop">Mis pedidos</div>
           <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem">Contacto</div>
           <div class="col-md-2 navbarItem">
             <div class="row">
-              <div class="col-md-4"><img src="images/iconSearch.svg" width="21px" height="21px" alt="iconSearch"></div>
+              <div id="searchDrop" data-openDropdown="#searchDropdown" class="col-md-4"><img src="images/iconSearch.svg" width="21px" height="21px" alt="iconSearch"></div>
               <div class="col-md-4"><img src="images/iconFav.svg" width="22px" height="22px" alt="iconFav"></div>
               <div class="col-md-4"><img src="images/iconCart.svg" width="23px" height="23px" alt="iconCart"></div>
             </div>
@@ -121,7 +154,6 @@
     </div>
 
     <div id="pedidosDropdown" data-closeDropdown="#pedidosDropdown" class="container Dropdown">
-      <!-- <div class="container"> -->
         <div class="row dropdownContainer">
           <div class="col-md-6 ">
             <h4>Seguimiento de pedidos</h4>
@@ -130,11 +162,9 @@
             <h4>Historial de pedidos</h4>
           </div>
         </div>
-      <!-- </div> -->
     </div>
 
     <div id="contactoDropdown" data-closeDropdown="#contactoDropdown" class="container Dropdown">
-      <!-- <div class="container"> -->
         <div class="row dropdownContainer">
           <div class="col-md-6">
             <h4>Preguntas frecuentes</h4>
@@ -143,7 +173,14 @@
             <h4>Contáctanos</h4>
           </div>
         </div>
-      <!-- </div> -->
+    </div>
+
+    <div id="searchDropdown" data-closeDropdown="#searchDropdown" class="container Dropdown">
+        <div class="row dropdownContainer">
+          <div class="col-md-12">
+            <input type="text" placeholder="Ingresa tu búsqueda...">
+          </div>
+        </div>
     </div>
 
     <div class="containerFluid slidesHomeContainer">
@@ -158,16 +195,24 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img src="images/bannerImg.png" alt="...">
-            <!-- <div class="carousel-caption">
-              ...
-            </div> -->
+            <div>
+              <div class="imgSlider"></div>
+              <img src="images/bannerImg.png" alt="...">
+            </div>
+            <div class="carousel-caption">
+              Lorem impsum dolor sit asimet <br>
+              <button class="btnRed">Button</button>
+            </div>
           </div>
           <div class="item">
-            <img src="images/bannerImg.png" alt="...">
-            <!-- <div class="carousel-caption">
-              ...
-            </div> -->
+            <div>
+              <div class="imgSlider"></div>
+              <img src="images/bannerImg.png" alt="...">
+            </div>
+            <div class="carousel-caption">
+              Lorem impsum dolor sit asimet <br>
+              <button class="btnRed">Button</button>
+            </div>
           </div>
         </div>
 
@@ -236,6 +281,7 @@
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
+                <img src="images/star.png" alt="">
               </div>
               <div class="row">
                 <div class="col-md-5">
@@ -265,6 +311,7 @@
               <h6 class="marcaProducto">Terpel</h6>
               <h3 class="nombreProducto">Camisa Administrador Blanca Manga Larga Hombre Gazel</h3>
               <div class="calificacionProducto">
+                <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
@@ -330,32 +377,6 @@
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
-              </div>
-              <h2 class="precioProducto">$ 15.582,00</h2>
-            </div>
-            <div class="footerVistosReciente">
-              <div class="row">
-                <div class="col-md-7 verDetalle">
-                  <h4>VER DETALLE</h4></h3>
-                </div>
-                <div class="col-md-5 addToFav">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-xs-12">
-          <div class="vistoReciente">
-            <div class="imgVistosReciente">
-              <img src="images/poloTerpel.png" alt="">
-            </div>
-            <div class="descripcionVistosReciente">
-              <h4>Camiseta Polo Blanca Manga Larga Terpel</h4>
-              <div class="calificacionVistosReciente">
-                <img src="images/star.png" alt="">
-                <img src="images/star.png" alt="">
-                <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
               </div>
               <h2 class="precioProducto">$ 15.582,00</h2>
@@ -380,6 +401,35 @@
             <div class="descripcionVistosReciente">
               <h4>Camiseta Polo Blanca Manga Larga Terpel</h4>
               <div class="calificacionVistosReciente">
+                <img src="images/star.png" alt="">
+                <img src="images/star.png" alt="">
+                <img src="images/star.png" alt="">
+                <img src="images/star.png" alt="">
+                <img src="images/star.png" alt="">
+              </div>
+              <h2 class="precioProducto">$ 15.582,00</h2>
+            </div>
+            <div class="footerVistosReciente">
+              <div class="row">
+                <div class="col-md-7 verDetalle">
+                  <h4>VER DETALLE</h4></h3>
+                </div>
+                <div class="col-md-5 addToFav">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <div class="vistoReciente">
+            <div class="imgVistosReciente">
+              <img src="images/poloTerpel.png" alt="">
+            </div>
+            <div class="descripcionVistosReciente">
+              <h4>Camiseta Polo Blanca Manga Larga Terpel</h4>
+              <div class="calificacionVistosReciente">
+                <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">

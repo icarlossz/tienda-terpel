@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tienda Terpel Web</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="home">
+      <div class="container-fluid usuarioLogueadoContainer sectionHome">
+        <div class="row">
+          <div class="col-md-offset-8 col-md-2 col-xs-12 text-right usuarioLogueado"><button>EDS de prueba</button></div>
+          <div class="col-md-1 ">
+
+            <div class="dropdown">
+
+              <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img class="dropdown" src="images/iconUser.png" alt="">
+                <span class="caret"></span>
+              </a>
+
+              <div class="dropdown-menu pull-right usuarioDropdown" aria-labelledby="dLabel">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="images/userImg.svg" width="80px" alt="">
+                  </div>
+                  <div class="col-md-4">
+                    <h2>PruebaEDS1</h2>
+                    <h3>Administrador</h3>
+                  </div>
+                </div>
+                <ul>
+                  <li>Actualizar perfil</li>
+                  <li>Cambiar contraseña</li>
+                  <li>Recursos</li>
+                  <li>Cerrar sesión</li>
+                </ul>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 text-center logoTTHeader"><img src="images/logoTT.svg" width="400px" alt=""></div>
+        </div>
+      </div>
+      
+      <div class="container-fluid navbarContainer">
+        <div class="container Navbar">
+          <div class="row">
+            <div class="col-md-2 navbarItem">Inicio</div>
+            <div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem active catalogoDrop ">Catálogo</div>
+            <div id="promocionesDrop" class="col-md-2 navbarItem  catalogoDrop">Promociones</div>
+            <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem pedidosDrop">Mis pedidos</div>
+            <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem">Contacto</div>
+            <div class="col-md-2 navbarItem">
+              <div class="row">
+                <div id="searchDrop" data-openDropdown="#searchDropdown" class="col-md-4"><img src="images/iconSearch.svg" width="21px" height="21px" alt="iconSearch"></div>
+                <div class="col-md-4"><img src="images/iconFav.svg" width="22px" height="22px" alt="iconFav"></div>
+                <div class="col-md-4"><img src="images/iconCart.svg" width="23px" height="23px" alt="iconCart"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div id="catalogoDropdown" data-closeDropdown="#catalogoDropdown" class="container Dropdown">
+          <div class="row dropdownContainer ">
+            <div class="col-md-2 p20wp40h">
+              <h2>Terpel</h2>
+              <h3>Uniformes</h3>
+              <ul>
+                <li>Hombre</li>
+                <li>Mujer</li>
+                <li>Accesorios</li>
+                <li>Unisex</li>
+              </ul>
+
+              <h2>Para tu EDS</h2>
+              <ul>
+                <li>Mobiliaro</li>
+                <li>Consumibles</li>
+                <li>EDS confíable</li>
+              </ul>
+            </div>
+            <div class="col-md-2 p20wp40h">
+              <h2>Terpel</h2>
+              <h3>Uniformes</h3>
+              <ul>
+                <li>Hombre</li>
+                <li>Mujer</li>
+                <li>Accesorios</li>
+                <li>Unisex</li>
+              </ul>
+
+              <h2>Merchandising</h2>
+              <ul>
+                <li>Terpel</li>
+                <li>Gazel</li>
+              </ul>
+            </div>
+            <div class="col-md-2 p20wp40h">
+              <h2>Terpel</h2>
+              <h3>Uniformes</h3>
+              <ul>
+                <li>Hombre</li>
+                <li>Mujer</li>
+                <li>Accesorios</li>
+                <li>Unisex</li>
+              </ul>
+
+              <h2>Otros</h2>
+              <ul>
+                <li>Bandera</li>
+                <li>Señalización</li>
+              </ul>
+            </div>
+            <div class="col-md-2 p20wp40h">
+              <h2>Terpel</h2>
+              <h3>Uniformes</h3>
+              <ul>
+                <li>Hombre</li>
+                <li>Mujer</li>
+                <li>Accesorios</li>
+                <li>Unisex</li>
+              </ul>
+
+              <h2>Clasificados</h2>
+              <ul>
+                <li>Servicios</li>
+              </ul>
+            </div>
+            <div class="col-md-4 bannerDropdown">
+              <img src="images/bannerMenu.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div id="pedidosDropdown" data-closeDropdown="#pedidosDropdown" class="container Dropdown">
+            <div class="row dropdownContainer">
+              <div class="col-md-6 ">
+                <h4>Seguimiento de pedidos</h4>
+              </div>
+              <div class="col-md-6 ">
+                <h4>Historial de pedidos</h4>
+              </div>
+            </div>
+        </div>
+
+        <div id="contactoDropdown" data-closeDropdown="#contactoDropdown" class="container Dropdown">
+            <div class="row dropdownContainer">
+              <div class="col-md-6">
+                <h4>Preguntas frecuentes</h4>
+              </div>
+              <div class="col-md-6">
+                <h4>Contáctanos</h4>
+              </div>
+            </div>
+        </div>
+
+        <div id="searchDropdown" data-closeDropdown="#searchDropdown" class="container Dropdown">
+            <div class="row dropdownContainer">
+              <div class="col-md-12">
+                <input type="text" placeholder="Ingresa tu búsqueda...">
+              </div>
+            </div>
+        </div>
+
+
+      <div class="container-fluid footer sectionHome">
+        <div class="container footerTop">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="images/footerIconTienda.png" alt="">
+            </div>
+            <div class="col-md-2">
+              <h3>Catálogo</h3>
+              <ul>
+                <li>Uniformes</li>
+                <li>Para tu EDS</li>
+                <li>Merchandising</li>
+                <li>Otros</li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <h3>Contáctenos</h3>
+              <ul>
+                <li>Líneas de atención</li>
+                <li>Preguntas frecuentes</li>
+              </ul>
+              <h3>Promociones</h3>
+              <h3>Mis pedidos</h3>
+            </div>
+            <div class="col-md-2">
+              <h3>Perfil</h3>
+              <ul>
+                <li>Líneas de atención</li>
+                <li>Preguntas frecuentes</li>
+                <li>Recursos</li>
+              </ul>
+            </div>
+            <div class="col-md-3 text-center">
+              <p>Pague sus transacciones con:</p>
+              <img src="images/footerIcons.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="container footerDerechos">
+          <div class="row text-center">
+            <div class="col-md-3">
+              <p>@ 2016 Terpel</p>
+            </div>
+            <div class="col-md-3">
+              <p>Todos los derechos reservados</p>
+            </div>
+            <div class="col-md-3">
+              <p>Términos y condiciones</p>
+            </div>
+            <div class="col-md-3">
+              <p>Preguntas frecuentes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
