@@ -19,229 +19,250 @@
     <![endif]-->
   </head>
   <body>
+    
+      <header>
+        <div class="header">
+          <div class="container-fluid usuarioLogueadoContainer sectionHome">
+            <div class="row">
+              <div class="col-md-offset-8 col-md-2 col-xs-12 text-right usuarioLogueado"><button>EDS de prueba</button></div>
+              <div class="col-md-1 ">
 
-    <div class="home">
-      <div class="container-fluid usuarioLogueadoContainer sectionHome">
-        <div class="row">
-          <div class="col-md-offset-8 col-md-2 col-xs-12 text-right usuarioLogueado"><button>EDS de prueba</button></div>
-          <div class="col-md-1 ">
 
-            <div class="dropdown">
+             <!--    <ul class="nav navbar-nav navbar-right"> <li id="fat-menu" class="dropdown"> <a href="#" class="dropdown-toggle" id="drop3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> Dropdown <span class="caret"></span> </a> <ul class="dropdown-menu" aria-labelledby="drop3"> <li><a href="#">Action</a></li> <li><a href="#">Another action</a></li> <li><a href="#">Something else here</a></li> <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> </ul> </li> </ul> -->
 
-              <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <img class="dropdown" src="images/iconUser.png" alt="">
-                <span class="caret"></span>
-              </a>
 
-              <div class="dropdown-menu pull-right usuarioDropdown" aria-labelledby="dLabel">
-                <div class="row">
-                  <div class="col-md-4">
-                    <img src="images/userImg.svg" width="80px" alt="">
+                <div class="dropdown">
+
+                  <a id="dLabel" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img class="dropdown" src="images/iconUser.png" alt="">
+                    <span class="caret"></span>
+                  </a>
+
+                  <div class="dropdown-menu pull-right usuarioDropdown" aria-labelledby="dLabel">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img src="images/userImg.svg" width="80px" alt="">
+                      </div>
+                      <div class="col-md-4">
+                        <h2>PruebaEDS1</h2>
+                        <h3>Administrador</h3>
+                      </div>
+                    </div>
+                    <ul>
+                      <li>Actualizar perfil</li>
+                      <li>Cambiar contraseña</li>
+                      <li>Recursos</li>
+                      <li>Cerrar sesión</li>
+                    </ul>
                   </div>
-                  <div class="col-md-4">
-                    <h2>PruebaEDS1</h2>
-                    <h3>Administrador</h3>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 text-center logoTTHeader"><img src="images/logoTT.svg" width="320px" alt=""></div>
+            </div>
+          </div>
+          
+          <div class="container-fluid navbarContainer">
+            <div class="container Navbar">
+              <div class="row">
+                <div class="col-md-2 navbarItem"><a href="index.html">Inicio</a></div>
+                <div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem active catalogoDrop ">Catálogo</div>
+                <div id="promocionesDrop" class="col-md-2 navbarItem  catalogoDrop"><a href="index.html">Promociones</a></div>
+                <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem pedidosDrop">Mis pedidos</div>
+                <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem">Contacto</div>
+                <div class="col-md-2 navbarItem">
+                  <div class="row">
+                    <div id="searchDrop" data-openDropdown="#searchDropdown" class="col-md-4 searchIconHeader"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.2 21.2"><defs></defs><title>Asset 27</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M8.37,0a8.37,8.37,0,1,0,5.5,14.66L20.25,21a.55.55,0,0,0,.78-.78l-6.37-6.37A8.37,8.37,0,0,0,8.37,0Zm0,1.12A7.25,7.25,0,1,1,1.12,8.37,7.25,7.25,0,0,1,8.37,1.12Z"/></g></g></svg></div>
+                    <div class="col-md-4 favIconHeader"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.83 23.75"><defs></defs><title>Asset 28</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M5.57,23.75a1.35,1.35,0,0,1-1.32-1.57l1.16-6.74a.34.34,0,0,0-.1-.3L.41,10.35a1.34,1.34,0,0,1,.75-2.29l6.77-1a.35.35,0,0,0,.26-.19l3-6.14A1.33,1.33,0,0,1,12.42,0h0a1.34,1.34,0,0,1,1.21.75l3,6.14a.35.35,0,0,0,.26.19l6.77,1a1.34,1.34,0,0,1,.75,2.29l-4.9,4.78a.34.34,0,0,0-.1.3l1.16,6.74a1.34,1.34,0,0,1-2,1.42l-6.06-3.18a.34.34,0,0,0-.32,0L6.2,23.59A1.35,1.35,0,0,1,5.57,23.75ZM12.42,1a.34.34,0,0,0-.31.19l-3,6.14a1.34,1.34,0,0,1-1,.74L1.3,9a.34.34,0,0,0-.19.59L6,14.41a1.34,1.34,0,0,1,.39,1.19L5.23,22.34a.34.34,0,0,0,.5.36l6.06-3.18a1.35,1.35,0,0,1,1.25,0l6.06,3.18a.34.34,0,0,0,.5-.36L18.44,15.6a1.34,1.34,0,0,1,.39-1.19l4.9-4.78A.34.34,0,0,0,23.54,9l-6.77-1a1.34,1.34,0,0,1-1-.74l-3-6.14A.34.34,0,0,0,12.42,1Z"/></g></g></svg></div>
+                    <div class="col-md-4 cartIconHeader"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.37 21.25"><defs></defs><title>Asset 29</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M.53,0a.53.53,0,1,0,0,1.06H3.36c1.36,3.36,2.69,6.72,4,10.09l-1.25,3a.56.56,0,0,0,.49.74H19.92a.53.53,0,1,0,0-1.06H7.44l.9-2.16,13-1a.55.55,0,0,0,.47-.41L23.36,3.3a.56.56,0,0,0-.51-.65H5.14L4.21.33A.54.54,0,0,0,3.72,0Zm5,3.72H22.18L20.82,9.6l-12.5,1ZM9.3,16.47a2.39,2.39,0,1,0,2.39,2.39A2.4,2.4,0,0,0,9.3,16.47Zm8,0a2.39,2.39,0,1,0,2.39,2.39A2.4,2.4,0,0,0,17.27,16.47Zm-8,1.06A1.33,1.33,0,1,1,8,18.86,1.32,1.32,0,0,1,9.3,17.53Zm8,0a1.33,1.33,0,1,1-1.33,1.33A1.32,1.32,0,0,1,17.27,17.53Z"/></g></g></svg></div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="catalogoDropdown" data-closeDropdown="#catalogoDropdown" class="container Dropdown">
+            <div class="row dropdownContainer ">
+              <div class="col-md-2 p20wp40h">
+                <h2>Terpel</h2>
+                <h3>Uniformes</h3>
                 <ul>
-                  <li>Actualizar perfil</li>
-                  <li>Cambiar contraseña</li>
-                  <li>Recursos</li>
-                  <li>Cerrar sesión</li>
+                  <li>Hombre</li>
+                  <li>Mujer</li>
+                  <li>Accesorios</li>
+                  <li>Unisex</li>
+                </ul>
+
+                <h2>Para tu EDS</h2>
+                <ul>
+                  <li>Mobiliaro</li>
+                  <li>Consumibles</li>
+                  <li>EDS confíable</li>
                 </ul>
               </div>
+              <div class="col-md-2 p20wp40h">
+                <h2>Terpel</h2>
+                <h3>Uniformes</h3>
+                <ul>
+                  <li>Hombre</li>
+                  <li>Mujer</li>
+                  <li>Accesorios</li>
+                  <li>Unisex</li>
+                </ul>
 
+                <h2>Merchandising</h2>
+                <ul>
+                  <li>Terpel</li>
+                  <li>Gazel</li>
+                </ul>
+              </div>
+              <div class="col-md-2 p20wp40h">
+                <h2>Terpel</h2>
+                <h3>Uniformes</h3>
+                <ul>
+                  <li>Hombre</li>
+                  <li>Mujer</li>
+                  <li>Accesorios</li>
+                  <li>Unisex</li>
+                </ul>
 
+                <h2>Otros</h2>
+                <ul>
+                  <li>Bandera</li>
+                  <li>Señalización</li>
+                </ul>
+              </div>
+              <div class="col-md-2 p20wp40h">
+                <h2>Terpel</h2>
+                <h3>Uniformes</h3>
+                <ul>
+                  <li>Hombre</li>
+                  <li>Mujer</li>
+                  <li>Accesorios</li>
+                  <li>Unisex</li>
+                </ul>
+
+                <h2>Clasificados</h2>
+                <ul>
+                  <li>Servicios</li>
+                </ul>
+              </div>
+              <div class="col-md-4 bannerDropdown">
+                <img src="images/bannerMenu.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div id="pedidosDropdown" data-closeDropdown="#pedidosDropdown" class="container Dropdown">
+              <div class="row dropdownContainer">
+                <div class="col-md-6 ">
+                  <h4>Seguimiento de pedidos</h4>
+                </div>
+                <div class="col-md-6 ">
+                  <h4>Historial de pedidos</h4>
+                </div>
+              </div>
+          </div>
+
+          <div id="contactoDropdown" data-closeDropdown="#contactoDropdown" class="container Dropdown">
+              <div class="row dropdownContainer">
+                <div class="col-md-6">
+                  <h4>Preguntas frecuentes</h4>
+                </div>
+                <div class="col-md-6">
+                  <h4>Contáctanos</h4>
+                </div>
+              </div>
+          </div>
+
+          <div id="searchDropdown" data-closeDropdown="#searchDropdown" class="container Dropdown">
+              <div class="row dropdownContainer">
+                <div class="col-md-12">
+                  <input type="text" placeholder="Ingresa tu búsqueda...">
+                </div>
+              </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="home">
+        <div class="errorContainer text-center">
+
+          <h4>Error 404</h4>
+          <h2>La página que busca no se encuentra disponible</h2>
+          <p>Lo invitamos a seguir navegando para encontrar lo que usted necesita.</p>
+
+          <a href="index.html"><button class="btnRed">volver al inicio</button></a>
+          <div class="container-fluid">
+            <div class="imgError">
+              <img src="images/canastaError.svg" width="500px" alt="">
+            </div>
+            <div class="bkgImgError"></div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container-fluid footer sectionHome">
+          <div class="container footerTop">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="images/footerIconTienda.png" alt="">
+              </div>
+              <div class="col-md-2">
+                <h3>Catálogo</h3>
+                <ul>
+                  <li>Uniformes</li>
+                  <li>Para tu EDS</li>
+                  <li>Merchandising</li>
+                  <li>Otros</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <h3>Contáctenos</h3>
+                <ul>
+                  <li>Líneas de atención</li>
+                  <li>Preguntas frecuentes</li>
+                </ul>
+                <h3>Promociones</h3>
+                <h3>Mis pedidos</h3>
+              </div>
+              <div class="col-md-2">
+                <h3>Perfil</h3>
+                <ul>
+                  <li>Líneas de atención</li>
+                  <li>Preguntas frecuentes</li>
+                  <li>Recursos</li>
+                </ul>
+              </div>
+              <div class="col-md-3 text-center">
+                <p>Pague sus transacciones con:</p>
+                <img src="images/footerIcons.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="container footerDerechos">
+            <div class="row text-center">
+              <div class="col-md-3">
+                <p>@ 2016 Terpel</p>
+              </div>
+              <div class="col-md-3">
+                <p>Todos los derechos reservados</p>
+              </div>
+              <div class="col-md-3">
+                <p>Términos y condiciones</p>
+              </div>
+              <div class="col-md-3">
+                <p>Preguntas frecuentes</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12 text-center logoTTHeader"><img src="images/logoTT.svg" width="400px" alt=""></div>
-        </div>
-      </div>
+      </footer>
       
-      <div class="container-fluid navbarContainer">
-        <div class="container Navbar">
-          <div class="row">
-            <div class="col-md-2 navbarItem">Inicio</div>
-            <div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem active catalogoDrop ">Catálogo</div>
-            <div id="promocionesDrop" class="col-md-2 navbarItem  catalogoDrop">Promociones</div>
-            <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem pedidosDrop">Mis pedidos</div>
-            <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem">Contacto</div>
-            <div class="col-md-2 navbarItem">
-              <div class="row">
-                <div id="searchDrop" data-openDropdown="#searchDropdown" class="col-md-4"><img src="images/iconSearch.svg" width="21px" height="21px" alt="iconSearch"></div>
-                <div class="col-md-4"><img src="images/iconFav.svg" width="22px" height="22px" alt="iconFav"></div>
-                <div class="col-md-4"><img src="images/iconCart.svg" width="23px" height="23px" alt="iconCart"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <div id="catalogoDropdown" data-closeDropdown="#catalogoDropdown" class="container Dropdown">
-          <div class="row dropdownContainer ">
-            <div class="col-md-2 p20wp40h">
-              <h2>Terpel</h2>
-              <h3>Uniformes</h3>
-              <ul>
-                <li>Hombre</li>
-                <li>Mujer</li>
-                <li>Accesorios</li>
-                <li>Unisex</li>
-              </ul>
-
-              <h2>Para tu EDS</h2>
-              <ul>
-                <li>Mobiliaro</li>
-                <li>Consumibles</li>
-                <li>EDS confíable</li>
-              </ul>
-            </div>
-            <div class="col-md-2 p20wp40h">
-              <h2>Terpel</h2>
-              <h3>Uniformes</h3>
-              <ul>
-                <li>Hombre</li>
-                <li>Mujer</li>
-                <li>Accesorios</li>
-                <li>Unisex</li>
-              </ul>
-
-              <h2>Merchandising</h2>
-              <ul>
-                <li>Terpel</li>
-                <li>Gazel</li>
-              </ul>
-            </div>
-            <div class="col-md-2 p20wp40h">
-              <h2>Terpel</h2>
-              <h3>Uniformes</h3>
-              <ul>
-                <li>Hombre</li>
-                <li>Mujer</li>
-                <li>Accesorios</li>
-                <li>Unisex</li>
-              </ul>
-
-              <h2>Otros</h2>
-              <ul>
-                <li>Bandera</li>
-                <li>Señalización</li>
-              </ul>
-            </div>
-            <div class="col-md-2 p20wp40h">
-              <h2>Terpel</h2>
-              <h3>Uniformes</h3>
-              <ul>
-                <li>Hombre</li>
-                <li>Mujer</li>
-                <li>Accesorios</li>
-                <li>Unisex</li>
-              </ul>
-
-              <h2>Clasificados</h2>
-              <ul>
-                <li>Servicios</li>
-              </ul>
-            </div>
-            <div class="col-md-4 bannerDropdown">
-              <img src="images/bannerMenu.png" alt="">
-            </div>
-          </div>
-        </div>
-
-        <div id="pedidosDropdown" data-closeDropdown="#pedidosDropdown" class="container Dropdown">
-            <div class="row dropdownContainer">
-              <div class="col-md-6 ">
-                <h4>Seguimiento de pedidos</h4>
-              </div>
-              <div class="col-md-6 ">
-                <h4>Historial de pedidos</h4>
-              </div>
-            </div>
-        </div>
-
-        <div id="contactoDropdown" data-closeDropdown="#contactoDropdown" class="container Dropdown">
-            <div class="row dropdownContainer">
-              <div class="col-md-6">
-                <h4>Preguntas frecuentes</h4>
-              </div>
-              <div class="col-md-6">
-                <h4>Contáctanos</h4>
-              </div>
-            </div>
-        </div>
-
-        <div id="searchDropdown" data-closeDropdown="#searchDropdown" class="container Dropdown">
-            <div class="row dropdownContainer">
-              <div class="col-md-12">
-                <input type="text" placeholder="Ingresa tu búsqueda...">
-              </div>
-            </div>
-        </div>
-
-
-      <div class="container-fluid footer sectionHome">
-        <div class="container footerTop">
-          <div class="row">
-            <div class="col-md-3">
-              <img src="images/footerIconTienda.png" alt="">
-            </div>
-            <div class="col-md-2">
-              <h3>Catálogo</h3>
-              <ul>
-                <li>Uniformes</li>
-                <li>Para tu EDS</li>
-                <li>Merchandising</li>
-                <li>Otros</li>
-              </ul>
-            </div>
-            <div class="col-md-2">
-              <h3>Contáctenos</h3>
-              <ul>
-                <li>Líneas de atención</li>
-                <li>Preguntas frecuentes</li>
-              </ul>
-              <h3>Promociones</h3>
-              <h3>Mis pedidos</h3>
-            </div>
-            <div class="col-md-2">
-              <h3>Perfil</h3>
-              <ul>
-                <li>Líneas de atención</li>
-                <li>Preguntas frecuentes</li>
-                <li>Recursos</li>
-              </ul>
-            </div>
-            <div class="col-md-3 text-center">
-              <p>Pague sus transacciones con:</p>
-              <img src="images/footerIcons.png" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="container footerDerechos">
-          <div class="row text-center">
-            <div class="col-md-3">
-              <p>@ 2016 Terpel</p>
-            </div>
-            <div class="col-md-3">
-              <p>Todos los derechos reservados</p>
-            </div>
-            <div class="col-md-3">
-              <p>Términos y condiciones</p>
-            </div>
-            <div class="col-md-3">
-              <p>Preguntas frecuentes</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-        
-
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
