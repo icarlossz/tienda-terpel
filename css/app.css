@@ -151,7 +151,7 @@ body{
 }
 
 .btnRed:hover{
-	background-color: #D98F00;
+	background-color: #8e1218;
 }
 
 .titleHome{
@@ -319,7 +319,7 @@ body{
 
 .Navbar .navbarItem{
 	text-transform: uppercase;
-	padding: 15px 0;
+	padding: 10px 0;
 	cursor: pointer;
 	font-family: 'AlrightSansLight';
 	letter-spacing: 3px;
@@ -375,7 +375,7 @@ body{
 
 .dropdownContainer{
 	background-color: #FFF;
-    box-shadow: 5px 2px 5px rgba(0,0,0,.1);
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
 	border-radius: 3px;
     position: absolute;
     z-index: 5;
@@ -698,7 +698,7 @@ body{
 	font-size: 12pt;
 }
 
-/*ERROR PAGE*/
+/* BEGIN ERROR PAGE */
 
 .errorContainer{
     padding-top: 30px;
@@ -751,9 +751,9 @@ body{
 	padding: 0;
 }
 
-/*ERROR PAGE*/
+/* END ERROR PAGE*/
 
-/*CATALOGO*/
+/* BEGIN CATALOGO */
 
 .catalogoContainer{
 	margin-bottom: 50px;
@@ -814,9 +814,307 @@ body{
 	letter-spacing: 2px;
 }
 
-/*CATALOGO*/
+/* END CATALOGO */
 
-/* MODAL */
+/*BEGIN CHECKOUT*/
+
+.checkoutContainer{
+	margin: 20px 0;
+	margin-bottom: 20px;
+	padding-right: 20px;
+}
+
+.checkoutContainer .stepsCheckout{
+	padding: 40px 0 10px 0;
+}
+
+.checkoutContainer .stepsCheckout p{
+	padding: 15px 0;
+	font-family: 'AlrightSansLight';
+	font-size: 10pt;
+	text-transform: uppercase;
+}
+
+.checkoutContainer h4{
+	font-family: 'AlrightSansLight';
+	font-size: 12pt;
+	text-transform: uppercase;
+	color: #58595B;
+}
+
+.checkoutContainer h4 span{
+	font-family: 'AlrightSansBold';
+	font-size: 12pt;
+	text-transform: uppercase;
+}
+
+.checkoutContainer .numberStep{
+	background-color: #F8F8F8;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	color: #B8B8B8;
+	transition: .3s;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.numberStep.separator:after{
+	content: "";
+	background-image: url(../images/pointsSeparator.svg);
+	background-size: cover;
+    color: #ccc;
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    height: 5px;
+    width: 30px;
+    right: 0;
+}
+
+.numberStep.separator:last-child{
+	display: none;
+}
+
+.checkoutContainer .numberStep:hover{
+	background-color: #D91C24;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	color: #FFF;
+}
+
+.checkoutContainer .numberStep.active{
+	background-color: #D91C24;
+	color: #FFF;
+}
+
+.checkoutContainer .numberStep p{
+	font-size: 16pt;
+	font-family: 'OpenSansRegular';
+	padding-top: 27%;
+}
+
+.productosCheckout{
+	padding-right: 40px;
+}
+
+.productoCheckout{
+	border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.productoCheckout .nameProduct{
+	font-size: 16pt;
+	margin: 0;
+	padding-bottom: 15px;
+	font-family: 'AlrightSansLight';
+	color: #4D4D4D;
+}
+
+.productoCheckout .sizeProduct{
+	background-color: #F8F8F8;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #B8B8B8;
+    transition: .3s;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.productoCheckout .sizeProduct.active{
+	background-color: #D91C24;
+	color: #FFF;
+}
+
+.productoCheckout .sizeProduct p{
+	font-size: 11pt;
+	font-family: 'OpenSansRegular';
+	padding-top: 22%;
+}
+
+.productoCheckout .priceProduct{
+	font-family: 'OpenSansLight';
+	letter-spacing: 1px;
+}
+
+.productoCheckout .sizeQuantity{
+	padding-top: 10px;
+    border-bottom: 3px solid #ddd;
+}
+
+.productoCheckout .sizeQuantity.active{
+    border-bottom: 3px solid #D91C24;
+}
+
+.productoCheckout .sizeQuantity select{
+	font-family: 'OpenSansLight';
+	/*border-bottom: 3px solid #ddd;*/
+    border: 0;
+    background: none;
+    border-radius: 0;
+    width: 80%;
+}
+
+.productoCheckout .sizeQuantity select.active{
+	font-family: 'OpenSansLight';
+	/*border-bottom: 3px solid #D91C24;*/
+}
+
+.productoCheckout h5{
+	font-size: 10pt;
+	text-transform: uppercase;
+	font-family: 'AlrightSansMedium';
+	color: #58595B;
+	margin: 5px 0;
+}
+
+.productoCheckout .outProduct{
+	cursor: pointer;
+}
+
+.productoCheckout .outProduct:hover{
+	opacity: .8;
+}
+
+.resumenCompraCheckout{
+	background-color: #F8F8F8;
+	padding: 10px 30px;
+	text-align: center;
+}
+
+.resumenCompraCheckout input.promoCode{
+	padding: 20px 20px;
+    width: 95%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.resumenCompraCheckout h2{
+	font-family: 'AlrightSansBold';
+	text-transform: uppercase;
+	color: #D91C24;
+	font-size: 14pt;
+	letter-spacing: 2px;
+	padding-bottom: 20px;
+}
+
+.resumenCompraCheckout ul{
+	list-style: none;
+	padding: 0 20px;
+	color: #58595B;
+}
+
+.resumenCompraCheckout ul li{
+	font-family: 'AlrightSansLight';
+	font-size: 12pt;
+	padding-bottom: 15px;
+}
+
+.resumenCompraCheckout ul .textPrice{
+	font-family: 'AlrightSansMedium';
+	font-size: 12pt;
+	color: #ED3C26;
+	text-transform: uppercase;
+}
+
+.resumenCompraCheckout ul .price{
+	font-family: 'OpenSansExtrabold';
+	font-size: 12pt;
+	color: #58595B;
+	text-transform: uppercase;
+}
+
+.resumenCompraCheckout button{
+	padding: 0;
+	width: 90%;
+	padding: 15px 12px 13px 12px;
+	font-size: 10pt;
+	margin-bottom: 30px;
+}
+
+.paginacion .pagination>li>a, .pagination>li>span{
+	position: relative;
+    padding: 12px 25px;
+    color: #D91C24;
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    font-family: 'OpenSansRegular';
+    font-size: 14pt;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.paginacion .pagination>li>a.active, .pagination>li>span.active{
+    color: #FFF;
+    background-color: #D91C24;
+}
+
+.paginacion .pagination>li>a:hover, .pagination>li>span:hover{
+    color: #FFF;
+    background-color: #D91C24;
+}
+
+.paymentOptions h1.title{
+	text-transform: uppercase;
+	color: #9E9E9E;
+	font-family: 'AlrightSansLight';
+	letter-spacing: 5px;
+	font-size: 18pt;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.paymentOptions p.subtitle{
+	font-family: 'OpenSansRegular';
+	color: #58595B;
+	font-size: 11pt;
+	text-align: center;
+}
+
+.paymentOptions .beneficiosContainer{
+	margin-top: 40px;
+	margin-bottom: 100px;
+}
+
+.paymentOptions .beneficiosContainer .beneficio{
+	/*padding: 0 30px;*/
+}
+
+.paymentOptions .beneficiosContainer .beneficio h3{
+	margin: 10px 0;
+	font-family: 'AlrightSansBlack';
+	color: #D91C24;
+	text-transform: uppercase;
+	font-size: 16pt;
+}
+
+.paymentOptions .paymentsOptionsTab{
+	margin: 30px 0;
+}
+
+.paymentOptions .paymentsOptionsTab .tab{
+    height: 200px;
+    background-color: #FFF;
+    content: "";
+    padding: 40px;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    position: relative;
+    color: #B8B8B8;
+}
+
+.paymentOptions .paymentsOptionsTab .tab.active{
+    background-color: #D91C24;
+    color: #FFF;
+}
+
+
+/*END CHECKOUT*/
+
+/* BEGIN MODAL */
 
 
 .modal{
@@ -848,9 +1146,9 @@ body{
 }
 
 
-/* MODAL */
+/* END MODAL */
 
-/*RESPONSIVE*/
+/* BEGIN RESPONSIVE */
 
 @media screen and (max-width: 576px){
 	body{
@@ -977,7 +1275,7 @@ body{
 }
 
 
-/*RESPONSIVE*/
+/* END RESPONSIVE */
 
 
 
