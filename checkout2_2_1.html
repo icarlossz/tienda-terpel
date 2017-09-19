@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tienda Terpel Web</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+      <header>
+        <div class="header h-i-m">
+          <div class="container-fluid usuarioLogueadoContainer sectionHome">
+            <div class="row">
+              <div class="col-md-offset-8 col-md-2 col-xs-6 text-right usuarioLogueado"><button>EDS de prueba</button></div>
+              <div class="col-md-1 ">
+                <div class="dropdown">
+
+                  <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img class="dropdown" src="images/iconUser.png" alt="">
+                    <span class="caret"></span>
+                  </a>
+
+                  <div class="dropdown-menu pull-right usuarioDropdown" aria-labelledby="dLabel">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img src="images/userImg.svg" width="80px" alt="">
+                      </div>
+                      <div class="col-md-4 col-xs-12">
+                        <h2>PruebaEDS1</h2>
+                        <h3>Administrador</h3>
+                      </div>
+                    </div>
+                    <ul>
+                      <li>Actualizar perfil</li>
+                      <li>Cambiar contraseña</li>
+                      <li>Recursos</li>
+                      <li>Cerrar sesión</li>
+                    </ul>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 text-center logoTTHeader"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 54.69"><defs><style>.cls-1{isolation:isolate;}.cls-2{fill:url(#linear-gradient);}.cls-3{opacity:0.88;fill:url(#radial-gradient);}.cls-3,.cls-4{mix-blend-mode:multiply;}.cls-4{opacity:0.68;fill:url(#radial-gradient-2);}.cls-5{fill:url(#linear-gradient-2);}.cls-6{fill:#58595b;}.cls-7{fill:#ed3c26;}.cls-8{fill:url(#linear-gradient-3);}</style><linearGradient id="linear-gradient" x1="53.65" y1="7.97" x2="53.65" y2="40.62" gradientUnits="userSpaceOnUse"><stop offset="0.12" stop-color="#ffe02c"/><stop offset="0.27" stop-color="#fed82a"/><stop offset="0.49" stop-color="#fac326"/><stop offset="0.77" stop-color="#f5a11f"/><stop offset="0.85" stop-color="#f3941d"/></linearGradient><radialGradient id="radial-gradient" cx="49.79" cy="37.8" fx="57.05517769898208" fy="30.511970848830103" r="10.29" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#861704"/><stop offset="0.35" stop-color="#c22b1c"/><stop offset="0.41" stop-color="#c32d1c" stop-opacity="0.98"/><stop offset="0.49" stop-color="#c7341c" stop-opacity="0.9"/><stop offset="0.57" stop-color="#cc401c" stop-opacity="0.78"/><stop offset="0.65" stop-color="#d5501d" stop-opacity="0.61"/><stop offset="0.74" stop-color="#df651d" stop-opacity="0.4"/><stop offset="0.83" stop-color="#eb7e1e" stop-opacity="0.14"/><stop offset="0.87" stop-color="#f28b1e" stop-opacity="0"/></radialGradient><radialGradient id="radial-gradient-2" cx="52.45" cy="35.97" fy="54.434854477037874" r="18.67" gradientTransform="matrix(0.99, -0.12, 0.13, 1.03, -4.22, 5.59)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#861704"/><stop offset="0.35" stop-color="#c22b1c"/><stop offset="0.43" stop-color="#c32d1c" stop-opacity="0.98"/><stop offset="0.52" stop-color="#c7341c" stop-opacity="0.9"/><stop offset="0.62" stop-color="#cc401c" stop-opacity="0.78"/><stop offset="0.72" stop-color="#d5501d" stop-opacity="0.61"/><stop offset="0.82" stop-color="#df651d" stop-opacity="0.4"/><stop offset="0.93" stop-color="#eb7e1e" stop-opacity="0.14"/><stop offset="0.98" stop-color="#f28b1e" stop-opacity="0"/></radialGradient><linearGradient id="linear-gradient-2" x1="20.08" y1="30.92" x2="54.46" y2="39.82" gradientUnits="userSpaceOnUse"><stop offset="0.71" stop-color="#f3941d"/><stop offset="0.75" stop-color="#f5a41a"/><stop offset="0.82" stop-color="#fccd13"/><stop offset="0.85" stop-color="#ffe00f"/><stop offset="0.88" stop-color="#fdd511"/><stop offset="0.94" stop-color="#f9b616"/><stop offset="0.98" stop-color="#f4971c"/></linearGradient><linearGradient id="linear-gradient-3" x1="14.38" x2="14.38" y2="40.7" gradientUnits="userSpaceOnUse"><stop offset="0.41" stop-color="#ed3c26"/><stop offset="0.55" stop-color="#ed3f26"/><stop offset="0.65" stop-color="#ee4725"/><stop offset="0.73" stop-color="#ef5623"/><stop offset="0.8" stop-color="#f06b21"/><stop offset="0.87" stop-color="#f2861e"/><stop offset="0.9" stop-color="#f3941d"/><stop offset="0.92" stop-color="#f2811f"/><stop offset="0.98" stop-color="#ee4f24"/><stop offset="1" stop-color="#ed3c26"/></linearGradient></defs><title>Asset 2</title><g class="cls-1"><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-2" d="M48.64,15.92H42.93a3.67,3.67,0,0,1-3.62-4.29l.1-.61A3.67,3.67,0,0,1,43,8H64.36A3.67,3.67,0,0,1,68,12.26l-.1.61a3.67,3.67,0,0,1-3.62,3.05H57.76L54,37.58a3.67,3.67,0,0,1-3.62,3H48.65A3.67,3.67,0,0,1,45,36.31Z"/><path class="cls-3" d="M48.51,16.53,45.1,35.77a3.67,3.67,0,0,0,3.61,4.31h1.71A3.67,3.67,0,0,0,54,37l3.6-20.51Z"/><path class="cls-4" d="M48.64,15.92H42.93a3.67,3.67,0,0,1-3.62-4.29l.1-.61A3.67,3.67,0,0,1,43,8H64.36A3.67,3.67,0,0,1,68,12.26l-.1.61a3.67,3.67,0,0,1-3.62,3.05H57.76L54,37.58a3.67,3.67,0,0,1-3.62,3H48.65A3.67,3.67,0,0,1,45,36.31Z"/><path class="cls-5" d="M51.73,32.75H19.09a3.67,3.67,0,0,0-3.62,3.05l-.1.61A3.67,3.67,0,0,0,19,40.71H50.35a3.67,3.67,0,0,0,3.62-3l1.35-7.81A3.51,3.51,0,0,1,51.73,32.75Z"/><path class="cls-6" d="M300,26.72a1.59,1.59,0,0,1-1.62,1.6,1.6,1.6,0,1,1,1.62-1.6Zm-2.86,0a1.23,1.23,0,1,0,1.22-1.27A1.23,1.23,0,0,0,297.14,26.72Zm1,.83h-.37V26a3.09,3.09,0,0,1,.61-.06.88.88,0,0,1,.55.13.41.41,0,0,1,.16.34.42.42,0,0,1-.33.38v0c.16,0,.23.17.28.39a1.3,1.3,0,0,0,.12.39h-.39a1,1,0,0,1-.13-.38.29.29,0,0,0-.33-.25h-.18Zm0-.89h.17c.2,0,.38-.07.38-.23s-.11-.24-.35-.24l-.2,0Z"/><path class="cls-6" d="M22.67,46.43a2.81,2.81,0,1,1-2.81,2.81,2.81,2.81,0,0,1,2.81-2.81m0-2.65a5.46,5.46,0,1,0,5.46,5.46,5.46,5.46,0,0,0-5.46-5.46Z"/><path class="cls-6" d="M49.21,48.08A2.19,2.19,0,1,1,47,50.27a2.2,2.2,0,0,1,2.19-2.19m0-2.23a4.42,4.42,0,1,0,4.42,4.42,4.42,4.42,0,0,0-4.42-4.42Z"/><path class="cls-6" d="M72.84,25.93H69.45a2.18,2.18,0,0,1-2.15-2.55l.06-.36a2.18,2.18,0,0,1,2.15-1.81H82.18a2.18,2.18,0,0,1,2.15,2.55l-.06.36a2.18,2.18,0,0,1-2.15,1.81H78.26L76,38.85a2.18,2.18,0,0,1-2.15,1.8h-1a2.18,2.18,0,0,1-2.15-2.56Z"/><path class="cls-6" d="M86.81,25.76h1.13a2,2,0,0,1,2,2.37L88,39a2,2,0,0,1-2,1.66H84.89a2,2,0,0,1-2-2.37l1.93-10.86A2,2,0,0,1,86.81,25.76Zm1.06-6H89a2,2,0,0,1,2,2.34h0a2,2,0,0,1-2,1.69H87.88a2,2,0,0,1-2-2.36h0A2,2,0,0,1,87.88,19.73Z"/><path class="cls-6" d="M99.66,25.12c3.56,0,6,1.83,6,4.53,0,3-3.39,4.67-8.22,4.67H95.63c0,1.89.89,2.56,2.5,2.56a6.88,6.88,0,0,0,2.34-.46,2,2,0,0,1,2.46.93h0a2,2,0,0,1-1,2.73,11,11,0,0,1-4.5.94c-4.2,0-7.11-2.58-7.11-6.72A9,9,0,0,1,99.66,25.12ZM96,31.68h1.08c2.83,0,3.67-.86,3.67-1.75,0-.69-.56-1.25-1.5-1.25C97.77,28.68,96.54,29.87,96,31.68Z"/><path class="cls-6" d="M115.85,31.32A8.08,8.08,0,0,0,116,30,.93.93,0,0,0,115,29c-1,0-2,.84-2.89,2.16a.67.67,0,0,0-.1.26l-1.55,8.72a.65.65,0,0,1-.64.53H105.9a.65.65,0,0,1-.64-.76L107.73,26a.65.65,0,0,1,.64-.53h3.24a.65.65,0,0,1,.64.61h0a.65.65,0,0,0,1.06.46,6.25,6.25,0,0,1,4-1.4A3.69,3.69,0,0,1,121.33,29a15.81,15.81,0,0,1-.28,2.58l-1.52,8.5a.65.65,0,0,1-.64.53H115a.65.65,0,0,1-.64-.76Z"/><path class="cls-6" d="M122,34.82c0-5.39,3.17-9.64,7.17-9.64a5.6,5.6,0,0,1,3.22.9.55.55,0,0,0,.84-.36l1-5.58a.55.55,0,0,1,.54-.45h4.1a.55.55,0,0,1,.54.65l-3.5,19.87a.55.55,0,0,1-.54.46H132a.55.55,0,0,1-.55-.54h0a.55.55,0,0,0-.89-.43,5.5,5.5,0,0,1-3.61,1.25C124.27,40.93,122,38.77,122,34.82Zm9.6.21.87-5a.55.55,0,0,0-.25-.56A3.1,3.1,0,0,0,130.5,29c-1.92,0-3.31,2.5-3.31,5.36,0,2,.83,2.81,1.81,2.81a3.23,3.23,0,0,0,2.51-1.91A.59.59,0,0,0,131.57,35Z"/><path class="cls-6" d="M138.39,34.88c0-5.42,3.08-9.7,7.25-9.7a5.46,5.46,0,0,1,3.34,1,.69.69,0,0,0,1.08-.3h0a.69.69,0,0,1,.65-.45h3.39a.69.69,0,0,1,.68.81L153,36a5.1,5.1,0,0,0-.06.58.56.56,0,0,0,.38.59.68.68,0,0,1,.42.75l-.38,2.25a.7.7,0,0,1-.63.57c-1.87.16-3.43-.11-4.26-1.24a.68.68,0,0,0-1-.1,5.85,5.85,0,0,1-4,1.5C140.7,41,138.39,38.88,138.39,34.88Zm10.48-4.75a.68.68,0,0,0-.32-.71,3.16,3.16,0,0,0-1.63-.46c-1.89,0-3.28,2.47-3.28,5.39,0,1.94.81,2.72,1.78,2.72a3.14,3.14,0,0,0,2.52-1.83A.73.73,0,0,0,148,35Z"/><path class="cls-7" d="M179.79,25.12c3.56,0,6,1.83,6,4.53,0,3-3.39,4.67-8.22,4.67h-1.81c0,1.89.89,2.56,2.5,2.56a6.88,6.88,0,0,0,2.34-.46,2,2,0,0,1,2.46.93h0a2,2,0,0,1-1,2.73,11,11,0,0,1-4.5.94c-4.2,0-7.11-2.58-7.11-6.72A9,9,0,0,1,179.79,25.12Zm-3.67,6.56h1.08c2.83,0,3.67-.86,3.67-1.75,0-.69-.56-1.25-1.5-1.25C177.9,28.68,176.68,29.87,176.12,31.68Z"/><path class="cls-7" d="M189.36,25.46h1.4A1.67,1.67,0,0,1,192.42,27h0a.25.25,0,0,0,.45.14,5.07,5.07,0,0,1,4.2-2.18,6.08,6.08,0,0,1,1.65.22.26.26,0,0,1,.17.32l-1.27,4.1a.25.25,0,0,1-.31.17,6,6,0,0,0-1.6-.23c-1.57,0-2.79,1.39-3.81,3.13a.27.27,0,0,0,0,.09l-1.37,7.66a.25.25,0,0,1-.25.21h-4.71a.25.25,0,0,1-.25-.3l2.42-13.52A1.67,1.67,0,0,1,189.36,25.46Z"/><path class="cls-7" d="M200.74,46.21h-4.07a.57.57,0,0,1-.56-.67l3.49-19.62a.57.57,0,0,1,.56-.47h3.57a.57.57,0,0,1,.57.54h0a.57.57,0,0,0,.92.41,5.5,5.5,0,0,1,3.52-1.23c2.53,0,4.78,1.89,4.78,6.2,0,5.7-3.11,9.56-7.17,9.56a5.18,5.18,0,0,1-3.18-1,.56.56,0,0,0-.89.35l-1,5.49A.57.57,0,0,1,200.74,46.21ZM205,37.15c2,0,3.31-2.58,3.31-5.45,0-1.89-.81-2.69-1.81-2.69a3.28,3.28,0,0,0-2.5,1.85.6.6,0,0,0-.08.21L203,36a.58.58,0,0,0,.24.57A2.86,2.86,0,0,0,205,37.15Z"/><path class="cls-7" d="M223.5,25.12c3.56,0,6,1.83,6,4.53,0,3-3.39,4.67-8.22,4.67h-1.81c0,1.89.89,2.56,2.5,2.56a6.88,6.88,0,0,0,2.34-.46,2,2,0,0,1,2.46.93h0a2,2,0,0,1-1,2.73,11,11,0,0,1-4.5.94c-4.2,0-7.11-2.58-7.11-6.72A9,9,0,0,1,223.5,25.12Zm-3.67,6.56h1.08c2.83,0,3.67-.86,3.67-1.75,0-.69-.56-1.25-1.5-1.25C221.61,28.68,220.39,29.87,219.83,31.68Z"/><path class="cls-7" d="M232.67,19.68h5.22l-3.7,21H229Z"/><path class="cls-6" d="M238.84,35.68h0a2.47,2.47,0,0,1,2.43,2.91v0a2.47,2.47,0,0,1-2.43,2h0a2.47,2.47,0,0,1-2.43-2.9v0A2.47,2.47,0,0,1,238.84,35.68Z"/><path class="cls-6" d="M251.2,25.12a9,9,0,0,1,3.12.55,2,2,0,0,1,.79,3.3l0,0a2,2,0,0,1-2.24.48,3.83,3.83,0,0,0-1.5-.3c-2,0-3.58,2-3.58,4.72,0,1.86,1.08,2.94,2.47,2.94a3.88,3.88,0,0,0,1.43-.27,2,2,0,0,1,2.39.63h0a2,2,0,0,1-.79,3.1,10,10,0,0,1-3.78.69c-3.64,0-7.06-2.25-7.06-7A8.68,8.68,0,0,1,251.2,25.12Z"/><path class="cls-6" d="M255.73,34c0-5.28,3.61-8.92,8.86-8.92a6.57,6.57,0,0,1,7,7c0,5.25-3.58,8.92-8.86,8.92A6.6,6.6,0,0,1,255.73,34Zm10.56-2.11c0-2.06-.72-3.08-2-3.08-1.83,0-3.25,2.67-3.25,5.33,0,2.08.72,3.08,2,3.08C264.9,37.26,266.29,34.6,266.29,31.93Z"/><path class="cls-6" d="M276.54,40.65h-5.11l2.48-14.13a1.29,1.29,0,0,1,1.27-1.07h2a1.29,1.29,0,0,1,1.29,1.26l0,.77a6.72,6.72,0,0,1,4.89-2.36,3.39,3.39,0,0,1,3.64,2.53,6.86,6.86,0,0,1,5.11-2.53,3.45,3.45,0,0,1,3.75,3.61,21.32,21.32,0,0,1-.33,3.06L294,40.65h-5l1.64-9.34a8.59,8.59,0,0,0,.14-1.25.92.92,0,0,0-1-1.06c-1,0-1.92.75-2.83,2v.06l-1.72,9.56h-5l1.67-9.34a8.2,8.2,0,0,0,.14-1.22c0-.67-.31-1.08-1-1.08-1,0-1.94.78-2.83,2.08Z"/><path class="cls-7" d="M161.37,25.93H158a2.18,2.18,0,0,1-2.15-2.55l.06-.36A2.18,2.18,0,0,1,158,21.21H170.7a2.18,2.18,0,0,1,2.15,2.55l-.06.36a2.18,2.18,0,0,1-2.15,1.81h-3.86l-2.27,12.92a2.18,2.18,0,0,1-2.15,1.8h-1a2.18,2.18,0,0,1-2.15-2.56Z"/><path class="cls-8" d="M24.58,37.66,19.43,8H25.1a3.67,3.67,0,0,0,3.62-4.29l-.1-.61A3.67,3.67,0,0,0,25,0H3.67A3.67,3.67,0,0,0,.05,4.29l.1.61A3.67,3.67,0,0,0,3.78,8h6.49l5.16,29.71a3.67,3.67,0,0,0,3.62,3H28.2A3.67,3.67,0,0,1,24.58,37.66Z"/></g></g></g></svg></div>
+            </div>
+          </div>
+          
+          <div class="container-fluid navbarContainer">
+            <div class="container Navbar">
+              <div class="row">
+                <a href="index.html"><div class="col-md-2 navbarItem">Inicio</div></a>
+                <a href="catalogo.html"><div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem catalogoDrop ">Catálogo</div></a>
+                <div id="promocionesDrop" class="col-md-2 navbarItem  catalogoDrop">Promociones</div>
+                <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem pedidosDrop">Mis pedidos</div>
+                <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem">Contacto</div>
+                <div class="col-md-2 navbarItem">
+                  <div class="row">
+                    <div id="searchDrop" data-openDropdown="#searchDropdown" class="col-md-4 searchIconHeader"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.2 21.2"><defs></defs><title>Asset 27</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M8.37,0a8.37,8.37,0,1,0,5.5,14.66L20.25,21a.55.55,0,0,0,.78-.78l-6.37-6.37A8.37,8.37,0,0,0,8.37,0Zm0,1.12A7.25,7.25,0,1,1,1.12,8.37,7.25,7.25,0,0,1,8.37,1.12Z"/></g></g></svg></div>
+                    <div class="col-md-4 favIconHeader"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.83 23.75"><defs></defs><title>Asset 28</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M5.57,23.75a1.35,1.35,0,0,1-1.32-1.57l1.16-6.74a.34.34,0,0,0-.1-.3L.41,10.35a1.34,1.34,0,0,1,.75-2.29l6.77-1a.35.35,0,0,0,.26-.19l3-6.14A1.33,1.33,0,0,1,12.42,0h0a1.34,1.34,0,0,1,1.21.75l3,6.14a.35.35,0,0,0,.26.19l6.77,1a1.34,1.34,0,0,1,.75,2.29l-4.9,4.78a.34.34,0,0,0-.1.3l1.16,6.74a1.34,1.34,0,0,1-2,1.42l-6.06-3.18a.34.34,0,0,0-.32,0L6.2,23.59A1.35,1.35,0,0,1,5.57,23.75ZM12.42,1a.34.34,0,0,0-.31.19l-3,6.14a1.34,1.34,0,0,1-1,.74L1.3,9a.34.34,0,0,0-.19.59L6,14.41a1.34,1.34,0,0,1,.39,1.19L5.23,22.34a.34.34,0,0,0,.5.36l6.06-3.18a1.35,1.35,0,0,1,1.25,0l6.06,3.18a.34.34,0,0,0,.5-.36L18.44,15.6a1.34,1.34,0,0,1,.39-1.19l4.9-4.78A.34.34,0,0,0,23.54,9l-6.77-1a1.34,1.34,0,0,1-1-.74l-3-6.14A.34.34,0,0,0,12.42,1Z"/></g></g></svg></div>
+                    <div class="col-md-4 cartIconHeader"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.37 21.25"><defs></defs><title>Asset 29</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M.53,0a.53.53,0,1,0,0,1.06H3.36c1.36,3.36,2.69,6.72,4,10.09l-1.25,3a.56.56,0,0,0,.49.74H19.92a.53.53,0,1,0,0-1.06H7.44l.9-2.16,13-1a.55.55,0,0,0,.47-.41L23.36,3.3a.56.56,0,0,0-.51-.65H5.14L4.21.33A.54.54,0,0,0,3.72,0Zm5,3.72H22.18L20.82,9.6l-12.5,1ZM9.3,16.47a2.39,2.39,0,1,0,2.39,2.39A2.4,2.4,0,0,0,9.3,16.47Zm8,0a2.39,2.39,0,1,0,2.39,2.39A2.4,2.4,0,0,0,17.27,16.47Zm-8,1.06A1.33,1.33,0,1,1,8,18.86,1.32,1.32,0,0,1,9.3,17.53Zm8,0a1.33,1.33,0,1,1-1.33,1.33A1.32,1.32,0,0,1,17.27,17.53Z"/></g></g></svg></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="catalogoDropdown" data-closeDropdown="#catalogoDropdown" class="container Dropdown">
+            <div class="row dropdownContainer ">
+              <div class="col-md-2 p20wp40h">
+                <h2><a href="catalogo.html">Terpel</a></h2>
+                <h3>Uniformes</h3>
+                <ul>
+                  <li>Hombre</li>
+                  <li>Mujer</li>
+                  <li>Accesorios</li>
+                  <li>Unisex</li>
+                </ul>
+
+                <h2>Para tu EDS</h2>
+                <ul>
+                  <li>Mobiliaro</li>
+                  <li>Consumibles</li>
+                  <li>EDS confíable</li>
+                </ul>
+              </div>
+              <div class="col-md-2 p20wp40h">
+                <h2>Terpel</h2>
+                <h3>Uniformes</h3>
+                <ul>
+                  <li>Hombre</li>
+                  <li>Mujer</li>
+                  <li>Accesorios</li>
+                  <li>Unisex</li>
+                </ul>
+
+                <h2>Merchandising</h2>
+                <ul>
+                  <li>Terpel</li>
+                  <li>Gazel</li>
+                </ul>
+              </div>
+              <div class="col-md-2 p20wp40h">
+                <h2>Terpel</h2>
+                <h3>Uniformes</h3>
+                <ul>
+                  <li>Hombre</li>
+                  <li>Mujer</li>
+                  <li>Accesorios</li>
+                  <li>Unisex</li>
+                </ul>
+
+                <h2>Otros</h2>
+                <ul>
+                  <li>Bandera</li>
+                  <li>Señalización</li>
+                </ul>
+              </div>
+              <div class="col-md-2 p20wp40h">
+                <h2>Terpel</h2>
+                <h3>Uniformes</h3>
+                <ul>
+                  <li>Hombre</li>
+                  <li>Mujer</li>
+                  <li>Accesorios</li>
+                  <li>Unisex</li>
+                </ul>
+
+                <h2>Clasificados</h2>
+                <ul>
+                  <li>Servicios</li>
+                </ul>
+              </div>
+              <div class="col-md-4 bannerDropdown">
+                <img src="images/bannerMenu.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div id="pedidosDropdown" data-closeDropdown="#pedidosDropdown" class="container Dropdown">
+              <div class="row dropdownContainer">
+                <div class="col-md-6 ">
+                  <h4>Seguimiento de pedidos</h4>
+                </div>
+                <div class="col-md-6 ">
+                  <h4>Historial de pedidos</h4>
+                </div>
+              </div>
+          </div>
+
+          <div id="contactoDropdown" data-closeDropdown="#contactoDropdown" class="container Dropdown">
+              <div class="row dropdownContainer">
+                <div class="col-md-6">
+                  <h4>Preguntas frecuentes</h4>
+                </div>
+                <div class="col-md-6">
+                  <h4>Contáctanos</h4>
+                </div>
+              </div>
+          </div>
+
+          <div id="searchDropdown" data-closeDropdown="#searchDropdown" class="container Dropdown">
+              <div class="row dropdownContainer">
+                <div class="col-md-12">
+                  <input type="text" placeholder="Ingresa tu búsqueda...">
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="navbarMobile h-i-d">
+          <div class="container-fluid">
+            <div class="row navbarContainer">
+              <div class="col-xs-4">
+                <img src="images/burgerMenu.svg" width="55px" align="left" alt="">
+              </div>
+              <div class="col-xs-4">
+                <img src="images/logoIsoTT.svg" width="70px" alt="">
+              </div>
+              <div class="col-xs-4">
+                <img src="images/iconUser.svg" width="65px" align="right" alt="">
+              </div>
+            </div>
+            <div class="row navbarContainer navSecondMobile text-center">
+              <div class="col-xs-4">
+                <img src="images/iconSearchNav.svg" width="30px" alt="">
+              </div>
+              <div class="col-xs-4">
+                <img src="images/iconFavNav.svg" width="33px" alt="">
+              </div>
+              <div class="col-xs-4">
+                <img src="images/iconCartNav.svg" width="35px" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <div class="home">
+        <div class="checkoutContainer">
+          <div class="container">
+            <h4 class="text-center"><span>¡Está a punto de realizar su pedido!</span> Siga estos pasos para finalizar su compra</h4>
+            <div class="row text-center stepsCheckout">
+              <div class="col-md-3">
+                <div class="numberStep separator active"><p><img src="images/check.svg" width="24px" alt="check"></p></div>
+                <p>Revisión de compra</p>
+              </div>
+              <div class="col-md-3">
+                <div class="numberStep separator active"><p><img src="images/check.svg" width="24px" alt="check"></p></div>
+                <p>Medios de pago</p>
+              </div>
+              <div class="col-md-3">
+                <div class="numberStep separator active"><p>3</p></div>
+                <p>Pago</p>
+              </div>
+              <div class="col-md-3">
+                <div class="numberStep"><p>4</p></div>
+                <p>Compra exitosa</p>
+              </div>
+            </div>
+            
+            <div class="s2t1Container">
+              <div class="row">
+                <h3>información del pago</h3>
+                <p>A tu orden en la Tienda Terpel se ha agregado el concepto de transacción con pago en efectivo, recuerda que la transacción tiene un costo de $2.000 + 2% del valor de la compra. Tu orden estará vigente para pago hasta el xx  de xxxxxxx de xxxx.</p>
+                
+                <ul>
+                  <li>Cajas de Éxito, Surtimax, Superinter y Carulla: montos de hasta <span>$ 9.999.999</span></li>
+                  <li>Puntos Baloto: montos de hasta <span>$ 1.000.000</span></li>
+                  <li>Sucursales no bancarias ATH: la restricción se da en cuanto al monto autorizado o en saldo para cada cliente en esta red bancaria.</li>
+                  <li>Efecty: montos desde <span>$ 1.000.001</span> hasta <span>$ 3.000.000</span>. *No se recibirán montos inferiores a los valores indicados anteriormente</li>
+                </ul>
+                
+                <h2>resumen de la orden</h2>
+
+                <div class="row infoTable tableEffective text-center">
+                  <div class="col-md-2">
+                    <h5>Producto</h5>
+                    <p>Camisa Administrador Blanca Manga Larga</p>
+                    <p>Bayler</p>
+                    <p>Botiquín</p>
+                    <p>Boligrafo Terpelx 12</p>
+                  </div>
+                  <div class="col-md-2">
+                    <h5>referencía</h5>
+                    <p>Talla M</p><br>
+                    <p>Bayler</p>
+                    <p>Botiquín</p>
+                    <p>x 12</p>
+                  </div>
+                  <div class="col-md-2">
+                    <h5>número de guía</h5>
+                    <p>123456789101</p><br>
+                    <p>123456789101</p>
+                    <p>123456789101</p>
+                    <p>123456789101</p>
+                  </div>
+                  <div class="col-md-2">
+                    <h5>cantidad</h5>
+                    <p>6</p><br>
+                    <p>1</p>
+                    <p>1</p>
+                    <p>1</p>
+                  </div>
+                  <div class="col-md-2">
+                    <h5>valor unidad</h5>
+                    <p>$ 34,658,25</p><br>
+                    <p>$ 98,338.03</p>
+                    <p>$ 240,296.70</p>
+                    <p>$ 11,651.03</p>
+                  </div>
+                  <div class="col-md-2">
+                    <h5>valor total</h5>
+                    <p>$ 208,731.25</p><br>
+                    <p>$ 298,338.03</p>
+                    <p>$ 240,296.70</p>
+                    <p>$ 11,651.03</p>
+                  </div>
+                </div>
+
+                <div class="row infoTable">
+                  <div class="col-md-offset-8 col-md-4 subtotalTable">
+                    <div class="row">
+                      <div class="col-md-6 text-left">
+                        <p>Subtotal</p>
+                        <p>Iva</p>
+                        <p>Transporte</p>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <p>$ 455,092.56</p>
+                        <p>$ 89,989.81</p>
+                        <p>$ 14,485.17</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-offset-8 col-md-4 totalTable">
+                    <div class="row">
+                      <div class="col-md-6 text-left">
+                        <h4>descuento</h4>
+                        <h4>total</h4>
+                      </div>
+                      <div class="col-md-6 text-center">
+                        <p> $ 50,000.00</p>
+                        <p> $ 508,917.20</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row text-center buttonsContainer">
+                <button class="btnRedFill">cancelar</button>
+                <button class="btnRed">proceder con el pago</button>
+              </div>
+              <p>En caso de tener alguna duda o inquietud comuníquese a la línea gratuita de atención al cliente 018000 518555 o desde cualquier celular al #462, también puede contactarnos escribiéndonos a: servicioalcliente@terpel.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <footer>
+        <div class="container-fluid footer sectionHome">
+          <div class="container footerTop">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="images/footerIconTienda.png" alt="">
+              </div>
+              <div class="col-md-2">
+                <h3>Catálogo</h3>
+                <ul>
+                  <li>Uniformes</li>
+                  <li>Para tu EDS</li>
+                  <li>Merchandising</li>
+                  <li>Otros</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <h3>Contáctenos</h3>
+                <ul>
+                  <li>Líneas de atención</li>
+                  <li>Preguntas frecuentes</li>
+                </ul>
+                <h3>Promociones</h3>
+                <h3>Mis pedidos</h3>
+              </div>
+              <div class="col-md-2">
+                <h3>Perfil</h3>
+                <ul>
+                  <li>Líneas de atención</li>
+                  <li>Preguntas frecuentes</li>
+                  <li>Recursos</li>
+                </ul>
+              </div>
+              <div class="col-md-3 text-center">
+                <p>Pague sus transacciones con:</p>
+                <img src="images/footerIcons.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="container footerDerechos">
+            <div class="row text-center">
+              <div class="col-md-3">
+                <p>@ 2016 Terpel</p>
+              </div>
+              <div class="col-md-3">
+                <p>Todos los derechos reservados</p>
+              </div>
+              <div class="col-md-3">
+                <p>Términos y condiciones</p>
+              </div>
+              <div class="col-md-3">
+                <p>Preguntas frecuentes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

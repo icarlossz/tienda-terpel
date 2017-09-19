@@ -15,6 +15,22 @@ $(document).ready(function(){
 
 	});
 
+	$("[data-openTab]").click(function() {
+		var theTab = $(this).attr('data-openTab')
+		var tab = $(theTab)
+		var allTabs = $('.Tabs')
+
+		tab.toggleClass('active');
+
+		allTabs.each(function(i, e) {
+
+			if (tab[0] !== e) {
+				$(e).removeClass('active')
+			}
+		})
+
+	});
+
 	// $(document).ready(function(){
 	//     $(".modal").fadeIn();
 	//     $(".cerrar").click(function(){

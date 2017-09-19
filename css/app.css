@@ -121,6 +121,14 @@
 	font-style: normal;
 }
 
+@font-face {
+    font-family: 'heavitas';
+    src: url('./fonts/heavitas-webfont.woff2') format('woff2'),
+         url('./fonts/heavitas-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* begin global styles */
 
 *{
@@ -135,23 +143,43 @@ body{
 }
 
 .home{
-	min-height: 50vh;
     border-top: 1px solid #efefef;
+    min-height: 60vh;
 }
 
 .btnRed{
 	color: #FFF;
 	background-color: #D91C24;
-	padding: 12px 70px 9px 70px;
 	font-family: 'AlrightSansLight';
 	text-transform: uppercase;
-	font-size: 15px;
-	border: 0;
-	letter-spacing: 3px;
+	padding: 12px 0 10px 0;
+	font-size: 14px;
+	border: 1px solid #D91C24;
+	letter-spacing: 2px;
+	width: 330px;
 }
 
 .btnRed:hover{
 	background-color: #8e1218;
+}
+
+.btnRedFill{
+	color: #D91C24;
+	font-family: 'AlrightSansLight';
+	text-transform: uppercase;
+	padding: 12px 0 10px 0;
+	font-size: 14px;
+	border: 1px solid #D91C24;
+	letter-spacing: 2px;
+	width: 300px;
+	background-color: #fff;
+	transition: .3s;
+}
+
+.btnRedFill:hover{
+	color: #FFF;
+	border: 1px solid #D91C24;
+	background-color: #D91C24;
 }
 
 .titleHome{
@@ -1076,11 +1104,11 @@ body{
 
 .paymentOptions .beneficiosContainer{
 	margin-top: 40px;
-	margin-bottom: 100px;
+	margin-bottom: 40px;
 }
 
-.paymentOptions .beneficiosContainer .beneficio{
-	/*padding: 0 30px;*/
+.paymentOptions .beneficiosContainer .beneficio svg{
+	width: 150px;
 }
 
 .paymentOptions .beneficiosContainer .beneficio h3{
@@ -1104,12 +1132,268 @@ body{
     border-radius: 10px;
     position: relative;
     color: #B8B8B8;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.paymentOptions .paymentsOptionsTab .tab p{
+    text-transform: uppercase;
+    font-family: 'AlrightSansLight';
+    margin-top: 5px;
+}
+
+.paymentOptions .paymentsOptionsTab .tab svg{
+    stroke: #B8B8B8;
+    fill: #B8B8B8;
+    width: 120px;
 }
 
 .paymentOptions .paymentsOptionsTab .tab.active{
     background-color: #D91C24;
     color: #FFF;
 }
+
+.paymentOptions .paymentsOptionsTab .tab.active svg{
+    stroke: #FFF;
+    fill: #FFF;
+}
+
+.paymentOptions .paymentsOptionsTab .tab:hover{
+    background-color: #D91C24;
+    color: #FFF;
+}
+
+.paymentOptions .paymentsOptionsTab .tab:hover svg{
+    stroke: #FFF;
+    fill: #FFF;
+}
+
+.paymentOptions .tab1Container{
+    display: none;
+}
+
+.paymentOptions .tab1Container.active{
+    display: inherit;
+}
+
+.paymentOptions .tab2Container{
+    display: none;
+}
+
+.paymentOptions .tab2Container.active{
+    display: inherit;
+}
+
+.paymentOptions .tab3Container{
+    display: none;
+}
+
+.paymentOptions .tab3Container.active{
+    display: inherit;
+}
+
+.paymentOptions .tab4Container{
+    display: none;
+}
+
+.paymentOptions .tab4Container.active{
+    display: inherit;
+}
+
+.paymentOptions .ctaContainer{
+    border-bottom: 3px solid #F9B916;
+    border-bottom-left-radius: 70px;
+}
+
+.paymentOptions .ctaContainer h2{
+    text-transform: uppercase;
+    font-size: 15pt;
+    font-family: 'heavitas', sans-serif;
+    color: #D91C24;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.paymentOptions .linksContainer{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.paymentOptions .linksContainer p,li{
+    font-family: 'OpenSansRegular', sans-serif;
+    color: #58595B;
+}
+
+.paymentOptions .linksContainer a{
+    font-family: 'OpenSansRegular', sans-serif;
+    color: #D91C24;
+    text-decoration: underline;
+}
+
+.buttonsContainer button{
+    font-size: 10pt;
+    margin: 0 30px;
+}
+
+.buttonsContainer{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.paymentOptions ul{
+    
+}
+
+.paymentOptions ul li{
+    padding: 5px 0;
+}
+
+.paymentOptions h3{
+   font-family: 'AlrightSansBold';
+   font-size: 12pt;
+   text-transform: uppercase;
+   color: #ED3C26;
+   margin-bottom: 20px;
+}
+
+.paymentOptions .tab2Container button{
+   font-family: 'AlrightSansBlack', sans-serif;
+   font-size: 13pt;
+   text-transform: uppercase;
+   background-color: #D91C24;
+   margin-top: 20px;
+   color: #FFF;
+   border: 0;
+   padding: 30px 40px 30px 40px;
+   border-radius: 10px;
+   margin-bottom: 40px;
+}
+
+.s2t1Container h3{
+	text-transform: uppercase;
+    color: #9E9E9E;
+    font-family: 'AlrightSansLight';
+    letter-spacing: 5px;
+    font-size: 18pt;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+.s2t1Container h3{
+	text-transform: uppercase;
+    color: #9E9E9E;
+    font-family: 'AlrightSansLight';
+    letter-spacing: 5px;
+    font-size: 18pt;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 30px 0;
+}
+
+.s2t1Container p{
+    color: #58595B;
+    font-family: 'OpenSansRegular';
+    margin-bottom: 30px;
+}
+
+
+.s2t1Container h2{
+    color: #D91C24;
+    font-family: 'AlrightSansBold';
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.s2t1Container h4{
+    color: #D91C24;
+    font-family: 'AlrightSansBold';
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
+
+.s2t1Container h5{
+    color: #58595B;
+    font-family: 'AlrightSansBold';
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.s2t1Container .infoTable{
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.s2t1Container .infoTable p{
+    margin-bottom: 0;
+}
+
+.s2t1Container .msjDespacho p{
+    margin-top: 20px;
+}
+
+.s2t1Container .msjDespacho input{
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.s2t1Container .resumePago input{
+    width: 50%;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.s2t1Container ul li{
+    padding: 5px 0;
+}
+
+.s2t1Container ul li span{
+    font-family: 'OpenSansExtraBold';
+}
+
+.s2t1Container .subtotalTable{
+    border-bottom: 1px solid #eee;
+}
+
+.s2t1Container .tableEffective p{
+    padding: 15px 0;
+}
+
+.s2t1Container .subtotalTable{
+    padding-bottom: 10px;
+}
+
+.s2t1Container .subtotalTable p{
+    padding: 10px 0;
+}
+
+.s2t1Container .subtotalTable h4{
+    padding: 5px 0;
+}
+
+.s2t1Container .totalTable{
+    padding-top: 10px;
+}
+
+.s2t1Container .totalTable p{
+    padding: 10px 0;
+}
+
+.s2t1Container .totalTable h4{
+    padding: 5px 0;
+}
+
 
 
 /*END CHECKOUT*/
@@ -1418,6 +1702,13 @@ body{
 
 /* SLIDER */
 
+
+
+/*MENU*/
+
+
+
+/*MENU*/
 
 
 
