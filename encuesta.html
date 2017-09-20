@@ -225,67 +225,102 @@
                 <p>Medios de pago</p>
               </div>
               <div class="col-md-3">
-                <div class="numberStep separator active"><p>3</p></div>
+                <div class="numberStep separator active"><p><img src="images/check.svg" width="24px" alt=""></p></div>
                 <p>Pago</p>
               </div>
               <div class="col-md-3">
-                <div class="numberStep"><p>4</p></div>
+                <div class="numberStep active"><p><img src="images/check.svg" width="24px" alt=""></p></div>
                 <p>Compra exitosa</p>
               </div>
             </div>
             
-            <div class="s2t1Container">
+            <div class="s2t1Container encuestaContainer">
               <div class="row">
-                <h3>resumen del pago</h3>
-                <div class="row text-center infoTable">
-                  <div class="col-md-3">
-                    <h4>Nombre Administrador</h4>
-                    <p>Carlos Iván Suárez Cortés</p>
-                  </div>
-                  <div class="col-md-3">
-                    <h4>razón social</h4>
-                    <p>Estación de Servicio Cerros del Monte</p>
-                  </div>
-                  <div class="col-md-3">
-                    <h4>cédula administrador</h4>
-                    <p>1018461422</p>
-                  </div>
-                  <div class="col-md-3">
-                    <h4>NIT</h4>
-                    <p>717372073</p>
-                  </div>
-                </div> 
+                <h3>compra completada con éxito</h3>
+                <p><span>Califique su experiencia</span> y ayúdenos a mejorar en tan solo un minuto:</p>
                 
-                <h2>Información para el pago:</h2>
-                <div class="row resumePago">
-                  <div class="col-md-6 text-right">
-                    <input type="text" placeholder="Identificación del pagador">
+                <div class="row emotionsContainer text-center">
+                  <div class="col-md-offset-1 col-md-2 emotion emotion1">
+                    <div class="emotionp emotionexcelente" id="emotionexcelente"></div>
+                    <p>Excelente</p>
                   </div>
-                  <div class="col-md-6 text-left">
-                    <input type="text" placeholder="Número de identificación">
+                  <div class="col-md-2 emotion emotion2">
+                    <div class="emotionp emotionbuena" id="emotionbuena"></div>
+                    <p>Buena</p>
                   </div>
-                  <div class="col-md-6 text-right">
-                    <input type="text" placeholder="Nombre">
+                  <div class="col-md-2 emotion3">
+                    <div class="emotionp emotionnormal" id="emotionnormal"></div>
+                    <p>Normal</p>
                   </div>
-                  <div class="col-md-6 text-left">
-                    <input type="text" placeholder="Correo electrónico">
+                  <div class="col-md-2 emotion emotion4">
+                    <div class="emotionp emotionregular" id="emotionregular"></div>
+                    <p>Regular</p>
+                  </div>
+                  <div class="col-md-2 emotion emotion5">
+                    <div class="emotionp emotionmejorar" id="emotionmejorar"></div>
+                    <p>Por Mejorar</p>
+                  </div>
+                </div>
+                </div> 
+
+                <div class="row emotionsContainer emotionButtonsNormal text-center">
+                  <h4>¿Qué ha salido bien?</h4>
+
+                  <div class="row emotionButtonsContainer">
+                    <div class="col-md-6">
+                      <button class="btnRedFill">Uso sencillo de la página</button>
+                    </div>
+                    <div class="col-md-6">
+                      <button class="btnRedFill">encontré lo que buscaba</button>
+                    </div>
+                    <div class="col-md-6">
+                      <button class="btnRedFill">inventario disponible</button>
+                    </div>
+                    <div class="col-md-6">
+                      <button class="btnRedFill">facilidad en la forma de pago</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="msjDespacho">
+                      <p>Déjenos su comentario (opcional): </p>
+                      <input type="text" placeholder="Mensaje">
+                    </div>
                   </div>
                 </div>
 
-                <div class="row text-center">
-                  <h2>Tarjeta de crédito:</h2>
-                  <input type="radio"><img src="images/cardMastercard.png" width="100px" alt="">
+                <div class="row emotionsContainer emotionButtonsRegular text-center">
+                  <h4>¿Qué ha salido mal?</h4>
+
+                  <div class="row emotionButtonsContainer">
+                    <div class="col-md-6">
+                      <button class="btnRedFill">Uso de la página</button>
+                    </div>
+                    <div class="col-md-6">
+                      <button class="btnRedFill">no encontré lo que buscaba</button>
+                    </div>
+                    <div class="col-md-6">
+                      <button class="btnRedFill">sin inventario</button>
+                    </div>
+                    <div class="col-md-6">
+                      <button class="btnRedFill">formas de pago</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="msjDespacho">
+                      <p>¿Qué falló? (opcional):   </p>
+                      <input type="text" placeholder="Mensaje">
+                    </div>
+                  </div>
                 </div>
+
+
+
+              
 
               </div>
 
               <div class="row text-center buttonsContainer">
-                <button class="btnRedFill">cancelar</button>
-                <button class="btnRed">proceder con el pago</button>
-              </div>
-
-              <div class="row placetopayFooter text-center">
-                <img src="images/footerPlaceToPay.png" alt="">
+                <button class="btnRed">enviar</button>
               </div>
             </div>
           </div>
@@ -352,6 +387,28 @@
       </footer>
       
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script>
+      var $emotionnormal = document.getElementById('emotionnormal');
+          $emotionnormal.addEventListener('click', (event)=>{
+            $emotionnormal.classList.toggle('is-active');
+          });
+      var $emotionbuena = document.getElementById('emotionbuena');
+          $emotionbuena.addEventListener('click', (event)=>{
+            $emotionbuena.classList.toggle('is-active');
+          });
+      var $emotionexcelente = document.getElementById('emotionexcelente');
+          $emotionexcelente.addEventListener('click', (event)=>{
+            $emotionexcelente.classList.toggle('is-active');
+          });
+      var $emotionmejorar = document.getElementById('emotionmejorar');
+          $emotionmejorar.addEventListener('click', (event)=>{
+            $emotionmejorar.classList.toggle('is-active');
+          });
+      var $emotionregular = document.getElementById('emotionregular');
+          $emotionregular.addEventListener('click', (event)=>{
+            $emotionregular.classList.toggle('is-active');
+          });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>

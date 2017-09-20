@@ -31,6 +31,8 @@ $(document).ready(function(){
 
 	});
 
+
+
 	// $(document).ready(function(){
 	//     $(".modal").fadeIn();
 	//     $(".cerrar").click(function(){
@@ -39,3 +41,4 @@ $(document).ready(function(){
 	// });
 	 
 });
+

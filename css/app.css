@@ -225,6 +225,18 @@ body{
 	padding: 15px 35px;
 }
 
+.p10-0{
+	padding: 10px 0;
+}
+
+.pt-20{
+	padding-top: 20px;
+}
+
+.pb-20{
+	padding-bottom: 20px;
+}
+
 
 /* end global styles */
 
@@ -1354,6 +1366,14 @@ body{
     margin-bottom: 20px;
 }
 
+.s2t1Container .resumePago label{
+	
+}
+
+.s2t1Container .resumePago p{
+    width: 50%;
+}
+
 .s2t1Container ul li{
     padding: 5px 0;
 }
@@ -1394,9 +1414,329 @@ body{
     padding: 5px 0;
 }
 
+.optionCards{
+    padding: 10px 0;
+}
 
+.optionCards input{
+    margin-right: 20px;
+}
+
+.optionCards p{
+    padding: 10px 0;
+}
 
 /*END CHECKOUT*/
+
+
+/*BEGIN ENCUESTAS*/
+
+
+.encuestaContainer h3{
+    padding: 10px 0;margin: 10px 0;
+}
+
+.encuestaContainer p{
+    text-align: center;
+    margin-top: 0;
+}
+
+.encuestaContainer p span{
+    color: #D91C24;
+}
+
+.encuestaContainer p span{
+    color: #D91C24;
+}
+
+.encuestaContainer .emotionsContainer{
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px auto;
+}
+
+.encuestaContainer .emotionsContainer svg{
+    width: 100px;
+    fill: #fff;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.encuestaContainer .emotionsContainer svg:hover{
+    transform: scale(1.2);
+}
+
+.encuestaContainer .emotionsContainer svg .active{
+    transform: scale(1.2);
+}
+
+.encuestaContainer .emotionsContainer .emotion.active svg{
+    transform: scale(1.2);
+}
+
+.encuestaContainer .emotionsContainer .emotion.active svg .cls-1{
+    fill:#FFCE00 !important;
+}
+
+.encuestaContainer .emotionButtonsContainer{
+    margin-top: 30px;
+}
+
+.encuestaContainer h4{
+    font-size: 15pt;
+}
+
+.encuestaContainer .emotionButtonsContainer button{
+    border-radius: 30px;
+    margin: 10px ;
+    width: 330px;
+}
+
+.encuestaContainer .emotionButtonsContainer button{
+    color: #58595B;
+}
+
+.encuestaContainer .emotionButtonsContainer button:hover{
+    color: #FFF;
+}
+
+.encuestaContainer .msjDespacho{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.encuestaContainer .msjDespacho input{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.emotionnormal {
+  cursor: pointer;
+  width: 113px;
+  height: 112px;
+  background-image: url('../images/emotionNormal.png');
+  background-size: 3150px 112.5px;
+}
+
+.emotionnormal.is-active {
+  animation-name: emotion;
+  animation-duration: 1s;
+  animation-timing-function: steps(27);
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+.emotionbuena {
+  cursor: pointer;
+  width: 113px;
+  height: 112px;
+  background-image: url('../images/emotionBuena.png');
+  background-size: 3150px 112.5px;
+}
+
+.emotionbuena.is-active {
+  animation-name: emotion;
+  animation-duration: 1s;
+  animation-timing-function: steps(27);
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+.emotionexcelente {
+  cursor: pointer;
+  width: 113px;
+  height: 112px;
+  background-image: url('../images/emotionExcelente.png');
+  background-size: 3150px 112.5px;
+}
+
+.emotionexcelente.is-active {
+  animation-name: emotion;
+  animation-duration: 1s;
+  animation-timing-function: steps(27);
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+.emotionmejorar {
+  cursor: pointer;
+  width: 113px;
+  height: 112px;
+  background-image: url('../images/emotionmejorar.png');
+  background-size: 3150px 112.5px;
+}
+
+.emotionmejorar.is-active {
+  animation-name: emotion;
+  animation-duration: 1s;
+  animation-timing-function: steps(27);
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+.emotionregular {
+  cursor: pointer;
+  width: 113px;
+  height: 112px;
+  background-image: url('../images/emotionregular.png');
+  background-size: 3150px 112.5px;
+}
+
+.emotionregular.is-active {
+  animation-name: emotion;
+  animation-duration: 1s;
+  animation-timing-function: steps(27);
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+@keyframes emotion {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.emotionsContainer .emotionp p{
+	text-transform: uppercase;
+	margin-top: 10px;
+	font-family: 'AlrightSansBold';
+	font-size: 10pt;
+	color: #B8B8B8;
+}
+
+.emotionsContainer .emotionp.is-active p{
+	text-transform: uppercase;
+	margin-top: 10px;
+	font-family: 'AlrightSansBlack';
+	font-size: 10pt;
+	color: #58595B;
+}
+
+
+/*END ENCUESTAS*/
+
+
+/*BEGIN FAVORITOS*/
+
+.favoritosContainer-title{
+    text-transform: uppercase;
+    color: #9E9E9E;
+    font-family: 'AlrightSansLight';
+    letter-spacing: 5px;
+    font-size: 28px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.productoFavorito{
+	border-bottom: 1px solid #eee;
+	padding: 30px 0;
+}
+
+.productoFavorito .productoFavorito-nombre{
+	font-size: 22px;
+	padding: 0;
+}
+
+.productoFavorito .productoFavorito-precio{
+    font-family: 'OpenSansExtraBold';
+    font-size: 20pt;
+    color: #C42134;
+}
+
+.productoFavorito .sizeProduct{
+	background-color: #F8F8F8;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #B8B8B8;
+    transition: .3s;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.productoFavorito .sizeProduct.active{
+	background-color: #D91C24;
+	color: #FFF;
+}
+
+.productoFavorito .sizeProduct p{
+	font-size: 11pt;
+	font-family: 'OpenSansRegular';
+	padding-top: 22%;
+}
+
+.productoFavorito .sizeQuantity{
+	padding-top: 10px;
+    border-bottom: 3px solid #ddd;
+}
+
+.productoFavorito .sizeQuantity.active{
+    border-bottom: 3px solid #D91C24;
+}
+
+.productoFavorito .sizeQuantity select{
+	font-family: 'OpenSansLight';
+    border: 0;
+    background: none;
+    border-radius: 0;
+    width: 80%;
+}
+
+.productoFavorito .sizeQuantity select.active{
+	font-family: 'OpenSansLight';
+}
+
+.productoFavorito .productoFavorito-buttons{
+	margin-top: 15px
+}
+
+.productoFavorito button.productoFavorito-button{
+	width: 260px;
+	margin: 15px 0;
+}
+
+.productoFavorito .productoFavorito-stars{
+	width: 25px;
+}
+
+.productoFavorito .productoFavorito-stars svg{
+	stroke: #F8B916;
+    fill: #FFF;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.productoFavorito .productoFavorito-stars svg:hover{
+    fill: #F8B916;
+}
+
+.productoFavorito .productoFavorito-talla{
+    margin-top: 20px;
+}
+
+.productoFavorito .productoFavorito-talla .sizeQuantity{
+    margin-top: 20px;
+}
+
+.productoFavorito .productoFavorito-talla h5{
+    text-transform: uppercase;
+    color: #D91C24;
+    font-family: 'AlrightSansMedium';
+    letter-spacing: 2px;
+    padding-top: 20px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+/*END FAVORITOS*/
+
 
 /* BEGIN MODAL */
 
