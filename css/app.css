@@ -156,11 +156,12 @@ body{
 	font-size: 14px;
 	border: 1px solid #D91C24;
 	letter-spacing: 2px;
-	width: 330px;
+	width: 300px;
 }
 
 .btnRed:hover{
-	background-color: #8e1218;
+	background-color: #bd181f;
+	border: 1px solid #bd181f;
 }
 
 .btnRedFill{
@@ -236,6 +237,21 @@ body{
 .pb-20{
 	padding-bottom: 20px;
 }
+
+.ir-arriba {
+	padding: 20px 22px;
+    background: #D91C24;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    z-index: 100;
+    border-radius: 50px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+}
+
 
 
 /* end global styles */
@@ -631,6 +647,7 @@ body{
 .cajaProductoBorderRadiusGris .imgVistosReciente img{
 	transition: .5s;
 	cursor: pointer;
+	width: 100%;
 }
 
 .cajaProductoBorderRadiusGris .imgVistosReciente img:hover{
@@ -1735,7 +1752,210 @@ body{
     font-size: 12px;
 }
 
+.favoritosContainerEmpty{
+	
+}
+
+.favoritosContainerEmpty h3{
+	margin-bottom: 30px;
+}
+
+.favoritosContainerEmpty .favoritosContainerEmpty-icon svg{
+	width: 200px;
+}
+
+.favoritosContainerEmpty .favoritosContainerEmpty-icon svg:hover{
+	transform: rotate(360deg);
+}
+
+.favoritosContainerEmpty .favoritosContainerEmpty-subtitle{
+	color: #D91C24;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 24px;
+	padding: 10px 0;
+	margin-top: 10px;
+}
+
+.favoritosContainerEmpty .favoritosContainerEmpty-button{
+	margin-top: 40px;
+}
+
+.favoritosContainerEmpty p{
+	text-transform: uppercase;
+	text-align: center;
+}
+
 /*END FAVORITOS*/
+
+/* BEGIN RECURSOS */
+
+.recursosContainer-title{
+	text-transform: uppercase;
+    color: #9E9E9E;
+    font-family: 'AlrightSansLight';
+    letter-spacing: 5px;
+    font-size: 28px;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.recursosContainer-table-title h5{
+    color: #D91C24;
+    font-family: 'AlrightSansBold';
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.recursosContainer-recurso{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.recursosContainer-recurso:hover{
+    box-shadow: 0 0 10px rgba(9,9,9,.2);
+}
+
+.recursosContainer-recurso img{
+    cursor: pointer;
+    transition: .3s;
+}
+
+.recursosContainer-recurso img:hover{
+    transform: scale(1.2);
+}
+
+.recursosContainer-recurso:last-child{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    border: 0;
+}
+
+.recursosContainer-recurso p{
+    text-align: center;
+    color: #58595B;
+    font-family: 'OpenSansRegular';
+}
+
+/* END RECURSOS */
+
+
+/*BEGIN FAQ*/
+
+.faqContainer-title{
+	font-size: 26px;
+}
+
+.faqContainer-faq{
+	padding: 20px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.faqContainer-faq:first-child{
+	padding-top: 0;
+	margin-top: 0;
+	border-bottom: 1px solid #eee;
+}
+
+.faqContainer-faq:last-child{
+	margin-bottom: 50px;
+}
+
+.faqContainer-faq h5{
+    color: #D91C24;
+    font-family: 'AlrightSansBold';
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.faqContainer .faqContainer-categories ul{
+    list-style: none;
+    
+}
+
+.faqContainer .faqContainer-categories li{
+    padding: 25px 0 25px 25px;
+    font-family: 'AlrightSansLight', sans-serif;
+    text-transform: uppercase;
+    border-left: 3px solid #ccc;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.faqContainer .faqContainer-categories li:hover{
+    color: #D91C24;
+    font-family: 'AlrightSansBold', sans-serif;
+    border-left: 3px solid #D91C24;
+}
+
+.faqContainer .faqContainer-categories li.active{
+    color: #D91C24;
+    font-family: 'AlrightSansBold', sans-serif;
+    border-left: 3px solid #D91C24;
+}
+
+
+.faqContainer #faqTienda{
+    display: none;
+}
+
+.faqContainer #faqProductos{
+    display: none;
+}
+
+.faqContainer #faqLogistica{
+    display: none;
+}
+
+.faqContainer #faqPagos{
+    display: none;
+}
+
+.faqContainer #faqTienda.active{
+    display: inherit;
+}
+
+.faqContainer #faqProductos.active{
+    display: inherit;
+}
+
+.faqContainer #faqLogistica.active{
+    display: inherit;
+}
+
+.faqContainer #faqPagos.active{
+    display: inherit;
+}
+
+.faqContainer .faqContainer-plazo h5{
+    color: #4D4D4D;
+    font-family: 'AlrightSansRegular', sans-serif;
+	font-size: 14px;
+}
+
+.faqContainer .faqContainer-plazo h4{
+    color: #4D4D4D;
+    font-family: 'OpenSansSemibold', sans-serif;
+	font-size: 15px;
+	padding-bottom: 20px;
+	margin-top: 0;
+}
+
+.faqContainer .faqContainer-plazo h3{
+    font-family: 'OpenSansExtrabold', sans-serif;
+    color: #D91C24;
+	font-size: 28px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+
+/*END FAQ*/
+
 
 
 /* BEGIN MODAL */
@@ -1772,9 +1992,63 @@ body{
 
 /* END MODAL */
 
+
+
+
+/*MOBILE*/
+
+
+.usuarioDropdownMobile{
+	    width: 90vw;
+		margin-top: 130px;
+		right: 0 !important;
+	}
+
+	.usuarioDropdownMobile h2{
+		font-family: 'AlrightSansMedium';
+		color: #58595B;
+		font-size: 13pt;
+		text-transform: uppercase;
+		padding-top: 10px;
+	}
+
+	.usuarioDropdownMobile h3{
+		font-family: 'AlrightSansLight';
+		color: #58595B;
+		font-size: 10pt;
+		text-transform: uppercase;
+		margin-top: -7px;
+	}
+
+	.usuarioDropdownMobile ul{
+		background-color: #FFF;
+		padding: 0;
+		color: #9b9b9b;
+		list-style: none;
+		margin: 0;
+	}
+
+	.usuarioDropdownMobile li{
+		padding: 15px 10px 15px 10px;
+		cursor: pointer;
+		font-family: 'AlrightSansLight';
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	.usuarioDropdownMobile li:hover{
+		background-color: #f4f4f4;
+	}
+
+
+/*MOBILE*/
+
+
+
+
 /* BEGIN RESPONSIVE */
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 767px){
 	body{
 		overflow-x:hidden;
 	}
@@ -1890,9 +2164,13 @@ body{
 	.footer{
 		text-align: center;
 	}
+
+	.dropdownContainer{
+		margin-top: 130px;
+	}
 }
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 767px){
 	.h-i-d{
 		display: none;
 	}

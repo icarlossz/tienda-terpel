@@ -11,6 +11,11 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
     <link href="css/app.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -51,8 +56,6 @@
                     <li>Cerrar sesión</li>
                   </ul>
                 </div>
-
-
               </div>
             </div>
           </div>
@@ -174,31 +177,66 @@
             </div>
         </div>
 
-        <div id="searchDropdown" data-closeDropdown="#searchDropdown" class="container Dropdown">
+        
+      </div>
+
+      <div id="searchDropdown" data-closeDropdown="#searchDropdown" class="container Dropdown">
             <div class="row dropdownContainer">
               <div class="col-md-12">
                 <input type="text" placeholder="Ingresa tu búsqueda...">
               </div>
             </div>
         </div>
-      </div>
 
       <div class="navbarMobile h-i-d">
         <div class="container-fluid">
           <div class="row navbarContainer">
             <div class="col-xs-4">
-             <!--  <img src="images/burgerMenu.svg" width="55px" align="left" alt=""> -->
+              <img src="images/burgerMenu.svg" width="55px" align="left" id="trigger" class="menu-trigger" alt="">
+              <!-- <p><a href="#" id="trigger" class="menu-trigger"></a></p> -->
             </div>
             <div class="col-xs-4">
               <img src="images/logoIsoTT.svg" width="70px" alt="">
             </div>
-            <div class="col-xs-4">
-              <img src="images/iconUser.svg" width="65px" align="right" alt="">
-            </div>
+            
+
+            <!-- JUST TRY PUT A MENU HERE -->
+            <div class="col-xs-4 usuarioLogueadoMobilContainer">
+              <div class="dropdown">
+
+                  <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img class="dropdown" src="images/iconUser.svg" align="right" width="70px" alt="">
+                    
+                  </a>
+
+                  <div class="dropdown-menu pull-right usuarioDropdownMobile" aria-labelledby="dLabel">
+                    <div class="row">
+                      <div class="col-md-4 col-xs-12 text-center">
+                        <img src="images/userImg.svg" width="75px" align="center" alt="">
+                      </div>
+                      <div class="col-md-4 col-xs-12">
+                        <h2>PruebaEDS1</h2>
+                        <h3>Administrador</h3>
+                      </div>
+                    </div>
+                    <ul>
+                      <li>Actualizar perfil</li>
+                      <li>Cambiar contraseña</li>
+                      <li>Recursos</li>
+                      <li>Cerrar sesión</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            <!-- JUST TRY PUT A MENU HERE -->
+
           </div>
           <div class="row navbarContainer navSecondMobile text-center">
             <div class="col-xs-4">
-              <img src="images/iconSearchNav.svg" width="30px" alt="">
+              <div id="searchDrop" data-openDropdown="#searchDropdown" class="col-md-4 searchIconHeader">
+                <img src="images/iconSearchNav.svg" width="30px" alt="">
+              </div>
             </div>
             <div class="col-xs-4">
               <img src="images/iconFavNav.svg" width="33px" alt="">
@@ -210,7 +248,228 @@
         </div>
       </div>
 
+      <div class="menuMobile h-i-d">
+       <div class="contenedor">
+            <!-- Push Wrapper -->
+            <div class="mp-pusher" id="mp-pusher">
+
+              <!-- mp-menu -->
+              <nav id="mp-menu" class="mp-menu">
+                <div class="mp-level">
+                  <h2 class="icon icon-world">Inicio</h2>
+                  <ul>
+                    <li class="icon icon-arrow-left">
+                      <a class="icon" href="#">Catálogo</a>
+                      <div class="mp-level">
+                        <h2 class="icon icon-display">Catálogo</h2>
+                        <a class="mp-back" href="#">Inicio</a>
+                        <ul>
+                          <li class="icon icon-arrow-left">
+                            <a class="icon" href="#">Terpel</a>
+                            <div class="mp-level">
+                              <h2>Terpel</h2>
+                              <a class="mp-back" href="#">Catálogo</a>
+                              <ul>
+                                <li><a href="#">Uniformes Hombre</a></li>
+                                <li><a href="#">Uniformes mujer</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Unisex</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="icon icon-arrow-left">
+                            <a class="icon" href="#">Gazel</a>
+                            <div class="mp-level">
+                              <h2>Gazel</h2>
+                              <a class="mp-back" href="#">Catálogo</a>
+                              <ul>
+                                <li><a href="#">Uniformes Hombre</a></li>
+                                <li><a href="#">Uniformes mujer</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Unisex</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="icon icon-arrow-left">
+                            <a class="icon" href="#">Altoque</a>
+                            <div class="mp-level">
+                              <h2>Altoque</h2>
+                              <a class="mp-back" href="#">Catálogo</a>
+                              <ul>
+                                <li><a href="#">Uniformes Hombre</a></li>
+                                <li><a href="#">Uniformes mujer</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Unisex</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="icon icon-arrow-left">
+                            <a class="icon" href="#">Motos</a>
+                            <div class="mp-level">
+                              <h2>Motos</h2>
+                              <a class="mp-back" href="#">Catálogo</a>
+                              <ul>
+                                <li><a href="#">Uniformes Hombre</a></li>
+                                <li><a href="#">Uniformes mujer</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Unisex</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="icon icon-arrow-left">
+                            <a class="icon" href="#">Para tu EDS</a>
+                            <div class="mp-level">
+                              <h2>Para tu EDS</h2>
+                              <a class="mp-back" href="#">Catálogo</a>
+                              <ul>
+                                <li><a href="#">Uniformes Hombre</a></li>
+                                <li><a href="#">Uniformes mujer</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Unisex</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="icon icon-arrow-left">
+                            <a class="icon" href="#">Merchandising</a>
+                            <div class="mp-level">
+                              <h2>Merchandising</h2>
+                              <a class="mp-back" href="#">Catálogo</a>
+                              <ul>
+                                <li><a href="#">Uniformes Hombre</a></li>
+                                <li><a href="#">Uniformes mujer</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Unisex</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="icon icon-arrow-left">
+                            <a class="icon" href="#">Clasificados</a>
+                            <div class="mp-level">
+                              <h2>Clasificados</h2>
+                              <a class="mp-back" href="#">Catálogo</a>
+                              <ul>
+                                <li><a href="#">Uniformes Hombre</a></li>
+                                <li><a href="#">Uniformes mujer</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Unisex</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a class="icon" href="#">Promociones</a></li>
+                    <li class="icon icon-arrow-left">
+                      <a class="icon" href="#">Mis pedidos</a>
+                      <div class="mp-level">
+                        <h2 class="icon icon-news">Mis pedidos</h2>
+                        <a class="mp-back" href="#">Inicio</a>
+                        <ul>
+                          <li><a href="#">Seguimiento</a></li>
+                          <li><a href="#">Historial</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="icon icon-arrow-left">
+                      <a class="icon" href="#">Contacto</a>
+                      <div class="mp-level">
+                        <h2 class="icon icon-shop">Contacto</h2>
+                        <a class="mp-back" href="#">Inicio</a>
+                        <ul>
+                          <!-- <li class="icon icon-arrow-left">
+                            <a class="icon icon-t-shirt" href="#">Clothes</a>
+                            <div class="mp-level">
+                              <h2 class="icon icon-t-shirt">Clothes</h2>
+                              <a class="mp-back" href="#">back</a>
+                              <ul>
+                                <li class="icon icon-arrow-left">
+                                  <a class="icon icon-female" href="#">Women's Clothing</a>
+                                  <div class="mp-level">
+                                    <h2 class="icon icon-female">Women's Clothing</h2>
+                                    <a class="mp-back" href="#">back</a>
+                                    <ul>
+                                      <li><a href="#">Tops</a></li>
+                                      <li><a href="#">Dresses</a></li>
+                                      <li><a href="#">Trousers</a></li>
+                                      <li><a href="#">Shoes</a></li>
+                                      <li><a href="#">Sale</a></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="icon icon-arrow-left">
+                                  <a class="icon icon-male" href="#">Men's Clothing</a>
+                                  <div class="mp-level">
+                                    <h2 class="icon icon-male">Men's Clothing</h2>
+                                    <a class="mp-back" href="#">back</a>
+                                    <ul>
+                                      <li><a href="#">Shirts</a></li>
+                                      <li><a href="#">Trousers</a></li>
+                                      <li><a href="#">Shoes</a></li>
+                                      <li><a href="#">Sale</a></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li> -->
+                          <li>
+                            <a class="icon" href="#">Preguntas frecuentes</a>
+                          </li>
+                          <li>
+                            <a class="icon" href="#">Contáctanos</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    
+                  </ul>
+                    
+                </div>
+              </nav>
+              <!-- /mp-menu -->
+
+              <div class="scroller"><!-- this is for emulating position fixed of the nav -->
+                <div class="scroller-inner">
+                  <!-- Top Navigation -->
+                  <!-- <div class="codrops-top clearfix">
+                    <a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/CircularNavigation/"><span>Previous Demo</span></a>
+                    <span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=16252"><span>Back to the Codrops Article</span></a></span>
+                  </div>
+                  <header class="codrops-header">
+                    <h1>Multi-Level Push Menu <span>Off-screen navigation with multiple levels</span></h1>
+                  </header>
+                  <div class="content clearfix">
+                    <div class="block block-40 clearfix"> -->
+                      
+                      <!-- <nav class="codrops-demos">
+                        <a href="index.html">Demo 1: Overlapping levels</a>
+                        <a href="index2.html">Demo 2: Covering levels</a>
+                        <a class="current-demo" href="index3.html">Demo 3: Overlapping levels with back links</a>
+                      </nav>
+                    </div>
+                    <div class="block block-60">
+                      <p><strong>Demo 3:</strong> Overlapping levels with back links</p>
+                      <p>This menu will open by pushing the website content to the right. It has multi-level functionality, allowing endless nesting of navigation elements.</p>
+                      <p>The next level can optionally overlap or cover the previous one.</p>
+                    </div>
+                    <div class="info">
+                      <p>If you enjoyed this you might also like:</p>
+                      <p><a href="http://goo.gl/JLJ4v5">Responsive Multi-Level Menu</a></p>
+                      <p><a href="http://goo.gl/qjbq9Y">Google Nexus Website Menu</a></p>
+                    </div>
+                  </div> -->
+                </div><!-- /scroller-inner -->
+              </div><!-- /scroller -->
+
+            </div><!-- /pusher -->
+          </div><!-- /container -->
+      </div>
+
+
+
     </header>
+
+    <span class="ir-arriba icon-arrow-up2"><img src="images/arrowUp.svg" width="20px" alt=""></span>
 
     <div class="containerFluid slidesHomeContainer">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -563,6 +822,13 @@
         </div>
       </div>
     </div>
+
+
+    <script src="js/classie.js"></script>
+    <script src="js/mlpushmenu.js"></script>
+    <script>
+      new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+    </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

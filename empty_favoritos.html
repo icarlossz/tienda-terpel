@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tienda Terpel Web</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+      <header>
+        <div class="header h-i-m">
+          <div class="container-fluid usuarioLogueadoContainer sectionHome">
+            <div class="row">
+              <div class="col-md-offset-8 col-md-2 col-xs-6 text-right usuarioLogueado"><button>EDS de prueba</button></div>
+              <div class="col-md-1 ">
+                <div class="dropdown">
+
+                  <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img class="dropdown" src="images/iconUser.png" alt="">
+                    <span class="caret"></span>
+                  </a>
+
+                  <div class="dropdown-menu pull-right usuarioDropdown" aria-labelledby="dLabel">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img src="images/userImg.svg" width="80px" alt="">
+                      </div>
+                      <div class="col-md-4 col-xs-12">
+                        <h2>PruebaEDS1</h2>
+                        <h3>Administrador</h3>
+                      </div>
+                    </div>
+                    <ul>
+                      <li>Actualizar perfil</li>
+                      <li>Cambiar contraseña</li>
+                      <li>Recursos</li>
+                      <li>Cerrar sesión</li>
+                    </ul>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 text-center logoTTHeader"><img src="images/logoTT.png" alt=""></div>
+            </div>
+          </div>
+          
+          <div class="container-fluid navbarContainer">
+            <div class="container Navbar">
+              <div class="row">
+                <a href="index.html"><div class="col-md-2 navbarItem">Inicio</div></a>
+                <a href="catalogo.html"><div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem catalogoDrop ">Catálogo</div></a>
+                <div id="promocionesDrop" class="col-md-2 navbarItem  catalogoDrop">Promociones</div>
+                <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem pedidosDrop">Mis pedidos</div>
+                <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem">Contacto</div>
+                <div class="col-md-2 navbarItem">
+                  <div class="row">
+                    <div id="searchDrop" data-openDropdown="#searchDropdown" class="col-md-4 searchIconHeader"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.2 21.2"><defs></defs><title>Asset 27</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M8.37,0a8.37,8.37,0,1,0,5.5,14.66L20.25,21a.55.55,0,0,0,.78-.78l-6.37-6.37A8.37,8.37,0,0,0,8.37,0Zm0,1.12A7.25,7.25,0,1,1,1.12,8.37,7.25,7.25,0,0,1,8.37,1.12Z"/></g></g></svg></div>
+                    <div class="col-md-4 favIconHeader"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.83 23.75"><defs></defs><title>Asset 28</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M5.57,23.75a1.35,1.35,0,0,1-1.32-1.57l1.16-6.74a.34.34,0,0,0-.1-.3L.41,10.35a1.34,1.34,0,0,1,.75-2.29l6.77-1a.35.35,0,0,0,.26-.19l3-6.14A1.33,1.33,0,0,1,12.42,0h0a1.34,1.34,0,0,1,1.21.75l3,6.14a.35.35,0,0,0,.26.19l6.77,1a1.34,1.34,0,0,1,.75,2.29l-4.9,4.78a.34.34,0,0,0-.1.3l1.16,6.74a1.34,1.34,0,0,1-2,1.42l-6.06-3.18a.34.34,0,0,0-.32,0L6.2,23.59A1.35,1.35,0,0,1,5.57,23.75ZM12.42,1a.34.34,0,0,0-.31.19l-3,6.14a1.34,1.34,0,0,1-1,.74L1.3,9a.34.34,0,0,0-.19.59L6,14.41a1.34,1.34,0,0,1,.39,1.19L5.23,22.34a.34.34,0,0,0,.5.36l6.06-3.18a1.35,1.35,0,0,1,1.25,0l6.06,3.18a.34.34,0,0,0,.5-.36L18.44,15.6a1.34,1.34,0,0,1,.39-1.19l4.9-4.78A.34.34,0,0,0,23.54,9l-6.77-1a1.34,1.34,0,0,1-1-.74l-3-6.14A.34.34,0,0,0,12.42,1Z"/></g></g></svg></div>
+                    <div class="col-md-4 cartIconHeader"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.37 21.25"><defs></defs><title>Asset 29</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M.53,0a.53.53,0,1,0,0,1.06H3.36c1.36,3.36,2.69,6.72,4,10.09l-1.25,3a.56.56,0,0,0,.49.74H19.92a.53.53,0,1,0,0-1.06H7.44l.9-2.16,13-1a.55.55,0,0,0,.47-.41L23.36,3.3a.56.56,0,0,0-.51-.65H5.14L4.21.33A.54.54,0,0,0,3.72,0Zm5,3.72H22.18L20.82,9.6l-12.5,1ZM9.3,16.47a2.39,2.39,0,1,0,2.39,2.39A2.4,2.4,0,0,0,9.3,16.47Zm8,0a2.39,2.39,0,1,0,2.39,2.39A2.4,2.4,0,0,0,17.27,16.47Zm-8,1.06A1.33,1.33,0,1,1,8,18.86,1.32,1.32,0,0,1,9.3,17.53Zm8,0a1.33,1.33,0,1,1-1.33,1.33A1.32,1.32,0,0,1,17.27,17.53Z"/></g></g></svg></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="catalogoDropdown" data-closeDropdown="#catalogoDropdown" class="container Dropdown">
+            <div class="row dropdownContainer ">
+              <div class="col-md-2 p20wp40h">
+                <h2><a href="catalogo.html">Terpel</a></h2>
+                <h3>Uniformes</h3>
+                <ul>
+                  <li>Hombre</li>
+                  <li>Mujer</li>
+                  <li>Accesorios</li>
+                  <li>Unisex</li>
+                </ul>
+
+                <h2>Para tu EDS</h2>
+                <ul>
+                  <li>Mobiliaro</li>
+                  <li>Consumibles</li>
+                  <li>EDS confíable</li>
+                </ul>
+              </div>
+              <div class="col-md-2 p20wp40h">
+                <h2>Terpel</h2>
+                <h3>Uniformes</h3>
+                <ul>
+                  <li>Hombre</li>
+                  <li>Mujer</li>
+                  <li>Accesorios</li>
+                  <li>Unisex</li>
+                </ul>
+
+                <h2>Merchandising</h2>
+                <ul>
+                  <li>Terpel</li>
+                  <li>Gazel</li>
+                </ul>
+              </div>
+              <div class="col-md-2 p20wp40h">
+                <h2>Terpel</h2>
+                <h3>Uniformes</h3>
+                <ul>
+                  <li>Hombre</li>
+                  <li>Mujer</li>
+                  <li>Accesorios</li>
+                  <li>Unisex</li>
+                </ul>
+
+                <h2>Otros</h2>
+                <ul>
+                  <li>Bandera</li>
+                  <li>Señalización</li>
+                </ul>
+              </div>
+              <div class="col-md-2 p20wp40h">
+                <h2>Terpel</h2>
+                <h3>Uniformes</h3>
+                <ul>
+                  <li>Hombre</li>
+                  <li>Mujer</li>
+                  <li>Accesorios</li>
+                  <li>Unisex</li>
+                </ul>
+
+                <h2>Clasificados</h2>
+                <ul>
+                  <li>Servicios</li>
+                </ul>
+              </div>
+              <div class="col-md-4 bannerDropdown">
+                <img src="images/bannerMenu.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div id="pedidosDropdown" data-closeDropdown="#pedidosDropdown" class="container Dropdown">
+              <div class="row dropdownContainer">
+                <div class="col-md-6 ">
+                  <h4>Seguimiento de pedidos</h4>
+                </div>
+                <div class="col-md-6 ">
+                  <h4>Historial de pedidos</h4>
+                </div>
+              </div>
+          </div>
+
+          <div id="contactoDropdown" data-closeDropdown="#contactoDropdown" class="container Dropdown">
+              <div class="row dropdownContainer">
+                <div class="col-md-6">
+                  <h4>Preguntas frecuentes</h4>
+                </div>
+                <div class="col-md-6">
+                  <h4>Contáctanos</h4>
+                </div>
+              </div>
+          </div>
+
+          <div id="searchDropdown" data-closeDropdown="#searchDropdown" class="container Dropdown">
+              <div class="row dropdownContainer">
+                <div class="col-md-12">
+                  <input type="text" placeholder="Ingresa tu búsqueda...">
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="navbarMobile h-i-d">
+          <div class="container-fluid">
+            <div class="row navbarContainer">
+              <div class="col-xs-4">
+                <img src="images/burgerMenu.svg" width="55px" align="left" alt="">
+              </div>
+              <div class="col-xs-4">
+                <img src="images/logoIsoTT.svg" width="70px" alt="">
+              </div>
+              <div class="col-xs-4">
+                <img src="images/iconUser.svg" width="65px" align="right" alt="">
+              </div>
+            </div>
+            <div class="row navbarContainer navSecondMobile text-center">
+              <div class="col-xs-4">
+                <img src="images/iconSearchNav.svg" width="30px" alt="">
+              </div>
+              <div class="col-xs-4">
+                <img src="images/iconFavNav.svg" width="33px" alt="">
+              </div>
+              <div class="col-xs-4">
+                <img src="images/iconCartNav.svg" width="35px" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <div class="home">
+        <div class="favoritosContainerEmpty">
+            <h3 class="favoritosContainer-title">favoritos</h3>
+            
+          <div class="favoritosContainerEmpty-icon text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 183.5 183.35"><defs><style>.cls-1{fill:none;}.cls-2,.cls-7{opacity:0.6;}.cls-3{fill:#ba8b10;}.cls-4{fill:#f8b916;}.cls-5{clip-path:url(#clip-path);}.cls-6{fill:#0e80c3;}.cls-7{fill:#0b4d6d;}</style><clipPath id="clip-path" transform="translate(-44.49 -48.39)"><rect class="cls-1" width="267.99" height="267.99"/></clipPath></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_3" data-name="Layer 3"><g class="cls-2"><path class="cls-3" d="M181.77,153.29A2.42,2.42,0,0,1,181,158a2.45,2.45,0,0,1-.75-.12l-4.16-1.35a2.42,2.42,0,1,1,1.5-4.61Z" transform="translate(-44.49 -48.39)"/><path class="cls-4" d="M177.84,128.42a6,6,0,0,1-1.53,6.21l-14.54,14.17a1.22,1.22,0,0,0-.35,1.07l3.43,20a6,6,0,0,1-8.79,6.38l-18-9.45a1.2,1.2,0,0,0-1.13,0l-18,9.45a6.06,6.06,0,0,1-8.79-6.38l3.43-20a1.21,1.21,0,0,0-.35-1.07L98.73,134.63a6.06,6.06,0,0,1,3.36-10.33l20.1-2.92a1.21,1.21,0,0,0,.91-.66l9-18.21a6.06,6.06,0,0,1,10.86,0l9,18.21a1.21,1.21,0,0,0,.91.66L173,124.3A6,6,0,0,1,177.84,128.42Z" transform="translate(-44.49 -48.39)"/><path class="cls-3" d="M165.83,102.51a2.42,2.42,0,0,1,.54,3.38l-2.57,3.54a2.42,2.42,0,1,1-3.92-2.85l2.57-3.54A2.42,2.42,0,0,1,165.83,102.51Z" transform="translate(-44.49 -48.39)"/><path class="cls-3" d="M139.94,182.82v4.38a2.42,2.42,0,1,1-4.85,0v-4.38a2.42,2.42,0,1,1,4.85,0Z" transform="translate(-44.49 -48.39)"/><path class="cls-3" d="M115.16,106.57a2.42,2.42,0,0,1-3.92,2.85l-2.57-3.54a2.42,2.42,0,0,1,3.92-2.85Z" transform="translate(-44.49 -48.39)"/><path class="cls-3" d="M100.48,153.49a2.42,2.42,0,0,1-1.56,3.06l-4.16,1.35A2.45,2.45,0,0,1,94,158a2.42,2.42,0,0,1-.75-4.73l4.16-1.35A2.42,2.42,0,0,1,100.48,153.49Z" transform="translate(-44.49 -48.39)"/><g class="cls-5"><path class="cls-6" d="M220.1,125.38" transform="translate(-44.49 -48.39)"/><path class="cls-7" d="M135.17,48.4A91.73,91.73,0,0,0,49.88,171.14a3.38,3.38,0,0,0,3.19,2.25,4.37,4.37,0,0,0,1.16-.19,3.41,3.41,0,0,0,2.06-4.35A84.92,84.92,0,0,1,195.55,79.36l.52.49L185.79,80a3.41,3.41,0,0,0,0,6.83h0l18.46-.23a3.45,3.45,0,0,0,3.38-3.45l-.19-18.46a3.42,3.42,0,1,0-6.83.08L200.8,75l-.53-.49a90.74,90.74,0,0,0-65.1-26.12Zm0,0" transform="translate(-44.49 -48.39)"/><path class="cls-7" d="M76.86,200.82l-.52-.49,10.28-.11a3.41,3.41,0,1,0-.08-6.83l-18.46.22a3.45,3.45,0,0,0-3.38,3.45l.23,18.46a3.42,3.42,0,0,0,3.41,3.38h0a3.45,3.45,0,0,0,3.38-3.45l-.11-10.28.52.49A91.73,91.73,0,0,0,222.6,109a3.41,3.41,0,1,0-6.42,2.29A85,85,0,0,1,76.86,200.82Zm0,0" transform="translate(-44.49 -48.39)"/></g></g></g></g></svg>
+          </div>
+
+          <h4 class="favoritosContainerEmpty-subtitle">Agregue sus productos favoritos</h4>
+          <p>de esta forma puede acceder más rápido a ellos en su siguiente compra</p>
+          
+          <div class="favoritosContainerEmpty-button text-center">
+            <button class="btnRedFill">ir al catálogo</button>
+          </div>
+
+
+
+        </div>
+      </div>
+       
+
+
+      <footer>
+        <div class="container-fluid footer sectionHome">
+          <div class="container footerTop">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="images/footerIconTienda.png" alt="">
+              </div>
+              <div class="col-md-2">
+                <h3>Catálogo</h3>
+                <ul>
+                  <li>Uniformes</li>
+                  <li>Para tu EDS</li>
+                  <li>Merchandising</li>
+                  <li>Otros</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <h3>Contáctenos</h3>
+                <ul>
+                  <li>Líneas de atención</li>
+                  <li>Preguntas frecuentes</li>
+                </ul>
+                <h3>Promociones</h3>
+                <h3>Mis pedidos</h3>
+              </div>
+              <div class="col-md-2">
+                <h3>Perfil</h3>
+                <ul>
+                  <li>Líneas de atención</li>
+                  <li>Preguntas frecuentes</li>
+                  <li>Recursos</li>
+                </ul>
+              </div>
+              <div class="col-md-3 text-center">
+                <p>Pague sus transacciones con:</p>
+                <img src="images/footerIcons.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="container footerDerechos">
+            <div class="row text-center">
+              <div class="col-md-3">
+                <p>@ 2016 Terpel</p>
+              </div>
+              <div class="col-md-3">
+                <p>Todos los derechos reservados</p>
+              </div>
+              <div class="col-md-3">
+                <p>Términos y condiciones</p>
+              </div>
+              <div class="col-md-3">
+                <p>Preguntas frecuentes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

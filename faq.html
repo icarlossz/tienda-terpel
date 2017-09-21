@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Encuesta - Tienda Terpel Web</title>
+    <title>Recursos - Tienda Terpel Web</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -212,120 +212,78 @@
 
 
       <div class="home">
-        <div class="checkoutContainer">
+        <div class="faqContainer">
           <div class="container">
-            <h4 class="text-center"><span>¡Está a punto de realizar su pedido!</span> Siga estos pasos para finalizar su compra</h4>
-            <div class="row text-center stepsCheckout">
-              <div class="col-md-3">
-                <div class="numberStep separator active"><p><img src="images/check.svg" width="24px" alt=""></p></div>
-                <p>Revisión de compra</p>
+            <h3 class="faqContainer-title titleHome text-center">preguntas frecuentes</h3>
+            <div class="row">
+              <div class="col-md-3 faqContainer-categories">
+                <ul>
+                  <li data-openDropdown="#faqTienda" class="active">Tienda</li>
+                  <li data-openDropdown="#faqProductos" >Productos</li>
+                  <li data-openDropdown="#faqLogistica">Logística</li>
+                  <li data-openDropdown="#faqPagos">Pagos</li>
+                </ul>
               </div>
-              <div class="col-md-3">
-                <div class="numberStep separator active"><p><img src="images/check.svg" width="24px" alt=""></p></div>
-                <p>Medios de pago</p>
+              <div class="col-md-9 faqContainer-list">
+                <div id="faqTienda" class="faqTienda active">
+                  <div class="faqContainer-faq">
+                    <h5>¿Qué es Tienda Terpel?</h5>
+                    <p>La Tienda Terpel es un nuevo canal que ponemos a disposición de todas las EDS para adquirir de forma fácil y rápida los productos y servicios necesarios para su operación.</p>
+                  </div>
+                </div>
+                <div id="faqProductos" class="faqProductos">
+                  <div class="faqContainer-faq">
+                    <h5>¿Qué productos puedo comprar en la Tienda Terpel?</h5>
+                    <p>Solo se pueden adquirir los productos que se encuentran en el catálogo virtual. Periódicamente ingresaremos nuevos productos al catálogo.</p>
+                  </div>
+                  <div class="faqContainer-faq">
+                    <h5>¿Cuál es la cantidad mínima que puedo pedir?</h5>
+                    <p>La cantidad mínima que se puede pedir está especificada en cada producto relacionado en el catálogo.</p>
+                  </div>
+                </div>
+                <div id="faqLogistica" class="faqLogistica">
+                  <div class="faqContainer-faq">
+                    <h5>¿Qué hago si no ha llegado mi producto?</h5>
+                    <p>Si usted compró un producto y no ha llegado a la EDS de destino después del plazo establecido para la entrega según su ciudad, comuníquese a la línea gratuita de atención al cliente 018000 518555 o desde cualquier celular al #462. También puede contactarnos escribiéndonos a: servicioalcliente@terpel.com</p>
+                  </div>
+                  <div class="faqContainer-faq">
+                    <h5>¿Cuál es el plazo de entrega de los productos?</h5>
+                    <div class="row text-center faqContainer-plazo">
+                      <div class="col-md-4">
+                        <h5>Ciudades principales</h5>
+                        <h3>4 dias</h3>
+                        <h4>Hábiles</h4>
+                        <p>Bogotá, Medellín, Cali, Barranquilla, Manizales, Bucaramanga, Cartagena, Pereira, Armenia, Cúcuta, Ibagué, Sincelejo, Pasto y  Montería.</p>
+                      </div>
+                      <div class="col-md-4">
+                        <h5>Ciudades intermedias</h5>
+                        <h3>6 dias</h3>
+                        <h4>Hábiles</h4>
+                        <p>Santa Marta, Barrancabermeja, Villavicencio, Montería, Caucasia, Neiva, Popayán, Quibdó, Ipiales, Santander de Quilichao, Rionegro,Buenaventura, Buga la Grande, Caloto, Miranda, Paipa, Puerto Tejada, Duitama, Florida Valle, Fundación Ginebra, Guacari, Ipiales, Jamundí Sogamoso Tuluá Tunja Valledupar, Melgar, entre otras.</p>
+                      </div>
+                      <div class="col-md-4">
+                        <h5>Reexpediciones</h5>
+                        <h3>10 dias</h3>
+                        <h4>Hábiles</h4>
+                        <p>Riohacha, Leticia, Florencia, Inírida, Quibdó, Ismina, Acacias, Amaga, Altamira, Santa Rosa de Osos, Lérida, Puerto Carreño, Guamo, Ambalema, Andes, Anserma, Bruselas, Fredonia, Campo alegre, entre otros.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faqContainer-faq">
+                    <h5>¿Qué pasa si administro más de una EDS?</h5>
+                    <p>Podrá registrarse como el administrador/dueño de varias EDS bajo un único NIT. Solo se acepta un usuario por Estación de Servicio.</p>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-3">
-                <div class="numberStep separator active"><p><img src="images/check.svg" width="24px" alt=""></p></div>
-                <p>Pago</p>
-              </div>
-              <div class="col-md-3">
-                <div class="numberStep active"><p><img src="images/check.svg" width="24px" alt=""></p></div>
-                <p>Compra exitosa</p>
-              </div>
-            </div>
-            
-            <div class="s2t1Container encuestaContainer">
-              <div class="row">
-                <h3>compra completada con éxito</h3>
-                <p><span>Califique su experiencia</span> y ayúdenos a mejorar en tan solo un minuto:</p>
+                  
                 
-                <div class="row emotionsContainer text-center">
-                  <div class="col-md-offset-1 col-md-2 emotion emotion1">
-                    <div class="emotionp emotionexcelente" id="emotionexcelente"></div>
-                    <p>Excelente</p>
-                  </div>
-                  <div class="col-md-2 emotion emotion2">
-                    <div class="emotionp emotionbuena" id="emotionbuena"></div>
-                    <p>Buena</p>
-                  </div>
-                  <div class="col-md-2 emotion3">
-                    <div class="emotionp emotionnormal" id="emotionnormal"></div>
-                    <p>Normal</p>
-                  </div>
-                  <div class="col-md-2 emotion emotion4">
-                    <div class="emotionp emotionregular" id="emotionregular"></div>
-                    <p>Regular</p>
-                  </div>
-                  <div class="col-md-2 emotion emotion5">
-                    <div class="emotionp emotionmejorar" id="emotionmejorar"></div>
-                    <p>Por Mejorar</p>
-                  </div>
-                </div>
-                </div> 
-
-                <div class="row emotionsContainer emotionButtonsNormal text-center">
-                  <h4>¿Qué ha salido bien?</h4>
-
-                  <div class="row emotionButtonsContainer">
-                    <div class="col-md-6">
-                      <button class="btnRedFill">Uso sencillo de la página</button>
-                    </div>
-                    <div class="col-md-6">
-                      <button class="btnRedFill">encontré lo que buscaba</button>
-                    </div>
-                    <div class="col-md-6">
-                      <button class="btnRedFill">inventario disponible</button>
-                    </div>
-                    <div class="col-md-6">
-                      <button class="btnRedFill">facilidad en la forma de pago</button>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="msjDespacho">
-                      <p>Déjenos su comentario (opcional): </p>
-                      <input type="text" placeholder="Mensaje">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row emotionsContainer emotionButtonsRegular text-center">
-                  <h4>¿Qué ha salido mal?</h4>
-
-                  <div class="row emotionButtonsContainer">
-                    <div class="col-md-6">
-                      <button class="btnRedFill">Uso de la página</button>
-                    </div>
-                    <div class="col-md-6">
-                      <button class="btnRedFill">no encontré lo que buscaba</button>
-                    </div>
-                    <div class="col-md-6">
-                      <button class="btnRedFill">sin inventario</button>
-                    </div>
-                    <div class="col-md-6">
-                      <button class="btnRedFill">formas de pago</button>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="msjDespacho">
-                      <p>¿Qué falló? (opcional):   </p>
-                      <input type="text" placeholder="Mensaje">
-                    </div>
-                  </div>
-                </div>
-
-
-
-              
-
-              </div>
-
-              <div class="row text-center buttonsContainer">
-                <button class="btnRed">enviar</button>
-              </div>
+                
+                
             </div>
           </div>
         </div>
       </div>
+       
 
 
       <footer>
@@ -387,28 +345,6 @@
       </footer>
       
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script>
-      var $emotionnormal = document.getElementById('emotionnormal');
-          $emotionnormal.addEventListener('click', (event)=>{
-            $emotionnormal.classList.toggle('is-active');
-          });
-      var $emotionbuena = document.getElementById('emotionbuena');
-          $emotionbuena.addEventListener('click', (event)=>{
-            $emotionbuena.classList.toggle('is-active');
-          });
-      var $emotionexcelente = document.getElementById('emotionexcelente');
-          $emotionexcelente.addEventListener('click', (event)=>{
-            $emotionexcelente.classList.toggle('is-active');
-          });
-      var $emotionmejorar = document.getElementById('emotionmejorar');
-          $emotionmejorar.addEventListener('click', (event)=>{
-            $emotionmejorar.classList.toggle('is-active');
-          });
-      var $emotionregular = document.getElementById('emotionregular');
-          $emotionregular.addEventListener('click', (event)=>{
-            $emotionregular.classList.toggle('is-active');
-          });
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
