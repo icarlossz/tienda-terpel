@@ -1821,6 +1821,8 @@ body{
 .recursosContainer-recurso img{
     cursor: pointer;
     transition: .3s;
+    padding-top: 5px;
+    width: 30px;
 }
 
 .recursosContainer-recurso img:hover{
@@ -1955,6 +1957,510 @@ body{
 
 
 /*END FAQ*/
+
+
+/* BEGIN HISTORIAL */
+
+.historialContainer-title{
+	text-transform: uppercase;
+    color: #9E9E9E;
+    font-family: 'AlrightSansLight';
+    letter-spacing: 5px;
+    font-size: 28px;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.historialContainer-subtitle{
+	text-transform: uppercase;
+    color: #D91C24;
+    font-family: 'AlrightSansBold', sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.historialContainer-table-title{
+	text-transform: uppercase;
+	color: #58595B;
+	font-family: 'AlrightSansBold', sans-serif;
+}
+
+.historialContainer .historialContainer-item{
+	text-align: center;
+	font-family: 'OpenSansRegular', sans-serif;
+	color: #9b9b9b;
+	padding: 15px 0 10px 0;
+	transition: .3s;
+	cursor: pointer;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.historialContainer .historialContainer-section{
+	margin-bottom: 40px;
+}
+
+.historialContainer .historialContainer-item:hover{
+	box-shadow: 0 0 10px rgba(6,6,6,.1);
+	border-radius: 5px;
+}
+
+.historialContainer .historialContainer-item p{ 
+	padding-top: 6px;
+}
+
+.historialContainer .historialContainer-item img{ 
+	padding-left: 20px;
+	cursor: pointer;
+	transition: .3s;
+	padding-top: 2px;
+	width: 50px;
+}
+
+.historialContainer .historialContainer-item img:hover{ 
+	transform: scale(1.2);
+}
+
+.historialContainer .historialContainer-item-proceso p{
+	background-color: rgba(248,185,23,.2);
+	padding: 6px 1px;
+	border-radius: 50px;
+	color: #FAB718;
+	font-family: 'OpenSansExtraBold', sans-serif;
+}
+
+.historialContainer .historialContainer-item-aprobado p{
+	background-color: rgba(128,178,63,.2);
+	padding: 6px 1px;
+	border-radius: 50px;
+	color: #80B23F;
+	font-family: 'OpenSansExtraBold', sans-serif;
+}
+
+.historialContainer .historialContainer-item-cancelado p{
+	background-color: rgba(235,116,38,.2);
+	padding: 6px 1px;
+	border-radius: 50px;
+	color: #EB7426;
+	font-family: 'OpenSansExtraBold', sans-serif;
+}
+
+.historialContainer .historialContainer-item-rechazado p{
+	background-color: rgba(196,33,52,.2);
+	padding: 6px 1px;
+	border-radius: 50px;
+	color: #C42134;
+	font-family: 'OpenSansExtraBold', sans-serif;
+}
+
+.historialContainer-item-detalle{
+	display: none;
+}
+
+.historialContainer-item-detalle.active{
+	display: inherit;
+	box-shadow: 0 0 10px rgba(6,6,6,.2);
+	padding: 0 20px;
+	border-radius: 5px;
+}
+
+.historialContainer-item-detalle h3{
+	text-transform: uppercase;
+    color: #9E9E9E;
+    font-family: 'AlrightSansLight';
+    letter-spacing: 5px;
+    font-size: 18pt;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 30px 0;
+}
+
+.historialContainer-item-detalle p{
+    color: #58595B;
+    font-family: 'OpenSansRegular';
+    margin-bottom: 30px;
+}
+
+.historialContainer-item-detalle h2{
+    color: #D91C24;
+    font-family: 'AlrightSansBold';
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.historialContainer-item-detalle h4{
+    color: #D91C24;
+    font-family: 'AlrightSansBold';
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
+
+.historialContainer-item-detalle h5{
+    color: #58595B;
+    font-family: 'AlrightSansBold';
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.historialContainer-item-detalle .infoTable{
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.historialContainer-item-detalle .infoTable:last-child{
+    border:0
+}
+
+.historialContainer-item-detalle .infoTable p{
+    margin-bottom: 0;
+}
+
+.historialContainer-item-detalle .msjDespacho p{
+    margin-top: 20px;
+}
+
+.historialContainer-item-detalle .msjDespacho input{
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.historialContainer-item-detalle .resumePago input{
+    width: 50%;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.historialContainer-item-detalle .resumePago label{
+	
+}
+
+.historialContainer-item-detalle .resumePago p{
+    width: 50%;
+}
+
+.historialContainer-item-detalle ul li{
+    padding: 5px 0;
+}
+
+.historialContainer-item-detalle ul li span{
+    font-family: 'OpenSansExtraBold';
+}
+
+.historialContainer-item-detalle .subtotalTable{
+    border-bottom: 1px solid #eee;
+}
+
+.historialContainer-item-detalle .tableEffective p{
+    padding: 15px 0;
+}
+
+.historialContainer-item-detalle .subtotalTable{
+    padding-bottom: 10px;
+}
+
+.historialContainer-item-detalle .subtotalTable p{
+    padding: 10px 0;
+}
+
+.historialContainer-item-detalle .subtotalTable h4{
+    padding: 5px 0;
+}
+
+.historialContainer-item-detalle .totalTable{
+    padding-top: 10px;
+}
+
+.historialContainer-item-detalle .totalTable p{
+    padding: 10px 0;
+}
+
+.historialContainer-item-detalle .totalTable h4{
+    padding: 5px 0;
+}
+
+.historialContainer .item-cargarComprobante{
+	display: none;
+}
+
+.historialContainer .item-cargarComprobante h5{
+	text-transform: uppercase;
+    color: #D91C24;
+    font-family: 'AlrightSansBold', sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.historialContainer .item-cargarComprobante label{
+    border: 2px dashed #eee !important;
+    padding: 20px 80px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.historialContainer .item-cargarComprobante h6{
+    text-transform: uppercase;
+    color: #B8B8B8;
+    font-family: 'AlrightSansRegular';
+    font-size: 16px;
+    padding-top: 5px;
+    margin-bottom: 0;
+}
+
+.historialContainer .item-cargarComprobante p{
+    font-family: 'OpenSansRegular', sans-serif;
+    color: #9b9b9b;
+}
+
+.historialContainer .item-cargarComprobante.active{
+	display: inherit;
+	box-shadow: 0 0 10px rgba(6,6,6,.2);
+	padding: 0 20px;
+	border-radius: 5px;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+
+
+/* END HISTORIAL */
+
+
+/*BEGIN SEGUIMIENTO DE PEDIDOS*/
+
+.seguimientoContainer{
+    margin-bottom: 100px;
+}
+
+.seguimientoContainer .seguimientoContainer-title{
+	text-transform: uppercase;
+    color: #9E9E9E;
+    font-family: 'AlrightSansLight';
+    letter-spacing: 5px;
+    font-size: 28px;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.seguimientoContainer .seguimientoContainer-idPedido{
+	width: 100%;
+	background-color: #D91C24;
+	color: #FFF;
+	padding: 10px 20px;
+	font-family: 'OpenSansSemibold', sans-serif;
+	letter-spacing: 5px;
+}
+
+.seguimientoContainer .seguimientoContainer-table-title{
+	text-align: center;
+}
+
+.seguimientoContainer .seguimientoContainer-table-title h4{
+	text-transform: uppercase;
+	color: #D91C24;
+	font-family: 'AlrightSansBold', sans-serif;
+	font-size: 16px;
+	padding-top: 30px;
+}
+
+.seguimientoContainer .seguimientoContainer-table-title p{
+	padding-top: 10px;
+}
+
+.seguimientoContainer .seguimientoContainer-icons{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.seguimientoContainer .seguimientoContainer-icons .icon{
+	background-color: #eee;
+	width: 150px;
+	margin: 0 auto;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.seguimientoContainer .seguimientoContainer-icons .icon:after{
+	border: 5px solid red;
+}
+
+.seguimientoContainer .seguimientoContainer-icons .icon.active{
+	border: 5px solid #ED3C26;
+}
+
+.seguimientoContainer .seguimientoContainer-icons .icon img{
+	margin-top: 35px;
+	
+}
+
+.seguimientoContainer .seguimientoContainer-estado{
+	text-align: center;
+	margin-top: 20px;
+	text-transform: uppercase;
+	margin-bottom: 100px;
+	font-family: 'AlrightSansMedium', sans-serif;
+	letter-spacing: 2px;
+}
+
+.seguimientoContainer .seguimientoContainer-estado p{
+	color: #B8B8B8;
+}
+
+.seguimientoContainer .seguimientoContainer-estado p.active{
+	margin-bottom: 0;
+	color: #58595B;
+}
+
+
+/*END SEGUIMIENTO DE PEDIDOS*/
+
+
+/*BEGIN INTERNA PRODUCTO*/
+
+.productoContainer{
+	margin: 20px 0;
+}
+
+.productoContainer .breadcrumb{
+	background-color: #fff;
+	text-transform: uppercase;
+}
+
+.productoContainer .breadcrumb li{
+	color: #B7B7B7;
+	font-family: 'AlrightSansLight', sans-serif;
+	letter-spacing: 1px;
+}
+
+.productoContainer .breadcrumb li.active{
+	color: #9b9b9b;
+	font-family: 'AlrightSansRegular', sans-serif;
+}
+
+.productoContainer .breadcrumb li a{
+	color: #B7B7B7;
+	text-decoration: none;
+}
+
+.productoContainer .producto-calificacion{
+	text-transform: uppercase;
+}
+
+.productoContainer .producto-calificacion span{
+	padding-right: 10px;
+}
+
+.productoContainer .producto-descripcion{
+	padding-top: 15px;
+}
+
+.productoContainer .producto-precio{
+	padding: 20px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.productoContainer .producto-precio h5{
+	text-transform: uppercase;
+	font-size: 12pt;
+}
+
+.productoContainer .producto-precio h3{
+	font-family: 'OpenSansExtraBold';
+    font-size: 18pt;
+    color: #C42134;
+    margin: 0;
+}
+
+.productoContainer .sizeProduct{
+	background-color: #F8F8F8;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #B8B8B8;
+    transition: .3s;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.productoContainer .sizeProduct.active{
+	background-color: #D91C24;
+	color: #FFF;
+}
+
+.productoContainer .sizeProduct p{
+	font-size: 11pt;
+	font-family: 'OpenSansRegular';
+	padding-top: 22%;
+	text-align: center;
+}
+
+.productoContainer .priceProduct{
+	font-family: 'OpenSansLight';
+	letter-spacing: 1px;
+}
+
+.productoContainer .sizeQuantity{
+	padding-top: 10px;
+    border-bottom: 3px solid #ddd;
+}
+
+.productoContainer .sizeQuantity.active{
+    border-bottom: 3px solid #D91C24;
+}
+
+.productoContainer .sizeQuantity select{
+	font-family: 'OpenSansLight';
+	/*border-bottom: 3px solid #ddd;*/
+    border: 0;
+    background: none;
+    border-radius: 0;
+    width: 80%;
+}
+
+.productoContainer .sizeQuantity select.active{
+	font-family: 'OpenSansLight';
+	/*border-bottom: 3px solid #D91C24;*/
+}
+
+.productoContainer .producto-talla{
+    padding: 20px 0;
+}
+
+.productoContainer .producto-talla h5{
+	text-transform: uppercase;
+    font-size: 12pt;
+    padding: 12px 0;
+}
+
+/*END INTERNA PRODUCTO*/
 
 
 

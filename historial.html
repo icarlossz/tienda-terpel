@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Recursos - Tienda Terpel Web</title>
+    <title>Historial - Tienda Terpel Web</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -66,7 +67,7 @@
                 <a href="index.html"><div class="col-md-2 navbarItem">Inicio</div></a>
                 <a href="catalogo.html"><div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem catalogoDrop ">Catálogo</div></a>
                 <div id="promocionesDrop" class="col-md-2 navbarItem  catalogoDrop">Promociones</div>
-                <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem pedidosDrop">Mis pedidos</div>
+                <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem active pedidosDrop">Mis pedidos</div>
                 <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem">Contacto</div>
                 <div class="col-md-2 navbarItem">
                   <div class="row">
@@ -212,51 +213,247 @@
 
 
       <div class="home">
-        <div class="recursosContainer">
+        <div class="historialContainer">
           <div class="container">
-            <h3 class="recursosContainer-title">recursos</h3>
-            <div class="row text-center recursosContainer-table-title">
-              <div class="col-md-3 col-xs-12"><h5>fecha de montaje</h5></div>
-              <div class="col-md-3 col-xs-12"><h5>nombre</h5></div>
-              <div class="col-md-4 col-xs-12"><h5>descripción</h5></div>
-              <div class="col-md-2 col-xs-12"><h5>descargar</h5></div>
+            <h3 class="historialContainer-title">historial</h3>
+            
+            <div class="historialContainer-section  wow zoomIn">
+              <h4 class="historialContainer-subtitle">por aprobar</h4>
+              <div class="row text-center historialContainer-table-title">
+                <div class="col-md-2 col-xs-12"><h5>estado</h5></div>
+                <div class="col-md-2 col-xs-12"><h5>ID de órden</h5></div>
+                <div class="col-md-3 col-xs-12"><h5>Fecha de Órden</h5></div>
+                <div class="col-md-3 col-xs-12"><h5>fecha límite de carga de comprobante</h5></div>
+                <div class="col-md-2 col-xs-12"><h5>detalle</h5></div>
+              </div>
+              <div class="row historialContainer-item">
+                <div class="col-md-2 col-xs-12 historialContainer-item-proceso"><p>En proceso</p></div>
+                <div class="col-md-2 col-xs-12"><p>1015458689152</p></div>
+                <div class="col-md-3 col-xs-12"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-3 col-xs-12 text-center"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><img src="images/iconMore.svg" align="center" alt=""><!-- <input type="file"> --><img data-openDropdown="#item-cargarComprobante" src="images/iconUploadTicket.svg" alt=""></div>
+              </div>
+
+                <div id="item-cargarComprobante" class="item-cargarComprobante text-center">
+                  <h5>CARGAR EL COMPROBANTE DE PAGO</h5>
+                  <p>Una vez haya seleccionado el pago de su compras por consignación y/o transferencia, su orden entra en estado pendiente de aprobación. Es necesario que envíe el comprobante de la transacción para confirmar la compra. Puede subir archivos en formato jpg, tif, png o pdf de máximo 500 MB.</p>
+
+                  <div class="item-cargarComprobante-input">
+                    <input type="file" name="file-5[]" id="file-5" class="inputfile inputfile-4" data-multiple-caption="{count} files selected" multiple />
+                    <label for="file-5"><img class="mb-3" src="images/iconUploadTicket1.svg" width="100px" alt=""><br>
+                    <h6>examinar</h6></label>
+                  </div>
+                </div>
+
             </div>
-            <div class="row recursosContainer-recurso">
-              <div class="col-md-3 col-xs-12"><p>12/12/2017</p></div>
-              <div class="col-md-3 col-xs-12"><p>Manual de uso de imagen de marca terpel</p></div>
-              <div class="col-md-4 col-xs-12"><p>Manual de uso responsable para la marca terpel (Formato PDF)</p></div>
-              <div class="col-md-2 col-xs-12 text-center"><img src="images/iconDownload.svg" align="center" alt=""></div>
+
+            <div class="historialContainer-section  wow zoomIn">
+              <h4 class="historialContainer-subtitle">aprobadas</h4>
+              <div class="row text-center historialContainer-table-title">
+                <div class="col-md-2 col-xs-12"><h5>estado</h5></div>
+                <div class="col-md-2 col-xs-12"><h5>ID de órden</h5></div>
+                <div class="col-md-3 col-xs-12"><h5>Fecha de Órden</h5></div>
+                <div class="col-md-3 col-xs-12"><h5>Fecha de aprobación</h5></div>
+                <div class="col-md-2 col-xs-12"><h5>detalle</h5></div>
+              </div>
+              <div class="row historialContainer-item">
+                <div class="col-md-2 col-xs-12 historialContainer-item-aprobado"><p>Aprobado</p></div>
+                <div class="col-md-2 col-xs-12"><p>1015458689152</p></div>
+                <div class="col-md-3 col-xs-12"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-3 col-xs-12 text-center"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><img data-openDropdown="#item-detalle" src="images/iconMore.svg" width="40px" align="center" alt=""></div>
+              </div>
+                
+                <div id="item-detalle" class="historialContainer-item-detalle">
+                  <div class="row infoTable tableEffective text-center">
+                    <div class="col-md-2">
+                      <h5>Producto</h5>
+                      <p>Camisa Administrador Blanca Manga Larga</p>
+                      <p>Bayler</p>
+                      <p>Botiquín</p>
+                      <p>Boligrafo Terpelx 12</p>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>referencía</h5>
+                      <p>Talla M</p><br>
+                      <p>Bayler</p>
+                      <p>Botiquín</p>
+                      <p>x 12</p>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>número de guía</h5>
+                      <p>123456789101</p><br>
+                      <p>123456789101</p>
+                      <p>123456789101</p>
+                      <p>123456789101</p>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>cantidad</h5>
+                      <p>6</p><br>
+                      <p>1</p>
+                      <p>1</p>
+                      <p>1</p>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>valor unidad</h5>
+                      <p>$ 34,658,25</p><br>
+                      <p>$ 98,338.03</p>
+                      <p>$ 240,296.70</p>
+                      <p>$ 11,651.03</p>
+                    </div>
+                    <div class="col-md-2">
+                      <h5>valor total</h5>
+                      <p>$ 208,731.25</p><br>
+                      <p>$ 298,338.03</p>
+                      <p>$ 240,296.70</p>
+                      <p>$ 11,651.03</p>
+                    </div>
+                  </div>
+
+                  <div class="row infoTable">
+                    <div class="col-md-offset-8 col-md-4 subtotalTable">
+                      <div class="row">
+                        <div class="col-md-6 text-left">
+                          <p>Subtotal</p>
+                          <p>Iva</p>
+                          <p>Transporte</p>
+                        </div>
+                        <div class="col-md-6 text-center">
+                          <p>$ 455,092.56</p>
+                          <p>$ 89,989.81</p>
+                          <p>$ 14,485.17</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-offset-8 col-md-4 totalTable">
+                      <div class="row">
+                        <div class="col-md-6 text-left">
+                          <h4>descuento</h4>
+                          <h4>total</h4>
+                        </div>
+                        <div class="col-md-6 text-center">
+                          <p> $ 50,000.00</p>
+                          <p> $ 508,917.20</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <div class="row historialContainer-item">
+                <div class="col-md-2 col-xs-12 historialContainer-item-aprobado"><p>Aprobado</p></div>
+                <div class="col-md-2 col-xs-12"><p>1015458689152</p></div>
+                <div class="col-md-3 col-xs-12"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-3 col-xs-12 text-center"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><img src="images/iconMore.svg" width="40px" align="center" alt=""></div>
+              </div>
+              <div class="row historialContainer-item">
+                <div class="col-md-2 col-xs-12 historialContainer-item-aprobado"><p>Aprobado</p></div>
+                <div class="col-md-2 col-xs-12"><p>1015458689152</p></div>
+                <div class="col-md-3 col-xs-12"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-3 col-xs-12 text-center"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><img src="images/iconMore.svg" width="40px" align="center" alt=""></div>
+              </div>
             </div>
-            <div class="row recursosContainer-recurso">
-              <div class="col-md-3 col-xs-12"><p>12/12/2017</p></div>
-              <div class="col-md-3 col-xs-12"><p>Manual de uso de imagen de marca terpel</p></div>
-              <div class="col-md-4 col-xs-12"><p>Manual de uso responsable para la marca terpel (Formato PDF)</p></div>
-              <div class="col-md-2 col-xs-12 text-center"><img src="images/iconDownload.svg" align="center" alt=""></div>
+
+            <div class="historialContainer-section  wow zoomIn">
+              <h4 class="historialContainer-subtitle">cancelados</h4>
+              <div class="row text-center historialContainer-table-title">
+                <div class="col-md-2 col-xs-12"><h5>estado</h5></div>
+                <div class="col-md-2 col-xs-12"><h5>ID de órden</h5></div>
+                <div class="col-md-3 col-xs-12"><h5>Fecha de Órden</h5></div>
+                <div class="col-md-3 col-xs-12"><h5>Fecha de aprobación</h5></div>
+                <div class="col-md-2 col-xs-12"><h5>detalle</h5></div>
+              </div>
+              <div class="row historialContainer-item ">
+                <div class="col-md-2 col-xs-12 historialContainer-item-cancelado"><p>Cancelada</p></div>
+                <div class="col-md-2 col-xs-12"><p>1015458689152</p></div>
+                <div class="col-md-3 col-xs-12"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-3 col-xs-12 text-center"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><img src="images/iconMore.svg" width="40px" align="center" alt=""></div>
+              </div>
+              <div class="row historialContainer-item">
+                <div class="col-md-2 col-xs-12 historialContainer-item-cancelado"><p>Cancelada</p></div>
+                <div class="col-md-2 col-xs-12"><p>1015458689152</p></div>
+                <div class="col-md-3 col-xs-12"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-3 col-xs-12 text-center"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><img src="images/iconMore.svg" width="40px" align="center" alt=""></div>
+              </div>
+              <div class="row historialContainer-item">
+                <div class="col-md-2 col-xs-12 historialContainer-item-cancelado"><p>Cancelada</p></div>
+                <div class="col-md-2 col-xs-12"><p>1015458689152</p></div>
+                <div class="col-md-3 col-xs-12"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-3 col-xs-12 text-center"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><img src="images/iconMore.svg" width="40px" align="center" alt=""></div>
+              </div>
             </div>
-            <div class="row recursosContainer-recurso">
-              <div class="col-md-3 col-xs-12"><p>12/12/2017</p></div>
-              <div class="col-md-3 col-xs-12"><p>Manual de uso de imagen de marca terpel</p></div>
-              <div class="col-md-4 col-xs-12"><p>Manual de uso responsable para la marca terpel (Formato PDF)</p></div>
-              <div class="col-md-2 col-xs-12 text-center"><img src="images/iconDownload.svg" align="center" alt=""></div>
+
+            <div class="historialContainer-section  wow zoomIn">
+              <h4 class="historialContainer-subtitle">rechazados</h4>
+              <div class="row text-center historialContainer-table-title">
+                <div class="col-md-2 col-xs-12"><h5>estado</h5></div>
+                <div class="col-md-2 col-xs-12"><h5>ID de órden</h5></div>
+                <div class="col-md-3 col-xs-12"><h5>Fecha de Órden</h5></div>
+                <div class="col-md-3 col-xs-12"><h5>Fecha de aprobación</h5></div>
+                <div class="col-md-2 col-xs-12"><h5>detalle</h5></div>
+              </div>
+              <div class="row historialContainer-item">
+                <div class="col-md-2 col-xs-12 historialContainer-item-rechazado"><p>Rechazada</p></div>
+                <div class="col-md-2 col-xs-12"><p>1015458689152</p></div>
+                <div class="col-md-3 col-xs-12"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-3 col-xs-12 text-center"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><img src="images/iconMore.svg" width="40px" align="center" alt=""></div>
+              </div>
+              <div class="row historialContainer-item">
+                <div class="col-md-2 col-xs-12 historialContainer-item-rechazado"><p>Rechazada</p></div>
+                <div class="col-md-2 col-xs-12"><p>1015458689152</p></div>
+                <div class="col-md-3 col-xs-12"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-3 col-xs-12 text-center"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><img src="images/iconMore.svg" width="40px" align="center" alt=""></div>
+              </div>
+              <div class="row historialContainer-item">
+                <div class="col-md-2 col-xs-12 historialContainer-item-rechazado"><p>Rechazada</p></div>
+                <div class="col-md-2 col-xs-12"><p>1015458689152</p></div>
+                <div class="col-md-3 col-xs-12"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-3 col-xs-12 text-center"><p>12/12/2017  -  7:35:16 A.M.</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><img src="images/iconMore.svg" width="40px" align="center" alt=""></div>
+              </div>
             </div>
-            <div class="row recursosContainer-recurso">
-              <div class="col-md-3 col-xs-12"><p>12/12/2017</p></div>
-              <div class="col-md-3 col-xs-12"><p>Manual de uso de imagen de marca terpel</p></div>
-              <div class="col-md-4 col-xs-12"><p>Manual de uso responsable para la marca terpel (Formato PDF)</p></div>
-              <div class="col-md-2 col-xs-12 text-center"><img src="images/iconDownload.svg" align="center" alt=""></div>
+
+            <div class="historialContainer-section  wow zoomIn">
+              <h4 class="historialContainer-subtitle">solicitudes anteriores</h4>
+              <div class="row text-center historialContainer-table-title">
+                <div class="col-md-2 col-xs-12"><h5>Fecha</h5></div>
+                <div class="col-md-3 col-xs-12"><h5>NÚMERO DE REFERENCIA</h5></div>
+                <div class="col-md-3 col-xs-12"><h5>AUTORIZACIÓN / cus</h5></div>
+                <div class="col-md-2 col-xs-12"><h5>ESTADO</h5></div>
+                <div class="col-md-2 col-xs-12"><h5>VALOR</h5></div>
+              </div>
+              <div class="row historialContainer-item">
+                <div class="col-md-2 col-xs-12"><p>12/12/2017</p></div>
+                <div class="col-md-3 col-xs-12"><p>1015458689152</p></div>
+                <div class="col-md-3 col-xs-12"><p>2536568548896/25456894222</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><p>Aprobado</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><img src="images/iconMore.svg" width="40px" align="center" alt=""></div>
+              </div>
+              <div class="row historialContainer-item">
+                <div class="col-md-2 col-xs-12"><p>12/12/2017</p></div>
+                <div class="col-md-3 col-xs-12"><p>1015458689152</p></div>
+                <div class="col-md-3 col-xs-12"><p>2536568548896/25456894222</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><p>Aprobado</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><img src="images/iconMore.svg" width="40px" align="center" alt=""></div>
+              </div>
+              <div class="row historialContainer-item">
+                <div class="col-md-2 col-xs-12"><p>12/12/2017</p></div>
+                <div class="col-md-3 col-xs-12"><p>1015458689152</p></div>
+                <div class="col-md-3 col-xs-12"><p>2536568548896/25456894222</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><p>Aprobado</p></div>
+                <div class="col-md-2 col-xs-12 text-center"><img src="images/iconMore.svg" width="40px" align="center" alt=""></div>
+              </div>
             </div>
-            <div class="row recursosContainer-recurso">
-              <div class="col-md-3 col-xs-12"><p>12/12/2017</p></div>
-              <div class="col-md-3 col-xs-12"><p>Manual de uso de imagen de marca terpel</p></div>
-              <div class="col-md-4 col-xs-12"><p>Manual de uso responsable para la marca terpel (Formato PDF)</p></div>
-              <div class="col-md-2 col-xs-12 text-center"><img src="images/iconDownload.svg" align="center" alt=""></div>
-            </div>
-            <div class="row recursosContainer-recurso">
-              <div class="col-md-3 col-xs-12"><p>12/12/2017</p></div>
-              <div class="col-md-3 col-xs-12"><p>Manual de uso de imagen de marca terpel</p></div>
-              <div class="col-md-4 col-xs-12"><p>Manual de uso responsable para la marca terpel (Formato PDF)</p></div>
-              <div class="col-md-2 col-xs-12 text-center"><img src="images/iconDownload.svg" align="center" alt=""></div>
-            </div>
+
+
+
           </div>
         </div>
       </div>
@@ -325,6 +522,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <script src="js/app.js"></script>
   </body>
 </html>
