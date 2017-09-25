@@ -438,6 +438,16 @@ body{
     width: 100%;
 }
 
+.Dropdown .invisible-closer {
+	/*background: red;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
 .Dropdown .dropdownContainer input{
 	border: 0;
 	padding: 10px 20px 10px 20px;
@@ -554,7 +564,7 @@ body{
   	transition: .5s;
 }
 
-.uniformesHomeContainer img:hover{
+.uniformesHomeContainer .boomImage:hover img{
 	-webkit-filter: none;
   	filter: grayscale(1);
   	transform: scale(1.1);
@@ -572,7 +582,7 @@ body{
 	cursor: pointer;
 }
 
-.uniformesHomeContainer h4{
+.uniformesHomeContainer .ver-mas{
 	position: absolute;
 	margin-top: -30%;
 	left: 40%;
@@ -581,6 +591,9 @@ body{
 	color: #FFF;
 	text-transform: uppercase;
 	cursor: pointer;
+}
+.uniformesHomeContainer .ver-mas:hover {
+	color: #D91C24;
 }
 
 .uniformesHomeContainer .uniformeTerpelHome,.uniformeAltoqueHome,.uniformeGazelHome{
@@ -968,7 +981,18 @@ body{
 	border-bottom: 1px solid #eee;
     padding-bottom: 30px;
     padding-top: 30px;
+    height: auto;
+    transition: .3s;
 }
+.productoCheckout.invisible { animation: hideProduct .3s; animation-fill-mode: forwards; }
+@keyframes hideProduct {
+	from { display: block; opacity: 1; }
+	to { display: none; opacity: 0; height: 0; margin: 0; padding: 0; overflow: hidden; }
+}
+/*@-webkit-keyframes hideProduct {
+	from { display: block; opacity: 1; }
+	to { display: none; opacity: 0; }
+}*/
 
 .productoCheckout .nameProduct{
 	font-size: 16pt;
@@ -1008,10 +1032,12 @@ body{
 .productoCheckout .sizeQuantity{
 	padding-top: 10px;
     border-bottom: 3px solid #ddd;
+	opacity: .3;
 }
 
 .productoCheckout .sizeQuantity.active{
     border-bottom: 3px solid #D91C24;
+	opacity: 1;
 }
 
 .productoCheckout .sizeQuantity select{
@@ -1295,7 +1321,7 @@ body{
    margin-bottom: 20px;
 }
 
-.paymentOptions .tab2Container button{
+.paymentOptions .tab2Container .info{
    font-family: 'AlrightSansBlack', sans-serif;
    font-size: 13pt;
    text-transform: uppercase;
@@ -1589,7 +1615,7 @@ body{
   cursor: pointer;
   width: 113px;
   height: 112px;
-  background-image: url('../images/emotionmejorar.png');
+  background-image: url('../images/emotionMejorar.png');
   background-size: 3150px 112.5px;
 }
 
@@ -1605,7 +1631,7 @@ body{
   cursor: pointer;
   width: 113px;
   height: 112px;
-  background-image: url('../images/emotionregular.png');
+  background-image: url('../images/emotionRegular.png');
   background-size: 3150px 112.5px;
 }
 
@@ -1625,6 +1651,9 @@ body{
     background-position: right;
   }
 }
+
+.emotionsForm { height: 0; width: 0; overflow: hidden; transition: .3s; }
+.emotionsForm.active { height: auto; width: auto; }
 
 .emotionsContainer .emotionp p{
 	text-transform: uppercase;
@@ -2519,18 +2548,14 @@ body{
 	padding-top: 20px;
 }*/
 
-.productoContainer .producto-img .bx-pager img{
+.productoContainer .producto-img .bx-pager img {
 	width: 80%;
 	margin: 0 auto;
 }
 
-.productoContainer .bx-wrapper .bx-controls-direction a{
-	display: none;
-}
+.productoContainer .bx-wrapper .bx-controls-direction a { display: none; }
 
-.relacionadosContainer{
-	padding: 30px 0;
-}
+.relacionadosContainer { padding: 30px 0; }
 
 .producto-cuidados-title{
 	font-family: 'AlrightSansMedium';
@@ -2542,9 +2567,7 @@ body{
     color: #D81C24;
 }
 
-.producto-cuidados-subtitle{
-	cursor: pointer;
-}
+.producto-cuidados-subtitle { cursor: pointer; }
 
 .producto-cuidados-subtitle h4{
 	font-family: 'AlrightSansMedium';
@@ -2557,14 +2580,17 @@ body{
     padding-bottom: 10px;
 }
 
-.producto-cuidados-subtitle .active h4{
+.producto-cuidados-subtitle .active h4 {
     font-size: 11pt;
     color: #58595B;
     border-bottom: 4px solid #D81C24;
 }
 
-.producto-cuidados-button-close{
+.producto-cuidados-button-close {
 	text-align: right;
+	position: absolute;
+	top: -5px;
+	right: -6px;
 }
 
 .producto-cuidados-body{
@@ -2804,7 +2830,22 @@ body{
 	padding: 0 10px;
 }
 
-
+.bx-pager-item a {
+	background-color: transparent !important;
+	padding: 10px 20px;
+	background-repeat: no-repeat !important;
+}
+.bx-pager-item:first-child a { background-image: url(../images/backArrow.png) !important; }
+.bx-pager-item:last-child a { background-image: url(../images/Arrow.png) !important; position: relative; }
+.bx-pager-item:last-child a:before {
+  background: #d91c24;
+  content: '|';
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -13px;
+	width: 3px;
+}
 
 /*
 .bx-wrapper .bx-pager.bx-default-pager a{
