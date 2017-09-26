@@ -12,12 +12,9 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/slick.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
 
     <script src="js/modernizr.custom.js"></script>
     <link href="css/app.css" rel="stylesheet">
@@ -56,7 +53,7 @@
                   <ul>
                     <li>Actualizar perfil</li>
                     <li>Cambiar contraseña</li>
-                    <li>Recursos</li>
+                    <li><a href="recursos.html">Recursos</a></li>
                     <li>Cerrar sesión</li>
                   </ul>
                 </div>
@@ -71,16 +68,22 @@
         <div class="container-fluid navbarContainer">
           <div class="container Navbar">
             <div class="row">
-              <div class="col-md-2 navbarItem  active">Inicio</div>
+              <a href="index.html"><div class="col-md-2 navbarItem active">Inicio</div></a>
               <div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem catalogoDrop "><a href="catalogo.html">Catálogo</a></div>
-              <div id="promocionesDrop" class="col-md-2 navbarItem  catalogoDrop">Promociones</div>
-              <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem pedidosDrop">Mis pedidos</div>
-              <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem">Contacto</div>
+              <div id="promocionesDrop" class="col-md-2 navbarItem  catalogoDrop"><a href="promociones.html">Promociones</a></div>
+              <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem pedidosDrop"><a href="#">Mis pedidos</a></div>
+              <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem"><a href="#">Contacto</a></div>
               <div class="col-md-2 navbarItem">
                 <div class="row">
-                  <div id="searchDrop" data-openDropdown="#searchDropdown" class="col-md-4 searchIconHeader"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.2 21.2"><defs></defs><title>Asset 27</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M8.37,0a8.37,8.37,0,1,0,5.5,14.66L20.25,21a.55.55,0,0,0,.78-.78l-6.37-6.37A8.37,8.37,0,0,0,8.37,0Zm0,1.12A7.25,7.25,0,1,1,1.12,8.37,7.25,7.25,0,0,1,8.37,1.12Z"/></g></g></svg></div>
-                  <div class="col-md-4 favIconHeader"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.83 23.75"><defs></defs><title>Asset 28</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M5.57,23.75a1.35,1.35,0,0,1-1.32-1.57l1.16-6.74a.34.34,0,0,0-.1-.3L.41,10.35a1.34,1.34,0,0,1,.75-2.29l6.77-1a.35.35,0,0,0,.26-.19l3-6.14A1.33,1.33,0,0,1,12.42,0h0a1.34,1.34,0,0,1,1.21.75l3,6.14a.35.35,0,0,0,.26.19l6.77,1a1.34,1.34,0,0,1,.75,2.29l-4.9,4.78a.34.34,0,0,0-.1.3l1.16,6.74a1.34,1.34,0,0,1-2,1.42l-6.06-3.18a.34.34,0,0,0-.32,0L6.2,23.59A1.35,1.35,0,0,1,5.57,23.75ZM12.42,1a.34.34,0,0,0-.31.19l-3,6.14a1.34,1.34,0,0,1-1,.74L1.3,9a.34.34,0,0,0-.19.59L6,14.41a1.34,1.34,0,0,1,.39,1.19L5.23,22.34a.34.34,0,0,0,.5.36l6.06-3.18a1.35,1.35,0,0,1,1.25,0l6.06,3.18a.34.34,0,0,0,.5-.36L18.44,15.6a1.34,1.34,0,0,1,.39-1.19l4.9-4.78A.34.34,0,0,0,23.54,9l-6.77-1a1.34,1.34,0,0,1-1-.74l-3-6.14A.34.34,0,0,0,12.42,1Z"/></g></g></svg></div>
-                  <div class="col-md-4 cartIconHeader"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.37 21.25"><defs></defs><title>Asset 29</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M.53,0a.53.53,0,1,0,0,1.06H3.36c1.36,3.36,2.69,6.72,4,10.09l-1.25,3a.56.56,0,0,0,.49.74H19.92a.53.53,0,1,0,0-1.06H7.44l.9-2.16,13-1a.55.55,0,0,0,.47-.41L23.36,3.3a.56.56,0,0,0-.51-.65H5.14L4.21.33A.54.54,0,0,0,3.72,0Zm5,3.72H22.18L20.82,9.6l-12.5,1ZM9.3,16.47a2.39,2.39,0,1,0,2.39,2.39A2.4,2.4,0,0,0,9.3,16.47Zm8,0a2.39,2.39,0,1,0,2.39,2.39A2.4,2.4,0,0,0,17.27,16.47Zm-8,1.06A1.33,1.33,0,1,1,8,18.86,1.32,1.32,0,0,1,9.3,17.53Zm8,0a1.33,1.33,0,1,1-1.33,1.33A1.32,1.32,0,0,1,17.27,17.53Z"/></g></g></svg></div>
+                  <div id="searchDrop" data-openDropdown="#searchDropdown" class="col-md-4 searchIconHeader">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.2 21.2"><defs></defs><title>Asset 27</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M8.37,0a8.37,8.37,0,1,0,5.5,14.66L20.25,21a.55.55,0,0,0,.78-.78l-6.37-6.37A8.37,8.37,0,0,0,8.37,0Zm0,1.12A7.25,7.25,0,1,1,1.12,8.37,7.25,7.25,0,0,1,8.37,1.12Z"/></g></g></svg>
+                  </div>
+                  <div class="col-md-4 favIconHeader">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.83 23.75"><defs></defs><title>Asset 28</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M5.57,23.75a1.35,1.35,0,0,1-1.32-1.57l1.16-6.74a.34.34,0,0,0-.1-.3L.41,10.35a1.34,1.34,0,0,1,.75-2.29l6.77-1a.35.35,0,0,0,.26-.19l3-6.14A1.33,1.33,0,0,1,12.42,0h0a1.34,1.34,0,0,1,1.21.75l3,6.14a.35.35,0,0,0,.26.19l6.77,1a1.34,1.34,0,0,1,.75,2.29l-4.9,4.78a.34.34,0,0,0-.1.3l1.16,6.74a1.34,1.34,0,0,1-2,1.42l-6.06-3.18a.34.34,0,0,0-.32,0L6.2,23.59A1.35,1.35,0,0,1,5.57,23.75ZM12.42,1a.34.34,0,0,0-.31.19l-3,6.14a1.34,1.34,0,0,1-1,.74L1.3,9a.34.34,0,0,0-.19.59L6,14.41a1.34,1.34,0,0,1,.39,1.19L5.23,22.34a.34.34,0,0,0,.5.36l6.06-3.18a1.35,1.35,0,0,1,1.25,0l6.06,3.18a.34.34,0,0,0,.5-.36L18.44,15.6a1.34,1.34,0,0,1,.39-1.19l4.9-4.78A.34.34,0,0,0,23.54,9l-6.77-1a1.34,1.34,0,0,1-1-.74l-3-6.14A.34.34,0,0,0,12.42,1Z"/></g></g></svg>
+                  </div>
+                  <div class="col-md-4 cartIconHeader">
+                    <a href="checkout1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.37 21.25"><defs></defs><title>Asset 29</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M.53,0a.53.53,0,1,0,0,1.06H3.36c1.36,3.36,2.69,6.72,4,10.09l-1.25,3a.56.56,0,0,0,.49.74H19.92a.53.53,0,1,0,0-1.06H7.44l.9-2.16,13-1a.55.55,0,0,0,.47-.41L23.36,3.3a.56.56,0,0,0-.51-.65H5.14L4.21.33A.54.54,0,0,0,3.72,0Zm5,3.72H22.18L20.82,9.6l-12.5,1ZM9.3,16.47a2.39,2.39,0,1,0,2.39,2.39A2.4,2.4,0,0,0,9.3,16.47Zm8,0a2.39,2.39,0,1,0,2.39,2.39A2.4,2.4,0,0,0,17.27,16.47Zm-8,1.06A1.33,1.33,0,1,1,8,18.86,1.32,1.32,0,0,1,9.3,17.53Zm8,0a1.33,1.33,0,1,1-1.33,1.33A1.32,1.32,0,0,1,17.27,17.53Z"/></g></g></svg></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -161,9 +164,10 @@
         </div>
 
         <div id="pedidosDropdown" data-closeDropdown="#pedidosDropdown" class="container Dropdown">
+        <div class="invisible-closer"></div>
             <div class="row dropdownContainer">
               <div class="col-md-6 ">
-                <h4>Seguimiento de pedidos</h4>
+                <a href="seguimiento.html"><h4>Seguimiento de pedidos</h4></a>
               </div>
               <div class="col-md-6 ">
                 <a href="historial.html"><h4>Historial de pedidos</h4></a>
@@ -172,12 +176,13 @@
         </div>
 
         <div id="contactoDropdown" data-closeDropdown="#contactoDropdown" class="container Dropdown">
+        <div class="invisible-closer"></div>
             <div class="row dropdownContainer">
               <div class="col-md-6">
-                <h4>Preguntas frecuentes</h4>
+                <a href="faq.html"><h4>Preguntas frecuentes</h4></a>
               </div>
               <div class="col-md-6">
-                <h4>Contáctanos</h4>
+                <a href="contacto"><h4>Contáctanos</h4></a>
               </div>
             </div>
         </div>
@@ -186,6 +191,7 @@
       </div>
 
       <div id="searchDropdown" data-closeDropdown="#searchDropdown" class="container Dropdown">
+      <div class="invisible-closer"></div>
             <div class="row dropdownContainer">
               <div class="col-md-12">
                 <input type="text" placeholder="Ingresa tu búsqueda...">
@@ -227,7 +233,7 @@
                     <ul>
                       <li>Actualizar perfil</li>
                       <li>Cambiar contraseña</li>
-                      <li>Recursos</li>
+                      <li><a href="recursos.html">Recursos</a></li>
                       <li>Cerrar sesión</li>
                     </ul>
                   </div>
@@ -435,46 +441,18 @@
 
               <div class="scroller"><!-- this is for emulating position fixed of the nav -->
                 <div class="scroller-inner">
-                  <!-- Top Navigation -->
-                  <!-- <div class="codrops-top clearfix">
-                    <a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Tutorials/CircularNavigation/"><span>Previous Demo</span></a>
-                    <span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=16252"><span>Back to the Codrops Article</span></a></span>
-                  </div>
-                  <header class="codrops-header">
-                    <h1>Multi-Level Push Menu <span>Off-screen navigation with multiple levels</span></h1>
-                  </header>
-                  <div class="content clearfix">
-                    <div class="block block-40 clearfix"> -->
-                      
-                      <!-- <nav class="codrops-demos">
-                        <a href="index.html">Demo 1: Overlapping levels</a>
-                        <a href="index2.html">Demo 2: Covering levels</a>
-                        <a class="current-demo" href="index3.html">Demo 3: Overlapping levels with back links</a>
-                      </nav>
-                    </div>
-                    <div class="block block-60">
-                      <p><strong>Demo 3:</strong> Overlapping levels with back links</p>
-                      <p>This menu will open by pushing the website content to the right. It has multi-level functionality, allowing endless nesting of navigation elements.</p>
-                      <p>The next level can optionally overlap or cover the previous one.</p>
-                    </div>
-                    <div class="info">
-                      <p>If you enjoyed this you might also like:</p>
-                      <p><a href="http://goo.gl/JLJ4v5">Responsive Multi-Level Menu</a></p>
-                      <p><a href="http://goo.gl/qjbq9Y">Google Nexus Website Menu</a></p>
-                    </div>
-                  </div> -->
+                  
                 </div><!-- /scroller-inner -->
               </div><!-- /scroller -->
 
             </div><!-- /pusher -->
           </div><!-- /container -->
       </div>
-
-
-
     </header>
 
     <span class="ir-arriba icon-arrow-up2"><img src="images/arrowUp.svg" width="20px" alt=""></span>
+
+<!-- SLIDES ABOVE HOME -->
 
     <div class="containerFluid slidesHomeContainer">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -523,6 +501,10 @@
       </div>
     </div>
 
+<!-- SLIDES ABOVE HOME -->
+
+<!-- UNIFORMES SECCION -->
+
     <div class="container-fluid uniformesHomeContainer">
       <div class="row">
         <div class="boomImage col-xs-12 col-md-4 uniformeTerpelHome text-center">
@@ -551,19 +533,30 @@
       </div>
     </div>
 
-    <div class="container-fluid promocionesHomeContainer">
+
+    <div class="container">
+      <div class="col-md-12 text-center">
+            <h1 class="titleHome">Promociones</h1>
+          </div>
+    </div>
+
+<!-- UNIFORMES SECCION -->
+
+<!-- PROMOCIONES SECCION -->
+
+<!--     <div class="container-fluid promocionesHomeContainer">
       <div class="col-md-12 text-center">
         <h1 class="titleHome">Promociones</h1>
       </div>
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
+
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
           <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         </ol>
 
-        <!-- Wrapper for slides -->
+
         <div class="carousel-inner" role="listbox">
           <div class="item active">
             <div class="row">
@@ -629,168 +622,126 @@
             </div>
           </div>
         </div>
-
-        <!-- Controls -->
-        <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a> -->
-      </div>
-    </div>
-
-
-<!-- slider -->
-
-    <!-- <div id="slider-wrapper">
-      <div class="inner-wrapper">
-        <input checked type="radio" name="slidetest" class="control" id="Slide1" />
-        <label for="Slide1" id="s1"></label>
-        <input type="radio" name="slidetest" class="control" id="Slide2" />
-        <label for="Slide2" id="s2"></label>
-        <input type="radio" name="slidetest" class="control" id="Slide3" />
-        <label for="Slide3" id="s3"></label>
-        <input type="radio" name="slidetest" class="control" id="Slide4" />
-        <label for="Slide4" id="s4"></label>
-        <div class="overflow-wrapper">
-          <a class="slidetest" href=""><img src="http://placehold.it/940x470" /></a>
-          <a class="slidetest" href=""><img src="http://placehold.it/940x470" /></a>
-          <a class="slidetest" href=""><img src="http://placehold.it/940x470" /></a>
-          <a class="slidetest" href=""><img src="http://placehold.it/940x470" /></a>
-        </div>
       </div>
     </div> -->
 
-<!-- slider -->
+<!-- PROMOCIONES SECCION -->
 
-    <!-- <div class="container vistosRecienteContainer text-center sectionHome">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h1 class="titleHome">vistos recientemente</h1>
-        </div>
-        <div class="col-md-4 col-xs-12">
-          <div class="cajaProductoBorderRadiusGris">
-            <div class="imgVistosReciente">
-              <img src="images/poloTerpel.png" alt="">
-            </div>
-            <div class="descripcionVistosReciente">
-              <h4>Camiseta Polo Blanca Manga Larga Terpel</h4>
-              <div class="calificacionVistosReciente">
+<!-- PROMOCIONES SECCION -->
+
+  <div class="container-fluid promocionesHomeContainer">
+      
+
+    <ul class="bxslider-promociones">
+      <li>
+        <div class="item">
+          <div class="row">
+            
+            <div class="col-md-4 col-md-offset-1">
+              <h6 class="marcaProducto">Terpel</h6>
+              <h3 class="nombreProducto">Camisa Administrador Blanca Manga Larga Hombre Gazel</h3>
+              <div class="calificacionProducto">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
               </div>
-              <h2 class="precioProducto">$ 15.582,00</h2>
-            </div>
-            <div class="footerVistosReciente">
               <div class="row">
-                <div class="col-md-7 verDetalle">
-                  <h4>VER DETALLE</h4></h3>
+                <div class="col-md-5">
+                  <h2 class="precioProducto">$ 15.582,00</h2>
                 </div>
-                <div class="col-md-5 addToFav">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
+                <div class="col-md-6">
+                  <h2 class="precioSinPromocion">$ 15.582,00</h2>
                 </div>
               </div>
+              <button class="btnRed">agregar al carrito</button>
+            </div>
+            <div class="col-md-5">
+              <img src="images/bkgPromociones.png" class="h-i-m" alt="">
+              <div class="imgProductoPromocion">
+                <img src="images/camisaTerpel.png" alt="">
+              </div>
+              <button class="btnPromocion">30%</button>
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-xs-12">
-          <div class="cajaProductoBorderRadiusGris">
-            <div class="imgVistosReciente">
-              <img src="images/poloTerpel.png" alt="">
-            </div>
-            <div class="descripcionVistosReciente">
-              <h4>Camiseta Polo Blanca Manga Larga Terpel</h4>
-              <div class="calificacionVistosReciente">
+      </li>
+      <li>
+        <div class="item">
+          <div class="row">
+            <div class="col-md-4 col-md-offset-1">
+              <h6 class="marcaProducto">Terpel</h6>
+              <h3 class="nombreProducto">Camisa Administrador Blanca Manga Larga Hombre Gazel</h3>
+              <div class="calificacionProducto">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
               </div>
-              <h2 class="precioProducto">$ 15.582,00</h2>
-            </div>
-            <div class="footerVistosReciente">
               <div class="row">
-                <div class="col-md-7 verDetalle">
-                  <h4>VER DETALLE</h4></h3>
+                <div class="col-md-5">
+                  <h2 class="precioProducto">$ 15.582,00</h2>
                 </div>
-                <div class="col-md-5 addToFav">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
+                <div class="col-md-6">
+                  <h2 class="precioSinPromocion">$ 15.582,00</h2>
                 </div>
               </div>
+              <button class="btnRed">agregar al carrito</button>
+            </div>
+            <div class="col-md-5">
+              <img src="images/bkgPromociones.png"  class="h-i-m" alt="">
+              <div class="imgProductoPromocion">
+                <img src="images/camisaTerpel.png" alt="">
+              </div>
+              <button class="btnPromocion">30%</button>
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-xs-12">
-          <div class="cajaProductoBorderRadiusGris">
-            <div class="imgVistosReciente">
-              <img src="images/poloTerpel.png" alt="">
-            </div>
-            <div class="descripcionVistosReciente">
-              <h4>Camiseta Polo Blanca Manga Larga Terpel</h4>
-              <div class="calificacionVistosReciente">
+      </li>
+      <li>
+        <div class="item">
+          <div class="row">
+            <div class="col-md-4 col-md-offset-1">
+              <h6 class="marcaProducto">Terpel</h6>
+              <h3 class="nombreProducto">Camisa Administrador Blanca Manga Larga Hombre Gazel</h3>
+              <div class="calificacionProducto">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
                 <img src="images/star.png" alt="">
               </div>
-              <h2 class="precioProducto">$ 15.582,00</h2>
-            </div>
-            <div class="footerVistosReciente">
               <div class="row">
-                <div class="col-md-7 verDetalle">
-                  <h4>VER DETALLE</h4></h3>
+                <div class="col-md-5">
+                  <h2 class="precioProducto">$ 15.582,00</h2>
                 </div>
-                <div class="col-md-5 addToFav">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
+                <div class="col-md-6">
+                  <h2 class="precioSinPromocion">$ 15.582,00</h2>
                 </div>
               </div>
+              <button class="btnRed">agregar al carrito</button>
+            </div>
+            <div class="col-md-5">
+              <img src="images/bkgPromociones.png"  class="h-i-m" alt="">
+              <div class="imgProductoPromocion">
+                <img src="images/camisaTerpel.png" alt="">
+              </div>
+              <button class="btnPromocion">30%</button>
             </div>
           </div>
         </div>
-      </div>
+      </li>
+    </ul>
+  </div>
 
-      <div class="row">
-        <div class="col-md-12 navegacionVistosReciente text-center">
-          <img src="images/backArrow.png" alt="">
-          <img src="images/separatorLine.png" alt="">
-          <img src="images/Arrow.png" alt="">
-        </div>
-      </div>
-    </div> -->
-  
+<!-- PROMOCIONES SECCION -->
 
 
-<!-- TESTING SLIDER -->
+<!-- VISTOS RECIENTE SECCION -->
 
-<!-- 
-<section class="variable slider">
-    <div>
-      <img src="http://placehold.it/350x300?text=1">
-    </div>
-    <div>
-      <img src="http://placehold.it/200x300?text=2">
-    </div>
-    <div>
-      <img src="http://placehold.it/100x300?text=3">
-    </div>
-    <div>
-      <img src="http://placehold.it/200x300?text=4">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x300?text=5">
-    </div>
-    <div>
-      <img src="http://placehold.it/300x300?text=6">
-    </div>
-  </section> -->
+
   <div class="vistosRecienteContainer">
     <ul class="bxslider">
       <li><!-- <div class="col-md-4 col-xs-12"> -->
@@ -812,7 +763,7 @@
               <div class="footerVistosReciente">
                 <div class="row">
                   <div class="col-md-7 verDetalle">
-                    <h4>VER DETALLE</h4></h3>
+                    <h4><a href="producto.html">VER DETALLE</a></h4>
                   </div>
                   <div class="col-md-5 addToFav">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
@@ -840,7 +791,7 @@
               <div class="footerVistosReciente">
                 <div class="row">
                   <div class="col-md-7 verDetalle">
-                    <h4>VER DETALLE</h4></h3>
+                    <h4><a href="producto.html">VER DETALLE</a></h4></h3>
                   </div>
                   <div class="col-md-5 addToFav">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
@@ -868,7 +819,7 @@
               <div class="footerVistosReciente">
                 <div class="row">
                   <div class="col-md-7 verDetalle">
-                    <h4>VER DETALLE</h4></h3>
+                    <h4><a href="producto.html">VER DETALLE</a></h4></h3>
                   </div>
                   <div class="col-md-5 addToFav">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
@@ -896,7 +847,7 @@
               <div class="footerVistosReciente">
                 <div class="row">
                   <div class="col-md-7 verDetalle">
-                    <h4>VER DETALLE</h4></h3>
+                    <h4><a href="producto.html">VER DETALLE</a></h4></h3>
                   </div>
                   <div class="col-md-5 addToFav">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
@@ -924,7 +875,7 @@
               <div class="footerVistosReciente">
                 <div class="row">
                   <div class="col-md-7 verDetalle">
-                    <h4>VER DETALLE</h4></h3>
+                    <h4><a href="producto.html">VER DETALLE</a></h4>
                   </div>
                   <div class="col-md-5 addToFav">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
@@ -953,7 +904,7 @@
               <div class="footerVistosReciente">
                 <div class="row">
                   <div class="col-md-7 verDetalle">
-                    <h4>VER DETALLE</h4></h3>
+                    <h4><a href="producto.html">VER DETALLE</a></h4>
                   </div>
                   <div class="col-md-5 addToFav">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
@@ -963,14 +914,10 @@
             </div>
           <!-- </div> --></li>
     </ul>
-    <!-- <div class="outside">
-      
-      <p><span id="slider-prev"><img src="images/backArrow.png" alt=""></span> | <span id="slider-next"></span></p>
-    </div> -->
   </div>
 
 
-<!-- TESTING SLIDER -->
+<!-- VISTOS RECIENTE SECCION -->
 
 
 
@@ -1011,7 +958,7 @@
             <ul>
               <li>Líneas de atención</li>
               <li>Preguntas frecuentes</li>
-              <li>Recursos</li>
+              <li><a href="recursos.html">Recursos</a></li>
             </ul>
           </div>
           <div class="col-md-3 text-center">
@@ -1045,121 +992,11 @@
     <script>
       new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
     </script>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
     <script src="js/jquery-2.2.0.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- <script src="js/slick.js"></script> -->
     <script src="js/jquery.bxslider.js"></script>
-    <!-- <script src="js/slick.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
-<!--     <script type="text/javascript">
-      $(document).on('ready', function() {
-        $(".vertical-center-4").slick({
-          dots: true,
-          vertical: true,
-          centerMode: true,
-          slidesToShow: 4,
-          slidesToScroll: 2
-        });
-        $(".vertical-center-3").slick({
-          dots: true,
-          vertical: true,
-          centerMode: true,
-          slidesToShow: 3,
-          slidesToScroll: 3
-        });
-        $(".vertical-center-2").slick({
-          dots: true,
-          vertical: true,
-          centerMode: true,
-          slidesToShow: 2,
-          slidesToScroll: 2
-        });
-        $(".vertical-center").slick({
-          dots: true,
-          vertical: true,
-          centerMode: true,
-        });
-        $(".vertical").slick({
-          dots: true,
-          vertical: true,
-          slidesToShow: 3,
-          slidesToScroll: 3
-        });
-        $(".regular").slick({
-          dots: true,
-          infinite: true,
-          slidesToShow: 3,
-          slidesToScroll: 3
-        });
-        $(".center").slick({
-          dots: true,
-          infinite: true,
-          centerMode: true,
-          slidesToShow: 5,
-          slidesToScroll: 3
-        });
-        $(".variable").slick({
-          dots: true,
-          infinite: true,
-          variableWidth: true
-        });
-        $(".lazy").slick({
-          lazyLoad: 'ondemand', // ondemand progressive anticipated
-          infinite: true
-        });
-        $('.responsive').slick({
-          dots: true,
-          infinite: false,
-          speed: 300,
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ]
-        });
-      });
-    </script> -->
-    <script>
-      $('.bxslider').bxSlider({
-        minSlides: 3,
-        maxSlides: 3,
-        slideWidth: 360,
-        slideMargin: 10,
-        nextSelector: '#slider-next',
-        prevSelector: '#slider-prev',
-        nextText: 'Onward →',
-        prevText: '← Go back'
-      });
-
-    </script>
     <script src="js/app.js"></script>
   </body>
 </html>

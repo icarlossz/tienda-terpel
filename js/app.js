@@ -1,4 +1,22 @@
 $(document).ready(function(){
+	$('.bxslider').bxSlider({
+	  minSlides: 3,
+	  maxSlides: 3,
+	  slideWidth: 360,
+	  slideMargin: 10,
+	  nextSelector: '#slider-next',
+	  prevSelector: '#slider-prev',
+	  nextText: 'Onward →',
+	  prevText: '← Go back'
+	});
+
+	$('.bxslider-promociones').bxSlider({
+	  infiniteLoop: true,
+	  hideControlOnEnd: true,
+	  auto: true,
+	});
+	
+
 	$("[data-openDropdown]").click(function() {
 		var theDropdown = $(this).attr('data-openDropdown')
 		var dropdown = $(theDropdown)

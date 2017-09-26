@@ -139,7 +139,13 @@ body{
 	outline: 0;
 	font-family: 'AlrightSansLight', sans-serif;
 	overflow-x: hidden;
+}
 
+a{
+	color: #9E9E9E;
+}
+a:hover{
+	text-decoration: none;
 }
 
 .home{
@@ -316,6 +322,10 @@ body{
 	margin: 0;
 }
 
+.usuarioLogueadoContainer .usuarioDropdown ul a{
+	color: #58595B;
+}
+
 .usuarioLogueadoContainer .usuarioDropdown li{
 	padding: 15px 10px 15px 30px;
 	cursor: pointer;
@@ -327,6 +337,7 @@ body{
 .usuarioLogueadoContainer .usuarioDropdown li:hover{
 	background-color: #f4f4f4;
 }
+
 
 .dropdown-menu.pull-left{
 	left: 0;
@@ -379,7 +390,7 @@ body{
 	cursor: pointer;
 	font-family: 'AlrightSansLight';
 	letter-spacing: 3px;
-	color: #58595B;
+	color: #9d9e9e;
 	text-align: center;
 	transition: .5s ease;
 }
@@ -395,7 +406,7 @@ body{
 	cursor: pointer;
 	font-family: 'AlrightSansLight';
 	letter-spacing: 3px;
-	color: #58595B;
+	color: #9d9e9e;
 	text-align: center;
 	transition: .5s ease;
 }
@@ -461,6 +472,10 @@ body{
 	text-transform: uppercase;
 	color: #D91C24;
 	padding: 30px 0 30px 10px;
+}
+
+.Dropdown .dropdownContainer a:hover{
+	text-decoration: none;
 }
 
 .Dropdown .dropdownContainer h3{
@@ -623,6 +638,23 @@ body{
 	padding: 30px 10px;
 }
 
+.promocionesHomeContainer .bx-viewport{
+	overflow: visible !important; 
+}
+
+.promocionesHomeContainer .bx-wrapper img{
+	max-width: 130% !important;
+	display: inline-block;
+}
+
+.promocionesHomeContainer .bx-wrapper .bx-pager{
+	display: none;
+}
+
+.promocionesHomeContainer .bx-controls-direction{
+	display: none;
+}
+
 .carousel-inner{
 	overflow: visible;
 }
@@ -700,6 +732,15 @@ body{
 	padding: 10px 0 6px 0;
 }
 
+.cajaProductoBorderRadiusGris .verDetalle a{
+	color: #D91F24;
+	cursor: pointer;
+}
+
+.cajaProductoBorderRadiusGris .verDetalle:hover a{
+    color: #FFF;
+}
+
 .cajaProductoBorderRadiusGris .footerVistosReciente .addToFav{
 	width: 40px;
 	padding: 5px;
@@ -762,6 +803,14 @@ body{
 }
 
 .footer ul li{
+	color: #FFF;
+	list-style: none;
+	padding: 0;
+	line-height: 32px;
+	font-size: 11pt;
+}
+
+.footer ul li a{
 	color: #FFF;
 	list-style: none;
 	padding: 0;
@@ -2594,7 +2643,6 @@ body{
 }
 
 .producto-cuidados-body{
-	border: 1px solid red;
 }
 
 .producto-cuidados-body img{
@@ -2627,7 +2675,6 @@ body{
 .producto-composicion-body{
 	width: 90%;
 	margin: 0 auto;
-	border: 1px solid red;
 }
 
 .producto-composicion-body img{
@@ -2663,7 +2710,6 @@ body{
 .producto-garantia-body{
 	width: 90%;
 	margin: 0 auto;
-	border: 1px solid red;
 }
 
 .producto-garantia-body img{
@@ -2821,6 +2867,146 @@ body{
 }
 
 /*END INTERNA PRODUCTO*/
+
+
+/*BEGIN REGISTRO*/
+
+.registro-container{
+	margin-bottom: 50px;
+}
+
+.registro-container input{
+	width: 100%;
+	padding: 18px 10px 15px 10px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	margin-top: 20px;
+}
+
+.registro-container input[type='checkbox']{
+	width: 20px;
+	padding: 20px 0;
+}
+
+.registro-container select{
+	height: 20px;
+	background-color: #FFF;
+	width: 100%;
+	height: 51px;
+	margin-top: 20px;
+	border: 1px solid #ddd;
+}
+
+.registro-container .registro-form-subtitle{
+	text-transform: uppercase;
+	color: #D81C24;
+	font-size: 14px;
+	padding: 10px 0;
+	font-family: 'OpenSansSemibold', sans-serif;
+}
+
+.registro-container .registro-form-buttons{
+	margin-top: 30px;
+}
+
+.registro-container .registro-form-buttons button.btnRed{
+	margin-left: 50px;
+}
+
+/* END REGISTRO */
+
+
+/* BEGIN PROFILE */
+
+.profile-container{
+	margin-bottom: 100px;
+}
+
+.profile-header-bkg{
+	height: 130px;
+	background-color: #D91F24;
+	width: 100%;
+}
+
+.profile-header img{
+	margin-top: -100px;
+	width: 150px;
+}
+
+.profile-name{
+	text-transform: uppercase;
+	font-family: 'AlrightSansLight', sans-serif;
+}
+
+.profile-role{
+	text-transform: uppercase;
+	font-family: 'AlrightSansMedium', sans-serif;
+	font-size: 16px;
+}
+
+.profile-info{
+	margin-top: 30px;
+}
+
+.profile-info input{
+	width: 100%;
+	padding: 15px 10px 12px 10px;
+	background-color: #F6f6f6;
+	border: 0;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.profile-terminos{
+	margin-top: 20px;
+}
+
+.profile-terminos input[type='checkbox']{
+	width: 20px;
+}
+
+.profile-terminos .profile-termino{
+	padding: 5px 0;
+}
+
+.profile-button{
+	margin: 20px 0;
+}
+
+.change-password-container{
+	margin-bottom: 100px;
+}
+
+.change-password-form label{
+	text-transform: uppercase;
+	font-family: 'AlrightSansBold';
+	color: #D91C24;
+}
+
+.change-password-form input{
+	width: 100%;
+	padding: 15px 10px 12px 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.change-password-buttons{
+	padding-top: 50px;
+}
+
+.change-password-buttons button{
+	margin-left: 50px;
+}
+
+.change-password-buttons button:first-child{
+	margin-left: 0;
+}
+
+
+
+/* END PROFILE */
+
 
 /* BEGIN SLIDER*/
 
