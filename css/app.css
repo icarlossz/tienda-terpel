@@ -158,6 +158,14 @@ div{
     min-height: 60vh;
 }
 
+.tooltip-yellow + .tooltip > .tooltip-inner {
+    background-color: #F8B916;
+    min-width: 160px;
+    padding: 8px 8px 5px 8px;
+    font-family: 'AlrightSansBold', sans-serif;
+    text-transform: uppercase;
+}
+
 .btnRed{
     color: #FFF;
     background-color: #D91C24;
