@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Tienda Terpel Web</title>
-
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Tienda Terpel Web</title>
+    <title>Seguimiento - Tienda Terpel Web</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,8 +16,6 @@
 
     <script src="js/modernizr.custom.js"></script>
     <link href="css/app.css" rel="stylesheet">
-    
-    <link href="css/app_responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -72,10 +67,10 @@
               <div class="container-fluid navbarContainer">
                 <div class="container Navbar">
                   <div class="row">
-                    <a href="index.html"><div class="col-md-2 navbarItem active">Inicio</div></a>
+                    <a href="index.html"><div class="col-md-2 navbarItem">Inicio</div></a>
                     <div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem catalogoDrop "><a href="catalogo.html">Catálogo</a></div>
                     <div id="promocionesDrop" class="col-md-2 navbarItem  catalogoDrop"><a href="promociones.html">Promociones</a></div>
-                    <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem pedidosDrop"><a href="#">Mis pedidos</a></div>
+                    <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem active pedidosDrop"><a href="#">Mis pedidos</a></div>
                     <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem"><a href="#">Contacto</a></div>
                     <div class="col-md-2 navbarItem">
                       <div class="row">
@@ -512,32 +507,68 @@
           </header>
 
 
-      <div class="home change-password-container">
-        <div class="change-password-title text-center">
-          <h3 class="titleHome">Cambiar contraseña</h3>
-        </div>
-        <form action="change-password" id="changepassword-form">
+      <div class="home">
+        <div class="seguimientoContainer">
           <div class="container">
-            <div class="change-password-form" id="contact_form">
-              <div class="col-md-6 form-group">
-                <label for="new-password">Nueva contraseña</label><br>
-                <input name="new-password" type="password" placeholder="A1236589665964598*JN" required>
+            <h3 class="seguimientoContainer-title">Seguimiento de pedidos</h3>
+            
+            <div class="seguimientoContainer-idPedido">
+              ID DE ORDEN - 1015458689152
+            </div>
+
+            <div class="row seguimientoContainer-table-title">
+              <div class="col-md-4">
+                <h4>mensajería via</h4>
+                <p>Servientrega</p>
               </div>
-              <div class="col-md-6 form-group">
-                <label for="repeat-new-password">Repetir nueva contraseña</label><br>
-                <input name="repeat-new-password" type="password" placeholder="A1236589665964598*JN" required>
+              <div class="col-md-3">
+                <h4>estado</h4>
+                <p>Pedido recibido</p>
+              </div>
+              <div class="col-md-5">
+                <h4>fecha estimada de llegada</h4>
+                <p>DD/MM/AAAA - HH:MM:SS</p>
               </div>
             </div>
+
+            <div class="row seguimientoContainer-icons">
+              <div class="col-md-4">
+                <div class="icon active">
+                  <img src="images/iconSeguimiento1.svg" width="100px" alt="seguimiento">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="icon">
+                  <img src="images/iconSeguimiento2.svg" width="100px" alt="seguimiento">
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="icon">
+                  <img src="images/iconSeguimiento3.svg" width="90px" alt="seguimiento">
+                </div>
+              </div>
+            </div>
+
+            <div class="row seguimientoContainer-estado">
+              <div class="col-md-4">
+                <p class="active">pedido recibido</p>
+                <p class="active">21/12/2017 - DD:HH:SS</p>
+              </div>
+              <div class="col-md-3">
+                <p>viajando</p>
+              </div>
+              <div class="col-md-5">
+                <p>entregado</p>
+              </div>
+            </div>
+
           </div>
-          <div class="change-password-buttons text-center">
-            <button class="btnRedFill">Cancelar</button>
-            <button type="submit" class="btnRed">Cambiar Contraseña</button>
-          </div>
-        </form>
+        </div>
       </div>
+       
 
 
-      <footer>
+    <footer>
       <div class="container-fluid footer sectionHome">
       <div class="container footerTop">
         <div class="row">
