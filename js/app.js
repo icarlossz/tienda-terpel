@@ -1,16 +1,14 @@
 $(document).ready(function(){
 	$('.bxslider').bxSlider({
-		auto: true,
+		// auto: true,
 		infiniteLoop: true,
-		useCSS: false,
 	  minSlides: 3,
 	  maxSlides: 3,
 	  slideWidth: 360,
 	  slideMargin: 10,
 	  moveSlides: 1,
-	  nextSelector: '#slider-next',
-	  prevSelector: '#slider-prev',
-	  touchEnabled:true
+	  touchEnabled:true,
+	  hideControlOnEnd: true,
 	});
 
 	$('.bxslider-promociones').bxSlider({
@@ -18,6 +16,16 @@ $(document).ready(function(){
 	  hideControlOnEnd: true,
 	  auto: true,
 	  responsive: true,
+	});
+
+	$('.bxslider-producto').bxSlider({
+	  infiniteLoop: true,
+	  minSlides: 3,
+	  maxSlides: 3,
+	  slideWidth: 360,
+	  slideMargin: 10,
+	  touchEnabled:true,
+	  hideControlOnEnd: true,
 	});
 
 	$('.bxslider-catalogo').bxSlider({
@@ -145,26 +153,29 @@ $(document).ready(function(){
   	$(productID).addClass('invisible')
   });
 
+  
+
   $("[data-toggleActive]").click(function() {
-  	var commonElementsAttribbute = $(this).attr('data-toggleActive');
-  	var elements = $(commonElementsAttribbute);
+      var commonElementsAttribbute = $(this).attr('data-toggleActive');
+      var elements = $(commonElementsAttribbute);
 
-  	$(elements).each(function(index, element){
-  		var next = $(element).next()
-  		var selected = next.find('select option:selected').val()
-		
-		console.log(selected == 0)
+      $(elements).each(function(index, element){
+          var next = $(element).next()
+          var selected = next.find('select option:selected').val()
+        
+        console.log(selected == 0)
 
-  		if (selected == 0) {
-  			$(element).removeClass('active')
-  			$(element).next().removeClass('active')
-  		} else {
-  			$(element).addClass('active')
-  			$(element).next().addClass('active')
-  		}
-  	})
-  	$(this).addClass('active')
-  	$(this).next().addClass('active')
+          if (selected == 0) {
+              $(element).removeClass('active')
+              $(element).next().removeClass('active')
+          } else {
+              $(element).addClass('active')
+              $(element).next().addClass('active')
+          }
+      })
+      $(this).addClass('active')
+      $(this).next().addClass('active')
+      
   });
 
 	$('.ir-arriba').click(function(){
@@ -180,166 +191,6 @@ $(document).ready(function(){
 			$('.ir-arriba').slideUp(500);
 		}
 	});
-
-
-  // $('#contact_form').bootstrapValidator({
-  //     // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
-  //     feedbackIcons: {
-  //         valid: 'glyphicon glyphicon-ok',
-  //         invalid: 'glyphicon glyphicon-remove',
-  //         validating: 'glyphicon glyphicon-refresh'
-  //     },
-  //     fields: {
-  //         first_name: {
-  //             validators: {
-  //                     stringLength: {
-  //                     min: 2,
-  //                 },
-  //                     notEmpty: {
-  //                     message: 'Please supply your first name'
-  //                 }
-  //             }
-  //         },
-  //          last_name: {
-  //             validators: {
-  //                  stringLength: {
-  //                     min: 2,
-  //                 },
-  //                 notEmpty: {
-  //                     message: 'Please supply your last name'
-  //                 }
-  //             }
-  //         },
-  //         email: {
-  //             validators: {
-  //                 notEmpty: {
-  //                     message: 'Please supply your email address'
-  //                 },
-  //                 emailAddress: {
-  //                     message: 'Please supply a valid email address'
-  //                 }
-  //             }
-  //         },
-  //         phone: {
-  //             validators: {
-  //                 notEmpty: {
-  //                     message: 'Please supply your phone number'
-  //                 },
-  //                 phone: {
-  //                     country: 'US',
-  //                     message: 'Please supply a vaild phone number with area code'
-  //                 }
-  //             }
-  //         },
-  //         address: {
-  //             validators: {
-  //                  stringLength: {
-  //                     min: 8,
-  //                 },
-  //                 notEmpty: {
-  //                     message: 'Please supply your street address'
-  //                 }
-  //             }
-  //         },
-  //         city: {
-  //             validators: {
-  //                  stringLength: {
-  //                     min: 4,
-  //                 },
-  //                 notEmpty: {
-  //                     message: 'Please supply your city'
-  //                 }
-  //             }
-  //         },
-  //         state: {
-  //             validators: {
-  //                 notEmpty: {
-  //                     message: 'Please select your state'
-  //                 }
-  //             }
-  //         },
-  //         zip: {
-  //             validators: {
-  //                 notEmpty: {
-  //                     message: 'Please supply your zip code'
-  //                 },
-  //                 zipCode: {
-  //                     country: 'US',
-  //                     message: 'Please supply a vaild zip code'
-  //                 }
-  //             }
-  //         },
-  //         comment: {
-  //             validators: {
-  //                   stringLength: {
-  //                     min: 10,
-  //                     max: 200,
-  //                     message:'Please enter at least 10 characters and no more than 200'
-  //                 },
-  //                 notEmpty: {
-  //                     message: 'Please supply a description of your project'
-  //                 }
-  //                 }
-  //             }
-  //         }
-  //     })
-  //     .on('success.form.bv', function(e) {
-  //         $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-  //             $('#contact_form').data('bootstrapValidator').resetForm();
-
-  //         // Prevent form submission
-  //         e.preventDefault();
-
-  //         // Get the form instance
-  //         var $form = $(e.target);
-
-  //         // Get the BootstrapValidator instance
-  //         var bv = $form.data('bootstrapValidator');
-
-  //         // Use Ajax to submit form data
-  //         $.post($form.attr('action'), $form.serialize(), function(result) {
-  //             console.log(result);
-  //         }, 'json');
-  //     });
-
-	// $(document).ready(function(){
-	//     $(".modal").fadeIn();
-	//     $(".cerrar").click(function(){
-	//         $(".modal").fadeOut(300);
-	//     });
-	// });
-
-	// $('form').validate({
-	//     rules: {
-	//         new-password: {
-	//             minlength: 8,
-	//             maxlength: 15,
-	//             required: true
-	//         },
-	//         repeat-new-password: {
-	//             minlength: 8,
-	//             maxlength: 15,
-	//             required: true
-	//         }
-	//     },
-	//     highlight: function(element) {
-	//         $(element).closest('.form-group').addClass('has-error');
-	//     },
-	//     unhighlight: function(element) {
-	//         $(element).closest('.form-group').removeClass('has-error');
-	//     },
-	//     errorElement: 'span',
-	//     errorClass: 'help-block',
-	//     errorPlacement: function(error, element) {
-	//         if(element.parent('.input-group').length) {
-	//             error.insertAfter(element.parent());
-	//         } else {
-	//             error.insertAfter(element);
-	//         }
-	//     }
-	// });
-
-
 
 });
 

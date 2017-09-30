@@ -68,7 +68,7 @@
             <div class="container Navbar">
               <div class="row">
                 <a href="index.html"><div class="col-md-2 navbarItem active">Inicio</div></a>
-                <div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem catalogoDrop "><a href="catalogo.html">Catálogo</a></div>
+                <div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem catalogoDrop ">Catálogo</div>
                 <div id="promocionesDrop" class="col-md-2 navbarItem  catalogoDrop"><a href="promociones.html">Promociones</a></div>
                 <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem pedidosDrop"><a href="#">Mis pedidos</a></div>
                 <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem"><a href="#">Contacto</a></div>
@@ -78,7 +78,9 @@
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.2 21.2"><defs></defs><title>Asset 27</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M8.37,0a8.37,8.37,0,1,0,5.5,14.66L20.25,21a.55.55,0,0,0,.78-.78l-6.37-6.37A8.37,8.37,0,0,0,8.37,0Zm0,1.12A7.25,7.25,0,1,1,1.12,8.37,7.25,7.25,0,0,1,8.37,1.12Z"/></g></g></svg>
                     </div>
                     <div id="favDrop" class="col-md-4 favIconHeader">
-                      <a href="favoritos.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.83 23.75"><defs></defs><title>Asset 28</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M5.57,23.75a1.35,1.35,0,0,1-1.32-1.57l1.16-6.74a.34.34,0,0,0-.1-.3L.41,10.35a1.34,1.34,0,0,1,.75-2.29l6.77-1a.35.35,0,0,0,.26-.19l3-6.14A1.33,1.33,0,0,1,12.42,0h0a1.34,1.34,0,0,1,1.21.75l3,6.14a.35.35,0,0,0,.26.19l6.77,1a1.34,1.34,0,0,1,.75,2.29l-4.9,4.78a.34.34,0,0,0-.1.3l1.16,6.74a1.34,1.34,0,0,1-2,1.42l-6.06-3.18a.34.34,0,0,0-.32,0L6.2,23.59A1.35,1.35,0,0,1,5.57,23.75ZM12.42,1a.34.34,0,0,0-.31.19l-3,6.14a1.34,1.34,0,0,1-1,.74L1.3,9a.34.34,0,0,0-.19.59L6,14.41a1.34,1.34,0,0,1,.39,1.19L5.23,22.34a.34.34,0,0,0,.5.36l6.06-3.18a1.35,1.35,0,0,1,1.25,0l6.06,3.18a.34.34,0,0,0,.5-.36L18.44,15.6a1.34,1.34,0,0,1,.39-1.19l4.9-4.78A.34.34,0,0,0,23.54,9l-6.77-1a1.34,1.34,0,0,1-1-.74l-3-6.14A.34.34,0,0,0,12.42,1Z"/></g></g></svg></a>
+                      <a href="favoritos.html">
+                        <svg class="favIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs><style>stroke:#f8b916;stroke-miterlimit:10;stroke-width:3px;}</style></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
+                      </a>
 
 
                     <!--   <div class="dropdown-menu dropdown-fav pull-right favDropdown" aria-labelledby="fav-dropdownLabel">
@@ -185,7 +187,7 @@
             <div class="invisible-closer"></div>
               <div class="row dropdownContainer">
                 <div class="col-md-6 ">
-                  <a href="seguimiento.html"><h4>Seguimiento de pedidos</h4></a>
+                  <a href="seguimiento1.html"><h4>Seguimiento de pedidos</h4></a>
                 </div>
                 <div class="col-md-6 ">
                   <a href="historial.html"><h4>Historial de pedidos</h4></a>
@@ -520,9 +522,9 @@
               <div class="col-md-6 producto-img">
                 <!-- <img src="images/imgProducto.png" alt=""> -->
                 <ul class="bxslider">
-                  <li><img src="images/imgProducto.png" /></li>
-                  <li><img src="images/imgProducto2.jpg" /></li>
-                  <li><img src="images/imgProducto3.jpg" /></li>
+                  <li><img src="images/imgProducto.png" data-toggle="modal" data-target=".imgproducto1-modal"/></li>
+                  <li><img src="images/imgProducto2.jpg" data-toggle="modal" data-target=".imgproducto2-modal"/></li>
+                  <li><img src="images/imgProducto3.jpg" data-toggle="modal" data-target=".imgproducto3-modal"/></li>
                 </ul>
                 <div id="bx-pager">
                   <div class="row">
@@ -532,6 +534,36 @@
                   </div>
                 </div>
               </div>
+
+              <!-- MODALES PRODUCTO -->
+                <div class="modal fade imgproducto1-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                  <div class="modal-dialog modal-ls modal-producto" role="document">
+                    <div class="modal-content">
+                      <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
+                      <img src="images/imgProducto.png" width="600px" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal fade imgproducto2-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                  <div class="modal-dialog modal-ls modal-producto" role="document">
+                    <div class="modal-content">
+                      <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
+                      <img src="images/imgProducto2.jpg" width="600px" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal fade imgproducto3-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                  <div class="modal-dialog modal-ls modal-producto" role="document">
+                    <div class="modal-content">
+                      <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
+                      <img src="images/imgProducto3.jpg" width="600px" alt="">
+                    </div>
+                  </div>
+                </div>
+              <!-- MODALES PRODUCTO -->
+
               <div class="col-md-6 producto-description">
                 <div class="row">
                   <div class="col-md-10 producto-description-name">
@@ -544,7 +576,7 @@
                 <div class="row producto-calificacion">
                   
                   <div class="col-md-12">
-                    <span>Calificacion</span>
+                    <span>Calificación</span>
                     <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
                     <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
                     <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
@@ -735,14 +767,14 @@
                     <h4>guía de tallas</h4>
                   </div>
                   <div class="col-md-7">
-                    <h4 data-toggle="modal" data-target=".producto-sintalla">no está la talla que busca</h4>
+                    <h4 data-toggle="modal" data-target=".producto-sintalla">¿no está la talla que busca?</h4>
                       
                       <!-- CONTENIDO MODAL -->
                       <div class="modal fade producto-sintalla" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
                         <div class="modal-dialog modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.svg" width="60px" alt=""></span></button>
+                              <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
                               <h2 class="producto-sintalla-title" id="gridSystemModalLabel">
                               ¿No esta la talla que busca?</h2>
                             </div>
@@ -751,16 +783,16 @@
                                 <p>Actualmente no tenemos algunas tallas de esta referencia en inventario</p>
                                 <h6>Seleccione la(s) talla(s) que necesita para notificarle vía email cuando tengamos disponiblidad en inventairo:</h6>
                                 <div class="row">
-                                  <div class="col-md-3">
+                                  <div class="col-md-3"">
                                     <div class="producto-talla-faltante active"><p>S</p></div>
                                   </div>
-                                  <div class="col-md-3">
+                                  <div class="col-md-3"">
                                     <div class="producto-talla-faltante"><p>M</p></div>
                                   </div>
-                                  <div class="col-md-3">
+                                  <div class="col-md-3"">
                                     <div class="producto-talla-faltante"><p>L</p></div>
                                   </div>
-                                  <div class="col-md-3">
+                                  <div class="col-md-3"">
                                     <div class="producto-talla-faltante"><p>XL</p></div>
                                   </div>
                                 </div>
@@ -783,14 +815,14 @@
                 <hr>
                 <div class="row producto-buttons">
                   <div class="col-md-6 btnProducto">
-                    <button data-toggle="modal" data-target=".producto-despacho" class="btnRed ">Tiempos de <br> despacho</button>
+                    <button data-toggle="modal" data-target=".producto-despacho" class="btnRedFill">Tiempos de <br> despacho</button>
 
                     <!-- CONTENIDO MODAL -->
                     <div class="modal fade producto-despacho" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.svg" width="60px" alt=""></span></button>
+                            <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
                             <h2 class="producto-despacho-title" id="gridSystemModalLabel">
                             Tiempos de despacho</h2>
                           </div>
@@ -813,7 +845,7 @@
                                   <p class="producto-despacho-time-subtitle">Hábiles</p>
                                   <p class="producto-despacho-ejemplo">Ejemplo</p>
                                   <p class="producto-despacho-ciudades">
-                                    Santa Marta, Barrancabermeja, Villavicencio, Montería, Caucasia, Neiva, Popayán, Quibdó, Ipiales, Santander de Quilichao, Rionegro, Buenaventura, Buga la Grande, Caloto, Miranda, Paipa, Puerto Tejada, Duitama, Florida Valle, Fundación Ginebra, Guacari, Ipiales, Jamundí Sogamoso Tuluá Tunja Valledupar, Melgar, entre otras.
+                                    Santa Marta, Barrancabermeja, Villavicencio, Montería, Caucasia, Neiva, Popayán, Quibdó, Ipiales, Santander de Quilichao, Rionegro, Buenaventura, Buga la Grande, Caloto, Miranda, Paipa, Puerto Tejada, Duitama, Florida Valle, Fundación Ginebra, Guacari, Ipiales, Jamundí Sogamoso, Tuluá, Tunja, Valledupar, Melgar, entre otras.
                                   </p>
                                 </div>
                                 <div class="col-md-4 producto-despacho-section">
@@ -822,7 +854,7 @@
                                   <p class="producto-despacho-time-subtitle">Hábiles</p>
                                   <p class="producto-despacho-ejemplo">Ejemplo</p>
                                   <p class="producto-despacho-ciudades">
-                                    Riohacha, Leticia, Florencia, Inírida, Quibdó, Ismina, Acacias, Amaga, Altamira, Santa Rosa de Osos, Lérida, Puerto Carreño, Guamo, Ambalema, Andes, Anserma, Bruselas, Fredonia, Campo alegre, entre otros.
+                                    Riohacha, Leticia, Florencia, Inírida, Quibdó, Ismina, Acacías, Amaga, Altamira, Santa Rosa de Osos, Lérida, Puerto Carreño, Guamo, Ambalema, Ándes, Anserma, Bruselas, Fredonia, Campo alegre, entre otros.
                                   </p>
                                 </div>
                               </div>
@@ -846,7 +878,7 @@
                         <div class="modal-dialog modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.svg" width="60px" alt=""></span></button>
+                              <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
                               <h4 class="producto-cuidados-title" id="gridSystemModalLabel">Composición y cuidados</h4>
                             </div>
                             <div class="modal-body">
@@ -933,10 +965,10 @@
             
             <div class="relacionadosContainer">
               <div class="row">
-                <div class="col-md-12 text-center"><h3 class="titleHome">Relacionados</h3></div>
+                <div class="col-md-12 text-center"><h3 class="titleHome">Productos Relacionados</h3></div>
               </div>
 
-              <ul class="bxsliderrelacionados">
+              <ul class="bxslider-producto">
                 <li>
                   <a href="producto.html">
                     <div class="cajaProductoBorderRadiusGris">
@@ -960,7 +992,7 @@
                             <h4>VER DETALLE</h4></h3>
                           </div>
                           <div class="col-md-5 addToFav">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
                           </div>
                         </div>
                       </div>
@@ -990,7 +1022,7 @@
                             <h4>VER DETALLE</h4></h3>
                           </div>
                           <div class="col-md-5 addToFav">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
                           </div>
                         </div>
                       </div>
@@ -1019,7 +1051,7 @@
                             <h4>VER DETALLE</h4></h3>
                           </div>
                           <div class="col-md-5 addToFav">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
                           </div>
                         </div>
                       </div>
@@ -1048,37 +1080,7 @@
                             <h4>VER DETALLE</h4></h3>
                           </div>
                           <div class="col-md-5 addToFav">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="producto.html">
-                    <div class="cajaProductoBorderRadiusGris">
-                      <div class="imgVistosReciente">
-                        <img src="images/poloTerpel.png" alt="">
-                      </div>
-                      <div class="descripcionVistosReciente">
-                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4>
-                        <div class="calificacionVistosReciente">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                        </div>
-                        <h2 class="precioProducto">$ 15.582,00</h2>
-                      </div>
-                      <div class="footerVistosReciente">
-                        <div class="row">
-                          <div class="col-md-7 verDetalle">
-                            <h4>VER DETALLE</h4></h3>
-                          </div>
-                          <div class="col-md-5 addToFav">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
                           </div>
                         </div>
                       </div>
@@ -1108,7 +1110,37 @@
                             <h4>VER DETALLE</h4></h3>
                           </div>
                           <div class="col-md-5 addToFav">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path class="cls-1" d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="producto.html">
+                    <div class="cajaProductoBorderRadiusGris">
+                      <div class="imgVistosReciente">
+                        <img src="images/poloTerpel.png" alt="">
+                      </div>
+                      <div class="descripcionVistosReciente">
+                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4>
+                        <div class="calificacionVistosReciente">
+                          <img src="images/star.png" alt="">
+                          <img src="images/star.png" alt="">
+                          <img src="images/star.png" alt="">
+                          <img src="images/star.png" alt="">
+                          <img src="images/star.png" alt="">
+                        </div>
+                        <h2 class="precioProducto">$ 15.582,00</h2>
+                      </div>
+                      <div class="footerVistosReciente">
+                        <div class="row">
+                          <div class="col-md-7 verDetalle">
+                            <h4>VER DETALLE</h4></h3>
+                          </div>
+                          <div class="col-md-5 addToFav">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
                           </div>
                         </div>
                       </div>

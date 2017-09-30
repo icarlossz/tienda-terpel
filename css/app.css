@@ -153,6 +153,21 @@ div{
 	box-sizing: border-box;
 }
 
+input[type='checkbox']{
+    background-color: #D91C24;
+    color: #FFF;
+}
+
+.input--valid {
+  border-color: green;
+  box-shadow: 0 0 10px green;
+}
+
+.input--error {
+  border-color: red;
+  box-shadow: 0 0 10px red;
+}
+
 .home{
     border-top: 1px solid #efefef;
     min-height: 60vh;
@@ -175,7 +190,7 @@ div{
     font-size: 14px;
     border: 1px solid #D91C24;
     letter-spacing: 2px;
-    max-width: 300px;
+    max-width: 330px;
     width: 100%;
     -webkit-transition: .4s;
     transition: .4s;
@@ -197,7 +212,7 @@ div{
     font-size: 14px;
     border: 1px solid #D91C24;
     letter-spacing: 2px;
-    max-width: 300px;
+    max-width: 330px;
     width: 100%;
     background-color: transparent;
     -webkit-transition: .3s;
@@ -385,6 +400,7 @@ div{
     width: 21px;
     padding: 1px;
     stroke-width: .2px;
+    transition: .3s;
 }
 
 .Navbar .searchIconHeader svg:hover{
@@ -406,6 +422,21 @@ div{
 .Navbar .favIconHeader svg:hover{
     fill: #F8B916;
     fill-width: .5px;
+}
+
+.Navbar .favIconHeader svg.favIcon{
+    fill: transparent;
+    width: 22px;
+    padding: 1px;
+    stroke: #58595b;
+    stroke-width: 30px;
+    transition: .4s;
+}
+
+.Navbar .favIconHeader svg.favIcon:hover{
+    fill: #F8B916;
+    fill-width: .5px;
+    stroke: #F8B916;
 }
 
 .Navbar .cartIconHeader svg{
@@ -544,12 +575,11 @@ div{
     letter-spacing: 3px;
     color: #9d9e9e;
     text-align: center;
-    -webkit-transition: .5s ease;
-    transition: .5s ease;
+    -webkit-transition: .5s;
+    transition: .5s;
 }
 
 .Navbar .navbarItem:hover{
-    font-family: 'AlrightSansRegular';
     color: #D91C24;
 }
 
@@ -561,12 +591,11 @@ div{
     letter-spacing: 3px;
     color: #969696;
     text-align: center;
-    -webkit-transition: .5s ease;
-    transition: .5s ease;
+    -webkit-transition: .5s;
+    transition: .5s;
 }
 
 .Navbar .navbarItem a:hover{
-    font-family: 'AlrightSansRegular';
     color: #D91C24;
     text-decoration: none;
 }
@@ -693,14 +722,14 @@ div{
     right: 30%;
 }
 
-[data-opendropdown]::after {
+/*[data-opendropdown]::after {
     content: '';
     bottom: -50px;
     left: 0;
     right: 0;
     height: 100px;
     position: absolute;
-}
+}*/
 
 .slidesHomeContainer{
     border-top: 1px solid #eee;
@@ -883,7 +912,7 @@ right: 0;
 }
 
 .promocionesHomeContainer .bx-controls-direction{
-    display: none;
+    /*display: none;*/
 }
 
 .carousel-inner{
@@ -971,7 +1000,7 @@ right: 0;
     font-size: 11pt;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 10px 0 6px 0;
+    padding: 10px 0 10px 0;
 }
 
 .cajaProductoBorderRadiusGris .verDetalle a{
@@ -986,21 +1015,48 @@ right: 0;
 .cajaProductoBorderRadiusGris .footerVistosReciente .addToFav{
     width: 40px;
     padding: 5px;
-    margin-left: 14%;
+    margin-left: 13%;
     margin-top: 5px;
 }
 
-.cajaProductoBorderRadiusGris .footerVistosReciente svg{
+.cajaProductoBorderRadiusGris .footerVistosReciente .addToFav svg{
+    padding: 5px 2px;
+}
+
+.cajaProductoBorderRadiusGris .footerVistosReciente svg .cls-1{
+    height: auto;
     stroke: #F8B916;
+    stroke-width: 40px;
     fill: #FFF;
     -webkit-transition: .3s;
     transition: .3s;
     cursor: pointer;
 }
 
-.cajaProductoBorderRadiusGris .footerVistosReciente svg:hover{
+.cajaProductoBorderRadiusGris .footerVistosReciente svg .cls-1:hover{
     fill: #F8B916;
 }
+
+
+/*LOL*/
+
+/*.producto-description-addtofav svg .cls-1{
+    height: auto;
+    stroke: #F8B916;
+    stroke-width: 40px;
+    fill: #FFF;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.producto-description-addtofav svg .cls-1:hover{
+    fill: #F8B916;
+}
+*/
+/*LOL*/
+
+
 
 .cajaProductoBorderRadiusGris .footerVistosReciente .row{
     margin: 0;
@@ -1178,8 +1234,26 @@ right: 0;
     margin-right: 10px;
 }
 
+.catalogoContainer .filtrosCatalogo .borrar{
+    margin-top: 30px;
+}
+
+.catalogoContainer .filtrosCatalogo .borrar-filtros{
+    background-color: #fff;
+    color: #D91C24;
+    border: 1px solid #D91C24;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.catalogoContainer .filtrosCatalogo .borrar-filtros:hover{
+    background-color: #D91C24;
+    color: #fff;
+}
+
 .catalogoContainer .cargarMasProductos{
-    background-color: #DEDEDE;
+    background-color: #f5f5f5;
     text-align: center;
     border-radius: 5px;
     -webkit-transition: .3s;
@@ -1200,13 +1274,21 @@ right: 0;
     letter-spacing: 2px;
 }
 
+.catalogo-banner{
+    margin-bottom: 10px;
+}
+
 .catalogo-banner li{
-    width: 100%;
+    /*width: 100% !important;*/
     height: 400px;
     background-color: #f4f4f4;
 }
 
-.catalogo-banner .bx-controls{
+.catalogo-banner .bx-controls-direction{
+   /* display: none;*/
+}
+
+.catalogo-banner .bx-wrapper .bx-pager{
     display: none;
 }
 
@@ -1216,6 +1298,13 @@ right: 0;
 
 .catalogoContainer .cargar-mas.active{
     display: inherit;
+}
+
+.catalogo-banner .bx-wrapper{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
 /* END CATALOGO */
@@ -1666,13 +1755,13 @@ to { display: none; opacity: 0; }
     font-family: 'AlrightSansBlack', sans-serif;
     font-size: 13pt;
     text-transform: uppercase;
-    background-color: #D91C24;
+    background-color: #eee;
     margin-top: 20px;
-    color: #FFF;
+    color: #999;
     border: 0;
-    padding: 30px 40px 30px 40px;
+    padding: 20px 30px 20px 30px;
     border-radius: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .s2t1Container h3{
@@ -1887,10 +1976,7 @@ to { display: none; opacity: 0; }
 .encuestaContainer .emotionButtonsContainer button{
     border-radius: 30px;
     margin: 10px ;
-    width: 330px;
-}
-
-.encuestaContainer .emotionButtonsContainer button{
+    width: 350px;
     color: #58595B;
 }
 
@@ -1919,8 +2005,8 @@ to { display: none; opacity: 0; }
 .emotionnormal.is-active {
     -webkit-animation-name: emotion;
     animation-name: emotion;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
     -webkit-animation-timing-function: steps(27);
     animation-timing-function: steps(27);
     -webkit-animation-fill-mode: forwards;
@@ -1940,8 +2026,8 @@ to { display: none; opacity: 0; }
 .emotionbuena.is-active {
     -webkit-animation-name: emotion;
     animation-name: emotion;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
     -webkit-animation-timing-function: steps(27);
     animation-timing-function: steps(27);
     -webkit-animation-fill-mode: forwards;
@@ -1961,8 +2047,8 @@ to { display: none; opacity: 0; }
 .emotionexcelente.is-active {
     -webkit-animation-name: emotion;
     animation-name: emotion;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
     -webkit-animation-timing-function: steps(27);
     animation-timing-function: steps(27);
     -webkit-animation-fill-mode: forwards;
@@ -1982,8 +2068,8 @@ to { display: none; opacity: 0; }
 .emotionmejorar.is-active {
     -webkit-animation-name: emotion;
     animation-name: emotion;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
     -webkit-animation-timing-function: steps(27);
     animation-timing-function: steps(27);
     -webkit-animation-fill-mode: forwards;
@@ -2003,8 +2089,8 @@ to { display: none; opacity: 0; }
 .emotionregular.is-active {
     -webkit-animation-name: emotion;
     animation-name: emotion;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
     -webkit-animation-timing-function: steps(27);
     animation-timing-function: steps(27);
     -webkit-animation-fill-mode: forwards;
@@ -2446,8 +2532,9 @@ to { display: none; opacity: 0; }
     -webkit-transition: .3s;
     transition: .3s;
     cursor: pointer;
-    margin-top: 5px;
-    margin-bottom: 5px;
+/*    margin-top: 5px;
+    margin-bottom: 5px;*/
+    margin: 0;
 }
 
 .historialContainer .historialContainer-section{
@@ -2516,8 +2603,9 @@ to { display: none; opacity: 0; }
 
 .historialContainer-item-detalle.active{
     display: inherit;
-    -webkit-box-shadow: 0 0 10px rgba(6,6,6,.2);
-    box-shadow: 0 0 10px rgba(6,6,6,.2);
+    /*-webkit-box-shadow: 0 0 10px rgba(6,6,6,.2);*/
+    /*box-shadow: 0 0 10px rgba(6,6,6,.2);*/
+    box-shadow: 0 3px 5px rgba(6,6,6,.2);
     padding: 0 20px;
     border-radius: 5px;
 }
@@ -3037,6 +3125,11 @@ fill: #F8B916;
     padding-bottom: 10px;
 }
 
+.modal-producto img{
+    width: 100%;
+    margin: 0 auto;
+}
+
 /*.productoContainer .producto-img .bx-pager{
 padding-top: 20px;
 }*/
@@ -3083,7 +3176,7 @@ padding-top: 20px;
     text-align: right;
     position: absolute;
     top: -5px;
-    right: -6px;
+    right: -8px;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -3469,11 +3562,10 @@ padding-top: 20px;
     padding: 0 10px;
 }
 
-.vistosRecienteContainer .bx-pager-item a {
+/*.vistosRecienteContainer .bx-pager-item a {
     background-color: #eee !important;
     padding: 10px 20px;
     background-repeat: no-repeat !important;
-    display: none !important;
 }
 
 .vistosRecienteContainer .bx-pager-item:first-child a { 
@@ -3495,8 +3587,27 @@ padding-top: 20px;
     bottom: -5px;
     left: -13px;
     width: 3px;
+}*/
+
+.vistosRecienteContainer .bx-wrapper .bx-pager{
+    display: none;
 }
 
+.vistosRecienteContainer .bx-controls-direction{
+    position: relative;
+}
+
+.vistosRecienteContainer .bx-wrapper .bx-controls-direction a{
+    transform: translate(-50%);
+}
+
+.vistosRecienteContainer .bx-wrapper .bx-next{
+    right: 46%;
+}
+
+.vistosRecienteContainer .bx-wrapper .bx-prev{
+    left: 46%;
+}
 
 .promocionesHomeContainer .bx-wrapper .bx-pager{
     margin-top: 20px;
@@ -3519,6 +3630,16 @@ padding-top: 20px;
 }
 
 .relacionadosContainer .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus{
+    background-color: #E3801E;
+}
+
+.catalogo-banner .bx-wrapper .bx-pager.bx-default-pager a{
+    background-color: #B8B8B8;
+    width: 12px;
+    height: 12px;
+}
+
+.catalogo-banner .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus{
     background-color: #E3801E;
 }
 
