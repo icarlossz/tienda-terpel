@@ -1,6 +1,5 @@
 $(document).ready(function(){
 	$('.bxslider').bxSlider({
-		// auto: true,
 		infiniteLoop: true,
 	  minSlides: 3,
 	  maxSlides: 3,
@@ -22,6 +21,7 @@ $(document).ready(function(){
 	  infiniteLoop: true,
 	  minSlides: 3,
 	  maxSlides: 3,
+	  moveSlides: 1,
 	  slideWidth: 360,
 	  slideMargin: 10,
 	  touchEnabled:true,
@@ -191,6 +191,9 @@ $(document).ready(function(){
 			$('.ir-arriba').slideUp(500);
 		}
 	});
+	$('.seguimientoContainer-icons .col-md-4:has(> .icon.active)').last().removeClass('active')
+	$('.seguimientoContainer-icons .col-md-4:has(> .icon.active):not(:last-child)').addClass('active')
+	
 
 });
 
