@@ -1,0 +1,43 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Users/carlos/.Pokemon-Terminal:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.1.0
+
+Node version: 
+  8.4.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "web_tiendaterpel",
+    "version": "1.0.0",
+    "description": "web tienda terpel",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "carlossz",
+    "license": "MIT",
+    "repository": "git@github.com:icarlossz/tienda-terpel.git",
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /BIG/Proceso/Desarrollo/TiendaTerpel/tienda-terpel/package.json: Unexpected token } in JSON at position 298
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:764:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:92:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:103:13
+      at <anonymous>
