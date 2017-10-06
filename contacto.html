@@ -264,7 +264,7 @@
               <div class="dropdown">
 
                   <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <img class="dropdown" src="images/iconUser.svg" align="right" width="55" alt="">
+                    <img class="dropdown" src="images/iconUser.svg" align="right" width="55px" alt="">
                     
                   </a>
 
@@ -519,34 +519,34 @@
         
         <div class="col-md-8 p0">
           <div class="col-md-6">
-            <input type="text" placeholder="Nombre">
+            <input type="text" pattern="[a-zA-Z]*" placeholder="Nombre">
           </div>
           <div class="col-md-6">
-            <input type="text" placeholder="(6) 6895254">
+            <input type="number" min="0" placeholder="(6) 6895254">
           </div>
           <div class="col-md-6">
             <select>
-              <option value="volvo">Tipo de identificaci</option>
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="mercedes">Mercedes</option>
-              <option value="audi">Audi</option>
+              <option value="volvo">Tipo de identificación</option>
+              <option value="volvo">Bogotá</option>
+              <option value="saab">Bogotá</option>
+              <option value="mercedes">Bogotá</option>
+              <option value="audi">Bogotá</option>
             </select>
           </div>
           <div class="col-md-6">
-            <input type="text" placeholder="Número de identificación">
+            <input type="number" min="0" max="9999999999" placeholder="Número de identificación">
           </div>
           <div class="col-md-6">
-            <input type="text" placeholder="Correo electrónico">
+            <input type="email" pattern="[a-zA-Z]*" placeholder="Correo electrónico">
           </div>
           <div class="col-md-6">
-            <input type="text" placeholder="Celular">
+            <input type="number" min="0" max="39999999" placeholder="Celular">
           </div>
           <div class="col-md-6">
-            <input type="text" placeholder="Usuario">
+            <input type="text" pattern="[a-zA-Z]*" placeholder="Usuario">
           </div>
           <div class="col-md-6">
-            <input type="text" placeholder="Estación">
+            <input type="text" pattern="[a-zA-Z]*" placeholder="Estación">
           </div>
           <div class="col-md-6">
             <select>
@@ -576,7 +576,7 @@
             </select>
           </div>
           <div class="col-md-12">
-            <input type="text" placeholder="Asunto">
+            <input type="text" pattern="[a-zA-Z]*" placeholder="Asunto">
           </div>
           <div class="col-md-12">
             <input class="mensaje-contacto" type="text" placeholder="Mensaje">
