@@ -247,7 +247,7 @@ a.btnRedFill:hover{
     width: 100%;
     -webkit-transition: .4s;
     transition: .4s;
-    margin: 20px 0;
+    margin: 15px 0;
     text-align: center;
 }
 
@@ -273,7 +273,7 @@ a.btnRedFill:hover{
     background-color: transparent;
     -webkit-transition: .3s;
     transition: .3s;
-    margin: 20px 0;
+    margin: 15px 0;
     text-align: center;
 }
 
@@ -2007,7 +2007,7 @@ to { display: none; opacity: 0; }
 .encuestaContainer .emotionsContainer{
     width: 70%;
     margin: 10px auto;
-    padding: 10px auto;
+    padding: 10px;
 }
 
 .encuestaContainer .emotionsContainer svg{
@@ -2045,6 +2045,7 @@ to { display: none; opacity: 0; }
 
 .encuestaContainer h4{
     font-size: 15pt;
+    padding: 10px 0;
 }
 
 .encuestaContainer .emotionButtonsContainer button{
@@ -2066,6 +2067,14 @@ to { display: none; opacity: 0; }
 .encuestaContainer .msjDespacho input{
     width: 70%;
     margin: 0 auto;
+}
+
+.emotion-icon-text{
+    text-transform: uppercase;
+    padding: 5px 0;
+    font-family: 'OpenSansSemibold', sans-serif !important;
+    font-size: 14px;
+    color: #9b9b9b !important;
 }
 
 .emotionnormal {
@@ -2243,7 +2252,7 @@ to { display: none; opacity: 0; }
 
 .productoFavorito{
     border-bottom: 1px solid #eee;
-    padding: 30px 0;
+    padding: 30px 0 !important;
     position: relative;
 }
 
@@ -3139,7 +3148,7 @@ fill: #F8B916;
 }
 
 .producto-talla-modal{
-	padding: 20px 0;
+	padding-top: 20px !important;
 }
 
 .productoContainer .producto-talla{
@@ -3161,6 +3170,7 @@ fill: #F8B916;
     margin-top: 0;
     padding-top: 0;
     font-family: 'AlrightSansMedium', sans-serif;
+    cursor: pointer;
 }
 
 .productoContainer .producto-referencia{
@@ -3829,9 +3839,57 @@ padding-top: 20px;
     color: #FFF;
 }
 
-
-
 /*END INDEX NO LOGUEADO*/
+
+/*BEGIN SERVICES HOME*/
+
+.servicios-container{
+    min-height: 80vh;
+}
+
+.servicios-container .container-fluid{
+    padding: 0;
+}
+
+.servicios-container .services-header{
+    position: absolute;
+}
+
+/*.servicios-container .services-header-img{
+    position: absolute;
+}*/
+
+.services-header h3{
+    position: relative;
+    margin: 0;
+    left: 10%;
+    color: #FFF;
+}
+
+.services-header h3{
+    position: relative;
+    margin: 0;
+    left: 10%;
+    color: #FFF;
+}
+
+.servicios-container .services-header-shadow{
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(0,0,0,.2) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(0,0,0,.2) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(0,0,0,.2) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(0,0,0,.2) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(0,0,0,.2) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/*END SERVICES HOME*/
+
+
 
 
 
@@ -4329,43 +4387,7 @@ padding-top: 20px;
 }
 
 @media screen and (max-width: 767px) {
-    body {
-        overflow-x: none;
-    }
-
-    .uniformesHomeContainer .uniformeTerpelHome, .uniformeAltoqueHome, .uniformeGazelHome {
-        margin-top: 30px
-    }
-
-    .uniformesHomeContainer .imgUniformeHome {
-        height: 300px;
-        width: 300px;
-    }  
-
-    .bx-wrapper {
-        /*max-width: 360px !important;*/
-        min-width: 100%;
-    }
     
-
-    .usuarioDropdownMobile {
-        width: 93vw;    
-    }
-
-    .uniformesHomeContainer > .row {
-        margin-left: 0 !important;
-        margin-right: 0 !Important;
-    }
-
-    .vistosRecienteContainer {
-        margin-top: -30px;
-    }
-
-    .promocionesHomeContainer .btnPromocion {
-        font-size: 18pt;
-        width: 100px;
-        height: 100px;
-    }
 }
 
 @media screen and (max-width: 400px) {
@@ -4376,34 +4398,9 @@ padding-top: 20px;
 /* End Home */
 
 /* Error 404 */
-@media screen and (max-width: 400px) {
-    .errorContainer > h4, .errorContainer > h2, .errorContainer > p {
-        margin: 0 15px;
-    }
-}
+
 /* End error 404 */
 
-/* Cambiar Contraseña */
-
-@media screen and (max-width: 767px) {
-/*    .change-password-buttons .btnRedFill,.btnRed {
-        max-width: 100%;
-    } */   
-
-    .change-password-buttons {
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 25px;    
-    }
-
-    .change-password-buttons .btnRed {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 25px;
-    }
-}
-
-/* End cambiar Contraseña */
 
 /* Revisión de la compra */
 
@@ -4614,7 +4611,43 @@ padding-top: 20px;
         margin: 0 auto !important;
         margin-top: 10px !important;
     }
-
+    .change-password-buttons {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 25px;    
+    }
+    .change-password-buttons .btnRed {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 25px;
+    }
+    .indexnolog-home .left{
+        text-align: center;
+    }
+    .indexnolog-home .right{
+        text-align: center;
+    }
+    .indexnolog-home h3{
+        font-size: 30px;
+    }
+    .indexnolog-home p{
+        line-height: 24px;
+        text-align: left;
+        margin-left: 5%;
+        padding: 5px 0;
+    }
+    .indexnolog-home img{
+        display: none;
+    }
+    .encuestaContainer .emotionsContainer{
+        width: 100%;
+    }
+    .emotionp{
+        margin: 0 auto !important;
+    }
+    .encuestaContainer .msjDespacho input{
+        width: 100%;
+    }
 
 }
 
@@ -4627,6 +4660,13 @@ padding-top: 20px;
         display: inline-block !important;    
     }
 
+}
+
+
+@media screen and (max-width: 400px) {
+    .errorContainer > h4, .errorContainer > h2, .errorContainer > p {
+        margin: 0 15px;
+    }
 }
 
 /* End Revisión de la compra */

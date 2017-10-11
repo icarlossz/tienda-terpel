@@ -32,6 +32,35 @@
       <div class="header h-i-m">
         <div class="container-fluid usuarioLogueadoContainer sectionHome">
           <div class="row">
+            <div class="col-md-offset-8 col-md-2 col-xs-6 text-right usuarioLogueado">EDS de prueba</div>
+            <div class="col-md-1 ">
+              <div class="dropdown">
+
+                <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <img class="dropdown" src="images/iconUser.svg" width="35px" alt="">
+                </a>
+
+                <div class="dropdown-menu pull-right usuarioDropdown" aria-labelledby="dLabel">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img src="images/userImg.svg" width="80px" alt="">
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                      <h2>PruebaEDS1</h2>
+                      <h3>Administrador</h3>
+                    </div>
+                  </div>
+                  <ul>
+                    <li><a href="perfil.html">Actualizar perfil</a></li>
+                    <li><a href="cambiarcontraseña.html">Cambiar contraseña</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="#">Cerrar sesión</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
             <div class="col-xs-12 text-center logoTTHeader"><img src="images/logoTT.svg" width="330px" alt=""></div>
           </div>
         </div>
@@ -39,9 +68,45 @@
         <div class="container-fluid navbarContainer">
           <div class="container Navbar">
             <div class="row">
-              <a href="index.html"><div class="col-md-4 navbarItem active">Inicio</div></a>
-              <div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-4 navbarItem catalogoDrop "><a href="faq.html">Preguntas frecuentes</a></div>
-              <div id="promocionesDrop" class="col-md-4 navbarItem  catalogoDrop"><a href="contacto.html">Contacto</a></div>
+              <a href="index.html"><div class="col-md-2 navbarItem active">Inicio</div></a>
+              <div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem catalogoDrop ">Catálogo</div>
+              <div id="promocionesDrop" class="col-md-2 navbarItem  catalogoDrop"><a href="promociones.html">Promociones</a></div>
+              <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem pedidosDrop"><a href="#">Mis pedidos</a></div>
+              <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem"><a href="#">Contacto</a></div>
+              <div class="col-md-2 navbarItem">
+                <div class="row">
+                  <div id="searchDrop" data-openDropdown="#searchDropdown" class="col-md-4 searchIconHeader">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.2 21.2"><defs></defs><title>Asset 27</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M8.37,0a8.37,8.37,0,1,0,5.5,14.66L20.25,21a.55.55,0,0,0,.78-.78l-6.37-6.37A8.37,8.37,0,0,0,8.37,0Zm0,1.12A7.25,7.25,0,1,1,1.12,8.37,7.25,7.25,0,0,1,8.37,1.12Z"/></g></g></svg>
+                  </div>
+                  <div id="favDrop" class="col-md-4 favIconHeader">
+                    <a href="favoritos.html">
+                      <svg class="favIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs><style>stroke:#f8b916;stroke-miterlimit:10;stroke-width:3px;}</style></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
+                    </a>
+
+
+                  <!--   <div class="dropdown-menu dropdown-fav pull-right favDropdown" aria-labelledby="fav-dropdownLabel">
+                      
+                    </div> -->
+
+
+                  </div>
+                  <div id="cartDrop" class="col-md-4 cartIconHeader">
+                    <a id="cart-dropdownLabel" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="checkout1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.37 21.25"><defs></defs><title>Asset 29</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M.53,0a.53.53,0,1,0,0,1.06H3.36c1.36,3.36,2.69,6.72,4,10.09l-1.25,3a.56.56,0,0,0,.49.74H19.92a.53.53,0,1,0,0-1.06H7.44l.9-2.16,13-1a.55.55,0,0,0,.47-.41L23.36,3.3a.56.56,0,0,0-.51-.65H5.14L4.21.33A.54.54,0,0,0,3.72,0Zm5,3.72H22.18L20.82,9.6l-12.5,1ZM9.3,16.47a2.39,2.39,0,1,0,2.39,2.39A2.4,2.4,0,0,0,9.3,16.47Zm8,0a2.39,2.39,0,1,0,2.39,2.39A2.4,2.4,0,0,0,17.27,16.47Zm-8,1.06A1.33,1.33,0,1,1,8,18.86,1.32,1.32,0,0,1,9.3,17.53Zm8,0a1.33,1.33,0,1,1-1.33,1.33A1.32,1.32,0,0,1,17.27,17.53Z"/></g></g></svg></a>
+
+
+                    <div class="dropdown-menu dropdown-cart pull-right" aria-labelledby="cart-dropdownLabel">
+                       <div class="cartDropdown text-center">
+                         <img src="images/cartDropdown.svg" width="130px" alt="">
+                         <h3>No hay productos en el carrito</h3>
+                         <h4>¿ya conoce todos nuestros productos?</h4>
+                         <a href="catalogo.html"><button class="btnRed">ir al catálogo</button></a>
+                       </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -187,6 +252,7 @@
           <div class="row navbarContainer">
             <div class="col-xs-4">
               <img src="images/burgerMenu.svg" width="55px" align="left" id="trigger" class="menu-trigger" alt="">
+              <!-- <p><a href="#" id="trigger" class="menu-trigger"></a></p> -->
             </div>
             <div class="col-xs-4">
               <img src="images/logoIsoTT.svg" width="70px" alt="">
@@ -445,66 +511,6 @@
 
     <span class="ir-arriba icon-arrow-up2"><img src="images/arrowUp.svg" width="20px" alt=""></span>
 
-<!-- HOME CONTAINER -->
-
-    <div class="indexnolog-container">
-      <div class="container-fluid ">
-        <div class="row indexnolog-above">
-          <div class="col-md-6 col-xs-12 container-above">
-            <img src="images/nologabove.png" alt="above no logueado" width="100%">
-          </div>
-          <div class="col-md-6 col-xs-12">
-            <div class="container">
-              <div class="container-login">
-                <h4 class="indexnolog-title">bienvenido a</h4>
-                <h3 class="indexnolog-subtitle">tienda terpel</h3>
-                <div class="row">
-                  <label for="usuario">Usuario</label><br>
-                  <input type="text" id="usuario"><br>
-                  <label for="pasword">Contraseña</label><br>
-                  <input type="password" id="password"><br>
-                  <div class="forgot">
-                    <a href="#">¿Olvidó su contraseña?</a><br>
-                  </div>
-                  <input type="checkbox" checked="">Recordar datos<br>
-                  <button class="btnRed">ingresar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container indexnolog-home">
-        <div class="row text-center">
-          <h2 class="titleHome">Encuentre productos y servicios <br> en un solo lugar.</h2>
-        </div>
-        <div class="row indexnolog-feature">
-          <div class="col-md-6 col-xs-12 feature-text left">
-            <h3>Navegue y seleccione sus productos</h3>
-            <p>Elija la sección de su interés</p>
-            <p>Adicione los productos a su carrito de compras</p>
-            <p>Continúe explorando la Tienda</p>
-          </div>
-          <div class="col-md-6 col-xs-12 text-center">
-            <img src="images/iconIndexnolog1.svg" alt="">
-          </div>
-        </div>
-        <div class="row indexnolog-feature">
-          <div class="col-md-6 col-xs-12 text-center">
-            <img src="images/iconIndexnolog2.svg" class="col-xs-push-12" alt="">
-          </div>
-          <div class="col-md-6 col-xs-12 feature-text right">
-            <div class="col-xs-pull-12">
-              <h3>Pague fácil y rápido con cualquiera de estos medios de pago</h3>
-              <p>Tarjeta débito (PSE), tarjeta crédito, Tarjeta de crédito Terpel (5% y 20% en cash back*), Pago en efectivo y pago por consignación o transferencia electrónica. Realice la transacción para finalizar la compra.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-<!-- HOME CONTAINER -->
-
 <!-- MODAL HOME -->
 
   <div class="modal">
@@ -516,10 +522,58 @@
 
 <!-- MODAL HOME -->
 
+<!-- SERVICES HOME -->
+
+<div class="services-container">
+  <div class="container-fluid">
+    <div class="services-header">
+      <img src="images/bkgservices.png" alt="Background servicios" class="services-header-img" width="100%">
+      <div class="services-header-shadow"></div>
+      <h3>Servicio de Lavado de estación</h3>
+      <h4>Servicio ofrecido por: <span>Almonila NanoTech</span></h4>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES HOME -->
+
 <!-- FOOTER HOME -->
 
     <footer>
-      <div class="container-fluid footer-no-log sectionHome">
+      <div class="container-fluid footer sectionHome">
+      <div class="container footerTop">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="logo-footer img-responsive h-i-m" src="images/footerIconTienda.png" alt="Logo Tienda Terpel">
+            <img class="logo-footer img-responsive h-i-d" src="images/logoTTwhite.svg" width="80%" alt="Logo Tienda Terpel">
+          </div>
+          <div class="col-md-2">
+            <h3><a href="catalogo.html">Catálogo</a></h3>
+            <h3><a href="promociones.html">Promociones</a></h3>
+            <h3><a href="historial.html">Mis pedidos</a></h3>
+          </div>
+          <div class="col-md-2">
+            <h3>Contacto</h3>
+            <ul>
+              <li><a href="faq.html">Preguntas frecuentes</a></li>
+              <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+            
+          </div>
+          <div class="col-md-2">
+            <h3>Perfil</h3>
+            <ul>
+              <li><a href="perfil.html">Actualizar perfil</a></li>
+              <li><a href="cambiarcontraseña.html">Cambiar contraseña</a></li>
+              <li><a href="recursos.html">Recursos</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 text-center">
+            <p>Realice sus transacciones con:</p>
+            <img class="ptp-logo img-responsive" src="images/footerIcons.png" alt="">
+          </div>
+        </div>
+      </div>
       <div class="container footerDerechos">
         <div class="row text-center">
           <div class="col-md-4">

@@ -512,123 +512,150 @@
       <div class="home">
         <div class="checkoutContainer">
           <div class="container">
-            <h4 class="text-center"><span>¡Está a punto de realizar su pedido!</span> Siga estos pasos para finalizar su compra</h4>
-            <div class="row text-center stepsCheckout">
-              <div class="col-md-3">
-                <div class="numberStep separator active"><p><img src="images/check.svg" width="24px" alt=""></p></div>
-                <p>Revisión de compra</p>
-              </div>
-              <div class="col-md-3">
-                <div class="numberStep separator active"><p><img src="images/check.svg" width="24px" alt=""></p></div>
-                <p>Medios de pago</p>
-              </div>
-              <div class="col-md-3">
-                <div class="numberStep separator active"><p><img src="images/check.svg" width="24px" alt=""></p></div>
-                <p>Pago</p>
-              </div>
-              <div class="col-md-3">
-                <div class="numberStep active"><p><img src="images/check.svg" width="24px" alt=""></p></div>
-                <p>Compra exitosa</p>
-              </div>
-            </div>
             
             <div class="s2t1Container encuestaContainer">
               <div class="row">
-                <h3>compra completada con éxito</h3>
-                <p><span>Califique su experiencia</span> y ayúdenos a mejorar en tan solo un minuto:</p>
+                <h3>su calificación nos ayuda a mejorar</h3>
+                <p><span>Califique su experiencia</span> en tan solo un minuto:</p>
                 
                 <div class="row emotionsContainer text-center">
-                  <div class="col-md-offset-1 col-md-2 emotion emotion1">
-                    <div class="emotionp emotionexcelente" id="emotionexcelente" data-emotional="#emotionsFormGood"></div>
-                    <p>Excelente</p>
+                  <h4 class="text-center">tiempos de entrega</h4>
+                  <div class="col-md-offset-1 col-md-2 col-xs-6 emotion emotion1">
+                    <div class="emotionp emotionexcelente" id="emotionexcelente1" data-emotional="#emotion1"></div>
+                    <p class="emotion-icon-text">Excelente</p>
                   </div>
-                  <div class="col-md-2 emotion emotion2">
-                    <div class="emotionp emotionbuena" id="emotionbuena" data-emotional="#emotionsFormGood"></div>
-                    <p>Buena</p>
+                  <div class="col-md-2 col-xs-6 emotion emotion2">
+                    <div class="emotionp emotionbuena" id="emotionbuena1" data-emotional="#emotion1"></div>
+                    <p class="emotion-icon-text">Buena</p>
                   </div>
-                  <div class="col-md-2 emotion3">
-                    <div class="emotionp emotionnormal is-active" id="emotionnormal" data-emotional="#emotionsFormGood"></div>
-                    <p>Normal</p>
+                  <div class="col-md-2 col-xs-6 emotion3">
+                    <div class="emotionp emotionnormal is-active" id="emotionnormal1" data-emotional="#emotion1"></div>
+                    <p class="emotion-icon-text">Normal</p>
                   </div>
-                  <div class="col-md-2 emotion emotion4">
-                    <div class="emotionp emotionregular" id="emotionregular" data-emotional="#emotionsFormBad"></div>
-                    <p>Regular</p>
+                  <div class="col-md-2 col-xs-6 emotion emotion4">
+                    <div class="emotionp emotionregular" id="emotionregular1" data-emotional="#emotion1"></div>
+                    <p class="emotion-icon-text">Regular</p>
                   </div>
-                  <div class="col-md-2 emotion emotion5">
-                    <div class="emotionp emotionmejorar" id="emotionmejorar" data-emotional="#emotionsFormBad"></div>
-                    <p>Por Mejorar</p>
+                  <div class="col-md-2 col-xs-12 emotion emotion5">
+                    <div class="emotionp emotionmejorar" id="emotionmejorar1" data-emotional="#emotion1"></div>
+                    <p class="emotion-icon-text">Por Mejorar</p>
                   </div>
                 </div>
-                </div> 
-
-               <div class="emotionsFormContainer">
                 
-                 <!-- Preguntando que le gusto -->
-                 <div id="emotionsFormGood" class="row emotionsContainer emotionsForm text-center active">
-                   <h4>¿Qué ha salido bien?</h4>
+                <div class="row emotionsContainer text-center">
+                  <h4 class="text-center">estado del pedido</h4>
+                  <div class="col-md-offset-1 col-md-2 col-xs-6 emotion emotion1">
+                    <div class="emotionp emotionexcelente" id="emotionexcelente2" data-emotional="#emotion2"></div>
+                    <p class="emotion-icon-text">Excelente</p>
+                  </div>
+                  <div class="col-md-2 col-xs-6 emotion emotion2">
+                    <div class="emotionp emotionbuena" id="emotionbuena2" data-emotional="#emotion2"></div>
+                    <p class="emotion-icon-text">Buena</p>
+                  </div>
+                  <div class="col-md-2 col-xs-6 emotion3">
+                    <div class="emotionp emotionnormal is-active" id="emotionnormal2" data-emotional="#emotion2"></div>
+                    <p class="emotion-icon-text">Normal</p>
+                  </div>
+                  <div class="col-md-2 col-xs-6 emotion emotion4">
+                    <div class="emotionp emotionregular" id="emotionregular2" data-emotional="#emotion2"></div>
+                    <p class="emotion-icon-text">Regular</p>
+                  </div>
+                  <div class="col-md-2 col-xs-12 emotion emotion5">
+                    <div class="emotionp emotionmejorar" id="emotionmejorar2" data-emotional="#emotion2"></div>
+                    <p class="emotion-icon-text">Por Mejorar</p>
+                  </div>
+                </div>
+                
+                <div class="row emotionsContainer text-center">
+                  <h4 class="text-center">calidad de los productos</h4>
+                  <div class="col-md-offset-1 col-md-2 col-xs-6 emotion emotion1">
+                    <div class="emotionp emotionexcelente" id="emotionexcelente" data-emotional="#emotionsFormGood"></div>
+                    <p class="emotion-icon-text">Excelente</p>
+                  </div>
+                  <div class="col-md-2 col-xs-6 emotion emotion2">
+                    <div class="emotionp emotionbuena" id="emotionbuena" data-emotional="#emotionsFormGood"></div>
+                    <p class="emotion-icon-text">Buena</p>
+                  </div>
+                  <div class="col-md-2 col-xs-6 emotion3">
+                    <div class="emotionp emotionnormal is-active" id="emotionnormal" data-emotional="#emotionsFormGood"></div>
+                    <p class="emotion-icon-text">Normal</p>
+                  </div>
+                  <div class="col-md-2 col-xs-6 emotion emotion4">
+                    <div class="emotionp emotionregular" id="emotionregular" data-emotional="#emotionsFormBad"></div>
+                    <p class="emotion-icon-text">Regular</p>
+                  </div>
+                  <div class="col-md-2 col-xs-12 emotion emotion5">
+                    <div class="emotionp emotionmejorar" id="emotionmejorar" data-emotional="#emotionsFormBad"></div>
+                    <p class="emotion-icon-text">Por Mejorar</p>
+                  </div>
+                </div>
+                
+                <div class="row emotionsContainer text-center">
+                  <h4 class="text-center">¿coincide el pedido con la entrega?</h4>
+                  <div class="col-md-offset-1 col-md-2 col-xs-6 emotion emotion1">
+                    <div class="emotionp emotionexcelente" id="emotionexcelente" data-emotional="#emotionsFormGood"></div>
+                    <p class="emotion-icon-text">Excelente</p>
+                  </div>
+                  <div class="col-md-2 col-xs-6 emotion emotion2">
+                    <div class="emotionp emotionbuena" id="emotionbuena" data-emotional="#emotionsFormGood"></div>
+                    <p class="emotion-icon-text">Buena</p>
+                  </div>
+                  <div class="col-md-2 col-xs-6 emotion3">
+                    <div class="emotionp emotionnormal is-active" id="emotionnormal" data-emotional="#emotionsFormGood"></div>
+                    <p class="emotion-icon-text">Normal</p>
+                  </div>
+                  <div class="col-md-2 col-xs-6 emotion emotion4">
+                    <div class="emotionp emotionregular" id="emotionregular" data-emotional="#emotionsFormBad"></div>
+                    <p class="emotion-icon-text">Regular</p>
+                  </div>
+                  <div class="col-md-2 col-xs-12 emotion emotion5">
+                    <div class="emotionp emotionmejorar" id="emotionmejorar" data-emotional="#emotionsFormBad"></div>
+                    <p class="emotion-icon-text">Por Mejorar</p>
+                  </div>
+                </div>
+                
+                <div class="row emotionsContainer text-center">
+                  <h4 class="text-center">atención al cliente</h4>
+                  <div class="col-md-offset-1 col-md-2 col-xs-6 emotion emotion1">
+                    <div class="emotionp emotionexcelente" id="emotionexcelente" data-emotional="#emotionsFormGood"></div>
+                    <p class="emotion-icon-text">Excelente</p>
+                  </div>
+                  <div class="col-md-2 col-xs-6 emotion emotion2">
+                    <div class="emotionp emotionbuena" id="emotionbuena" data-emotional="#emotionsFormGood"></div>
+                    <p class="emotion-icon-text">Buena</p>
+                  </div>
+                  <div class="col-md-2 col-xs-6 emotion3">
+                    <div class="emotionp emotionnormal is-active" id="emotionnormal" data-emotional="#emotionsFormGood"></div>
+                    <p class="emotion-icon-text">Normal</p>
+                  </div>
+                  <div class="col-md-2 col-xs-6 emotion emotion4">
+                    <div class="emotionp emotionregular" id="emotionregular" data-emotional="#emotionsFormBad"></div>
+                    <p class="emotion-icon-text">Regular</p>
+                  </div>
+                  <div class="col-md-2 col-xs-12 emotion emotion5">
+                    <div class="emotionp emotionmejorar" id="emotionmejorar" data-emotional="#emotionsFormBad"></div>
+                    <p class="emotion-icon-text">Por Mejorar</p>
+                  </div>
+                </div>
 
-                   <div class="row emotionButtonsContainer">
-                     <div class="col-md-6 text-right">
-                       <button class="emotion-form btnRedFill">Uso sencillo de la página</button>
-                     </div>
-                     <div class="col-md-6 text-left">
-                       <button class="emotion-form btnRedFill">encontré lo que buscaba</button>
-                     </div>
-                     <div class="col-md-6 text-right">
-                       <button class="emotion-form btnRedFill">inventario disponible</button>
-                     </div>
-                     <div class="col-md-6 text-left">
-                       <button class="emotion-form btnRedFill">facilidad en la forma de pago</button>
-                     </div>
-                   </div>
-                   <div class="row">
-                     <div class="msjDespacho">
-                       <p>Déjenos su comentario (opcional): </p>
-                       <input type="text" placeholder="Mensaje">
-                     </div>
+                
+                 <div class="row">
+                   <div class="msjDespacho">
+                     <p>Déjenos su comentario (opcional): </p>
+                     <input type="text" placeholder="Mensaje">
                    </div>
                  </div>
 
-                 <!-- Preguntando que NOOOOOO le gusto -->
-                 <div id="emotionsFormBad" class="row emotionsContainer emotionsForm text-center">
-                   <h4>¿Qué ha salido mal?</h4>
+              </div> 
+            </div>
 
-                   <div class="row emotionButtonsContainer">
-                     <div class="col-md-6 text-right">
-                       <button class="emotion-form btnRedFill">Uso de la página</button>
-                     </div>
-                     <div class="col-md-6 text-left">
-                       <button class="emotion-form btnRedFill">no encontré lo que buscaba</button>
-                     </div>
-                     <div class="col-md-6 text-right">
-                       <button class="emotion-form btnRedFill">sin inventario</button>
-                     </div>
-                     <div class="col-md-6 text-left">
-                       <button class="emotion-form btnRedFill">formas de pago</button>
-                     </div>
-                   </div>
-                   <div class="row">
-                     <div class="msjDespacho">
-                       <p>¿Qué falló? (opcional):   </p>
-                       <input type="text" placeholder="Mensaje">
-                     </div>
-                   </div>
-                 </div>
-               </div>
-
-
-
-              
-
-              </div>
-
-              <div class="row text-center buttonsContainer">
-                <button class="btnRed">enviar</button>
-              </div>
+            <div class="row text-center buttonsContainer">
+              <button class="btnRed">enviar</button>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
 
     <footer>
