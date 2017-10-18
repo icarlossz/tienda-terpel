@@ -17,6 +17,13 @@ $(document).ready(function(){
 	  responsive: true,
 	});
 
+	$('.bxslider-services').bxSlider({
+	  infiniteLoop: true,
+	  moveSlides: 1,
+	  slideMargin: 10,
+	  touchEnabled:true,
+	});
+
 	$('.bxslider-producto').bxSlider({
 	  infiniteLoop: true,
 	  minSlides: 3,
@@ -145,8 +152,22 @@ $(document).ready(function(){
 			$('#emotionsFormBad').addClass('active')
 			console.log(theEmotion)
 		}
-		// emotion.addClass('active');
 	});
+
+
+	$("[data-emotionaly]").click(function() {
+  	 // Add active class to the tab
+    var theEmotions = $(this).attr('data-emotionalyGroup')
+    var emotions = $(theEmotions).find('.emotionp')
+    emotions.removeClass('is-active')
+    $(this).addClass('is-active')
+
+    // Add active class to the content
+    var theEmotion = $(this).attr('data-emotionaly')
+    var emotion = $(theEmotion)
+    var emotions = $('.emotionsContainer')
+	});
+
 
   $("[data-outProduct]").click(function() {
   	var productID = $(this).attr('data-outProduct');
@@ -154,29 +175,29 @@ $(document).ready(function(){
   });
 
   
-
   $("[data-toggleActive]").click(function() {
-      var commonElementsAttribbute = $(this).attr('data-toggleActive');
-      var elements = $(commonElementsAttribbute);
+        var commonElementsAttribbute = $(this).attr('data-toggleActive');
+        var elements = $(commonElementsAttribbute);
 
-      $(elements).each(function(index, element){
-          var next = $(element).next()
-          var selected = next.find('select option:selected').val()
+        $(elements).each(function(index, element){
+            var next = $(element).next()
+            var selected = next.find('select option:selected').val()
+          
+          console.log(selected)
+
+            if (selected == 0) {
+                $(element).removeClass('active')
+                $(element).next().removeClass('active')
+            }
+        })
+
+        $(this).addClass('active')
+        $(this).next().addClass('active')
+        $(this).prev().addClass('active')
         
-        console.log(selected == 0)
+        
+    });
 
-          if (selected == 0) {
-              $(element).removeClass('active')
-              $(element).next().removeClass('active')
-          } else {
-              $(element).addClass('active')
-              $(element).next().addClass('active')
-          }
-      })
-      $(this).addClass('active')
-      $(this).next().addClass('active')
-      
-  });
 
 	$('.ir-arriba').click(function(){
 		$('body, html').animate({
@@ -191,6 +212,7 @@ $(document).ready(function(){
 			$('.ir-arriba').slideUp(500);
 		}
 	});
+
 	$('.seguimientoContainer-icons .col-md-4:has(> .icon.active)').last().removeClass('active')
 	$('.seguimientoContainer-icons .col-md-4:has(> .icon.active):not(:last-child)').addClass('active')
 	

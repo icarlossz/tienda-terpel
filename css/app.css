@@ -545,17 +545,18 @@ a.btnRedFill:hover{
 }
 
 .cartDropdown{
-    padding: 30px 40px;
+    padding: 25px 40px;
     min-width: 350px;
 }
 
 .cartDropdown-items{
     padding: 0 15px;
+    min-width: 350px;
 }
 
 .cart-product{
     min-width: 430px;
-    padding: 18px 20px;
+    padding: 15px 20px;
     border-bottom: 1px solid #eee;
 }
 
@@ -567,6 +568,7 @@ a.btnRedFill:hover{
     line-height: 16px;
     letter-spacing: 0.5px;
     padding-left: 5px;
+    text-align: left;
 }
 
 .cart-product h6{
@@ -578,6 +580,7 @@ a.btnRedFill:hover{
     letter-spacing: 0.5px;
     padding-left: 5px;
     margin: 2px 0;
+    text-align: left;
 }
 
 .cart-product .cart-product-price{
@@ -849,9 +852,16 @@ a.btnRedFill:hover{
     padding: 0;
 }
 
-.uniformesHomeContainer .imgUniformeHome{
+/*.uniformesHomeContainer .imgUniformeHome{
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}*/
+
+.uniformesHomeContainer .imgUniformeHome{
+    width: 100%;
+    height: 500px;
     overflow: hidden;
     cursor: pointer;
 }
@@ -869,6 +879,8 @@ a.btnRedFill:hover{
     filter: none;
     -webkit-transition: .5s;
     transition: .5s;
+    height: auto;
+    width: 100%;
 }
 
 .uniformesHomeContainer .boomImage:hover img{
@@ -1060,6 +1072,7 @@ right: 0;
     -webkit-transition: .5s;
     transition: .5s;
     cursor: pointer;
+    border-bottom-left-radius: 10px;
 }
 
 .cajaProductoBorderRadiusGris .verDetalle:hover{
@@ -1073,7 +1086,7 @@ right: 0;
     font-size: 11pt;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 10px 0 10px 0;
+    padding: 12px 0 12px 0;
 }
 
 .cajaProductoBorderRadiusGris .verDetalle a{
@@ -3868,7 +3881,7 @@ padding-top: 20px;
     position: absolute;
     margin: 0;
     color: #FFF;
-    margin-top: -8%;
+    margin-top: -7%;
     font-size: 24pt;
     margin-left: 5%;
     z-index: 3;
@@ -3879,9 +3892,21 @@ padding-top: 20px;
     position: absolute;
     margin: 0;
     color: #FFF;
-    margin-top: -5%;
+    margin-top: -4%;
     margin-left: 5%;
     z-index: 3;
+}
+
+.container-img-header{
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.servicios-header-img{
+    height: auto;
+    position: absolute;
 }
 
 .servicios-container .servicios-header-shadow{
@@ -3926,13 +3951,13 @@ padding-top: 20px;
     background-color: #D91F24;
     color: #FFF;
     text-align: center;
-    padding: 15px 20px;
+    padding: 20px 20px;
 }
 
 .servicios-body .service-contacto-info{
     background-color: #F8F8F8;
     text-align: center;
-    padding: 15px 20px;
+    padding: 15px 25px;
     margin-top: 30px;
 }
 
@@ -3969,12 +3994,38 @@ padding-top: 20px;
 }
 
 .servicios-body .service-feature img{
-    width: 130px;
+    width: 120px;
     margin: 0 auto;
 }
 
 .servicios-body .service-feature .service-feature-text{
     padding: 10px 0;
+}
+
+.servicios-relacionados{
+    padding-top: 30px;
+    color: #58595B;
+}
+
+.servicios-relacionados .relacionado-image img{
+    width: 100%;
+    opacity: 1;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.servicios-relacionados .relacionado-image img:hover{
+    border-radius: 20px;
+    opacity: .8;
+}
+
+.servicios-relacionados .relacionado-title{
+    font-size: 20px;
+    font-family: 'OpenSansSemibold', sans-serif;
+}
+
+.services-slider{
+    padding: 30px 0;
 }
 
 /*END SERVICES HOME*/
@@ -4294,6 +4345,27 @@ padding-top: 20px;
 
     .dropdownContainer{
         margin-top: 130px;
+    }
+    .servicios-header h3{
+        margin-top: -40%;
+        right: 50%;
+        transform: translate(50%);
+        text-align: center;
+        width: 100%;
+    }
+    .servicios-header h4{
+        margin-top: -15%;
+        width: 100%;
+        text-align: center;
+        right: 50%;
+        transform: translate(50%);
+        width: 100%;
+    }
+    .servicios-body .service-info p{
+        text-align: center;
+    }
+    .servicios-body .service-video iframe{
+        height: 200px;
     }
 }
 
@@ -4756,6 +4828,12 @@ padding-top: 20px;
 @media screen and (max-width: 400px) {
     .errorContainer > h4, .errorContainer > h2, .errorContainer > p {
         margin: 0 15px;
+    }
+    .container-img-header{      
+        min-height: 200px;
+    }
+    .servicios-header-img{
+        height: 100%
     }
 }
 

@@ -18,7 +18,6 @@
 
     <script src="js/modernizr.custom.js"></script>
     <link href="css/app.css" rel="stylesheet">
-    <!-- <link href="css/app_responsive.css" rel="stylesheet"> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -528,7 +527,9 @@
   <div class="container-fluid">
 
     <div class="servicios-header">
-      <img src="images/bkgservices.png" alt="Background servicios" class="servicios-header-img" width="100%">
+      <div class="container-img-header">
+        <img src="images/bkgservices.png" alt="Background servicios" class="servicios-header-img">
+      </div>
       <div class="servicios-header-shadow"></div>
       <h3>Servicio de Lavado de estación</h3>
       <h4>Servicio ofrecido por: <span>Almonila NanoTech</span></h4>
@@ -573,22 +574,23 @@
             </div>
           </div>
 
-          <div class="row service-info">
-            <ul class="bxslider">
-              <li><img src="/images/730_200/tree_root.jpg" /></li>
-              <li><img src="/images/730_200/houses.jpg" /></li>
-              <li><img src="/images/730_200/hill_fence.jpg" /></li>
+          <div class="row services-slider">
+            <ul class="bxslider-services">
+              <li><img src="images/srelacionado1.jpg" width="100%" /></li>
+              <li><img src="images/srelacionado1.jpg" width="100%" /></li>
+              <li><img src="images/srelacionado1.jpg" width="100%" /></li>
             </ul>
 
             <div id="bx-pager">
-              <a data-slide-index="0" href=""><img src="/images/thumbs/tree_root.jpg" /></a>
-              <a data-slide-index="1" href=""><img src="/images/thumbs/houses.jpg" /></a>
-              <a data-slide-index="2" href=""><img src="/images/thumbs/hill_fence.jpg" /></a>
+              <a data-slide-index="0" href=""><img src="images/srelacionado1.jpg" width="33%" /></a>
+              <a data-slide-index="1" href=""><img src="images/srelacionado1.jpg" width="33%" /></a>
+              <a data-slide-index="2" href=""><img src="images/srelacionado1.jpg" width="33%" /></a>
             </div>
           </div>
 
         </div>
-        <div class="col-md-4">
+
+        <div class="col-md-4 col-xs-12">
           <div class="service-contacto">
             <h3 class="contacto-title">para contratar este servicio:</h3>
             <p class="contacto-subtitle">Comuníquese al teléfono: </p>
@@ -604,6 +606,23 @@
             <p>Estos servicios son ofrecidos por proveedores. </p>
             <p>Si presenta alguna inquietud comuníquese directamente con las líneas de atención que encuentra en los clasificados.</p>
           </div>
+        </div>
+      </div>
+      <div class="servicios-relacionados row">
+        <h3 class="titleHome text-center">Otros clasificados</h3>
+        <div class="col-md-6 col-xs-12">
+          <div class="relacionado-image">
+            <img src="images/srelacionado1.jpg" alt="">
+          </div>  
+          <h3 class="relacionado-title">Servicio de Reparación de Arcos para las Islas de Motos</h3>
+          <h4 class="relacionado-subtitle">Servicio ofrecido por Saviv</h4>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="relacionado-image">
+            <img src="images/srelacionado1.jpg" alt="">
+          </div>
+          <h3 class="relacionado-title">Servicio de Reparación de Arcos para las Islas de Motos</h3>
+          <h4 class="relacionado-subtitle">Servicio ofrecido por Saviv</h4>
         </div>
       </div>
     </div>
