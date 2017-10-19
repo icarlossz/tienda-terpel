@@ -35,7 +35,7 @@
                 <div class="dropdown">
 
                   <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <img class="dropdown" src="images/iconUser.png" alt="">
+                    <img class="dropdown" src="images/iconUser.svg" width="35px" alt="">
                     <span class="caret"></span>
                   </a>
 
@@ -224,14 +224,14 @@
 
         <div id="cartDropdown" data-closeDropdown="#cartDropdown" class="container Dropdown">
           <div class="invisible-closer"></div>
-              <div class="row dropdownContainer">
-                <div class="col-md-11">
-                  <input type="text" placeholder="Ingresa tu búsqueda...">
-                </div>
-                <div class="col-md-1 search-dropdown-icon">
-                  <img class="search-dropdown" src="images/iconSearchNav.svg" alt="search icon">
-                </div>
-              </div>
+            <div class="dropdown-menu dropdown-cart pull-right" aria-labelledby="cart-dropdownLabel">
+               <div class="cartDropdown text-center">
+                 <img src="images/cartDropdown.svg" width="130px" alt="">
+                 <h3>No hay productos en el carrito</h3>
+                 <h4>¿ya conoce todos nuestros productos?</h4>
+                 <a href="catalogo.html"><button class="btnRed">ir al catálogo</button></a>
+               </div>
+            </div>
         </div>
 
         <div id="favDropdown" data-closeDropdown="#favDropdown" class="container Dropdown">
@@ -298,14 +298,15 @@
               </div>
               <div class="col-xs-4">
                 <img src="images/iconFavNav.svg" width="33px" alt="">
-
                 
               </div>
               <div class="col-xs-4">
-                <a id="cart-dropdownMobile" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="checkout1.html"><img src="images/iconCartNav.svg" width="35px" alt="cart mobile"></a>
+                <div id="cartDrop" data-openDropdown="#cartDropdown" class="col-md-4 cartIconHeader">
+                  <img src="images/iconCartNav.svg" width="35px" alt="cart mobile"></a>
+                </div>
               </div>
 
-              <div class="dropdown-menu dropdown-cart pull-right" aria-labelledby="cart-dropdownMobile">
+              <div class="dropdown-menu dropdown-cart pull-right" aria-labelledby="#cartDropdown">
                  <div class="cartDropdown text-center">
                    <img src="images/cartDropdown.svg" width="130px" alt="">
                    <h3>No hay productos en el carrito</h3>
@@ -514,19 +515,19 @@
           <div class="container">
             <h4 class="text-center"><span>¡Está a punto de realizar su pedido!</span> Siga estos pasos para finalizar su compra</h4>
             <div class="row text-center stepsCheckout">
-              <div class="col-md-3 col-xs-6">
+              <div class="col-md-3 col-xs-6 steps-checkout">
                 <div class="numberStep separator last"><p><img src="images/check.svg" width="24px" alt=""></p></div>
                 <p>Revisión de compra</p>
               </div>
-              <div class="col-md-3 col-xs-6">
+              <div class="col-md-3 col-xs-6 steps-checkout steps-act">
                 <div class="numberStep separator active"><p>2</p></div>
                 <p>Medios de pago</p>
               </div>
-              <div class="col-md-3 col-xs-6">
+              <div class="col-md-3 col-xs-6 steps-checkout">
                 <div class="numberStep separator"><p>3</p></div>
                 <p>Pago</p>
               </div>
-              <div class="col-md-3 col-xs-6">
+              <div class="col-md-3 col-xs-6 steps-checkout">
                 <div class="numberStep"><p>4</p></div>
                 <p>Compra exitosa</p>
               </div>

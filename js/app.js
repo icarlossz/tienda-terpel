@@ -31,6 +31,7 @@ $(document).ready(function(){
 	  moveSlides: 1,
 	  slideWidth: 360,
 	  slideMargin: 10,
+	  moveSlides: 1,
 	  touchEnabled:true,
 	  hideControlOnEnd: true,
 	});
@@ -176,27 +177,22 @@ $(document).ready(function(){
 
   
   $("[data-toggleActive]").click(function() {
-        var commonElementsAttribbute = $(this).attr('data-toggleActive');
-        var elements = $(commonElementsAttribbute);
+      var commonElementsAttribbute = $(this).attr('data-toggleActive');
+      var elements = $(commonElementsAttribbute);
 
-        $(elements).each(function(index, element){
-            var next = $(element).next()
-            var selected = next.find('select option:selected').val()
-          
-          console.log(selected)
-
-            if (selected == 0) {
-                $(element).removeClass('active')
-                $(element).next().removeClass('active')
-            }
-        })
-
-        $(this).addClass('active')
-        $(this).next().addClass('active')
-        $(this).prev().addClass('active')
-        
-        
-    });
+      $(elements).each(function(index, element){
+          var next = $(element).next()
+          var selected = next.find('select option:selected').val()
+        console.log(selected)
+          if (selected == 0) {
+              $(element).removeClass('active')
+              $(element).next().removeClass('active')
+          }
+      })
+      $(this).addClass('active')
+      $(this).next().addClass('active')
+      $(this).prev().addClass('active')
+  });
 
 
 	$('.ir-arriba').click(function(){
@@ -204,6 +200,8 @@ $(document).ready(function(){
 			scrollTop: '0px'
 		}, 500);
 	});
+
+	$('#checkout-table').stacktable();
  
 	$(window).scroll(function(){
 		if( $(this).scrollTop() > 500 ){

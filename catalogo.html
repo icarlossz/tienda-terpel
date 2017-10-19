@@ -33,13 +33,12 @@
         <div class="header h-i-m">
           <div class="container-fluid usuarioLogueadoContainer sectionHome">
             <div class="row">
-              <div class="col-md-offset-8 col-md-2 col-xs-6 text-right usuarioLogueado"><button>EDS de prueba</button></div>
+              <div class="col-md-offset-8 col-md-2 col-xs-6 text-right usuarioLogueado">EDS de prueba</div>
               <div class="col-md-1 ">
                 <div class="dropdown">
 
                   <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     <img class="dropdown" src="images/iconUser.svg" width="30px" alt="">
-                    <span class="caret"></span>
                   </a>
 
                   <div class="dropdown-menu pull-right usuarioDropdown" aria-labelledby="dLabel">
@@ -74,7 +73,7 @@
                 <div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem active catalogoDrop "><a href="catalogo.html">Catálogo</a></div>
                 <div id="promocionesDrop" class="col-md-2 navbarItem  catalogoDrop"><a href="promociones.html">Promociones</a></div>
                 <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem pedidosDrop"><a href="#">Mis pedidos</a></div>
-                <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem"><a href="#">Contacto</a></div>
+                <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem">Contacto</div>
                 <div class="col-md-2 navbarItem">
                   <div class="row">
                     <div id="searchDrop" data-openDropdown="#searchDropdown" class="col-md-4 searchIconHeader">
@@ -205,7 +204,7 @@
                   <a href="faq.html"><h4>Preguntas frecuentes</h4></a>
                 </div>
                 <div class="col-md-6">
-                  <a href="contacto"><h4>Contáctanos</h4></a>
+                  <a href="contacto.html"><h4>Contáctanos</h4></a>
                 </div>
               </div>
           </div>
@@ -560,8 +559,27 @@
               </div>
             </form>
           </div>
+          <div class="col-xs-12 h-i-d filtrosMobile">
+            <button class="btn btnRedFill" id="openMenu">Filtrar</button>
+            <div class="filtros" id="filtros">
+              <div class="row">
+                <div class="col-xs-12">
+                    
+                  <ul class="list-group">
+                    <li><input type="checkbox">Uniformes</li>
+                    <li><input type="checkbox">Para tu EDS</li>
+                    <li><input type="checkbox">Merchandising</li>
+                    <li><input type="checkbox">Otros</li>
+                    <button class="btn btnRed form-control" id="aplicarFiltros">Aplicar</button>
+                    <button class="btn btnRedFill form-control" id="closeMenu">Cerrar</button>
+                  </ul>
+
+                </div>
+               </div>
+            </div>
+          </div>
           <div class="col-md-10">
-            <div class="catalogo-banner">
+            <div class="catalogo-banner h-i-m">
               <ul class="bxslider-catalogo">
                 <li>Slider1</li>
                 <li>Slider2</li>
@@ -1107,6 +1125,14 @@
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();
+
+    $("#openMenu").click(function(){
+            $("#filtros").toggle();
+        });
+        
+        $("#closeMenu").click(function(){
+            $("#filtros").hide();
+        });
     </script>
     <script src="js/app.js"></script>
   </body>

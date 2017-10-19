@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/stacktable.css" />
 
     <script src="js/modernizr.custom.js"></script>
     <link href="css/app.css" rel="stylesheet">
@@ -514,19 +515,19 @@
           <div class="container">
             <h4 class="text-center"><span>¡Está a punto de realizar su pedido!</span> Siga estos pasos para finalizar su compra</h4>
             <div class="row text-center stepsCheckout">
-              <div class="col-md-3 col-xs-6">
+              <div class="col-md-3 col-xs-6 steps-checkout">
                 <div class="numberStep separator last"><p><img src="images/check.svg" width="24px" alt="check"></p></div>
                 <p>Revisión de compra</p>
               </div>
-              <div class="col-md-3 col-xs-6">
+              <div class="col-md-3 col-xs-6 steps-checkout">
                 <div class="numberStep separator last"><p><img src="images/check.svg" width="24px" alt="check"></p></div>
                 <p>Medios de pago</p>
               </div>
-              <div class="col-md-3 col-xs-6">
+              <div class="col-md-3 col-xs-6 steps-checkout steps-act">
                 <div class="numberStep separator active"><p>3</p></div>
                 <p>Pago</p>
               </div>
-              <div class="col-md-3 col-xs-6">
+              <div class="col-md-3 col-xs-6 steps-checkout">
                 <div class="numberStep"><p>4</p></div>
                 <p>Compra exitosa</p>
               </div>
@@ -540,85 +541,76 @@
                 
                 <h2>resumen de la orden</h2>
 
-                <div class="row infoTable tableEffective text-center">
-                  <div class="col-md-2">
-                    <h5>Producto</h5>
-                    <p>Camisa Administrador Blanca Manga Larga</p>
-                    <p>Bayler</p>
-                    <p>Botiquín</p>
-                    <p>Boligrafo Terpelx 12</p>
-                  </div>
-                  <div class="col-md-2">
-                    <h5>referencía</h5>
-                    <p>Talla M</p><br>
-                    <p>Bayler</p>
-                    <p>Botiquín</p>
-                    <p>x 12</p>
-                  </div>
-                  <div class="col-md-2">
-                    <h5>número de guía</h5>
-                    <p>123456789101</p><br>
-                    <p>123456789101</p>
-                    <p>123456789101</p>
-                    <p>123456789101</p>
-                  </div>
-                  <div class="col-md-2">
-                    <h5>cantidad</h5>
-                    <p>6</p><br>
-                    <p>1</p>
-                    <p>1</p>
-                    <p>1</p>
-                  </div>
-                  <div class="col-md-2">
-                    <h5>valor unidad</h5>
-                    <p>$ 34,658,25</p><br>
-                    <p>$ 98,338.03</p>
-                    <p>$ 240,296.70</p>
-                    <p>$ 11,651.03</p>
-                  </div>
-                  <div class="col-md-2">
-                    <h5>valor total</h5>
-                    <p>$ 208,731.25</p><br>
-                    <p>$ 298,338.03</p>
-                    <p>$ 240,296.70</p>
-                    <p>$ 11,651.03</p>
-                  </div>
+                <div class="col-xs-12">
+                  <table id="checkout-table" class="table stacktable" border=”0″>
+                    <tr>
+                      <th>PRODUCTO</th>
+                      <th>REFERENCÍA</th>
+                      <th>NÚMERO DE GUÍA</th>
+                      <th>CANTIDAD</th>
+                      <th>VALOR UNIDAD</th>
+                      <th>VALOR TOTAL</th>
+                    </tr>
+                    <tr>
+                      <td>Camisa Administrador Blanca Manga Larga</td>
+                      <td>Talla M</td>
+                      <td>123456789101</td>
+                      <td>6</td>
+                      <td>$ 34,658,25</td>
+                      <td>$ 208,731.25</td>
+                    </tr>
+                    <tr>
+                      <td>Bayler</td>
+                      <td>Bayler</td>
+                      <td>123456789101</td>
+                      <td>1</td>
+                      <td>$ 98,338.03</td>
+                      <td>$ 298,338.03</td>
+                    </tr>
+                    <tr>
+                      <td>Botiquín</td>
+                      <td>Botiquín</td>
+                      <td>123456789101</td>
+                      <td>1</td>
+                      <td>$ 240,296.70</td>
+                      <td>$ 240,296.70</td>
+                    </tr>
+                    <tr>
+                      <td>Boligrafo Terpelx 12</td>
+                      <td>x 12</td>
+                      <td>123456789101</td>
+                      <td>1</td>
+                      <td>$ 11,651.03</td>
+                      <td>$ 11,651.03</td>
+                    </tr>
+                  </table>
                 </div>
-
-                <div class="row infoTable">
-                  <div class="col-md-offset-8 col-md-4 subtotalTable">
-                    <div class="row">
-                      <div class="col-md-6 text-left">
-                        <p>Subtotal</p>
-                        <p>Iva</p>
-                        <p>Transporte</p>
-                      </div>
-                      <div class="col-md-6 text-center">
-                        <p>$ 455,092.56</p>
-                        <p>$ 89,989.81</p>
-                        <p>$ 14,485.17</p>
-                      </div>
-                    </div>
+                <div class="col-md-offset-8 col-md-4 col-xs-12 total-section-table">
+                  <div class="col-xs-6">
+                    <p>Subtotal</p>
+                    <p>Iva</p>
+                    <p>Transporte</p>
                   </div>
-                  <div class="col-md-offset-8 col-md-4 totalTable">
-                    <div class="row">
-                      <div class="col-md-6 text-left">
-                        <h4>descuento</h4>
-                        <h4>total</h4>
-                      </div>
-                      <div class="col-md-6 text-center">
-                        <p> $ 50,000.00</p>
-                        <p> $ 508,917.20</p>
-                      </div>
-                    </div>
+                  <div class="col-xs-6">
+                    <p>$ 455,092.56</p>
+                    <p>$ 89,989.81</p>
+                    <p>$ 14,485.17</p>
+                  </div>
+                  <div class="col-xs-6">
+                    <h4>Descuento</h4>
+                    <h4>Total</h4>
+                  </div>
+                  <div class="col-xs-6">
+                    <p>$ 50,000.00</p>
+                    <p>$ 508,917.20</p>
                   </div>
                 </div>
 
               </div>
 
               <div class="row text-center buttonsContainer">
-                <a class="btnRedFill">cancelar</a>
-                <a href="checkout3.html" class="btnRed">proceder con el pago</a>
+                <button class="btnRedFill"><a>cancelar</a></button>
+                <button class="btnRed"><a href="checkout2_2_2.html">proceder con el pago</a></button>
               </div>
               <p>En caso de tener alguna duda o inquietud comuníquese a la línea gratuita de atención al cliente 018000 518555 o desde cualquier celular al #462, también puede contactarnos escribiéndonos a: servicioalcliente@terpel.com</p>
             </div>
@@ -683,11 +675,10 @@
     <script>
       new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
     </script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
     <script src="js/jquery-2.2.0.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/stacktable.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

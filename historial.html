@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/stacktable.css" />
 
     <script src="js/modernizr.custom.js"></script>
     <link href="css/app.css" rel="stylesheet">
@@ -31,12 +32,12 @@
         <div class="header h-i-m">
           <div class="container-fluid usuarioLogueadoContainer sectionHome">
             <div class="row">
-              <div class="col-md-offset-8 col-md-2 col-xs-6 text-right usuarioLogueado"><button>EDS de prueba</button></div>
+              <div class="col-md-offset-8 col-md-2 col-xs-6 text-right usuarioLogueado">EDS de prueba</div>
               <div class="col-md-1 ">
                 <div class="dropdown">
 
                   <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <img class="dropdown" src="images/iconUser.png" alt="">
+                    <img class="dropdown" src="images/iconUser.svg" width="35px" alt="">
                     <span class="caret"></span>
                   </a>
 
@@ -568,83 +569,76 @@
                 <div class="col-md-3 col-xs-12 text-center"><p>12/12/2017  -  7:35:16 A.M.</p></div>
                 <p class="historialContainer-table-title h-i-d">Detalle</p>
                 <div class="col-md-2 col-xs-12 text-center"><img data-itemDetalle="#item-detalle" src="images/iconMore.svg" width="40px" align="center" alt=""></div>
-              </div>
-                
-                <div id="item-detalle" class="historialContainer-item-detalle item-detalle wow bounceInUp">
-                  <div class="row infoTable tableEffective text-center">
-                    <div class="col-md-2">
-                      <h5>Producto</h5>
-                      <p>Camisa Administrador Blanca Manga Larga</p>
-                      <p>Bayler</p>
-                      <p>Botiquín</p>
-                      <p>Boligrafo Terpelx 12</p>
-                    </div>
-                    <div class="col-md-2">
-                      <h5>referencía</h5>
-                      <p>Talla M</p><br>
-                      <p>Bayler</p>
-                      <p>Botiquín</p>
-                      <p>x 12</p>
-                    </div>
-                    <div class="col-md-2">
-                      <h5>número de guía</h5>
-                      <p>123456789101</p><br>
-                      <p>123456789101</p>
-                      <p>123456789101</p>
-                      <p>123456789101</p>
-                    </div>
-                    <div class="col-md-2">
-                      <h5>cantidad</h5>
-                      <p>6</p><br>
-                      <p>1</p>
-                      <p>1</p>
-                      <p>1</p>
-                    </div>
-                    <div class="col-md-2">
-                      <h5>valor unidad</h5>
-                      <p>$ 34,658,25</p><br>
-                      <p>$ 98,338.03</p>
-                      <p>$ 240,296.70</p>
-                      <p>$ 11,651.03</p>
-                    </div>
-                    <div class="col-md-2">
-                      <h5>valor total</h5>
-                      <p>$ 208,731.25</p><br>
-                      <p>$ 298,338.03</p>
-                      <p>$ 240,296.70</p>
-                      <p>$ 11,651.03</p>
-                    </div>
-                  </div>
 
-                  <div class="row infoTable">
-                    <div class="col-md-offset-8 col-md-4 subtotalTable">
-                      <div class="row">
-                        <div class="col-md-6 text-left">
-                          <p>Subtotal</p>
-                          <p>Iva</p>
-                          <p>Transporte</p>
-                        </div>
-                        <div class="col-md-6 text-center">
-                          <p>$ 455,092.56</p>
-                          <p>$ 89,989.81</p>
-                          <p>$ 14,485.17</p>
-                        </div>
-                      </div>
+                <div id="item-detalle" class="historialContainer-item-detalle item-detalle">
+                  <div class="col-xs-12">
+                    <table id="checkout-table" class="table stacktable" border=”0″>
+                      <tr>
+                        <th>PRODUCTO</th>
+                        <th>REFERENCÍA</th>
+                        <th>NÚMERO DE GUÍA</th>
+                        <th>CANTIDAD</th>
+                        <th>VALOR UNIDAD</th>
+                        <th>VALOR TOTAL</th>
+                      </tr>
+                      <tr>
+                        <td>Camisa Administrador Blanca Manga Larga</td>
+                        <td>Talla M</td>
+                        <td>123456789101</td>
+                        <td>6</td>
+                        <td>$ 34,658,25</td>
+                        <td>$ 208,731.25</td>
+                      </tr>
+                      <tr>
+                        <td>Bayler</td>
+                        <td>Bayler</td>
+                        <td>123456789101</td>
+                        <td>1</td>
+                        <td>$ 98,338.03</td>
+                        <td>$ 298,338.03</td>
+                      </tr>
+                      <tr>
+                        <td>Botiquín</td>
+                        <td>Botiquín</td>
+                        <td>123456789101</td>
+                        <td>1</td>
+                        <td>$ 240,296.70</td>
+                        <td>$ 240,296.70</td>
+                      </tr>
+                      <tr>
+                        <td>Boligrafo Terpelx 12</td>
+                        <td>x 12</td>
+                        <td>123456789101</td>
+                        <td>1</td>
+                        <td>$ 11,651.03</td>
+                        <td>$ 11,651.03</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="col-md-offset-8 col-md-4 col-xs-12 total-section-table">
+                    <div class="col-xs-6">
+                      <p>Subtotal</p>
+                      <p>Iva</p>
+                      <p>Transporte</p>
                     </div>
-                    <div class="col-md-offset-8 col-md-4 totalTable">
-                      <div class="row">
-                        <div class="col-md-6 text-left">
-                          <h4>descuento</h4>
-                          <h4>total</h4>
-                        </div>
-                        <div class="col-md-6 text-center">
-                          <p> $ 50,000.00</p>
-                          <p> $ 508,917.20</p>
-                        </div>
-                      </div>
+                    <div class="col-xs-6">
+                      <p>$ 455,092.56</p>
+                      <p>$ 89,989.81</p>
+                      <p>$ 14,485.17</p>
+                    </div>
+                    <div class="col-xs-6">
+                      <h4>Descuento</h4>
+                      <h4>Total</h4>
+                    </div>
+                    <div class="col-xs-6">
+                      <p>$ 50,000.00</p>
+                      <p>$ 508,917.20</p>
                     </div>
                   </div>
                 </div>
+              </div>
+                
+                
 
               <div class="row historialContainer-item">
                 <div class="col-md-2 col-xs-12 historialContainer-item-aprobado"><p>Aprobado</p></div><p class="historialContainer-table-title h-i-d">ID de orden</p>
@@ -861,11 +855,10 @@
     <script>
       new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
     </script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
     <script src="js/jquery-2.2.0.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/stacktable.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();
