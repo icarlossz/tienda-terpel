@@ -14,11 +14,10 @@
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/stacktable.css" />
 
     <script src="js/modernizr.custom.js"></script>
     <link href="css/app.css" rel="stylesheet">
-    <link href="css/app_responsive.css" rel="stylesheet">
-
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -69,19 +68,19 @@
           <div class="container-fluid navbarContainer">
             <div class="container Navbar">
               <div class="row">
-                <a href="index.html"><div class="col-md-2 navbarItem">Inicio</div></a>
-                <div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem active catalogoDrop "><a href="catalogo.html">Catálogo</a></div>
+                <a href="index.html"><div class="col-md-2 navbarItem active">Inicio</div></a>
+                <div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem catalogoDrop ">Catálogo</div>
                 <div id="promocionesDrop" class="col-md-2 navbarItem  catalogoDrop"><a href="promociones.html">Promociones</a></div>
                 <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem pedidosDrop"><a href="#">Mis pedidos</a></div>
                 <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem">Contacto</div>
                 <div class="col-md-2 navbarItem">
                   <div class="row">
                     <div id="searchDrop" data-openDropdown="#searchDropdown" class="col-md-4 searchIconHeader">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.2 21.2"><defs></defs><title>Asset 27</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M8.37,0a8.37,8.37,0,1,0,5.5,14.66L20.25,21a.55.55,0,0,0,.78-.78l-6.37-6.37A8.37,8.37,0,0,0,8.37,0Zm0,1.12A7.25,7.25,0,1,1,1.12,8.37,7.25,7.25,0,0,1,8.37,1.12Z"/></g></g></svg>
+                      <i class="icon-iconsearch"></i>
                     </div>
                     <div id="favDrop" class="col-md-4 favIconHeader">
                       <a href="favoritos.html">
-                        <svg class="favIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs><style>stroke:#f8b916;stroke-miterlimit:10;stroke-width:3px;}</style></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
+                        <i class="icon-heart"></i>
                       </a>
 
 
@@ -92,12 +91,12 @@
 
                     </div>
                     <div id="cartDrop" class="col-md-4 cartIconHeader">
-                      <a id="cart-dropdownLabel" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="checkout1.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.37 21.25"><defs></defs><title>Asset 29</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M.53,0a.53.53,0,1,0,0,1.06H3.36c1.36,3.36,2.69,6.72,4,10.09l-1.25,3a.56.56,0,0,0,.49.74H19.92a.53.53,0,1,0,0-1.06H7.44l.9-2.16,13-1a.55.55,0,0,0,.47-.41L23.36,3.3a.56.56,0,0,0-.51-.65H5.14L4.21.33A.54.54,0,0,0,3.72,0Zm5,3.72H22.18L20.82,9.6l-12.5,1ZM9.3,16.47a2.39,2.39,0,1,0,2.39,2.39A2.4,2.4,0,0,0,9.3,16.47Zm8,0a2.39,2.39,0,1,0,2.39,2.39A2.4,2.4,0,0,0,17.27,16.47Zm-8,1.06A1.33,1.33,0,1,1,8,18.86,1.32,1.32,0,0,1,9.3,17.53Zm8,0a1.33,1.33,0,1,1-1.33,1.33A1.32,1.32,0,0,1,17.27,17.53Z"/></g></g></svg></a>
+                      <a id="cart-dropdownLabel" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="checkout1.html"><i class="icon-iconcart"></i></a>
 
 
                       <div class="dropdown-menu dropdown-cart pull-right" aria-labelledby="cart-dropdownLabel">
                          <div class="cartDropdown text-center">
-                           <img src="images/cartDropdown.svg" width="130px" alt="">
+                           <img src="images/cartDropdown.png" width="130px" alt="">
                            <h3>No hay productos en el carrito</h3>
                            <h4>¿ya conoce todos nuestros productos?</h4>
                            <a href="catalogo.html"><button class="btnRed">ir al catálogo</button></a>
@@ -251,7 +250,7 @@
         <div class="navbarMobile h-i-d">
           <div class="container-fluid">
             <div class="row navbarContainer">
-              <div class="col-xs-4">
+              <div class="col-xs-4" id="trigger" class="menu-trigger">
                 <img src="images/burgerMenu.svg" width="55px" align="left" id="trigger" class="menu-trigger" alt="">
                 <!-- <p><a href="#" id="trigger" class="menu-trigger"></a></p> -->
               </div>
@@ -321,192 +320,192 @@
 
         <div class="menuMobile h-i-d">
          <div class="contenedor">
-              <!-- Push Wrapper -->
-              <div class="mp-pusher" id="mp-pusher">
+            <!-- Push Wrapper -->
+            <div class="mp-pusher" id="mp-pusher">
 
-                <!-- mp-menu -->
-                <nav id="mp-menu" class="mp-menu">
-                  <div class="mp-level">
-                    <h2 class="icon">Inicio</h2>
-                    <ul>
-                      <li class="icon icon-arrow-left">
-                        <a class="icon" href="#">Catálogo</a>
-                        <div class="mp-level">
-                          <h2 class="icon">Catálogo</h2>
-                          <a class="mp-back" href="#">Inicio</a>
-                          <ul>
-                            <li class="icon icon-arrow-left">
-                              <a class="icon" href="#">Terpel</a>
-                              <div class="mp-level">
-                                <h2>Terpel</h2>
-                                <a class="mp-back" href="#">Catálogo</a>
-                                <ul>
-                                  <li><a href="#">Uniformes Hombre</a></li>
-                                  <li><a href="#">Uniformes mujer</a></li>
-                                  <li><a href="#">Accesorios</a></li>
-                                  <li><a href="#">Unisex</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="icon icon-arrow-left">
-                              <a class="icon" href="#">gazel</a>
-                              <div class="mp-level">
-                                <h2>gazel</h2>
-                                <a class="mp-back" href="#">Catálogo</a>
-                                <ul>
-                                  <li><a href="#">Uniformes Hombre</a></li>
-                                  <li><a href="#">Uniformes mujer</a></li>
-                                  <li><a href="#">Accesorios</a></li>
-                                  <li><a href="#">Unisex</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="icon icon-arrow-left">
-                              <a class="icon" href="#">altoque</a>
-                              <div class="mp-level">
-                                <h2>altoque</h2>
-                                <a class="mp-back" href="#">Catálogo</a>
-                                <ul>
-                                  <li><a href="#">Uniformes Hombre</a></li>
-                                  <li><a href="#">Uniformes mujer</a></li>
-                                  <li><a href="#">Accesorios</a></li>
-                                  <li><a href="#">Unisex</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="icon icon-arrow-left">
-                              <a class="icon" href="#">Motos</a>
-                              <div class="mp-level">
-                                <h2>Motos</h2>
-                                <a class="mp-back" href="#">Catálogo</a>
-                                <ul>
-                                  <li><a href="#">Uniformes Hombre</a></li>
-                                  <li><a href="#">Uniformes mujer</a></li>
-                                  <li><a href="#">Accesorios</a></li>
-                                  <li><a href="#">Unisex</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="icon icon-arrow-left">
-                              <a class="icon" href="#">Para tu EDS</a>
-                              <div class="mp-level">
-                                <h2>Para tu EDS</h2>
-                                <a class="mp-back" href="#">Catálogo</a>
-                                <ul>
-                                  <li><a href="#">Uniformes Hombre</a></li>
-                                  <li><a href="#">Uniformes mujer</a></li>
-                                  <li><a href="#">Accesorios</a></li>
-                                  <li><a href="#">Unisex</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="icon icon-arrow-left">
-                              <a class="icon" href="#">Merchandising</a>
-                              <div class="mp-level">
-                                <h2>Merchandising</h2>
-                                <a class="mp-back" href="#">Catálogo</a>
-                                <ul>
-                                  <li><a href="#">Uniformes Hombre</a></li>
-                                  <li><a href="#">Uniformes mujer</a></li>
-                                  <li><a href="#">Accesorios</a></li>
-                                  <li><a href="#">Unisex</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="icon icon-arrow-left">
-                              <a class="icon" href="#">Clasificados</a>
-                              <div class="mp-level">
-                                <h2>Clasificados</h2>
-                                <a class="mp-back" href="#">Catálogo</a>
-                                <ul>
-                                  <li><a href="#">Uniformes Hombre</a></li>
-                                  <li><a href="#">Uniformes mujer</a></li>
-                                  <li><a href="#">Accesorios</a></li>
-                                  <li><a href="#">Unisex</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li><a class="icon" href="#">Promociones</a></li>
-                      <li class="icon icon-arrow-left">
-                        <a class="icon" href="#">Mis pedidos</a>
-                        <div class="mp-level">
-                          <h2 class="icon icon-news">Mis pedidos</h2>
-                          <a class="mp-back" href="#">Inicio</a>
-                          <ul>
-                            <li><a href="#">Seguimiento</a></li>
-                            <li><a href="#">Historial</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="icon icon-arrow-left">
-                        <a class="icon" href="#">Contacto</a>
-                        <div class="mp-level">
-                          <h2 class="icon icon-shop">Contacto</h2>
-                          <a class="mp-back" href="#">Inicio</a>
-                          <ul>
-                            <!-- <li class="icon icon-arrow-left">
-                              <a class="icon icon-t-shirt" href="#">Clothes</a>
-                              <div class="mp-level">
-                                <h2 class="icon icon-t-shirt">Clothes</h2>
-                                <a class="mp-back" href="#">back</a>
-                                <ul>
-                                  <li class="icon icon-arrow-left">
-                                    <a class="icon icon-female" href="#">Women's Clothing</a>
-                                    <div class="mp-level">
-                                      <h2 class="icon icon-female">Women's Clothing</h2>
-                                      <a class="mp-back" href="#">back</a>
-                                      <ul>
-                                        <li><a href="#">Tops</a></li>
-                                        <li><a href="#">Dresses</a></li>
-                                        <li><a href="#">Trousers</a></li>
-                                        <li><a href="#">Shoes</a></li>
-                                        <li><a href="#">Sale</a></li>
-                                      </ul>
-                                    </div>
-                                  </li>
-                                  <li class="icon icon-arrow-left">
-                                    <a class="icon icon-male" href="#">Men's Clothing</a>
-                                    <div class="mp-level">
-                                      <h2 class="icon icon-male">Men's Clothing</h2>
-                                      <a class="mp-back" href="#">back</a>
-                                      <ul>
-                                        <li><a href="#">Shirts</a></li>
-                                        <li><a href="#">Trousers</a></li>
-                                        <li><a href="#">Shoes</a></li>
-                                        <li><a href="#">Sale</a></li>
-                                      </ul>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </div>
-                            </li> -->
-                            <li>
-                              <a class="icon" href="#">Preguntas frecuentes</a>
-                            </li>
-                            <li>
-                              <a class="icon" href="#">Contáctanos</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      
-                    </ul>
-                      
-                  </div>
-                </nav>
-                <!-- /mp-menu -->
-
-                <div class="scroller"><!-- this is for emulating position fixed of the nav -->
-                  <div class="scroller-inner">
+              <!-- mp-menu -->
+              <nav id="mp-menu" class="mp-menu">
+                <div class="mp-level">
+                  <h2 class="icon">Inicio</h2>
+                  <ul>
+                    <li class="icon icon-arrow-left">
+                      <a class="icon" href="#">Catálogo</a>
+                      <div class="mp-level">
+                        <h2 class="icon">Catálogo</h2>
+                        <a class="mp-back" href="#">Inicio</a>
+                        <ul>
+                          <li class="icon icon-arrow-left">
+                            <a class="icon" href="#">Terpel</a>
+                            <div class="mp-level">
+                              <h2>Terpel</h2>
+                              <a class="mp-back" href="#">Catálogo</a>
+                              <ul>
+                                <li><a href="#">Uniformes Hombre</a></li>
+                                <li><a href="#">Uniformes mujer</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Unisex</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="icon icon-arrow-left">
+                            <a class="icon" href="#">gazel</a>
+                            <div class="mp-level">
+                              <h2>gazel</h2>
+                              <a class="mp-back" href="#">Catálogo</a>
+                              <ul>
+                                <li><a href="#">Uniformes Hombre</a></li>
+                                <li><a href="#">Uniformes mujer</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Unisex</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="icon icon-arrow-left">
+                            <a class="icon" href="#">altoque</a>
+                            <div class="mp-level">
+                              <h2>altoque</h2>
+                              <a class="mp-back" href="#">Catálogo</a>
+                              <ul>
+                                <li><a href="#">Uniformes Hombre</a></li>
+                                <li><a href="#">Uniformes mujer</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Unisex</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="icon icon-arrow-left">
+                            <a class="icon" href="#">Motos</a>
+                            <div class="mp-level">
+                              <h2>Motos</h2>
+                              <a class="mp-back" href="#">Catálogo</a>
+                              <ul>
+                                <li><a href="#">Uniformes Hombre</a></li>
+                                <li><a href="#">Uniformes mujer</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Unisex</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="icon icon-arrow-left">
+                            <a class="icon" href="#">Para tu EDS</a>
+                            <div class="mp-level">
+                              <h2>Para tu EDS</h2>
+                              <a class="mp-back" href="#">Catálogo</a>
+                              <ul>
+                                <li><a href="#">Uniformes Hombre</a></li>
+                                <li><a href="#">Uniformes mujer</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Unisex</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="icon icon-arrow-left">
+                            <a class="icon" href="#">Merchandising</a>
+                            <div class="mp-level">
+                              <h2>Merchandising</h2>
+                              <a class="mp-back" href="#">Catálogo</a>
+                              <ul>
+                                <li><a href="#">Uniformes Hombre</a></li>
+                                <li><a href="#">Uniformes mujer</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Unisex</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="icon icon-arrow-left">
+                            <a class="icon" href="#">Clasificados</a>
+                            <div class="mp-level">
+                              <h2>Clasificados</h2>
+                              <a class="mp-back" href="#">Catálogo</a>
+                              <ul>
+                                <li><a href="#">Uniformes Hombre</a></li>
+                                <li><a href="#">Uniformes mujer</a></li>
+                                <li><a href="#">Accesorios</a></li>
+                                <li><a href="#">Unisex</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a class="icon" href="#">Promociones</a></li>
+                    <li class="icon icon-arrow-left">
+                      <a class="icon" href="#">Mis pedidos</a>
+                      <div class="mp-level">
+                        <h2 class="icon icon-news">Mis pedidos</h2>
+                        <a class="mp-back" href="#">Inicio</a>
+                        <ul>
+                          <li><a href="#">Seguimiento</a></li>
+                          <li><a href="#">Historial</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="icon icon-arrow-left">
+                      <a class="icon" href="#">Contacto</a>
+                      <div class="mp-level">
+                        <h2 class="icon icon-shop">Contacto</h2>
+                        <a class="mp-back" href="#">Inicio</a>
+                        <ul>
+                          <!-- <li class="icon icon-arrow-left">
+                            <a class="icon icon-t-shirt" href="#">Clothes</a>
+                            <div class="mp-level">
+                              <h2 class="icon icon-t-shirt">Clothes</h2>
+                              <a class="mp-back" href="#">back</a>
+                              <ul>
+                                <li class="icon icon-arrow-left">
+                                  <a class="icon icon-female" href="#">Women's Clothing</a>
+                                  <div class="mp-level">
+                                    <h2 class="icon icon-female">Women's Clothing</h2>
+                                    <a class="mp-back" href="#">back</a>
+                                    <ul>
+                                      <li><a href="#">Tops</a></li>
+                                      <li><a href="#">Dresses</a></li>
+                                      <li><a href="#">Trousers</a></li>
+                                      <li><a href="#">Shoes</a></li>
+                                      <li><a href="#">Sale</a></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="icon icon-arrow-left">
+                                  <a class="icon icon-male" href="#">Men's Clothing</a>
+                                  <div class="mp-level">
+                                    <h2 class="icon icon-male">Men's Clothing</h2>
+                                    <a class="mp-back" href="#">back</a>
+                                    <ul>
+                                      <li><a href="#">Shirts</a></li>
+                                      <li><a href="#">Trousers</a></li>
+                                      <li><a href="#">Shoes</a></li>
+                                      <li><a href="#">Sale</a></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </li> -->
+                          <li>
+                            <a class="icon" href="#">Preguntas frecuentes</a>
+                          </li>
+                          <li>
+                            <a class="icon" href="#">Contáctanos</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
                     
-                  </div><!-- /scroller-inner -->
-                </div><!-- /scroller -->
+                  </ul>
+                    
+                </div>
+              </nav>
+              <!-- /mp-menu -->
 
-              </div><!-- /pusher -->
-            </div><!-- /container -->
+              <div class="scroller"><!-- this is for emulating position fixed of the nav -->
+                <div class="scroller-inner">
+                  
+                </div><!-- /scroller-inner -->
+              </div><!-- /scroller -->
+
+            </div><!-- /pusher -->
+          </div><!-- /container -->
         </div>
       </header>
 
@@ -515,7 +514,13 @@
         <div class="catalogoContainer container">
           <div class="col-md-2 filtrosCatalogo">
             <form action="filtros-catalogo">
+
               <h3>Categorías</h3>
+
+              <ul>
+                <li class="select-all"><input type="checkbox" value="Seleccionar todos" class="borrar-filtros" name="select-all" id="select-all"> Seleccionar todos</li>
+              </ul>
+              
               <h4>Uniformes</h4>
               <ul>
                 <li><input type="checkbox">Terpel</li>
@@ -553,6 +558,8 @@
                 <li><input type="checkbox">Bandera</li>
                 <li><input type="checkbox">Señalización</li>
               </ul>
+
+              
 
               <div class="borrar">
                <input type="reset" value="Borrar filtros" class="borrar-filtros"> 
@@ -1122,17 +1129,18 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/stacktable.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();
 
     $("#openMenu").click(function(){
-            $("#filtros").toggle();
-        });
-        
-        $("#closeMenu").click(function(){
-            $("#filtros").hide();
-        });
+        $("#filtros").toggle();
+    });
+    
+    $("#closeMenu").click(function(){
+        $("#filtros").hide();
+    });
     </script>
     <script src="js/app.js"></script>
   </body>

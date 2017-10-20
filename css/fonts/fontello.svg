@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2017 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="iconsearch" unicode="&#xe800;" d="M395 850a395 395 0 1 1 259-691l301-300a26 26 0 0 1 37 37l-300 301a395 395 0 0 1-297 653z m0-53a342 342 0 1 0-342-342 342 342 0 0 0 342 342z" horiz-adv-x="1000" />
+
+<glyph glyph-name="iconfavheartfill" unicode="&#xe801;" d="M1140 534a305 305 0 0 1-564 159 305 305 0 1 1-460-388l432-432a39 39 0 0 1 55 0l432 432a304 304 0 0 1 105 229z" horiz-adv-x="1151" />
+
+<glyph glyph-name="iconcart" unicode="&#xe802;" d="M25 850a25 25 0 1 1 0-50h133c64-158 127-316 188-475l-58-141a26 26 0 0 1 23-35h626a25 25 0 1 1 0 50h-587l43 102 611 47a26 26 0 0 1 22 19l73 328a26 26 0 0 1-24 30h-833l-44 110a25 25 0 0 1-23 15z m235-175h784l-64-277-588-47z m178-600a113 113 0 1 1 112-113 113 113 0 0 1-112 113z m376 0a113 113 0 1 1 113-113 113 113 0 0 1-114 113z m-376-50a63 63 0 1 0-61-63 62 62 0 0 0 61 63z m376 0a63 63 0 1 0-62-63 62 62 0 0 0 61 63z" horiz-adv-x="1100" />
+
+<glyph glyph-name="heart" unicode="&#xe805;" d="M919 708c-52 52-121 81-195 81s-144-29-196-81l-28-28-27 28c-53 53-123 82-197 82-73 0-143-29-195-81-52-53-81-122-81-196 0-74 29-144 81-196l399-398c5-6 13-9 20-9 7 0 14 3 20 9l399 397c52 53 81 122 81 196 0 74-28 144-81 196z m-40-351l-379-378-378 378c-42 42-65 97-65 156s23 114 65 155c41 41 96 64 154 64 59 0 115-23 156-64l48-48c11-11 29-11 41 0l47 47c42 42 97 65 155 65 59 0 114-23 156-64 41-42 64-97 64-156 0-59-23-114-64-155z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

@@ -201,7 +201,7 @@ a.btnRedFill:hover{
 .zoom .zoom-icon{
     position: absolute;
     z-index: 5;
-    right: 40px;
+    right: 60px;
     width: 40px;
 }
 
@@ -500,6 +500,7 @@ a.btnRedFill:hover{
 .Navbar .searchIconHeader svg{
     fill: #58595B;
     width: 21px;
+    height: 21px;
     padding: 1px;
     stroke-width: .2px;
     transition: .3s;
@@ -511,6 +512,7 @@ a.btnRedFill:hover{
 
 .search-dropdown-icon img{
     width: 25px;
+    height: 25px;
     margin-top: 35%;
 }
 
@@ -544,6 +546,7 @@ a.btnRedFill:hover{
 .Navbar .cartIconHeader svg{
     fill: #58595B;
     width: 23px;
+    height: 23px;
     padding: 1px;
     fill-width: .1px;
 }
@@ -712,6 +715,16 @@ a.btnRedFill:hover{
     color: #D91C24;
 }
 
+.Navbar .navbarItem i{
+    font-size: 19px;
+    transition: .3s;
+    color: #9b9b9b
+}
+
+.Navbar .navbarItem i:hover{
+    color: #F8B916;
+}
+
 .Navbar .navbarItem a{
     text-transform: uppercase;
     padding: 15px 0;
@@ -764,7 +777,7 @@ a.btnRedFill:hover{
     box-shadow: 0 3px 10px rgba(0,0,0,.1);
     border-radius: 3px;
     position: absolute;
-    z-index: 5;
+    z-index: 99999999;
     width: 100%;
 }
 
@@ -877,7 +890,7 @@ a.btnRedFill:hover{
     background-color: rgba(0,0,0,.3);
     width: 100%;
     height: 100%;
-    z-index: 10;
+    z-index: 3;
     position: absolute;
 }
 
@@ -886,6 +899,7 @@ a.btnRedFill:hover{
     color: #FFF;
     font-size: 24pt;
     bottom: 50px;
+    z-index: 3;
 }
 
 .carousel-caption h2{
@@ -908,6 +922,7 @@ a.btnRedFill:hover{
 
 .uniformesHomeContainer{
     padding: 0;
+    z-index: 3;
 }
 
 /*.uniformesHomeContainer .imgUniformeHome{
@@ -994,7 +1009,7 @@ a.btnRedFill:hover{
 }
 
 .promociones-title{
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .banner-promociones{
@@ -1167,6 +1182,10 @@ right: 0;
     padding: 5px 2px;
 }
 
+.cajaProductoBorderRadiusGris .footerVistosReciente svg{
+    height: 35px;width: 35px;
+}
+
 .cajaProductoBorderRadiusGris .footerVistosReciente svg .cls-1{
     height: auto;
     stroke: #F8B916;
@@ -1179,6 +1198,10 @@ right: 0;
 
 .cajaProductoBorderRadiusGris .footerVistosReciente svg .cls-1:hover{
     fill: #F8B916;
+}
+
+svg .cls-1.active{
+    fill: #F8B916 !important;
 }
 
 
@@ -1390,6 +1413,7 @@ right: 0;
     border-radius: 20px;
     transition: .4s;
 }
+
 
 .catalogoContainer .filtrosCatalogo .borrar-filtros:hover{
     background-color: #D91C24;
@@ -2016,6 +2040,8 @@ table td{
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
     border-top: 0;
 }
+
+.table.stacktable.large-only{margin-top: 20px;}
 
 .s2t1Container .infoTable{
     padding: 20px 0;
@@ -3370,6 +3396,11 @@ fill: #F8B916;
     padding-bottom: 10px;
     cursor: pointer;
     position: relative;
+    transition: .8s;
+}
+
+.productoContainer .producto-img .bxslider img:hover{
+    transform: scale(1.5);
 }
 
 .productoContainer .producto-img .bxslider img .lupa{
@@ -3725,7 +3756,7 @@ padding-top: 20px;
 /* BEGIN PROFILE */
 
 .profile-container{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .profile-header-bkg{
@@ -4385,6 +4416,74 @@ padding-top: 20px;
 
 
 
+/*FONTELLO*/
+
+@font-face {
+  font-family: 'fontello';
+  src: url('fonts/fontello.eot?65179778');
+  src: url('fonts/fontello.eot?65179778#iefix') format('embedded-opentype'),
+       url('fonts/fontello.woff2?65179778') format('woff2'),
+       url('fonts/fontello.woff?65179778') format('woff'),
+       url('fonts/fontello.ttf?65179778') format('truetype'),
+       url('fonts/fontello.svg?65179778#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?65179778#fontello') format('svg');
+  }
+}
+*/
+ 
+.navbarItem  [class^="icon-"]:before, .navbarItem [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.navbarItem .icon-iconsearch:before { content: '\e800'; } /* '' */
+.navbarItem .icon-iconfavheartfill:before { content: '\e801'; } /* '' */
+.navbarItem .icon-iconcart:before { content: '\e802'; } /* '' */
+.navbarItem .icon-heart:before { content: '\e805'; } /* '' */
+
+/*FONTELLO*/
+
+
+
 
 /* BEGIN RESPONSIVE */
 
@@ -4512,6 +4611,7 @@ padding-top: 20px;
 
     .dropdownContainer{
         margin-top: 130px;
+        z-index: 999999999;
     }
     .servicios-header h3{
         margin-top: -40%;
@@ -4653,6 +4753,15 @@ padding-top: 20px;
     .historialContainer-item-detalle p{margin-bottom: 0;padding: 5px 0;}
     .historialContainer-item-detalle h4{margin-bottom: 0;padding: 5px 0;margin-top: 5px;}
     .catalogoContainer h3{text-align: center;}
+    .seguimientoContainer .seguimientoContainer-idPedido{text-align: center;}
+    .seguimiento-state .icon{padding: 20px 0; display: none}
+    .seguimiento-state .icon.active{display: inherit;}
+    .seguimiento-state{padding: 20px 0;}
+    .seguimientoContainer .seguimientoContainer-icons .icon img{margin-top: 10%;}
+    .seguimientoContainer .seguimientoContainer-estado p{display: none;}
+    .seguimientoContainer .seguimientoContainer-estado p.active{display: inherit;}
+    .seguimientoContainer .seguimientoContainer-estado{margin-bottom: 0;}
+    .seguimientoContainer{margin-bottom: 0;}
 }
 
 @media screen and (max-width: 991px) {
@@ -4699,9 +4808,6 @@ padding-top: 20px;
     }
 }
 
-@media screen and (max-width: 767px) {
-    
-}
 
 @media screen and (max-width: 400px) {
     ul.bxslider > li {

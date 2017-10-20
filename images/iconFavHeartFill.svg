@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 522 453.52"><defs><style>.cls-1{fill:#fff;stroke:#f8b916;stroke-miterlimit:10;stroke-width:10px;}</style></defs><title>Asset 3</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M517,143.26A138.15,138.15,0,0,0,261,71.06,138.15,138.15,0,1,0,52.46,247.36L248.38,443.29a17.84,17.84,0,0,0,25.23,0L469.54,247.36A137.76,137.76,0,0,0,517,143.26Z"/></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 522 453.5" style="enable-background:new 0 0 522 453.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#F8B916;stroke-miterlimit:10;}
+</style>
+<title>Asset 3</title>
+<g id="Layer_2">
+	<g id="Capa_1">
+		<g id="Icons">
+			<path class="st0" d="M517,143.3C517.1,67,455.3,5.1,379,5c-48.1,0-92.8,25-118,66.1C221.2,6,136.2-14.5,71.1,25.3
+				s-85.6,124.8-45.8,189.9c7.4,12,16.5,22.9,27.2,32.1l195.9,195.9c7,7,18.3,7,25.2,0l0,0l195.9-195.9
+				C499.7,221.2,517,183.2,517,143.3z"/>
+		</g>
+	</g>
+</g>
+</svg>

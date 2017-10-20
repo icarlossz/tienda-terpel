@@ -1,4 +1,14 @@
 $(document).ready(function(){
+
+	$('.cls-1').click(function () {
+      var isActive = $(this).hasClass('active');
+      if (isActive) {
+          $(this).removeClass('active')
+      } else {
+          $(this).addClass('active')
+      }
+  });
+	
 	$('.bxslider').bxSlider({
 		infiniteLoop: true,
 	  minSlides: 3,
@@ -209,6 +219,16 @@ $(document).ready(function(){
 		} else {
 			$('.ir-arriba').slideUp(500);
 		}
+	});
+
+	$('#select-all').click(function(event) {   
+    if(this.checked) {
+        // Iterate each checkbox
+        $(':checkbox').each(function() {
+            this.checked = true;                        
+        });
+    }
+    else { $(":checkbox").each(function() { this.checked = false; }); }
 	});
 
 	$('.seguimientoContainer-icons .col-md-4:has(> .icon.active)').last().removeClass('active')
