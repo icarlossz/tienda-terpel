@@ -1,14 +1,22 @@
 $(document).ready(function(){
 
+	$(document).ready(function(){
+	  $('img#thumb')
+	    .wrap('<span style="display:inline-block"></span>')
+	    .css('display', 'block')
+	    .parent()
+	    .zoom();
+	});
+
 	$('.cls-1').click(function () {
-      var isActive = $(this).hasClass('active');
-      if (isActive) {
-          $(this).removeClass('active')
-      } else {
-          $(this).addClass('active')
-      }
+    var isActive = $(this).hasClass('active');
+    if (isActive) {
+      $(this).removeClass('active')
+    } else {
+      $(this).addClass('active')
+    }
   });
-	
+
 	$('.bxslider').bxSlider({
 		infiniteLoop: true,
 	  minSlides: 3,

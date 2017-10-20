@@ -519,11 +519,11 @@
             <div class="row producto-unidad">
               <div class="col-md-6 producto-img  productoContainer-up">
                 <!-- <img src="images/imgProducto.png" alt=""> -->
-                <div class="zoom"><img class="zoom-icon" src="images/zoomIcon.svg" alt="Zoom Icon" width="20px"></div>
+                <!-- <div class="zoom"><img class="zoom-icon" src="images/zoomIcon.svg" alt="Zoom Icon" width="20px"></div> -->
                 <ul class="bxslider">
-                  <li><img src="images/imgProducto.png" data-toggle="modal" data-target=".imgproducto1-modal"/></li>
-                  <li><img src="images/imgProducto2.jpg" data-toggle="modal" data-target=".imgproducto2-modal"/></li>
-                  <li><img src="images/imgProducto3.jpg" data-toggle="modal" data-target=".imgproducto3-modal"/></li>
+                  <li><img id="thumb" src="images/imgProducto.png" data-toggle="modal" data-target=".imgproducto1-modal"/></li>
+                  <li><img id="thumb" src="images/imgProducto2.jpg" data-toggle="modal" data-target=".imgproducto2-modal"/></li>
+                  <li><img id="thumb" src="images/imgProducto3.jpg" data-toggle="modal" data-target=".imgproducto3-modal"/></li>
                 </ul>
                 <div id="bx-pager">
                   <div class="row">
@@ -1203,7 +1203,7 @@
       </div>
     </footer> 
       
-  <script src="js/classie.js"></script>
+    <script src="js/classie.js"></script>
     <script src="js/mlpushmenu.js"></script>
     <script>
       new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
@@ -1229,9 +1229,9 @@
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       });
-
-      
     </script>
+    <script src="js/stacktable.js"></script>
+    <script src="js/jquery.zoom.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
   </body>
