@@ -1490,17 +1490,34 @@
                 </div>
                 <hr>
                 <input type="text" class="promoCode" placeholder="¿Tienes un código de promoción? Ingresalo">
+                <a data-toggle="modal" data-target=".producto-codigo""><button class="btnRedFill">Aplicar</button></a>
+
+                <!-- CONTENIDO MODAL -->
+                <div class="modal fade producto-codigo" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                  <div class="modal-dialog modal-xs" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header  modal-codigo">
+                        <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
+                        <h2 class="producto-despacho-title" id="gridSystemModalLabel">
+                        Código aprobado</h2>
+                      </div>
+                      <div class="modal-body modal-codigo">
+                        <div class="row">El código es válido y se ha aplicado un beneficio de <br><span>20%</span></div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- CONTENIDO MODAL -->
                 <hr>
                 <div class="row">
                   <div class="col-xs-6">
                     <ul class="text-left">
-                      <li class="textPrice">Descuento</li>
                       <li class="textPrice">Total</li>
                     </ul>
                   </div>
                   <div class="col-xs-6 ">
                     <ul class="text-right">
-                      <li class="price">$ 50,000.00</li>
                       <li class="price">$ 508,917.20</li>
                     </ul>
                   </div>

@@ -158,6 +158,11 @@ input[type='checkbox']{
     color: #FFF;
 }
 
+/*input:valid {
+    border: 1px solid green !important;
+    box-shadow: 0.2px 0.2px 2px green !important;
+}*/
+
 input:invalid {
     border: 1px solid #D91C24 !important;
     box-shadow: 0.2px 0.2px 2px  #D91C24 !important;
@@ -279,7 +284,7 @@ a.btnRedFill:hover{
     width: 100%;
     -webkit-transition: .4s;
     transition: .4s;
-    margin: 15px 0;
+    margin: 10px 0;
     text-align: center;
 }
 
@@ -2072,6 +2077,15 @@ table td{
     margin-bottom: 20px;
 }
 
+.s2t1Container .resumePago select{
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+/*    background-color: #FFF;*/
+}
+
 .s2t1Container .resumePago label{
 
 }
@@ -2135,6 +2149,25 @@ table td{
 .placetopayFooter img{
     text-align: center;
     width: 45%;
+}
+
+.modal-codigo h2{
+    margin-top: 20px;
+    padding: 0;
+}
+
+.modal-codigo button{
+    margin-right: -12px
+}
+
+.modal-codigo span{
+    font-family: 'OpenSansSemibold';
+    font-size: 32px;
+}
+
+.modal-agregado button{
+    max-width: 230px !important;
+    margin-top: 20px;
 }
 
 /*END CHECKOUT*/
@@ -3247,6 +3280,10 @@ fill: #F8B916;
 .productoContainer .producto-precio{
     padding: 20px 0;
     border-bottom: 1px solid #eee;
+    display: inline-block;
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .productoContainer .producto-precio h5{
@@ -3260,6 +3297,13 @@ fill: #F8B916;
     color: #C42134;
     margin: 0;
     text-align: right;
+}
+
+.productoContainer .producto-precio h6{
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .productoContainer .sizeProduct{
@@ -3491,6 +3535,7 @@ padding-top: 20px;
 
 .modal-header{
     border: 0;
+    padding: 3px !important;
 }
 
 .modal-content{
@@ -3791,7 +3836,24 @@ padding-top: 20px;
     background-color: #F6f6f6;
     border: 0;
     border-radius: 5px;
+    margin-top: 5px;
+}
+
+.profile-info select{
+    width: 100%;
+    height: 45px;
+    background-color: #F6f6f6;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.profile-info label{
+    margin: 0;
     margin-top: 20px;
+    text-transform: uppercase;
+    color: #9b9b9b;
+    font-size: 12px;
 }
 
 .profile-terminos{
@@ -3954,16 +4016,16 @@ padding-top: 20px;
 }
 
 .indexnolog-above .container-login input{
-    text-transform: uppercase;
+    text-transform: none;
     margin: 0;
-    color: #ccc;
+    color: #9b9b9b;
     font-family: 'AlrightSansLight', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     letter-spacing: 4px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border: 1px solid #eee;
     border-radius: 3px;
-    width: 300px;
+    width: 330px;
 }
 
 .indexnolog-above .container-login .forgot{
@@ -4027,6 +4089,47 @@ padding-top: 20px;
     padding: 20px 0;
     text-align: center;
     color: #FFF;
+}
+
+h2.title-modal {
+    font-family: 'AlrightSansMedium';
+    font-size: 14pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #D81C24;
+    text-decoration: none;
+}
+
+.input-olvido-modal input{
+    text-transform: none !important;
+    margin: 5px 0 !important;
+    color: #9b9b9b;
+    font-family: 'AlrightSansLight', sans-serif;
+    font-size: 13px !important;
+    letter-spacing: 4px;
+    padding: 10px 10px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    width: 330px;
+}
+
+.input-olvido-modal input::-webkit-input-placeholder, .input-olvido-modal input::-webkit-input-placeholder,  .input-olvido-modal input:-moz-placeholder, .input-olvido-modal input:-ms-input-placeholder{
+    color: #ccc;
+}
+
+.ingresar-container-login a{
+    text-align: center;
+}
+
+.ingresar-container-login .alert{
+    display: none;
+}
+
+.ingresar-container-login .alert.error{
+    width: 330px;
+    max-width: 100%;
+    display: inherit;
 }
 
 /*END INDEX NO LOGUEADO*/

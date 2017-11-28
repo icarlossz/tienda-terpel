@@ -8,6 +8,15 @@ $(document).ready(function(){
 	    .zoom();
 	});
 
+	$('#trigger-login').click(function () {
+    var isActive = $(this).hasClass('error');
+    if (isActive) {
+      $('.alert').removeClass('error')
+    } else {
+      $('.alert').addClass('error')
+    }
+  });
+
 	$('.cls-1').click(function () {
     var isActive = $(this).hasClass('active');
     if (isActive) {
@@ -242,6 +251,9 @@ $(document).ready(function(){
 	$('.seguimientoContainer-icons .col-md-4:has(> .icon.active)').last().removeClass('active')
 	$('.seguimientoContainer-icons .col-md-4:has(> .icon.active):not(:last-child)').addClass('active')
 	
+	$(window).load(function(){
+        $('#modal-inicio').modal('show');
+  });
 
 });
 

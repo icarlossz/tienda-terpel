@@ -30,13 +30,12 @@
         <div class="header h-i-m">
           <div class="container-fluid usuarioLogueadoContainer sectionHome">
             <div class="row">
-              <div class="col-md-offset-8 col-md-2 col-xs-6 text-right usuarioLogueado"><button>EDS de prueba</button></div>
+              <div class="col-md-offset-8 col-md-2 col-xs-6 text-right usuarioLogueado">EDS de prueba</div>
               <div class="col-md-1 ">
                 <div class="dropdown">
 
                   <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <img class="dropdown" src="images/iconUser.png" alt="">
-                    <span class="caret"></span>
+                    <img class="dropdown" src="images/iconUser.svg" width="32px" alt="">
                   </a>
 
                   <div class="dropdown-menu pull-right usuarioDropdown" aria-labelledby="dLabel">
@@ -534,39 +533,44 @@
             
             <div class="s2t1Container">
               <div class="row">
-                <h3>resumen del pago</h3>
+                <h3>Resumen del pago</h3>
                 <div class="row text-center infoTable">
-                  <div class="col-md-3 col-xs-6 p10">
-                    <h4>Nombre Administrador</h4>
-                    <p>Carlos Iván Suárez Cortés</p>
+                  <div class="col-md-3">
+                    <h4>Referencia</h4>
+                    <p>XXXXX</p>
                   </div>
-                  <div class="col-md-3 col-xs-6 p10">
-                    <h4>razón social</h4>
-                    <p>Estación de Servicio Cerros del Monte</p>
+                  <div class="col-md-3">
+                    <h4>Nombre</h4>
+                    <p>Usuario Tienda</p>
                   </div>
-                  <div class="col-md-3 col-xs-6 p10">
-                    <h4>cédula administrador</h4>
-                    <p>1018461422</p>
+                  <div class="col-md-3">
+                    <h4>E-mail</h4>
+                    <p>correo@hotmail.com</p>
                   </div>
-                  <div class="col-md-3 col-xs-6 p10">
-                    <h4>NIT</h4>
-                    <p>717372073</p>
+                  <div class="col-md-3">
+                    <h4>Total a pagar</h4>
+                    <p>$ 000.000</p>
                   </div>
                 </div> 
                 
                 <h2>Información para el pago:</h2>
                 <div class="row resumePago">
-                  <div class="col-md-6">
-                    <input type="text" placeholder="Identificación del pagador">
+                  <div class="col-md-6 text-right">
+                    <select>
+                      <option value="volvo">Tipo de identificación</option>
+                      <option value="saab">Cédula de ciudadanía</option>
+                      <option value="mercedes">Cédula de extranjeria</option>
+                      <option value="audi">Pasaporte</option>
+                    </select>
                   </div>
-                  <div class="col-md-6">
-                    <input type="text" placeholder="Número de identificación">
+                  <div class="col-md-6 text-left">
+                    <input type="number" placeholder="Número de identificación">
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 text-right">
                     <input type="text" placeholder="Nombre">
                   </div>
-                  <div class="col-md-6">
-                    <input type="text" placeholder="Correo electrónico">
+                  <div class="col-md-6 text-left">
+                    <input type="email" placeholder="Correo electrónico">
                   </div>
                 </div>
 

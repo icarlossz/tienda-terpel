@@ -3,10 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"> -->
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
    
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Tienda Terpel Web</title>
 
     <!-- Bootstrap -->
@@ -18,7 +16,6 @@
 
     <script src="js/modernizr.custom.js"></script>
     <link href="css/app.css" rel="stylesheet">
-    <!-- <link href="css/app_responsive.css" rel="stylesheet"> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -460,14 +457,56 @@
                 <h3 class="indexnolog-subtitle">tienda terpel</h3>
                 <div class="row">
                   <label for="usuario">Usuario</label><br>
-                  <input type="text" id="usuario"><br>
+                  <input class="input-text" pattern="[a-zA-Z]*" type="text" id="usuario"><br>
                   <label for="pasword">Contraseña</label><br>
-                  <input type="password" id="password"><br>
+                  <input type="password" id="password" maxlength="10"><br>
                   <div class="forgot">
-                    <a href="#">¿Olvidó su contraseña?</a><br>
+                    <a data-toggle="modal" data-target=".olvido-contrasena" href="#">¿Olvidó su contraseña?</a><br>
+
+                    <!-- CONTENIDO MODAL OLVIDASTE CONTRASEÑA -->
+                    <div class="modal fade olvido-contrasena" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
+                            <h2 class="title-modal" id="gridSystemModalLabel">
+                            ¿Olvidaste tu contraseña?</h2>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row text-center">
+                              <p>
+                                Hacerte la vida más fácil es darte más opciones, por eso para recuperar tu contraseña de acceso a la Tienda Terpel te enviaremos un código por correo electrónico.  
+                              </p>
+
+                              <div class="row input-olvido-modal">
+                                <div class="col-md-12">
+                                  <input type="text" placeholder="Cédula" maxlength="10">
+                                </div>
+                                <div class="col-md-12">
+                                  <input type="password" placeholder="Código SAP de la EDS" maxlength="16">
+                                </div>
+                              </div>
+                              <button class="producto-sintalla-button btnRed" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Recuperar contraseña</span>
+                              <button class="producto-sintalla-button btnRedFill" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">¿Ya tiene un código de recuperación?</span></div>
+                            </div>
+                          </div>
+                          
+                        </div><!-- /.modal-content -->
+                    </div>
+                    <!-- CONTENIDO MODAL OLVIDASTE CONTRASEÑA -->
                   </div>
                   <input type="checkbox" checked="">Recordar datos<br>
-                  <button class="btnRed">ingresar</button>
+
+                  <div class="ingresar-container-login">
+                    <button id="trigger-login" class="btnRed">ingresar</button>
+
+                    <!-- Acá va el mensaje si falla el login. -->
+                    <div class="alert alert-danger" role="alert">Verifica tus datos de ingreso.</div>
+                  </div>
+                  <a class="text-center" href="registro.html">¿Aún no estás registrado?</a>
+                  
+
+
                 </div>
               </div>
             </div>
@@ -536,6 +575,41 @@
       </div>
     </footer> 
 
+    <!-- CONTENIDO MODAL -->
+    <div class="modal fade modal-inicio" tabindex="-1" id="modal-inicio" role="dialog" aria-labelledby="gridSystemModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
+            <h2 class="title-modal" id="gridSystemModalLabel">
+            Actualiza tu contraseña</h2>
+          </div>
+          <div class="modal-body">
+            <div class="row text-center">
+              <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nihil doloremque quod commodi sunt sit, dolore sapiente eveniet, adipisci omnis quibusdam ducimus ad quidem et veritatis, iure eum repellendus molestias.</span>
+              </p>
+
+              <div class="row input-olvido-modal">
+                <div class="col-md-12">
+                  <input type="password" placeholder="Contraseña actual" placeholder="14">
+                </div>
+                <div class="col-md-12">
+                  <input type="password" placeholder="Nueva contraseña" placeholder="14">
+                </div>
+                <div class="col-md-12">
+                  <input type="password" placeholder="Repetir nueva contraseña" placeholder="14">
+                </div>
+              </div>
+              <button class="producto-sintalla-button btnRed" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">Cambiar contraseña</span>
+              </div>
+            </div>
+          </div>
+          
+        </div><!-- /.modal-content -->
+    </div>
+    <!-- CONTENIDO MODAL -->
+
 <!-- FOOTER HOME -->
    
     <script src="js/classie.js"></script>
@@ -543,9 +617,8 @@
     <script>
       new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
     </script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
     <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/stacktable.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>

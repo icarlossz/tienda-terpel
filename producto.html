@@ -589,7 +589,7 @@
                 </div>
                 <div class="row producto-precio">
                   <div class="col-md-6"><h5>Valor</h5></div>
-                  <div class="col-md-6"><h3>$25.000,00</h3></div>
+                  <div class="col-md-6"><h3>$25.000,00</h3><h6>Iva incluido</h6></div>
                 </div>
                 <div class="row producto-talla">
                   <div class="col-md-3">
@@ -802,7 +802,29 @@
                 </div>
                 <div class="row">
                   <div class="col-md-12 producto-agregar">
-                    <button class="btnRed">Agregar al carrito</button>
+                    <button data-toggle="modal" data-target=".producto-agregado" class="btnRed">Agregar al carrito</button>
+                    <!-- CONTENIDO MODAL -->
+                    <div class="modal fade producto-agregado" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                      <div class="modal-dialog modal-xs" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
+                            <h2 class="producto-despacho-title" id="gridSystemModalLabel">
+                            AGREGADO EXITOSAMENTE</h2>
+                          </div>
+                          <div class="modal-body modal-agregado">
+                            <div class="row text-center">
+                              <p>Su producto ha sido añadido al carrito de compras exitosamente.</p>
+                              
+                              <button class="producto-sintalla-button btnRed" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">ir al carrito</span>
+                              
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!-- CONTENIDO MODAL -->
                   </div>
                 </div>
                 <hr>

@@ -30,13 +30,12 @@
        <div class="header h-i-m">
          <div class="container-fluid usuarioLogueadoContainer sectionHome">
            <div class="row">
-             <div class="col-md-offset-8 col-md-2 col-xs-6 text-right usuarioLogueado"><button>EDS de prueba</button></div>
+             <div class="col-md-offset-8 col-md-2 col-xs-6 text-right usuarioLogueado">EDS de prueba</div>
              <div class="col-md-1 ">
                <div class="dropdown">
 
                  <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                   <img class="dropdown" src="images/iconUser.png" alt="">
-                   <span class="caret"></span>
+                   <img class="dropdown" src="images/iconUser.svg" width="32px" alt="">
                  </a>
 
                  <div class="dropdown-menu pull-right usuarioDropdown" aria-labelledby="dLabel">
@@ -557,11 +556,15 @@
                 <h2>Información para el pago:</h2>
                 <div class="row resumePago">
                   <div class="col-md-6">
-                    <input type="text" placeholder="Identificación del pagador">
-                   <!--  <label>Por favor suministre un número de identificación (solo números y letras son permitidos).</label> -->
+                    <select>
+                      <option value="volvo">Tipo de identificación</option>
+                      <option value="saab">Cédula de ciudadanía</option>
+                      <option value="mercedes">Cédula de extranjeria</option>
+                      <option value="audi">Pasaporte</option>
+                    </select>
                   </div>
                   <div class="col-md-6">
-                    <input type="text" placeholder="Número de identificación">
+                    <input type="number" placeholder="Número de identificación">
                    <!--  <label>Provea el nombre completo del pagador.</label> -->
                   </div>
                   <div class="col-md-12 text-center">
