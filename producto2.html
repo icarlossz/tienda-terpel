@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
 
     <script src="js/modernizr.custom.js"></script>
     <link href="css/app.css" rel="stylesheet">
@@ -30,13 +31,12 @@
         <div class="header h-i-m">
           <div class="container-fluid usuarioLogueadoContainer sectionHome">
             <div class="row">
-              <div class="col-md-offset-8 col-md-2 col-xs-6 text-right usuarioLogueado"><button>EDS de prueba</button></div>
+              <div class="col-md-offset-8 col-md-2 col-xs-6 text-right usuarioLogueado">EDS de prueba</div>
               <div class="col-md-1 ">
                 <div class="dropdown">
 
                   <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <img class="dropdown" src="images/iconUser.png" alt="">
-                    <span class="caret"></span>
+                    <img class="dropdown" src="images/iconUser.svg" width="33px" alt="">
                   </a>
 
                   <div class="dropdown-menu pull-right usuarioDropdown" aria-labelledby="dLabel">
@@ -516,7 +516,7 @@
             </ol>
 
             <div class="row producto-unidad">
-              <div class="col-md-6 producto-img">
+              <div class="col-md-6 producto-img productoContainer-up">
                 <!-- <img src="images/imgProducto.png" alt=""> -->
                 <ul class="bxslider">
                   <li><img src="images/imgProducto2-1.png" /></li>
@@ -544,19 +544,30 @@
                 <div class="row producto-calificacion">
                   
                   <div class="col-md-12">
-                    <span>Calificación</span>
-                    <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
-                    <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
-                    <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
-                    <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
+                    <div class="row">
+                      <div class="col-md-2 calificacion-title"><span>Calificalo</span></div>
+                      <div class="col-md-4 calificalo-stars">
+                        <fieldset class="rating">
+                          <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Genial - 5 stars"></label>
+                          <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Bueno - 4 stars"></label>
+                          <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Regular - 3 stars"></label>
+                          <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Malo - 2 stars"></label>
+                          <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Pésimo - 1 star"></label>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2 calificacion-title"><span>Calificación</span></div>
+                      <div class="col-md-4 calificacion-stars">
+                        <fieldset class="rating">
+                          <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Genial - 5 stars"></label>
+                          <input type="radio" id="star4" name="rating" value="4" /><label class = "full active" for="star4" title="Bueno - 4 stars"></label>
+                          <input type="radio" id="star3" name="rating" value="3" /><label class = "full active" for="star3" title="Regular - 3 stars"></label>
+                          <input type="radio" id="star2" name="rating" value="2" /><label class = "full active" for="star2" title="Malo - 2 stars"></label>
+                          <input type="radio" id="star1" name="rating" value="1" /><label class = "full active" for="star1" title="Pésimo - 1 star"></label>
+                        </fieldset>
+                      </div>
+                    </div>
                   </div>
-                  <!-- <div class="col-md-6 text-right producto-calificar">
-                    <span>Califiquelo</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 22.36"><defs></defs><title>Asset 30</title><g id="Layer_2" data-name="Layer 2"><g id="guides"><path d="M11.75,0a.12.12,0,0,0-.12.08L8.45,6.51a1.63,1.63,0,0,1-1.23.9l-7.1,1A.13.13,0,0,0,0,8.53a.13.13,0,0,0,0,.14l5.14,5a1.63,1.63,0,0,1,.47,1.45L4.44,22.2a.14.14,0,0,0,.2.14L11,19a1.64,1.64,0,0,1,1.52,0l6.35,3.34a.13.13,0,0,0,.14,0,.13.13,0,0,0,.05-.13l-1.21-7.07a1.63,1.63,0,0,1,.47-1.45l5.14-5a.14.14,0,0,0-.08-.23l-7.1-1A1.63,1.63,0,0,1,15,6.51L11.87.08A.12.12,0,0,0,11.75,0Z"/></g></g></svg>
-                  </div> -->
+                  
                 </div>
                 <div class="producto-descripcion">
                   <p>Bota de seguridad liviana negra hilo rojo terpel</p>

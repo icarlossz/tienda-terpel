@@ -355,6 +355,9 @@ a.btnRedFill:hover{
     font-family: 'OpenSansExtraBold';
     font-size: 18pt;
     color: #C42134;
+    width: 100%;
+    display: inline-block;
+    margin: 0;
 }
 
 .precioSinPromocion{
@@ -581,6 +584,24 @@ a.btnRedFill:hover{
     padding-bottom: 8px;
 }
 
+.cartIconHeader{
+    position: relative;
+}
+
+.cartIconHeader .counter{
+    position: absolute;
+    top: -30%;
+    right: 25%;
+    background-color: #D81F24;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    color: #FFF;
+    border-radius: 50px;
+    margin: 0;
+    padding-left: 3px;
+}
+
 #cartDrop .dropdown-menu{
     padding: 0
 }
@@ -593,6 +614,8 @@ a.btnRedFill:hover{
 .cartDropdown-with{
     padding: 15px 20px 0 20px;
     min-width: 450px;
+    max-height: 300px;
+    overflow: scroll;
 }
 
 .cartDropdown-items{
@@ -784,6 +807,7 @@ a.btnRedFill:hover{
     position: absolute;
     z-index: 99999999;
     width: 100%;
+    min-height: 390px;
 }
 
 .Dropdown .invisible-closer {
@@ -852,8 +876,32 @@ a.btnRedFill:hover{
     color: #58595B;
 }
 
+.dropdown-row1, .dropdown-row2, .dropdown-row3, .dropdown-row4{
+    padding: 15px 35px;
+}
+
+.dropdown-row{
+    padding: 10px 35px;
+    height: 195px;
+}
+
+/*.dropdown-row .big{
+    height: 150px;
+}
+
+.dropdown-row .medium{
+    height: 170px;
+}
+
+.dropdown-row .mini{
+    height: 120px;
+    font-size: 14px;
+}*/
+
 .Dropdown .dropdownContainer .bannerDropdown{
     padding: 0;
+    position: absolute;
+    right: 0;
 }
 
 .Dropdown .dropdownContainer .bannerDropdown img{
@@ -1087,7 +1135,7 @@ right: 0;
 }
 
 .cajaProductoBorderRadiusGris{
-    border: 0.5px solid #d6d6d6;
+    border: 1px solid #d6d6d6;
     border-radius: 10px;
     padding: 0;
     text-align: center;
@@ -1111,10 +1159,29 @@ right: 0;
     display: inline-block;
 }
 
+.cajaProductoBorderRadiusGris .calificacionVistosReciente fieldset{
+    display: block;
+    width: 225px;
+    margin: 0 auto;
+}
+
+/*.cajaProductoBorderRadiusGris .calificacionVistosReciente fieldset .rating > label{
+    float: initial;
+}*/
+
+.rating > label.active{
+    color: #F8B916 !important;
+}
+
+.calificacion-stars .rating > input:checked ~ label, .calificacion-stars .rating:not(:checked) > label:hover, .calificacion-stars .rating:not(:checked) > label:hover ~ label{
+    color: #ddd;
+}
+
 .cajaProductoBorderRadiusGris .descripcionVistosReciente h4{
     font-family: 'AlrightSansLight';
     font-size: 17pt;
-    padding: 8px 15px;
+    padding: 5px 15px;
+    margin: 0;
     color: #4D4D4D;
 }
 
@@ -1126,13 +1193,18 @@ right: 0;
 
 .cajaProductoBorderRadiusGris .imgVistosReciente{
     overflow: hidden;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .cajaProductoBorderRadiusGris .imgVistosReciente img{
     -webkit-transition: .5s;
     transition: .5s;
     cursor: pointer;
-    width: 100%;
+    height: 100%;
 }
 
 .cajaProductoBorderRadiusGris .imgVistosReciente img:hover{
@@ -3227,9 +3299,51 @@ table td{
     text-transform: uppercase;
 }
 
+.productoContainer .producto-calificacion .calificacion-title{
+    padding: 10px 30px 10px 15px;
+}
+
+.productoContainer .producto-calificacion fieldset{
+    padding: 0;
+}
+
 .productoContainer .producto-calificacion span{
     padding-right: 10px;
 }
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.50em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #F8B916;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #F8B916;  } 
+
 
 /*.productoContainer .producto-calificar svg{
 fill: #9d9d9d;
@@ -4424,6 +4538,30 @@ h2.title-modal {
     background-color: #E3801E;
 }
 
+.promocionesContainer .cajaProductoBorderRadiusGris{
+    position: relative;
+}
+
+.promocionesContainer .cajaProductoBorderRadiusGris .promocionActiva{
+    background-color: #E3801E;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border-radius: 50px;
+    color: #FFF;
+    width: 90px;
+    height: 90px;
+    z-index: 100;
+    font-family: 'OpenSansExtrabold';
+    color: #FFF;
+    padding: 10px;
+}
+
+.promocionesContainer .cajaProductoBorderRadiusGris .promocionActiva h4{
+    font-size: 19px;
+    margin: 0;
+    padding: 15px 0;
+}
 
 
 /* END BX SLIDER*/

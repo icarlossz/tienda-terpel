@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
 
     <script src="js/modernizr.custom.js"></script>
     <link href="css/app.css" rel="stylesheet">
@@ -575,12 +576,25 @@
                 <div class="row producto-calificacion">
                   
                   <div class="col-md-12">
-                    <span>Calificación</span>
+                    <div class="row">
+                      <div class="col-md-2 calificacion-title"><span>Calificación</span></div>
+                      <div class="col-md-8 calificacion-stars">
+                        <fieldset class="rating">
+                          <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Genial - 5 stars"></label>
+                          <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Bueno - 4 stars"></label>
+                          <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Regular - 3 stars"></label>
+                          <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Malo - 2 stars"></label>
+                          <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Pésimo - 1 star"></label>
+                        </fieldset>
+                      </div>
+                    </div>
+                    
+                    <!-- <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
                     <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
                     <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
                     <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
-                    <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
-                    <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
+                    <img src="images/iconFavYellow.svg" width="25px" alt="iconFav"> -->
+                    
                   </div>
                   
                 </div>
@@ -995,25 +1009,28 @@
                         <img src="images/poloTerpel.png" alt="">
                       </div>
                       <div class="descripcionVistosReciente">
-                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4>
+                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4></a>
                         <div class="calificacionVistosReciente">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
+                          <fieldset class="rating">
+                            <input type="radio" id="star10" name="rating" value="5" /><label class = "full" for="star10" title="Genial - 5 stars"></label>
+                            <input type="radio" id="star9" name="rating" value="4" /><label class = "full" for="star9" title="Bueno - 4 stars"></label>
+                            <input type="radio" id="star8" name="rating" value="3" /><label class = "full" for="star8" title="Regular - 3 stars"></label>
+                            <input type="radio" id="star7" name="rating" value="2" /><label class = "full" for="star7" title="Malo - 2 stars"></label>
+                            <input type="radio" id="star6" name="rating" value="1" /><label class = "full" for="star6" title="Pésimo - 1 star"></label>
+                          </fieldset>
                         </div>
                         <h2 class="precioProducto">$ 15.582,00</h2>
                       </div>
-                      <div class="footerVistosReciente">
-                        <div class="row">
-                          <div class="col-md-7 verDetalle">
-                            <h4>VER DETALLE</h4></h3>
+                      <a href="producto.html">
+                        <div class="footerVistosReciente">
+                          <div class="row">
+                            <div class="col-md-7 verDetalle">
+                              <h4>VER DETALLE</h4></h3>
+                            </div>
+                            <div class="col-md-5 addToFav">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
+                            </div>
                           </div></a>
-                          <div class="col-md-5 addToFav">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   
@@ -1025,17 +1042,19 @@
                         <img src="images/poloTerpel.png" alt="">
                       </div>
                       <div class="descripcionVistosReciente">
-                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4>
+                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4></a>
                         <div class="calificacionVistosReciente">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
+                          <fieldset class="rating">
+                            <input type="radio" name="rating" value="5" /><label class = "full" title="Genial - 5 stars"></label>
+                            <input type="radio"  name="rating" value="4" /><label class = "full"  title="Bueno - 4 stars"></label>
+                            <input type="radio"  name="rating" value="3" /><label class = "full"  title="Regular - 3 stars"></label>
+                            <input type="radio"  name="rating" value="2" /><label class = "full"  title="Malo - 2 stars"></label>
+                            <input type="radio"  name="rating" value="1" /><label class = "full"  title="Pésimo - 1 star"></label>
+                          </fieldset>
                         </div>
                         <h2 class="precioProducto">$ 15.582,00</h2>
                       </div>
-                      <div class="footerVistosReciente">
+                      <a href="producto.html"><div class="footerVistosReciente">
                         <div class="row">
                           <div class="col-md-7 verDetalle">
                             <h4>VER DETALLE</h4></h3>
@@ -1054,17 +1073,19 @@
                         <img src="images/poloTerpel.png" alt="">
                       </div>
                       <div class="descripcionVistosReciente">
-                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4>
+                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4></a>
                         <div class="calificacionVistosReciente">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
+                          <fieldset class="rating">
+                            <input type="radio" id="star10" name="rating" value="5" /><label class = "full" for="star10" title="Genial - 5 stars"></label>
+                            <input type="radio" id="star9" name="rating" value="4" /><label class = "full" for="star9" title="Bueno - 4 stars"></label>
+                            <input type="radio" id="star8" name="rating" value="3" /><label class = "full" for="star8" title="Regular - 3 stars"></label>
+                            <input type="radio" id="star7" name="rating" value="2" /><label class = "full" for="star7" title="Malo - 2 stars"></label>
+                            <input type="radio" id="star6" name="rating" value="1" /><label class = "full" for="star6" title="Pésimo - 1 star"></label>
+                          </fieldset>
                         </div>
                         <h2 class="precioProducto">$ 15.582,00</h2>
                       </div>
-                      <div class="footerVistosReciente">
+                      <a href="producto.html"><div class="footerVistosReciente">
                         <div class="row">
                           <div class="col-md-7 verDetalle">
                             <h4>VER DETALLE</h4></h3>
@@ -1083,47 +1104,19 @@
                         <img src="images/poloTerpel.png" alt="">
                       </div>
                       <div class="descripcionVistosReciente">
-                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4>
+                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4></a>
                         <div class="calificacionVistosReciente">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
+                          <fieldset class="rating">
+                            <input type="radio" id="star10" name="rating" value="5" /><label class = "full" for="star10" title="Genial - 5 stars"></label>
+                            <input type="radio" id="star9" name="rating" value="4" /><label class = "full" for="star9" title="Bueno - 4 stars"></label>
+                            <input type="radio" id="star8" name="rating" value="3" /><label class = "full" for="star8" title="Regular - 3 stars"></label>
+                            <input type="radio" id="star7" name="rating" value="2" /><label class = "full" for="star7" title="Malo - 2 stars"></label>
+                            <input type="radio" id="star6" name="rating" value="1" /><label class = "full" for="star6" title="Pésimo - 1 star"></label>
+                          </fieldset>
                         </div>
                         <h2 class="precioProducto">$ 15.582,00</h2>
                       </div>
-                      <div class="footerVistosReciente">
-                        <div class="row">
-                          <div class="col-md-7 verDetalle">
-                            <h4>VER DETALLE</h4></h3>
-                          </div></a>
-                          <div class="col-md-5 addToFav">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  
-                </li>
-                <li>
-                  <a href="producto.html">
-                    <div class="cajaProductoBorderRadiusGris">
-                      <div class="imgVistosReciente">
-                        <img src="images/poloTerpel.png" alt="">
-                      </div>
-                      <div class="descripcionVistosReciente">
-                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4>
-                        <div class="calificacionVistosReciente">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                        </div>
-                        <h2 class="precioProducto">$ 15.582,00</h2>
-                      </div>
-                      <div class="footerVistosReciente">
+                      <a href="producto.html"><div class="footerVistosReciente">
                         <div class="row">
                           <div class="col-md-7 verDetalle">
                             <h4>VER DETALLE</h4></h3>
@@ -1143,17 +1136,51 @@
                         <img src="images/poloTerpel.png" alt="">
                       </div>
                       <div class="descripcionVistosReciente">
-                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4>
+                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4></a>
                         <div class="calificacionVistosReciente">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
-                          <img src="images/star.png" alt="">
+                          <fieldset class="rating">
+                            <input type="radio" id="star10" name="rating" value="5" /><label class = "full" for="star10" title="Genial - 5 stars"></label>
+                            <input type="radio" id="star9" name="rating" value="4" /><label class = "full" for="star9" title="Bueno - 4 stars"></label>
+                            <input type="radio" id="star8" name="rating" value="3" /><label class = "full" for="star8" title="Regular - 3 stars"></label>
+                            <input type="radio" id="star7" name="rating" value="2" /><label class = "full" for="star7" title="Malo - 2 stars"></label>
+                            <input type="radio" id="star6" name="rating" value="1" /><label class = "full" for="star6" title="Pésimo - 1 star"></label>
+                          </fieldset>
                         </div>
                         <h2 class="precioProducto">$ 15.582,00</h2>
                       </div>
-                      <div class="footerVistosReciente">
+                      <a href="producto.html"><div class="footerVistosReciente">
+                        <div class="row">
+                          <div class="col-md-7 verDetalle">
+                            <h4>VER DETALLE</h4></h3>
+                          </div></a>
+                          <div class="col-md-5 addToFav">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                </li>
+                <li>
+                  <a href="producto.html">
+                    <div class="cajaProductoBorderRadiusGris">
+                      <div class="imgVistosReciente">
+                        <img src="images/poloTerpel.png" alt="">
+                      </div>
+                      <div class="descripcionVistosReciente">
+                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4></a>
+                        <div class="calificacionVistosReciente">
+                          <fieldset class="rating">
+                            <input type="radio" id="star10" name="rating" value="5" /><label class = "full" for="star10" title="Genial - 5 stars"></label>
+                            <input type="radio" id="star9" name="rating" value="4" /><label class = "full" for="star9" title="Bueno - 4 stars"></label>
+                            <input type="radio" id="star8" name="rating" value="3" /><label class = "full" for="star8" title="Regular - 3 stars"></label>
+                            <input type="radio" id="star7" name="rating" value="2" /><label class = "full" for="star7" title="Malo - 2 stars"></label>
+                            <input type="radio" id="star6" name="rating" value="1" /><label class = "full" for="star6" title="Pésimo - 1 star"></label>
+                          </fieldset>
+                        </div>
+                        <h2 class="precioProducto">$ 15.582,00</h2>
+                      </div>
+                      <a href="producto.html"><div class="footerVistosReciente">
                         <div class="row">
                           <div class="col-md-7 verDetalle">
                             <h4>VER DETALLE</h4></h3>

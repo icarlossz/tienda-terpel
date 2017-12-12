@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Producto - Tienda Terpel Web</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+
+    <script src="js/modernizr.custom.js"></script>
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+      <header>
+        <div class="header h-i-m">
+          <div class="container-fluid usuarioLogueadoContainer sectionHome">
+            <div class="row">
+              <div class="col-md-offset-8 col-md-2 col-xs-6 text-right usuarioLogueado">EDS de prueba</div>
+              <div class="col-md-1 ">
+                <div class="dropdown">
+
+                  <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img class="dropdown" src="images/iconUser.svg" width="35px" alt="">
+                  </a>
+
+                  <div class="dropdown-menu pull-right usuarioDropdown" aria-labelledby="dLabel">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img src="images/userImg.svg" width="80px" alt="">
+                      </div>
+                      <div class="col-md-4 col-xs-12">
+                        <h2>PruebaEDS1</h2>
+                        <h3>Administrador</h3>
+                      </div>
+                    </div>
+                    <ul>
+                      <li><a href="perfil.html">Actualizar perfil</a></li>
+                      <li><a href="cambiarcontraseña.html">Cambiar contraseña</a></li>
+                      <li><a href="recursos.html">Recursos</a></li>
+                      <li><a href="#">Cerrar sesión</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 text-center logoTTHeader"><img src="images/logoTT.svg" width="330px" alt=""></div>
+            </div>
+          </div>
+          
+          <div class="container-fluid navbarContainer">
+            <div class="container Navbar">
+              <div class="row">
+                <a href="index.html"><div class="col-md-2 navbarItem active">Inicio</div></a>
+                <div id="catalogoDrop" data-openDropdown="#catalogoDropdown" class="col-md-2 navbarItem catalogoDrop ">Catálogo</div>
+                <div id="promocionesDrop" class="col-md-2 navbarItem  catalogoDrop"><a href="promociones.html">Promociones</a></div>
+                <div id="pedidosDrop" data-openDropdown="#pedidosDropdown" class="col-md-2 navbarItem pedidosDrop"><a href="#">Mis pedidos</a></div>
+                <div id="contactoDrop" data-openDropdown="#contactoDropdown" class="col-md-2 navbarItem">Contacto</div>
+                <div class="col-md-2 navbarItem">
+                  <div class="row">
+                    <div id="searchDrop" data-openDropdown="#searchDropdown" class="col-md-4 searchIconHeader">
+                      <i class="icon-iconsearch"></i>
+                    </div>
+                    <div id="favDrop" class="col-md-4 favIconHeader">
+                      <a href="favoritos.html">
+                        <i class="icon-heart"></i>
+                      </a>
+
+                    <!--   <div class="dropdown-menu dropdown-fav pull-right favDropdown" aria-labelledby="fav-dropdownLabel">                      
+                      </div> -->
+
+                    </div>
+                    <div id="cartDrop" class="col-md-4 cartIconHeader">
+                      <a id="cart-dropdownLabel" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="checkout1.html"><i class="icon-iconcart"></i></a>
+
+
+                      <div class="dropdown-menu dropdown-cart pull-right" aria-labelledby="cart-dropdownLabel">
+                         <div class="cartDropdown text-center">
+                           <img src="images/cartDropdown.png" width="130px" alt="">
+                           <h3>No hay productos en el carrito</h3>
+                           <h4>¿ya conoce todos nuestros productos?</h4>
+                           <a href="catalogo.html"><button class="btnRed">ir al catálogo</button></a>
+                         </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+          <div id="catalogoDropdown" data-closeDropdown="#catalogoDropdown" class="container Dropdown">
+            <div class="invisible-closer"></div>
+            <div class="row dropdownContainer ">
+              <div class="col-md-2 p20wp40h">
+                <h2><a href="catalogo.html">Terpel</a></h2>
+                <h3><a href="catalogo.html">Uniformes</a></h3>
+                <ul>
+                  <li><a href="catalogo.html">Hombre</a></li>
+                  <li><a href="catalogo.html">Mujer</a></li>
+                  <li><a href="catalogo.html">Accesorios</a></li>
+                  <li><a href="catalogo.html">Unisex</a></li>
+                </ul>
+
+                <h2><a href="catalogo.html">Para tu EDS</a></h2>
+                <ul>
+                  <li><a href="catalogo.html">Mobiliaro</a></li>
+                  <li><a href="catalogo.html">Consumibles</a></li>
+                  <li><a href="catalogo.html">EDS confíable</a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 p20wp40h">
+                <h2><a href="catalogo.html">Gazel</a></h2>
+                <h3><a href="catalogo.html">Uniformes</a></h3>
+                <ul>
+                  <li><a href="catalogo.html">Hombre</a></li>
+                  <li><a href="catalogo.html">Mujer</a></li>
+                  <li><a href="catalogo.html">Accesorios</a></li>
+                  <li><a href="catalogo.html">Unisex</a></li>
+                </ul>
+
+                <h2><a href="catalogo.html">Merchandising</a></h2>
+                <ul>
+                  <li><a href="catalogo.html">Terpel</a></li>
+                  <li><a href="catalogo.html">Gazel</a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 p20wp40h">
+                <h2><a href="catalogo.html">Altoque</a></h2>
+                <h3><a href="catalogo.html">Uniformes</a></h3>
+                <ul>
+                  <li><a href="catalogo.html">Hombre</a></li>
+                  <li><a href="catalogo.html">Mujer</a></li>
+                  <li><a href="catalogo.html">Accesorios</a></li>
+                  <li><a href="catalogo.html">Unisex</a></li>
+                </ul>
+
+                <h2><a href="catalogo.html">Otros</a></h2>
+                <ul>
+                  <li><a href="catalogo.html">Bandera</a></li>
+                  <li><a href="catalogo.html">Señalización</a></li>
+                </ul>
+              </div>
+              <div class="col-md-2 p20wp40h">
+                <h2><a href="catalogo.html">Motos</a></h2>
+                <h3><a href="catalogo.html">Uniformes</a></h3>
+                <ul>
+                  <li><a href="catalogo.html">Hombre</a></li>
+                  <li><a href="catalogo.html">Mujer</a></li>
+                  <li><a href="catalogo.html">Accesorios</a></li>
+                  <li><a href="catalogo.html">Unisex</a></li>
+                </ul>
+
+                <h2><!-- <a href="catalogo.html"> -->Clasificados<!-- </a> --></h2>
+                <ul>
+                  <li><a href="catalogo.html">Servicios</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 bannerDropdown">
+                <img src="images/bannerMenu.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div id="pedidosDropdown" data-closeDropdown="#pedidosDropdown" class="container Dropdown">
+            <div class="invisible-closer"></div>
+              <div class="row dropdownContainer">
+                <div class="col-md-6 ">
+                  <a href="seguimiento1.html"><h4>Seguimiento de pedidos</h4></a>
+                </div>
+                <div class="col-md-6 ">
+                  <a href="historial.html"><h4>Historial de pedidos</h4></a>
+                </div>
+              </div>
+          </div>
+
+          <div id="contactoDropdown" data-closeDropdown="#contactoDropdown" class="container Dropdown">
+            <div class="invisible-closer"></div>
+              <div class="row dropdownContainer">
+                <div class="col-md-6">
+                  <a href="faq.html"><h4>Preguntas frecuentes</h4></a>
+                </div>
+                <div class="col-md-6">
+                  <a href="contacto.html"><h4>Contáctanos</h4></a>
+                </div>
+              </div>
+          </div>
+
+          
+        </div>
+
+        <div id="searchDropdown" data-closeDropdown="#searchDropdown" class="container Dropdown">
+          <div class="invisible-closer"></div>
+              <div class="row dropdownContainer">
+                <div class="col-xs-11">
+                  <input type="text" placeholder="Ingresa tu búsqueda...">
+                </div>
+                <div class="col-xs-1 search-dropdown-icon">
+                  <img class="search-dropdown" src="images/iconSearchNav.svg" alt="search icon">
+                </div>
+              </div>
+        </div>
+
+        <div id="cartDropdown" data-closeDropdown="#cartDropdown" class="container Dropdown">
+          <div class="invisible-closer"></div>
+              <div class="row dropdownContainer">
+                <div class="col-md-11">
+                  <input type="text" placeholder="Ingresa tu búsqueda...">
+                </div>
+                <div class="col-md-1 search-dropdown-icon">
+                  <img class="search-dropdown" src="images/iconSearchNav.svg" alt="search icon">
+                </div>
+              </div>
+        </div>
+
+        <div id="favDropdown" data-closeDropdown="#favDropdown" class="container Dropdown">
+          <div class="invisible-closer"></div>
+              <div class="row dropdownContainer">
+                <div class="col-xs-11">
+                  <input type="text" placeholder="Ingresa tu búsqueda...">
+                </div>
+                <div class="col-xs-1 search-dropdown-icon">
+                  <img class="search-dropdown" src="images/iconSearchNav.svg" alt="search icon">
+                </div>
+              </div>
+        </div>
+
+        <div class="navbarMobile h-i-d">
+          <div class="container-fluid">
+            <div class="row navbarContainer">
+              <div class="col-xs-4">
+                <img src="images/burgerMenu.svg" width="55px" align="left" id="trigger" class="menu-trigger" alt="">
+                <!-- <p><a href="#" id="trigger" class="menu-trigger"></a></p> -->
+              </div>
+              <div class="col-xs-4">
+                <img src="images/logoIsoTT.svg" width="70px" alt="">
+              </div>
+              
+
+              <!-- JUST TRY PUT A MENU HERE -->
+              <div class="col-xs-4 usuarioLogueadoMobilContainer">
+                <div class="dropdown">
+
+                    <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      <img class="dropdown" src="images/iconUser.svg" align="right" width="55px" alt="">
+                      
+                    </a>
+
+                    <div class="dropdown-menu pull-right usuarioDropdownMobile" aria-labelledby="dLabel">
+                      <div class="row">
+                        <div class="col-md-4 col-xs-12 text-center">
+                          <img src="images/userImg.svg" width="75px" align="center" alt="">
+                        </div>
+                        <div class="col-md-4 col-xs-12">
+                          <h2>PruebaEDS1</h2>
+                          <h3>Administrador</h3>
+                        </div>
+                      </div>
+                      <ul>
+                        <li>Actualizar perfil</li>
+                        <li>Cambiar contraseña</li>
+                        <li><a href="recursos.html">Recursos</a></li>
+                        <li>Cerrar sesión</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- JUST TRY PUT A MENU HERE -->
+
+            </div>
+            <div class="row navbarContainer navSecondMobile text-center">
+              <div class="col-xs-4">
+                <div id="searchDrop" data-openDropdown="#searchDropdown" class="col-md-4 searchIconHeader">
+                  <img src="images/iconSearchNav.svg" width="30px" alt="">
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <img src="images/iconFavNav.svg" width="33px" alt="">
+
+                
+              </div>
+              <div class="col-xs-4">
+                <a id="cart-dropdownMobile" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="checkout1.html"><img src="images/iconCartNav.svg" width="35px" alt="cart mobile"></a>
+              </div>
+
+              <div class="dropdown-menu dropdown-cart pull-right" aria-labelledby="cart-dropdownMobile">
+                 <div class="cartDropdown text-center">
+                   <img src="images/cartDropdown.svg" width="130px" alt="">
+                   <h3>No hay productos en el carrito</h3>
+                   <h4>¿ya conoce todos nuestros productos?</h4>
+                   <a href="catalogo.html"><button class="btnRed">ir al catálogo</button></a>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menuMobile h-i-d">
+         <div class="contenedor">
+              <!-- Push Wrapper -->
+              <div class="mp-pusher" id="mp-pusher">
+
+                <!-- mp-menu -->
+                <nav id="mp-menu" class="mp-menu">
+                  <div class="mp-level">
+                    <h2 class="icon">Inicio</h2>
+                    <ul>
+                      <li class="icon icon-arrow-left">
+                        <a class="icon" href="#">Catálogo</a>
+                        <div class="mp-level">
+                          <h2 class="icon">Catálogo</h2>
+                          <a class="mp-back" href="#">Inicio</a>
+                          <ul>
+                            <li class="icon icon-arrow-left">
+                              <a class="icon" href="#">Terpel</a>
+                              <div class="mp-level">
+                                <h2>Terpel</h2>
+                                <a class="mp-back" href="#">Catálogo</a>
+                                <ul>
+                                  <li><a href="#">Uniformes Hombre</a></li>
+                                  <li><a href="#">Uniformes mujer</a></li>
+                                  <li><a href="#">Accesorios</a></li>
+                                  <li><a href="#">Unisex</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="icon icon-arrow-left">
+                              <a class="icon" href="#">Gazel</a>
+                              <div class="mp-level">
+                                <h2>Gazel</h2>
+                                <a class="mp-back" href="#">Catálogo</a>
+                                <ul>
+                                  <li><a href="#">Uniformes Hombre</a></li>
+                                  <li><a href="#">Uniformes mujer</a></li>
+                                  <li><a href="#">Accesorios</a></li>
+                                  <li><a href="#">Unisex</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="icon icon-arrow-left">
+                              <a class="icon" href="#">Altoque</a>
+                              <div class="mp-level">
+                                <h2>Altoque</h2>
+                                <a class="mp-back" href="#">Catálogo</a>
+                                <ul>
+                                  <li><a href="#">Uniformes Hombre</a></li>
+                                  <li><a href="#">Uniformes mujer</a></li>
+                                  <li><a href="#">Accesorios</a></li>
+                                  <li><a href="#">Unisex</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="icon icon-arrow-left">
+                              <a class="icon" href="#">Motos</a>
+                              <div class="mp-level">
+                                <h2>Motos</h2>
+                                <a class="mp-back" href="#">Catálogo</a>
+                                <ul>
+                                  <li><a href="#">Uniformes Hombre</a></li>
+                                  <li><a href="#">Uniformes mujer</a></li>
+                                  <li><a href="#">Accesorios</a></li>
+                                  <li><a href="#">Unisex</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="icon icon-arrow-left">
+                              <a class="icon" href="#">Para tu EDS</a>
+                              <div class="mp-level">
+                                <h2>Para tu EDS</h2>
+                                <a class="mp-back" href="#">Catálogo</a>
+                                <ul>
+                                  <li><a href="#">Uniformes Hombre</a></li>
+                                  <li><a href="#">Uniformes mujer</a></li>
+                                  <li><a href="#">Accesorios</a></li>
+                                  <li><a href="#">Unisex</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="icon icon-arrow-left">
+                              <a class="icon" href="#">Merchandising</a>
+                              <div class="mp-level">
+                                <h2>Merchandising</h2>
+                                <a class="mp-back" href="#">Catálogo</a>
+                                <ul>
+                                  <li><a href="#">Uniformes Hombre</a></li>
+                                  <li><a href="#">Uniformes mujer</a></li>
+                                  <li><a href="#">Accesorios</a></li>
+                                  <li><a href="#">Unisex</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="icon icon-arrow-left">
+                              <a class="icon" href="#">Clasificados</a>
+                              <div class="mp-level">
+                                <h2>Clasificados</h2>
+                                <a class="mp-back" href="#">Catálogo</a>
+                                <ul>
+                                  <li><a href="#">Uniformes Hombre</a></li>
+                                  <li><a href="#">Uniformes mujer</a></li>
+                                  <li><a href="#">Accesorios</a></li>
+                                  <li><a href="#">Unisex</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li><a class="icon" href="#">Promociones</a></li>
+                      <li class="icon icon-arrow-left">
+                        <a class="icon" href="#">Mis pedidos</a>
+                        <div class="mp-level">
+                          <h2 class="icon icon-news">Mis pedidos</h2>
+                          <a class="mp-back" href="#">Inicio</a>
+                          <ul>
+                            <li><a href="#">Seguimiento</a></li>
+                            <li><a href="#">Historial</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="icon icon-arrow-left">
+                        <a class="icon" href="#">Contacto</a>
+                        <div class="mp-level">
+                          <h2 class="icon icon-shop">Contacto</h2>
+                          <a class="mp-back" href="#">Inicio</a>
+                          <ul>
+                            <!-- <li class="icon icon-arrow-left">
+                              <a class="icon icon-t-shirt" href="#">Clothes</a>
+                              <div class="mp-level">
+                                <h2 class="icon icon-t-shirt">Clothes</h2>
+                                <a class="mp-back" href="#">back</a>
+                                <ul>
+                                  <li class="icon icon-arrow-left">
+                                    <a class="icon icon-female" href="#">Women's Clothing</a>
+                                    <div class="mp-level">
+                                      <h2 class="icon icon-female">Women's Clothing</h2>
+                                      <a class="mp-back" href="#">back</a>
+                                      <ul>
+                                        <li><a href="#">Tops</a></li>
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">Trousers</a></li>
+                                        <li><a href="#">Shoes</a></li>
+                                        <li><a href="#">Sale</a></li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="icon icon-arrow-left">
+                                    <a class="icon icon-male" href="#">Men's Clothing</a>
+                                    <div class="mp-level">
+                                      <h2 class="icon icon-male">Men's Clothing</h2>
+                                      <a class="mp-back" href="#">back</a>
+                                      <ul>
+                                        <li><a href="#">Shirts</a></li>
+                                        <li><a href="#">Trousers</a></li>
+                                        <li><a href="#">Shoes</a></li>
+                                        <li><a href="#">Sale</a></li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li> -->
+                            <li>
+                              <a class="icon" href="#">Preguntas frecuentes</a>
+                            </li>
+                            <li>
+                              <a class="icon" href="#">Contáctanos</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      
+                    </ul>
+                      
+                  </div>
+                </nav>
+                <!-- /mp-menu -->
+
+                <div class="scroller"><!-- this is for emulating position fixed of the nav -->
+                  <div class="scroller-inner">
+                    
+                  </div><!-- /scroller-inner -->
+                </div><!-- /scroller -->
+
+              </div><!-- /pusher -->
+            </div><!-- /container -->
+        </div>
+      </header>
+
+
+      <div class="home">
+        <div class="productoContainer">
+          <div class="container">
+            <ol class="breadcrumb">
+              <li><a href="#">Catálogo</a></li>
+              <li><a href="#">Uniformes Gazel</a></li>
+              <li class="active">Hombre</li>
+            </ol>
+
+            <div class="row producto-unidad">
+              <div class="col-md-6 producto-img  productoContainer-up">
+                <!-- <img src="images/imgProducto.png" alt=""> -->
+                <!-- <div class="zoom"><img class="zoom-icon" src="images/zoomIcon.svg" alt="Zoom Icon" width="20px"></div> -->
+                <ul class="bxslider">
+                  <li><img id="thumb" src="images/imgProducto5-1-big.jpg" data-toggle="modal" data-target=".imgproducto1-modal"/></li>
+                  <li><img id="thumb" src="images/imgProducto5-2-big.jpg" data-toggle="modal" data-target=".imgproducto2-modal"/></li>
+                  <li><img id="thumb" src="images/imgProducto5-3-big.jpg" data-toggle="modal" data-target=".imgproducto3-modal"/></li>
+                </ul>
+                <div id="bx-pager">
+                  <div class="row">
+                    <div class="col-md-4 col-xs-4"><a data-slide-index="0" href=""><img src="images/imgProducto5-1-small.jpg" width="120px" /></a></div>
+                    <div class="col-md-4 col-xs-4"><a data-slide-index="1" href=""><img src="images/imgProducto5-2-small.jpg" width="120px" /></a></div>
+                    <div class="col-md-4 col-xs-4"><a data-slide-index="2" href=""><img src="images/imgProducto5-3-small.jpg" width="120px" /></a></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- MODALES PRODUCTO -->
+                <div class="modal fade imgproducto1-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                  <div class="modal-dialog modal-ls modal-producto" role="document">
+                    <div class="modal-content">
+                      <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
+                      <img src="images/imgProducto.png" width="600px" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal fade imgproducto2-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                  <div class="modal-dialog modal-ls modal-producto" role="document">
+                    <div class="modal-content">
+                      <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
+                      <img src="images/imgProducto2.jpg" width="600px" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal fade imgproducto3-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                  <div class="modal-dialog modal-ls modal-producto" role="document">
+                    <div class="modal-content">
+                      <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
+                      <img src="images/imgProducto3.jpg" width="600px" alt="">
+                    </div>
+                  </div>
+                </div>
+              <!-- MODALES PRODUCTO -->
+
+              <div class="col-md-6 producto-description">
+                <div class="row">
+                  <div class="col-xs-10 producto-description-name">
+                    <h3>Camisa Administrador Blanca Manga Larga Hombre Gazel</h3>
+                  </div>
+                  <div class="col-xs-2 producto-description-addtofav">
+                    <svg data-toggle="tooltip" class="tooltip-yellow" data-placement="top" title="Añadir a favoritos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
+                  </div>
+                </div>
+                <div class="row producto-calificacion">
+                  
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-2 calificacion-title"><span>Calificación</span></div>
+                      <div class="col-md-8 calificacion-stars">
+                        <fieldset class="rating">
+                          <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Genial - 5 stars"></label>
+                          <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Bueno - 4 stars"></label>
+                          <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Regular - 3 stars"></label>
+                          <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Malo - 2 stars"></label>
+                          <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Pésimo - 1 star"></label>
+                        </fieldset>
+                      </div>
+                    </div>
+                    
+                    <!-- <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
+                    <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
+                    <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
+                    <img src="images/iconFavYellow.svg" width="25px" alt="iconFav">
+                    <img src="images/iconFavYellow.svg" width="25px" alt="iconFav"> -->
+                    
+                  </div>
+                  
+                </div>
+                <div class="producto-descripcion">
+                  <p>Camiseta polo azul manga larga para hombre con franja verde </p>
+                </div>
+                <div class="row producto-precio">
+                  <div class="col-md-6"><h5>Valor</h5></div>
+                  <div class="col-md-6"><h3>$25.000,00</h3><h6>Iva incluido</h6></div>
+                </div>
+                <div class="row producto-talla">
+                  <div class="col-md-3">
+                    <h5>Talla</h5>
+                    <h5 class="h-i-m">Cantidad</h5>
+                  </div>
+                  <div class="col-md-9 text-right">
+                    <div class="col-md-3 col-xs-6">
+                      <div class="sizeProduct active product1" data-toggleActive=".product1">
+                        <p>S</p>
+                      </div>
+                      <div class="sizeQuantity active" data-toggleActive=".product1">
+                        <select>
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                      <div class="sizeProduct product1" data-toggleActive=".product1">
+                        <p>M</p>
+                      </div>
+                      <div class="sizeQuantity" data-toggleActive=".product1">
+                        <select>
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                      <div class="sizeProduct product1" data-toggleActive=".product1">
+                        <p>L</p>
+                      </div>
+                      <div class="sizeQuantity" data-toggleActive=".product1">
+                       <select>
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                      <div class="sizeProduct product1" data-toggleActive=".product1">
+                        <p>XL</p>
+                      </div>
+                      <div class="sizeQuantity"  data-toggleActive=".product1">
+                        <select>
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row producto-talla-modal">
+                  <div class="col-md-5">
+                    <h4>guía de tallas</h4>
+                  </div>
+                  <div class="col-md-7">
+                    <h4 data-toggle="modal" data-target=".producto-sintalla">¿no está la talla que busca?</h4>
+                      
+                      <!-- CONTENIDO MODAL -->
+                      <div class="modal fade producto-sintalla" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                        <div class="modal-dialog modal-lg" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
+                              <h2 class="producto-sintalla-title" id="gridSystemModalLabel">
+                              ¿No esta la talla que busca?</h2>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row text-center">
+                                <p>Actualmente no tenemos algunas tallas de esta referencia en inventario</p>
+                                <h6>Seleccione la(s) talla(s) que necesita para notificarle vía email cuando tengamos disponiblidad en inventairo:</h6>
+                                <div class="row">
+                                  <div class="col-md-3">
+                                    <div class="producto-talla-faltante active" data-openDropdown="#lalaala"><p>S</p></div>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <div class="producto-talla-faltante" data-openDropdown="#lalaala"><p>M</p></div>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <div class="producto-talla-faltante" data-openDropdown="#lalaala"><p>L</p></div>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <div class="producto-talla-faltante" data-openDropdown="#lalaala"><p>XL</p></div>
+                                  </div>
+                                </div>
+                                <button class="producto-sintalla-button btnRed" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">aceptar</span></div>
+                              </div>
+                            </div>
+                            
+                          </div><!-- /.modal-content -->
+                      </div>
+                      <!-- CONTENIDO MODAL -->
+                      
+
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 producto-agregar">
+                    <button data-toggle="modal" data-target=".producto-agregado" class="btnRed">Agregar al carrito</button>
+                    <!-- CONTENIDO MODAL -->
+                    <div class="modal fade producto-agregado" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                      <div class="modal-dialog modal-xs" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
+                            <h2 class="producto-despacho-title" id="gridSystemModalLabel">
+                            AGREGADO EXITOSAMENTE</h2>
+                          </div>
+                          <div class="modal-body modal-agregado">
+                            <div class="row text-center">
+                              <p>Su producto ha sido añadido al carrito de compras exitosamente.</p>
+                              
+                              <button class="producto-sintalla-button btnRed" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">ir al carrito</span>
+                              
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!-- CONTENIDO MODAL -->
+                  </div>
+                </div>
+                <hr>
+                <div class="row producto-buttons">
+                  <div class="col-md-6 btnProducto">
+                    <button data-toggle="modal" data-target=".producto-despacho" class="btnRedFill">Tiempos de <br> despacho</button>
+
+                    <!-- CONTENIDO MODAL -->
+                    <div class="modal fade producto-despacho" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                      <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
+                            <h2 class="producto-despacho-title" id="gridSystemModalLabel">
+                            Tiempos de despacho</h2>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row text-center">
+                              <p>Recuerde que estos tiempos son a partir de la recepción del dinero:</p>
+                              <div class="row">
+                                <div class="col-md-4 producto-despacho-section">
+                                  <h2 class="producto-despacho-subtitle">Ciudades principales</h2>
+                                  <p class="producto-despacho-time">4 días</p>
+                                  <p class="producto-despacho-time-subtitle">Hábiles</p>
+                                  <p class="producto-despacho-ejemplo">Ejemplo</p>
+                                  <p class="producto-despacho-ciudades">
+                                    Bogotá, Medellín, Cali, Barranquilla, Manizales, Bucaramanga, Cartagena, Pereira, Armenia, Cúcuta, Ibagué, Sincelejo, Pasto y Montería.
+                                  </p>
+                                </div>
+                                <div class="col-md-4 producto-despacho-section active">
+                                  <h2 class="producto-despacho-subtitle">Ciudades intermedias</h2>
+                                  <p class="producto-despacho-time">4 días</p>
+                                  <p class="producto-despacho-time-subtitle">Hábiles</p>
+                                  <p class="producto-despacho-ejemplo">Ejemplo</p>
+                                  <p class="producto-despacho-ciudades">
+                                    Santa Marta, Barrancabermeja, Villavicencio, Montería, Caucasia, Neiva, Popayán, Quibdó, Ipiales, Santander de Quilichao, Rionegro, Buenaventura, Buga la Grande, Caloto, Miranda, Paipa, Puerto Tejada, Duitama, Florida Valle, Fundación Ginebra, Guacari, Ipiales, Jamundí Sogamoso, Tuluá, Tunja, Valledupar, Melgar, entre otras.
+                                  </p>
+                                </div>
+                                <div class="col-md-4 producto-despacho-section">
+                                  <h2 class="producto-despacho-subtitle">Reexpediciones</h2>
+                                  <p class="producto-despacho-time">4 días</p>
+                                  <p class="producto-despacho-time-subtitle">Hábiles</p>
+                                  <p class="producto-despacho-ejemplo">Ejemplo</p>
+                                  <p class="producto-despacho-ciudades">
+                                    Riohacha, Leticia, Florencia, Inírida, Quibdó, Ismina, Acacías, Amaga, Altamira, Santa Rosa de Osos, Lérida, Puerto Carreño, Guamo, Ambalema, Ándes, Anserma, Bruselas, Fredonia, Campo alegre, entre otros.
+                                  </p>
+                                </div>
+                              </div>
+                              <button class="producto-sintalla-button btnRed" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">aceptar</span>
+                              
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!-- CONTENIDO MODAL -->
+
+
+                  </div>
+                  <div class="col-md-6 btnProducto">
+                    <button data-toggle="modal" data-target=".producto-cuidados" class="btnRedFill">Composición y <br> cuidados</button>
+
+                      <!-- CONTENIDO MODAL -->
+
+                      <div class="modal fade producto-cuidados" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                        <div class="modal-dialog modal-lg" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="producto-cuidados-button-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/closeModal.png" width="60px" alt=""></span></button>
+                              <h4 class="producto-cuidados-title" id="gridSystemModalLabel">Composición y cuidados</h4>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row producto-cuidados-subtitle">
+                                <div data-openModalTab="#producto-cuidados-body" class="modal-tab-title col-md-4 active"><h4>Cuidados</h4></div>
+                                <div data-openModalTab="#producto-composicion-body" class="modal-tab-title col-md-4"><h4>Composición</h4></div>
+                                <div data-openModalTab="#producto-garantia-body" class="modal-tab-title col-md-4"><h4>Garantía</h4></div>
+                              </div>
+                              <div id="producto-cuidados-body" class="modal-tab row producto-cuidados-body active">
+                                <div class="col-md-4">
+                                  <div class="text-center"><img src="images/iconModalCuidados.svg" align="center" alt=""></div>
+                                  <ul>
+                                    <li>Lavar por separado, seleccionando los colores claros de los oscuros y las telas con diferentes tipos de fibras.</li>
+                                    <li>Usar detergentes exentos de blanqueadores, cloro y oxígeno activo, especialmente en los tonos muy intensos u oscuros.</li>
+                                    <li>No sobrecargar la máquina.</li>
+                                    <li>Hacer un buen enjuague final eliminando residuos de detergentes, especialmente si ha estado en remojo por varias horas. Evite retorcer la prenda al enjuagar.</li>
+                                  </ul>
+                                </div>
+                                <div class="col-md-4">
+                                  <ul>
+                                    <li>La exposición a la luz solar puede ser causa de amarillamientos en las telas de color blanco.</li>
+                                    <li>El secado de las prendas es preferible hacerlo a la sombra para cuidar el color que se ve afectado por la exposición prolongada a la luz solar.</li>
+                                    <li>Los tejidos con fibras sintéticas (poliéster, nylon, elastómero) son muy sensibles al calor, por lo que deben ser lavados en agua tibia y planchados a baja temperatura para evitar la fijación de quiebres y deformaciones.</li>
+                                    <li>Los tejidos con fibras artificiales (acetato, rayón, viscosa) o fibras naturales como la lana y el lino, se deformanal secarse colgadas, es preferible sacarlas extendidas.</li>
+                                    <li>Seque la ropa a temperatura media.</li>
+                                  </ul>
+                                </div>
+                                <div class="col-md-4">
+                                  <ul>
+                                    <li>Evite el exceso de secado, lo cual puede causar que su ropa se desgaste más rápidamente o incluso puede quemar su ropa 100 por ciento algodón.</li>
+                                    <li>Las prendas 100% algodón admiten agua fría o caliente y centrifugados largos. Pero si la temperatura del agua es muy elevada encogen y pueden perder color.</li>
+                                    <li>Para facilitar el planchado en prendas 100% algodón, es conveniente hacerlo con la prenda algo húmeda o bien utilizar las planchas con vaporizador a máxima temperatura.</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div id="producto-composicion-body" class="modal-tab row producto-composicion-body">
+                                <div class="row">
+                                  <div class="col-md-12 text-center">
+                                    <img src="images/iconModalComposicion.svg" alt="">
+                                    <h3>PRENDAS EN TEJIDO PLANO</h3>
+                                    <p>Prendas como: Camisa polo, pantalón islero y administrativo, blusas y camisas administrativas, chaquetas, entre otros.</p>
+                                    <p>Tener en cuenta composiciones de cada prenda:</p>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <ul>
+                                      <li>Polo: 100% algodón</li>
+                                      <li>Pantalones isleros y administrativos: 100% algodón</li>
+                                      <li>Camisas y blusas administrativas: 100% algodón</li>
+                                      <li>Chaleco: 100% poliéster</li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <ul>
+                                      <li>Chaqueta: 100% poliéster</li>
+                                      <li>Uniforme servicios corporativos 100% poliéster</li>
+                                      <li>Camisas supervisor industrial: 100% algodón</li>
+                                      <li>Jean: 100% algodón</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="producto-garantia-body" class="modal-tab row producto-garantia-body">
+                                <div class="row">
+                                  <div class="col-md-12 text-center">
+                                    <img src="images/iconModalGarantia.svg" alt="">
+                                    <h3>30 días</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            
+                          </div><!-- /.modal-content -->
+
+                        </div><!-- /.modal-dialog -->
+
+                      </div><!-- /.modal -->
+
+
+                      <!-- CONTENIDO MODAL -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="relacionadosContainer">
+              <div class="row">
+                <div class="col-md-12 text-center"><h3 class="titleHome">Productos Relacionados</h3></div>
+              </div>
+
+              <ul class="bxslider-producto">
+                <li>
+                  <a href="producto.html">
+                    <div class="cajaProductoBorderRadiusGris">
+                      <div class="imgVistosReciente">
+                        <img src="images/poloTerpel.png" alt="">
+                      </div>
+                      <div class="descripcionVistosReciente">
+                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4></a>
+                        <div class="calificacionVistosReciente">
+                          <fieldset class="rating">
+                            <input type="radio" id="star10" name="rating" value="5" /><label class = "full" for="star10" title="Genial - 5 stars"></label>
+                            <input type="radio" id="star9" name="rating" value="4" /><label class = "full" for="star9" title="Bueno - 4 stars"></label>
+                            <input type="radio" id="star8" name="rating" value="3" /><label class = "full" for="star8" title="Regular - 3 stars"></label>
+                            <input type="radio" id="star7" name="rating" value="2" /><label class = "full" for="star7" title="Malo - 2 stars"></label>
+                            <input type="radio" id="star6" name="rating" value="1" /><label class = "full" for="star6" title="Pésimo - 1 star"></label>
+                          </fieldset>
+                        </div>
+                        <h2 class="precioProducto">$ 15.582,00</h2>
+                      </div>
+                      <a href="producto.html">
+                        <div class="footerVistosReciente">
+                          <div class="row">
+                            <div class="col-md-7 verDetalle">
+                              <h4>VER DETALLE</h4></h3>
+                            </div>
+                            <div class="col-md-5 addToFav">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
+                            </div>
+                          </div></a>
+                      </div>
+                    </div>
+                  
+                </li>
+                <li>
+                  <a href="producto.html">
+                    <div class="cajaProductoBorderRadiusGris">
+                      <div class="imgVistosReciente">
+                        <img src="images/poloTerpel.png" alt="">
+                      </div>
+                      <div class="descripcionVistosReciente">
+                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4></a>
+                        <div class="calificacionVistosReciente">
+                          <fieldset class="rating">
+                            <input type="radio" name="rating" value="5" /><label class = "full" title="Genial - 5 stars"></label>
+                            <input type="radio"  name="rating" value="4" /><label class = "full"  title="Bueno - 4 stars"></label>
+                            <input type="radio"  name="rating" value="3" /><label class = "full"  title="Regular - 3 stars"></label>
+                            <input type="radio"  name="rating" value="2" /><label class = "full"  title="Malo - 2 stars"></label>
+                            <input type="radio"  name="rating" value="1" /><label class = "full"  title="Pésimo - 1 star"></label>
+                          </fieldset>
+                        </div>
+                        <h2 class="precioProducto">$ 15.582,00</h2>
+                      </div>
+                      <a href="producto.html"><div class="footerVistosReciente">
+                        <div class="row">
+                          <div class="col-md-7 verDetalle">
+                            <h4>VER DETALLE</h4></h3>
+                          </div></a>
+                          <div class="col-md-5 addToFav">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                 
+                <li>
+                  <a href="producto.html">
+                    <div class="cajaProductoBorderRadiusGris">
+                      <div class="imgVistosReciente">
+                        <img src="images/poloTerpel.png" alt="">
+                      </div>
+                      <div class="descripcionVistosReciente">
+                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4></a>
+                        <div class="calificacionVistosReciente">
+                          <fieldset class="rating">
+                            <input type="radio" id="star10" name="rating" value="5" /><label class = "full" for="star10" title="Genial - 5 stars"></label>
+                            <input type="radio" id="star9" name="rating" value="4" /><label class = "full" for="star9" title="Bueno - 4 stars"></label>
+                            <input type="radio" id="star8" name="rating" value="3" /><label class = "full" for="star8" title="Regular - 3 stars"></label>
+                            <input type="radio" id="star7" name="rating" value="2" /><label class = "full" for="star7" title="Malo - 2 stars"></label>
+                            <input type="radio" id="star6" name="rating" value="1" /><label class = "full" for="star6" title="Pésimo - 1 star"></label>
+                          </fieldset>
+                        </div>
+                        <h2 class="precioProducto">$ 15.582,00</h2>
+                      </div>
+                      <a href="producto.html"><div class="footerVistosReciente">
+                        <div class="row">
+                          <div class="col-md-7 verDetalle">
+                            <h4>VER DETALLE</h4></h3>
+                          </div></a>
+                          <div class="col-md-5 addToFav">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                <li>
+                  <a href="producto.html">
+                    <div class="cajaProductoBorderRadiusGris">
+                      <div class="imgVistosReciente">
+                        <img src="images/poloTerpel.png" alt="">
+                      </div>
+                      <div class="descripcionVistosReciente">
+                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4></a>
+                        <div class="calificacionVistosReciente">
+                          <fieldset class="rating">
+                            <input type="radio" id="star10" name="rating" value="5" /><label class = "full" for="star10" title="Genial - 5 stars"></label>
+                            <input type="radio" id="star9" name="rating" value="4" /><label class = "full" for="star9" title="Bueno - 4 stars"></label>
+                            <input type="radio" id="star8" name="rating" value="3" /><label class = "full" for="star8" title="Regular - 3 stars"></label>
+                            <input type="radio" id="star7" name="rating" value="2" /><label class = "full" for="star7" title="Malo - 2 stars"></label>
+                            <input type="radio" id="star6" name="rating" value="1" /><label class = "full" for="star6" title="Pésimo - 1 star"></label>
+                          </fieldset>
+                        </div>
+                        <h2 class="precioProducto">$ 15.582,00</h2>
+                      </div>
+                      <a href="producto.html"><div class="footerVistosReciente">
+                        <div class="row">
+                          <div class="col-md-7 verDetalle">
+                            <h4>VER DETALLE</h4></h3>
+                          </div></a>
+                          <div class="col-md-5 addToFav">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                </li>
+                <li>
+                  <a href="producto.html">
+                    <div class="cajaProductoBorderRadiusGris">
+                      <div class="imgVistosReciente">
+                        <img src="images/poloTerpel.png" alt="">
+                      </div>
+                      <div class="descripcionVistosReciente">
+                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4></a>
+                        <div class="calificacionVistosReciente">
+                          <fieldset class="rating">
+                            <input type="radio" id="star10" name="rating" value="5" /><label class = "full" for="star10" title="Genial - 5 stars"></label>
+                            <input type="radio" id="star9" name="rating" value="4" /><label class = "full" for="star9" title="Bueno - 4 stars"></label>
+                            <input type="radio" id="star8" name="rating" value="3" /><label class = "full" for="star8" title="Regular - 3 stars"></label>
+                            <input type="radio" id="star7" name="rating" value="2" /><label class = "full" for="star7" title="Malo - 2 stars"></label>
+                            <input type="radio" id="star6" name="rating" value="1" /><label class = "full" for="star6" title="Pésimo - 1 star"></label>
+                          </fieldset>
+                        </div>
+                        <h2 class="precioProducto">$ 15.582,00</h2>
+                      </div>
+                      <a href="producto.html"><div class="footerVistosReciente">
+                        <div class="row">
+                          <div class="col-md-7 verDetalle">
+                            <h4>VER DETALLE</h4></h3>
+                          </div></a>
+                          <div class="col-md-5 addToFav">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                </li>
+                <li>
+                  <a href="producto.html">
+                    <div class="cajaProductoBorderRadiusGris">
+                      <div class="imgVistosReciente">
+                        <img src="images/poloTerpel.png" alt="">
+                      </div>
+                      <div class="descripcionVistosReciente">
+                        <h4>Camiseta Polo Blanca Manga Larga Terpel</h4></a>
+                        <div class="calificacionVistosReciente">
+                          <fieldset class="rating">
+                            <input type="radio" id="star10" name="rating" value="5" /><label class = "full" for="star10" title="Genial - 5 stars"></label>
+                            <input type="radio" id="star9" name="rating" value="4" /><label class = "full" for="star9" title="Bueno - 4 stars"></label>
+                            <input type="radio" id="star8" name="rating" value="3" /><label class = "full" for="star8" title="Regular - 3 stars"></label>
+                            <input type="radio" id="star7" name="rating" value="2" /><label class = "full" for="star7" title="Malo - 2 stars"></label>
+                            <input type="radio" id="star6" name="rating" value="1" /><label class = "full" for="star6" title="Pésimo - 1 star"></label>
+                          </fieldset>
+                        </div>
+                        <h2 class="precioProducto">$ 15.582,00</h2>
+                      </div>
+                      <a href="producto.html"><div class="footerVistosReciente">
+                        <div class="row">
+                          <div class="col-md-7 verDetalle">
+                            <h4>VER DETALLE</h4></h3>
+                          </div></a>
+                          <div class="col-md-5 addToFav">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 446.52"><defs></defs><title>Asset 2</title><g id="Layer_2" data-name="Layer 2"><g id="Capa_1" data-name="Capa 1"><g id="Icons"><path class="cls-1" d="M513.5,139.76a138.15,138.15,0,0,0-256-72.21A138.15,138.15,0,1,0,49,243.86L244.88,439.79a17.84,17.84,0,0,0,25.23,0L466,243.86A137.76,137.76,0,0,0,513.5,139.76Z"/></g></g></g></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+
+
+   <footer>
+      <div class="container-fluid footer sectionHome">
+        <div class="container footerTop">
+          <div class="row">
+            <div class="col-md-3">
+              <img class="logo-footer img-responsive h-i-m" src="images/footerIconTienda.png" alt="Logo Tienda Terpel">
+              <img class="logo-footer img-responsive h-i-d" src="images/logoTTwhite.svg" width="80%" alt="Logo Tienda Terpel">
+            </div>
+            <div class="col-md-2">
+              <h3><a href="catalogo.html">Catálogo</a></h3>
+              <h3><a href="promociones.html">Promociones</a></h3>
+              <h3><a href="historial.html">Mis pedidos</a></h3>
+            </div>
+            <div class="col-md-2">
+              <h3>Contacto</h3>
+              <ul>
+                <li><a href="faq.html">Preguntas frecuentes</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+              </ul>
+              
+            </div>
+            <div class="col-md-2">
+              <h3>Perfil</h3>
+              <ul>
+                <li><a href="perfil.html">Actualizar perfil</a></li>
+                <li><a href="cambiarcontraseña.html">Cambiar contraseña</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 text-center">
+              <p>Realice sus transacciones con:</p>
+              <img class="ptp-logo img-responsive" src="images/footerIcons.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="container footerDerechos">
+          <div class="row text-center">
+            <div class="col-md-4">
+              <p>@ 2016 Terpel</p>
+            </div>
+            <div class="col-md-4">
+              <p>Todos los derechos reservados</p>
+            </div>
+            <div class="col-md-4">
+              <p>Términos y condiciones</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> 
+      
+    <script src="js/classie.js"></script>
+    <script src="js/mlpushmenu.js"></script>
+    <script>
+      new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+      $('.bxsliderrelacionados').bxSlider({
+        minSlides: 4,
+        maxSlides: 4,
+        slideWidth: 360,
+        slideMargin: 10,
+        nextSelector: '#slider-next',
+        prevSelector: '#slider-prev',
+        nextText: 'Onward →',
+        prevText: '← Go back'
+      });
+      $('.bxslider').bxSlider({
+        pagerCustom: '#bx-pager',
+      });
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
+    </script>
+    <script src="js/stacktable.js"></script>
+    <script src="js/jquery.zoom.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
